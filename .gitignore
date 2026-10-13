@@ -1,0 +1,24 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Downloaded data and generated experiment artifacts
+/data/
+/datasets/
+/checkpoints/
+/outputs/
+/runs/
+/wandb/
+
+# Local temporary files
+/tmp/
+.DS_Store
