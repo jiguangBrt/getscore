@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "scope": "Static review of the downloaded paper and the existing local RPent submodule; no installation, model calls, training, or simulator evaluation.",
+  "paper": {
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "arxiv_id": "2607.08448",
+    "version": "v5",
+    "version_date": "2026-09-24",
+    "url": "https://arxiv.org/abs/2607.08448v5",
+    "download_url": "https://arxiv.org/pdf/2607.08448v5",
+    "local_path": "paper/Harness-VLA.pdf",
+    "pages": 42,
+    "bytes": 15418507,
+    "sha256": "42a29e94c3db58e2a26dcd8bd50e3b0271db0e261556b11c35118882dca8e169"
+  },
+  "repository": {
+    "local_path": "RPent",
+    "origin": "https://github.com/jiguangBrt/RPent.git",
+    "upstream": "https://github.com/RLinf/RPent.git",
+    "branch": "main",
+    "commit_sha": "efc392adc98a30045d8fb83c4097917f28e20a94",
+    "commit_date": "2026-10-15T18:55:08+08:00",
+    "reviewed_files": [
+      "README.zh-CN.md",
+      "pyproject.toml",
+      "docs/source-zh/rst_source/development/architecture.rst",
+      "docs/source-zh/rst_source/development/memory.rst",
+      "docs/source-zh/rst_source/guides/configure_primitives.rst",
+      "docs/source-zh/rst_source/guides/flash.rst",
+      "docs/source-zh/rst_source/simulators/libero.rst",
+      "docs/source-zh/rst_source/simulators/robocasa.rst",
+      "docs/source-zh/rst_source/simulators/robotwin.rst",
+      "robots/libero/toolkit.py",
+      "rpent/memory/manager.py",
+      "rpent/cli/main.py"
+    ]
+  }
+}

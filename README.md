@@ -1,21 +1,22 @@
 # getscore
 
-RoboTwin / RoboCasa 具身智能冲榜项目：由 GPT 完成场景适应、阶段规划、结果检查与重新规划，由 π0.5 等 VLA 提供夹取、打开、移动、放置等可调用动作能力，并通过执行层落实安全约束。
+面向 RoboTwin / RoboCasa 的具身智能实验项目。目前处于探索阶段，初步参考 RPent 框架；具体技术路线和接口设计尚未确定。
 
 ## 项目入口
 
-- [路线总览](ROADMAP.md)：任务目标、七步推进、完成条件、榜单区别和首个里程碑。
+- [路线记录](ROADMAP.md)：长期目标、当前探索意向、推进阶段和榜单区别。
 - [第 1 步记录](STEP1_RULES.md)：已确定的目标、榜单规则、计算资源及后续核实项。
-- [第 2 步方案](STEP2_SCHEMES.md)：三篇论文技术路线、公开代码范围、方案候选及第一轮实验建议。
-- [论文索引](paper/README.md)：GPT-Policy、GPT-as-Policy 和 PhyAgentOS 的本地 PDF、论文来源及代码入口。
+- [第 2 步方案](STEP2_SCHEMES.md)：三篇论文技术路线、公开代码范围及未定案的方案候选。
+- [第 3 步准备](STEP3_BASELINE.md)：近期复现意向、需要了解的问题和待确定事项。
+- [论文索引](paper/README.md)：GPT-Policy、GPT-as-Policy 和 RPent / Harness VLA 的本地 PDF、论文来源及代码入口。
 
 ## 推进流程
 
 明确规则 → 调研方案 → 复现基线 → 实现最小系统 → 按需训练 → 迭代与正式评测 → 打包提交。
 
-两个榜单都做，先 RoboTwin、后 RoboCasa。先在 RoboTwin 跑通基线并验证“大脑 + 小脑”，随后迁移到 RoboCasa，分别完成完整评测和提交材料。计算资源为同机 8×A100 40GB。
+此前记录的目标是 RoboTwin → RoboCasa，计算资源为同机 8×A100 40GB。近期先参考 RPent，尝试复现 π0.5 + GPT-6，了解启动信息流和执行过程；具体仿真环境及运行配置在搭建时确定。
 
-第 1—2 步的目标、规则梳理与方案调研已完成，下一步搭建环境并复现基线；具体评测配置与混合系统收录条件仍需在后续执行前核实。候选方案尚未得到运行验证。
+**当前状态（2026-10-16）：探索阶段，准备进行第 3 步——搭建仿真环境并复现基线。** 初步参考 RPent，后续有尝试更快、更小动作模型的意向。是否采用固定技能接口、如何规划和控制动作均待探索。RPent 源码已作为子模块引入，尚未验证运行成功；参考框架的现有设计不代表本项目已经采纳。
 
 ## 当前内容
 
@@ -25,6 +26,10 @@ getscore/
 ├── ROADMAP.md
 ├── STEP1_RULES.md
 ├── STEP2_SCHEMES.md
+├── STEP3_BASELINE.md
+├── RPent/                     # RPent 代码子模块
+├── data/                      # 本地下载资料，不纳入 Git
+│   └── gpt-policy-robodojo-contexts/
 ├── rules/
 │   └── 2026-10-13/
 │       └── repository_snapshot.json
@@ -32,7 +37,8 @@ getscore/
     ├── README.md
     ├── GPT-Policy.pdf
     ├── GPT-as-Policy.pdf
-    └── PhyAgentOS.pdf
+    ├── Harness-VLA.pdf         # RPent 相关论文，arXiv v5
+    └── PhyAgentOS.pdf          # 历史参考
 ```
 
-当前仓库保存路线规划和调研资料；仿真环境、训练与评测实现将随项目推进补充。
+`data/gpt-policy-robodojo-contexts/` 是此前调研 GPT-Policy 时下载的 RoboDojo 专家示范包，约 37 MB，包含 10 份任务示范、480 张图片及阶段、状态和动作参考。它用于阅读推理上下文，当前 RPent 代码没有引用该目录，也不能替代 RPent 所需的仿真资产、π0.5/SAM3 权重或 RPent memory。详见 [专家示范包中文导读](paper/DEMO_PACKAGE_GUIDE.md)。
