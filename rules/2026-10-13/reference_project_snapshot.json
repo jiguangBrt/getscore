@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "scope": "Static source inspection; no installation, model requests, training, or evaluation. commit_sha comes from commits/main; tree_sha comes from that commit record; tree_api_response_sha preserves the recursive tree endpoint response.",
+  "repositories": [
+    {
+      "repository": "cheng-haha/GPT-Policy",
+      "branch": "main",
+      "tree_truncated": false,
+      "url": "https://github.com/cheng-haha/GPT-Policy",
+      "commit_sha": "2ca201638e1139fe35973c8a2d209a894b389db1",
+      "commit_date": "2026-10-12T11:56:34Z",
+      "tree_api_response_sha": "2ca201638e1139fe35973c8a2d209a894b389db1",
+      "tree_sha": "78db226547080801e9b3ac559f4735f21f6de5a4"
+    },
+    {
+      "repository": "anonymous-report-421/GPT-as-Policy",
+      "branch": "main",
+      "tree_truncated": false,
+      "url": "https://github.com/anonymous-report-421/GPT-as-Policy",
+      "commit_sha": "8f3d362b077d8efb77e2a7274d5b2c20e2243846",
+      "commit_date": "2026-09-16T01:42:39Z",
+      "tree_api_response_sha": "8f3d362b077d8efb77e2a7274d5b2c20e2243846",
+      "tree_sha": "189dc21d0ca598024d9756028e4d782016d2d468"
+    },
+    {
+      "repository": "PhyAgentOS/PhyAgentOS-core",
+      "branch": "main",
+      "tree_truncated": false,
+      "url": "https://github.com/PhyAgentOS/PhyAgentOS-core",
+      "commit_sha": "74546aba45733cf102211e2f13dbf2c80ff6df8b",
+      "commit_date": "2026-10-10T10:16:21Z",
+      "tree_api_response_sha": "74546aba45733cf102211e2f13dbf2c80ff6df8b",
+      "tree_sha": "9bf75f2a88e6b8e5428bff3ddf8b7c433401ea19"
+    }
+  ]
+}

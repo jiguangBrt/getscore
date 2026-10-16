@@ -1,0 +1,4 @@
+[submodule "RPent"]
+	path = RPent
+	url = https://github.com/RLinf/RPent.git
+	branch = main
