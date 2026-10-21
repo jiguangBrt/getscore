@@ -1,0 +1,29 @@
+[openpi]
+host = "192.168.50.73"
+port = 8008
+connect_timeout_s = 20.0
+request_timeout_s = 300.0
+
+[bridge]
+host = "127.0.0.1"
+port = 8113
+# Leave margin above the WebSocket request timeout so its error reaches RPent.
+rpc_timeout_s = 330.0
+
+[simulation]
+suite = "libero_object_swap"
+task = 2
+seed = 0
+max_episode_steps = 1000
+action_chunks = 3
+cuda_device = 0
+sam3_endpoint = "http://192.168.50.73:8114"
+
+[codex]
+model = "gpt-6-astra"
+# low enables reasoning; no separate reasoning boolean is required.
+reasoning_effort = "low"
+max_turns = 24
+planner_timeout_s = 600
+max_episode_steps = 400
+memory_dir = "data/liberopro-codex-memory"

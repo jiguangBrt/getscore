@@ -1,0 +1,37 @@
+{
+  "rpent": {
+    "path": "/home/jh/getscore/RPent",
+    "commit": "efc392adc98a30045d8fb83c4097917f28e20a94",
+    "local_patch_commit": "e2eac0c29f3da273a96e96c1cd14c54b34b66a58",
+    "local_patch_branch": "codex/liberopro-remote-openpi"
+  },
+  "rlinf": {
+    "path": "/home/jh/getscore/data/rlinf-runtime",
+    "commit": "b6c6250587fcbd31dbc1d59ea1907f888a0dd748"
+  },
+  "libero": {
+    "path": "/home/jh/getscore/data/libero-runtime",
+    "commit": "a8323074d93a09e32bd898630a70531b1f51bc77"
+  },
+  "liberopro": {
+    "path": "/home/jh/getscore/data/liberopro-runtime",
+    "commit": "d1e11fb181b8544487d27742c0caa3a4d46452ad"
+  },
+  "sam3": {
+    "path": "/home/jh/getscore/data/sam3-service",
+    "commit": "c1f6b1e83967c912f675d8975d437ccdc41e17d8"
+  },
+  "openpi_remote": {
+    "host": "192.168.50.73",
+    "path": "/mnt/reacher-fast/openpi_ur_pp_202607/repo",
+    "commit": "3ab5477b975d5683b2368d7c4cb97e83cb86e36f",
+    "client_copy": "data/openpi-client",
+    "timeout_patch": "scripts/marvinpro_rtc_smoke.py"
+  },
+  "checkpoint": {
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "reused_from": "/mnt/reacher-fast/ckpt/pi05_libero",
+    "verified_objects": 16,
+    "checksums": "CRC32C all; MD5 if supplied"
+  }
+}
