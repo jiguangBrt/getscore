@@ -24,11 +24,15 @@
 
 ## 已有资料与待确定配置
 
-RPent 源码已作为 `RPent/` 子模块引入；本次核查的提交为 `efc392adc98a30045d8fb83c4097917f28e20a94`。origin 为 `https://github.com/jiguangBrt/RPent.git`，upstream 为 `https://github.com/RLinf/RPent.git`。尚未验证环境、模型服务或基线运行成功。
+RPent 源码已作为 `RPent/` 子模块引入；基于 `efc392adc98a30045d8fb83c4097917f28e20a94` 增加本地部署适配，当前子模块提交为 `e2eac0c29f3da273a96e96c1cd14c54b34b66a58`。origin 为 `https://github.com/jiguangBrt/RPent.git`，upstream 为 `https://github.com/RLinf/RPent.git`。适配已提交并推送至个人 fork 的 `codex/liberopro-remote-openpi` 分支。
 
-本地 RPent 已有 LIBERO / LIBERO-PRO 的 π0.5 集成，可作为搭建入口参考。具体仿真环境、GPT-6 版本、规划器、推理强度、权重、memory 和任务清单在搭建时核实确定；不把示例配置当作用户已选定方案。实际运行后记录版本、命令和结果。
+2026-10-19 已按用户选择配置本机 LIBERO-PRO、远程官方 π0.5-LIBERO/SAM3 和本地 fake 规划器，先使用阻塞式同步推理。真实链路验证了 3 次模型调用、15 个仿真动作及视频记录；GPT token 用量为 0。该检查不代表完整任务成功或基线成功率复现。配置、启动、超时与 RTC 范围、版本及验证记录见 [本地运行说明](LOCAL_LIBEROPRO.md)。
+
+2026-10-20 已用 RPent 原生 `codex` 后端接入 GPT-6 Astra，推理强度为 `low`，复用本机 ChatGPT 登录，无需提供 API key。首轮 `libero_object_swap / task 2 / seed 0` 在一个连续 episode 内完成抓取和放置，原生环境成功；记录到 19 次模型回复、16 次 π0.5 请求和 344 个仿真动作。该单例不代表完整 benchmark 成功率，启动与证据见上述运行说明。
 
 项目此前记录的长期榜单目标与资源见 [ROADMAP](ROADMAP.md) 和 [STEP1_RULES](STEP1_RULES.md)。当前复现用于探索框架，后续如何衔接目标榜单仍随实验推进。
+
+2026-10-21 已接入远程 GAWM：先通过 fake 链路检查，再以真实 GPT-6 Astra/low 在同一任务、seed 0 的连续 episode 内完成沙拉酱入篮。成功轮执行 447 个原生动作；此前一轮因初始化稳定步数与 episode 上限错位失败，已修复并保留记录。详见 [GAWM 运行说明](LOCAL_GAWM_LIBERO.md)。
 
 ## data 目录
 

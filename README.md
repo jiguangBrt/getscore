@@ -8,15 +8,17 @@
 - [第 1 步记录](STEP1_RULES.md)：已确定的目标、榜单规则、计算资源及后续核实项。
 - [第 2 步方案](STEP2_SCHEMES.md)：三篇论文技术路线、公开代码范围及未定案的方案候选。
 - [第 3 步准备](STEP3_BASELINE.md)：近期复现意向、需要了解的问题和待确定事项。
+- [本地 LIBERO-PRO 运行说明](LOCAL_LIBEROPRO.md)：本机仿真、远程官方 π0.5/SAM3、fake 或真实 Codex 规划器、超时配置和启动命令。
+- [GAWM + LIBERO-PRO 接入](LOCAL_GAWM_LIBERO.md)：50.73 上的 GAWM 服务、fake 验证、真实 Codex 完成沙拉酱入篮的记录与启动入口。
 - [论文索引](paper/README.md)：GPT-Policy、GPT-as-Policy 和 RPent / Harness VLA 的本地 PDF、论文来源及代码入口。
 
 ## 推进流程
 
 明确规则 → 调研方案 → 复现基线 → 实现最小系统 → 按需训练 → 迭代与正式评测 → 打包提交。
 
-此前记录的目标是 RoboTwin → RoboCasa，计算资源为同机 8×A100 40GB。近期先参考 RPent，尝试复现 π0.5 + GPT-6，了解启动信息流和执行过程；具体仿真环境及运行配置在搭建时确定。
+此前记录的长期目标是 RoboTwin → RoboCasa。当前先用本机运行 LIBERO-PRO 和 RPent，远程 `192.168.50.73` 提供官方 π0.5-LIBERO 与 SAM3。启动入口默认使用不消耗 token 的 fake 规划器；加 `--planner codex` 可使用现有 ChatGPT 登录调用 GPT-6 Astra，推理强度为 low。该服务器实查为 6×RTX 5090 32GB；此前的 8×A100 40GB 记录不适用于这次部署。
 
-**当前状态（2026-10-16）：探索阶段，准备进行第 3 步——搭建仿真环境并复现基线。** 初步参考 RPent，后续有尝试更快、更小动作模型的意向。是否采用固定技能接口、如何规划和控制动作均待探索。RPent 源码已作为子模块引入，尚未验证运行成功；参考框架的现有设计不代表本项目已经采纳。
+**当前状态（2026-10-21）：已接入 RPent 原生 Codex 规划器，GPT-6 Astra/low 分别搭配远程官方 π0.5 和 GAWM 完成同一个 LIBERO-PRO 任务。** `libero_object_swap / task 2 / seed 0` 的沙拉酱入篮均获得环境原生成功标志。GAWM 首轮因 episode 上限错位失败，修复后第二轮在连续 episode 内成功；视频和原始记录已保存。尚未统计完整 benchmark 成功率。
 
 ## 当前内容
 

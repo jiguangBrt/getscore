@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "naming": "simulation-action_policy-command_policy-YYYYMMDD-HHMMSS",
+  "renamed_outputs": {
+    "liberopro-codex-20261020-104215-667293": "liberopro-pi05-gpt6astra-20261020-104215",
+    "liberopro-fake-20261019-164642-575357": "_archive/runs/liberopro-mockvla-fake-20261019-164642",
+    "liberopro-fake-20261019-164950-567088": "liberopro-pi05-fake-20261019-164950",
+    "liberopro-gawm-fake-20261021-114320-427774": "_archive/runs/liberopro-gawm-fake-20261021-114320",
+    "liberopro-gawm-fake-20261021-114445-698469": "_archive/runs/liberopro-gawm-fake-20261021-114445",
+    "liberopro-gawm-fake-20261021-114551-298320": "liberopro-gawm-fake-20261021-114551",
+    "starvla-weights-2026-10-20": "_archive/records/starvla-weights-2026-10-20",
+    "server-status-2026-10-21": "_archive/records/server-status-2026-10-21",
+    "gawm-copy-2026-10-21": "_archive/records/gawm-copy-2026-10-21",
+    "gawm-setup-20261021": "_archive/records/gawm-setup-20261021",
+    "gawm-local-feasibility-2026-10-20": "_archive/records/gawm-local-feasibility-2026-10-20",
+    "server-audit-2026-10-19": "_archive/records/server-audit-2026-10-19",
+    "gawm-version-map-2026-10-20": "_archive/records/gawm-version-map-2026-10-20",
+    "liberopro-codex-setup-2026-10-20": "_archive/records/liberopro-codex-setup-2026-10-20",
+    "robotwin-checkpoints-2026-10-20": "_archive/records/robotwin-checkpoints-2026-10-20",
+    "liberopro-setup-2026-10-19": "_archive/records/liberopro-setup-2026-10-19"
+  },
+  "renamed_reviews": {
+    "liberopro-codex-20261020-104215-667293": "liberopro-pi05-gpt6astra-20261020-104215",
+    "liberopro-gawm-fake-20261021-114320-427774": "liberopro-gawm-fake-20261021-114320",
+    "liberopro-gawm-fake-20261021-114445-698469": "liberopro-gawm-fake-20261021-114445",
+    "liberopro-gawm-fake-20261021-114551-298320": "liberopro-gawm-fake-20261021-114551"
+  },
+  "deleted": [
+    {
+      "path": "outputs/server-audit-2026-10-20",
+      "bytes": 37915
+    },
+    {
+      "path": "outputs/server-setup-2026-10-19",
+      "bytes": 36375
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/deployment-source.tar",
+      "bytes": 2355200
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/dinov3-vits16.tar",
+      "bytes": 86425600
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/libero-registry.tar.gz",
+      "bytes": 2704
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/libero-source.tar.gz",
+      "bytes": 508147
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/python310-dependencies.tar.gz",
+      "bytes": 169757918
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/pytorch3d-python.tar.gz",
+      "bytes": 50403
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/registry-dependencies.tar.gz",
+      "bytes": 5407
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/source",
+      "bytes": 2207075
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/unified-registry.tar.gz",
+      "bytes": 6856
+    },
+    {
+      "path": "outputs/gawm-setup-20261021/source-assets/gawm_libero_80000_20261018_002850.pt",
+      "bytes": 129355451
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/checkout-pro-code-only.log",
+      "bytes": 1353
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/checkout-pro-resume.log",
+      "bytes": 0
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/checkpoint-base-overlap.json",
+      "bytes": 3
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/checkpoint-mirror-preflight.json",
+      "bytes": 18190
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/checkpoint-mirror-revision.txt",
+      "bytes": 41
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/clone-libero-runtime.log",
+      "bytes": 38
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/clone-liberopro-runtime.log",
+      "bytes": 41
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/clone-rlinf-runtime.log",
+      "bytes": 37
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/clone-sam3-sparse.log",
+      "bytes": 36
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/clone-sam3.log",
+      "bytes": 36
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/complete-pro-assets.log",
+      "bytes": 2043
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/dependency-check.log",
+      "bytes": 66
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/docs-html-en",
+      "bytes": 9779548
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/docs-html-zh",
+      "bytes": 9592663
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-claude-agent-sdk.log",
+      "bytes": 991
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-llvmlite.log",
+      "bytes": 208
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-openai-codex-cli-bin.log",
+      "bytes": 1392
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-ray.log",
+      "bytes": 298
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-robosuite.log",
+      "bytes": 1195
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-rpent-libero.log",
+      "bytes": 116
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/download-rpent-liberopro.log",
+      "bytes": 122
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/environment-check",
+      "bytes": 2581
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/environment-check-ready",
+      "bytes": 6946
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/export-local-torch.log",
+      "bytes": 1193
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-complete-local.log",
+      "bytes": 1347
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-control-direct.log",
+      "bytes": 51
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-control-offline.log",
+      "bytes": 4053
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-control-online.log",
+      "bytes": 886
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-control.log",
+      "bytes": 51
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-current-simulator-sources.log",
+      "bytes": 622
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-docs.log",
+      "bytes": 1032
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-final-helpers.log",
+      "bytes": 134
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-libero-retry.log",
+      "bytes": 0
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-libero.log",
+      "bytes": 973
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-local-core.log",
+      "bytes": 2327
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-local-final.log",
+      "bytes": 210
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-local-offline-final.log",
+      "bytes": 1358
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-rlinf.log",
+      "bytes": 279
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-simulator-support.log",
+      "bytes": 1311
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-test-online.log",
+      "bytes": 832
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-test-prereqs.log",
+      "bytes": 364
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-torch-local.log",
+      "bytes": 756
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-torch-mirror.log",
+      "bytes": 415
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-torch-retry.log",
+      "bytes": 1468
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-torch.log",
+      "bytes": 3522
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/install-websocket-pin.log",
+      "bytes": 126
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/link-assets-current.log",
+      "bytes": 431
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/link-assets.log",
+      "bytes": 890
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/plumbing-only.toml",
+      "bytes": 397
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pro-assets-comparison.json",
+      "bytes": 47159
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pro-code-still-missing.json",
+      "bytes": 137
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pro-code-updates.json",
+      "bytes": 4169
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pro-present-objects.txt",
+      "bytes": 92006
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pro-present-shas.txt",
+      "bytes": 74087
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pypi-claude-agent-sdk.json",
+      "bytes": 799132
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pypi-openai-codex-cli-bin.json",
+      "bytes": 9110
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/pypi-robosuite.json",
+      "bytes": 9028
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/ray-version.txt",
+      "bytes": 7
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/recover-pro-objects.log",
+      "bytes": 17
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/rpent-libero-help.txt",
+      "bytes": 8050
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/sam3-component.json",
+      "bytes": 359
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/test-adapters.log",
+      "bytes": 542
+    },
+    {
+      "path": "outputs/liberopro-setup-2026-10-19/test-remote-openpi.log",
+      "bytes": 99
+    },
+    {
+      "path": "outputs/liberopro-codex-setup-2026-10-20/codex-help.txt",
+      "bytes": 543
+    },
+    {
+      "path": "outputs/liberopro-codex-setup-2026-10-20/fake-help.txt",
+      "bytes": 322
+    }
+  ],
+  "deleted_bytes": 411226790,
+  "raw_experiment_files_verified_unchanged": true,
+  "raw_experiment_files_checked": 522
+}
