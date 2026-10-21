@@ -1,0 +1,31 @@
+policy_backend = "gawm"
+
+[gawm]
+host = "192.168.50.73"
+port = 8115
+connect_timeout_s = 20.0
+request_timeout_s = 120.0
+execute_horizon = 8
+
+[bridge]
+host = "127.0.0.1"
+port = 8116
+rpc_timeout_s = 150.0
+
+[simulation]
+suite = "libero_object_swap"
+task = 2
+seed = 0
+max_episode_steps = 400
+action_chunks = 3
+policy_prompt = "pick up the salad dressing and place it in the basket"
+cuda_device = 0
+sam3_endpoint = "http://192.168.50.73:8114"
+
+[codex]
+model = "gpt-6-astra"
+reasoning_effort = "low"
+max_turns = 40
+planner_timeout_s = 900
+max_episode_steps = 1000
+memory_dir = "data/liberopro-gawm-codex-memory"
