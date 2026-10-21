@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2609.03565",
+  "version": "v2",
+  "title": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
+  "authors": [
+    "Muyuan Liu",
+    "Yue Huang",
+    "Zheng Liang",
+    "Xiang Gao"
+  ],
+  "version_date": "2026-09-19",
+  "archived_on": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "abstract_url": "https://arxiv.org/abs/2609.03565v2",
+  "pdf_url": "https://arxiv.org/pdf/2609.03565v2",
+  "code_url_from_paper": "https://github.com/zsibot/gawm",
+  "local_pdf": "paper/GAWM.pdf",
+  "pages": 5,
+  "bytes": 566300,
+  "sha256": "c9140dbeb1f5978c5a95362704c12a800ed57cfe68fa0f2ef7666725df45801b",
+  "preserved_original_pdf": true,
+  "verification": [
+    "PDF signature",
+    "Poppler parse and five-page count",
+    "Text extraction",
+    "Rendered method and results pages visually inspected"
+  ]
+}
