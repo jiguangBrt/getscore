@@ -38,6 +38,10 @@ def export_transcripts(output: Path) -> list[Path]:
         else []
     )
     written = []
+    config_path = output / "configuration.json"
+    config = json.loads(config_path.read_text()) if config_path.exists() else {}
+    backend = config.get("policy_backend", "openpi")
+    policy_label = {"gawm": "GAWM", "openpi": "π0.5"}.get(backend, backend)
     for source in sorted(output.glob("transcript_*.json")):
         record = json.loads(source.read_text(encoding="utf-8"))
         task = steps[0].get("extras", {}).get("task_language") if steps else None
@@ -45,6 +49,12 @@ def export_transcripts(output: Path) -> list[Path]:
             "# LIBERO-PRO 任务记录\n",
             f"原始汇总：[{source.name}]({source})；本文件由已有记录生成，不调用模型。\n",
             f"原始运行目录：`{output}`；复盘文件保存在 `review/{output.name}/`。\n",
+            "## 工具名称与实际后端\n",
+            f"本轮 `policy_backend={backend}`，实际动作策略是 **{policy_label}**。"
+            "`pi0_pick` / `pi0_doubled` 沿用 RPent 的工具接口名称，"
+            f"通过本轮适配层调用 {policy_label}；名称本身不能判断实际模型。"
+            "`move_to`、`set_gripper`、`release` 为脚本控制。"
+            "具体配置见 `configuration.json`，服务标识和权重校验值见 `bridge.log`。\n",
             "## 原始任务描述\n",
             _block(task or "未保存任务原文，请检查环境记录。", "text"),
             "来源：`states.json → steps[0].extras.task_language`。\n",

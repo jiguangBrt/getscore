@@ -1,17 +1,21 @@
-"""Build an offline report for the recorded first Codex LIBERO run on 2026-10-20."""
+"""Build an offline, evidence-linked report for a recorded Codex LIBERO run."""
 
 from __future__ import annotations
 
 import argparse
+import ast
 import base64
 import hashlib
 import json
 import os
+import re
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
+
+import imageio.v2 as imageio
 
 TZ = ZoneInfo("Asia/Shanghai")
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +60,34 @@ def build(output):
         json.loads(line)
         for line in (output / "network-timing.jsonl").read_text().splitlines()
     ]
+    backend = config.get("policy_backend", "openpi")
+    policy_label = {"gawm": "GAWM", "openpi": "π0.5"}[backend]
+    policy_config = config["config"][backend]
+    bridge_config = config["config"]["bridge"]
+    execute_horizon = policy_config.get("execute_horizon", 5)
+    actions = [step for step in states if step.get("command")]
+    policy_calls = [step for step in actions if step["command"]["action"].startswith("pi0_")]
+    action_counts = Counter(step["command"]["action"] for step in actions)
+    frame_count = 0
+    with imageio.get_reader(output / "episode.mp4") as reader:
+        video_meta = reader.get_meta_data()
+        for _frame in reader:
+            frame_count += 1
+    fps = video_meta["fps"]
+    video_seconds = frame_count / fps
+    bridge_status = None
+    for line in (output / "bridge.log").read_text().splitlines():
+        try:
+            value = ast.literal_eval(line)
+        except (ValueError, SyntaxError):
+            continue
+        if isinstance(value, dict) and "source" in value:
+            bridge_status = value
+            break
+    if backend == "gawm":
+        assert bridge_status["source"] == "starvla-gawm-libero"
+        assert bridge_status["num_action_chunks"] == execute_horizon == 8
+    native_success = bool(states[-1]["terminated"])
     source_hashes = {
         path.name: hashlib.sha256(path.read_bytes()).hexdigest()
         for path in (
@@ -64,6 +96,8 @@ def build(output):
             output / "states.json",
             output / "configuration.json",
             output / "network-timing.jsonl",
+            output / "bridge.log",
+            output / "episode.mp4",
         )
     }
 
@@ -111,7 +145,7 @@ def build(output):
         "启动本地 RPent 与仿真",
         zero,
         important=True,
-        explanation="启动器先启动 OpenPI 适配层，再启动 RPent。LIBERO-PRO 在本机创建环境并渲染；π0.5 已在远程服务中运行。此时间来自秒级日志。",
+        explanation=f"启动器先启动 {policy_label} 适配层，再启动 RPent。LIBERO-PRO 在本机创建环境并渲染；{policy_label} 已在远程服务中运行。此时间来自秒级日志。",
         arguments={
             "rpent_command": config["command"],
             "model": config["model"],
@@ -132,7 +166,7 @@ def build(output):
             explanation = "RPent 暴露本地 MCP 接口。随后同一秒的日志记录了初始提示词字符数和 Codex SDK 调用；精确的文本提交见下一条 userMessage。"
         elif "I [agent] elapsed:" in line:
             title = "运行结束并汇总归档"
-            explanation = "RPent 保存汇总：elapsed_s=482.0，环境最终 terminated=true、truncated=false。启动日志到本条约 490 秒，包含不在该 elapsed_s 中的前置启动时间。"
+            explanation = f"RPent 保存汇总：elapsed_s={transcript['elapsed_s']}，环境最终 terminated={str(native_success).lower()}、truncated={str(states[-1]['truncated']).lower()}。启动日志区间包含前置启动时间，不能直接等同于该 elapsed_s。"
         else:
             continue
         at = (
@@ -158,19 +192,6 @@ def build(output):
     frame_cursor = 0
     type_counts = Counter()
     reasoning_items = []
-    action_notes = {
-        1: "GPT 主动到篮子上方观察内部，不是误抓篮子。腕部视角用于纠正主相机选点落在内壁的问题。",
-        2: "GPT 规划的中间航点，分段移动以满足工具对单次横向位移的限制。",
-        3: "GPT 用脚本控制移到沙拉酱上方，再通过腕部画面和反投影核对目标。",
-        4: "第一次 VLA 抓取。GPT 传入缩短的抓取指令；π0.5 生成动作，机械臂偏向番茄酱且没有夹住物体。8 次推理均通信成功，但局部抓取失败。",
-        5: "GPT 观察失败画面后，用 move_to 返回沙拉酱上方；这次修正由脚本执行。",
-        6: "第二次 VLA 抓取。改用完整任务指令，起始位置和 lift_thresh 也变化；达到局部抓取判据。不能用本轮结果证明单独改指令就是成功原因。",
-        7: "GPT 调用脚本持续闭合夹爪，保持瓶子。",
-        8: "GPT 调用脚本抬升，避开桌面物体。",
-        9: "GPT 调用脚本经过中间航点搬运，不调用 π0.5。",
-        10: "GPT 调用脚本将瓶子对准已测量的篮子内部中心。",
-        11: "GPT 调用 release 在篮子上方松开夹爪。环境返回 terminated=true；这一轮任务实际成功。",
-    }
     for line_number, line in enumerate(stream.open(encoding="utf-8"), 1):
         raw = json.loads(line)
         payload = raw.get("payload", {})
@@ -229,6 +250,19 @@ def build(output):
                     "line": line_number,
                 }
             )
+        elif typ == "commandExecution":
+            add(
+                "tool",
+                "commandExecution",
+                start,
+                end=end,
+                arguments={"command": item.get("command")},
+                result={"output": item.get("aggregated_output"), "exit_code": item.get("exit_code")},
+                status=item.get("status"),
+                publicBefore=last_public,
+                explanation="Codex CLI 的本地命令工具调用，原始命令和输出见本事件；它不属于机器人动作。",
+                sources=evidence,
+            )
         elif typ == "mcpToolCall":
             name = item["tool"]
             arguments = item.get("arguments", {})
@@ -259,7 +293,11 @@ def build(output):
                         key: step.get(key)
                         for key in ("result", "terminated", "truncated", "elapsed_s")
                     },
-                    explanation=action_notes[action_index],
+                    explanation=(
+                        f"工具名 {name} 沿用 RPent 接口，实际调用 {policy_label}，执行 {step['result'].get('chunks_used', 0)} 个策略动作块。局部 success 是抓取启发式判据，需与图像及原生任务标志分别核对。"
+                        if kind == "vla"
+                        else f"GPT 给出参数，RPent 脚本执行 {name}；该动作不请求 {policy_label}。对齐的执行前后图像和原始返回见下方。"
+                    ),
                     important=True,
                 )
                 fields["sources"].append(
@@ -274,15 +312,15 @@ def build(output):
                 latest_state = action_index
                 if name == "move_to":
                     actual_steps = step["result"]["steps_used"] - 1
-                elif name == "pi0_pick":
-                    actual_steps = step["result"]["chunks_used"] * 5
+                elif name in {"pi0_pick", "pi0_doubled"}:
+                    actual_steps = step["result"]["chunks_used"] * execute_horizon
                 elif name == "set_gripper":
                     actual_steps = step["result"]["steps"]
                 else:
                     actual_steps = step["result"]["steps_used"]
                 fields["video"] = {
-                    "start": frame_cursor / 20,
-                    "end": (frame_cursor + actual_steps) / 20,
+                    "start": frame_cursor / fps,
+                    "end": (frame_cursor + actual_steps) / fps,
                     "startFrame": frame_cursor,
                     "endFrameExclusive": frame_cursor + actual_steps,
                     "actions": actual_steps,
@@ -295,7 +333,7 @@ def build(output):
                 ]
                 fields["networkRows"] = linked
                 if kind == "vla":
-                    assert len(linked) == step["result"]["chunks_used"] == 8
+                    assert len(linked) == step["result"]["chunks_used"]
             elif name == "view_env_state":
                 requested = arguments.get("step", -1)
                 fields["state"] = latest_state if requested == -1 else requested
@@ -332,11 +370,10 @@ def build(output):
                 **fields,
             )
 
-    assert prompt is not None and len(prompt) == 33730
-    assert action_index == 11 and frame_cursor == 344
-    assert len(reasoning_items) == 16 and all(
-        not r["summary_count"] and not r["content_count"] for r in reasoning_items
-    )
+    assert prompt is not None
+    assert action_index == len(actions) and frame_cursor == frame_count
+    if backend == "gawm":
+        assert "GAWM policy for this run" in prompt
     (review / "initial-prompt.txt").write_text(prompt, encoding="utf-8")
     for index, entry in enumerate(network, 1):
         at = entry["time_unix"] * 1000
@@ -345,7 +382,7 @@ def build(output):
         )
         add(
             "network",
-            f"π0.5 请求 #{index:02d}",
+            f"{policy_label} 请求 #{index:02d}",
             at,
             end=at + entry["wall_ms"],
             important=False,
@@ -379,7 +416,7 @@ def build(output):
         (
             "initial-prompt.txt",
             "初始完整输入",
-            "本次从原始 userMessage 导出的 33,730 字符 RPent 提交文本。",
+            f"本次从原始 userMessage 导出的 {len(prompt):,} 字符 RPent 提交文本。",
         ),
         (
             stream.name,
@@ -389,12 +426,12 @@ def build(output):
         (
             "states.json",
             "环境证据",
-            "12 份观测；每次动作的参数、结果、原始任务、终止标志；观测号不等于底层动作步数。",
+            f"{len(states)} 份观测；每次动作的参数、结果、原始任务、终止标志；观测号不等于底层动作步数。",
         ),
         (
             "episode.mp4",
             "执行视频",
-            "344 个实际动作的连续画面，20fps，17.2 秒；没有包含模型等待时间。",
+            f"{frame_count} 个实际动作的连续画面，{fps:g}fps，{video_seconds:g} 秒；没有包含模型等待时间。",
         ),
         (
             "codex_object_swap_t2_s0.txt",
@@ -424,7 +461,7 @@ def build(output):
         (
             "network-timing.jsonl",
             "网络与推理",
-            "16 次请求开始时间及各项耗时；通过同机时间戳与两次 VLA 工具区间对齐。",
+            f"{len(network)} 次 {policy_label} 请求开始时间及各项耗时；通过同机时间戳与 VLA 工具区间对齐。",
         ),
         (
             "object_swap_t2_s0.json",
@@ -434,12 +471,12 @@ def build(output):
         (
             "object_swap_t2_s0_recipe.jsonl",
             "动作清单",
-            "11 条实际动作的工具名与参数，不含结果；便于核对脚本控制与 VLA 的边界。",
+            f"{len(actions)} 条实际动作的工具名与参数，不含结果；便于核对脚本控制与 VLA 的边界。",
         ),
         (
             "run.log",
             "带时间日志",
-            "启动、MCP 地址、33,730 字符计数、公开文字与工具摘要；时间精确到秒。",
+            f"启动、MCP 地址、{len(prompt):,} 字符计数、公开文字与工具摘要；时间精确到秒。",
         ),
         ("console.log", "控制台", "命令输出与警告；与 run.log 部分重复。"),
         (
@@ -450,12 +487,12 @@ def build(output):
         (
             "bridge.log",
             "适配层日志",
-            "OpenPI 桥接服务启动与故障排查；动作请求时间看 network-timing。",
+            f"{policy_label} 桥接服务启动、后端标识及模型元数据；动作请求时间看 network-timing。",
         ),
         (
             "agentview_high.png",
             "主相机原图目录",
-            "00–11：初始场景及工具执行后高分辨率画面；同号对应 states.steps 的 step_idx。",
+            f"00–{states[-1]['step_idx']:02d}：初始场景及工具执行后高分辨率画面；同号对应 states.steps 的 step_idx。",
         ),
         (
             "wrist_high.png",
@@ -490,8 +527,37 @@ def build(output):
     ]
     from codex_cli_bin import bundled_codex_path
 
+    endpoint_match = re.search(r"HttpMcpServer ready at (\S+)", "\n".join(log_lines))
+    policy_action_count = sum(step["result"]["chunks_used"] * execute_horizon for step in policy_calls)
+    presentation = {
+        "policy": policy_label,
+        "backend": backend,
+        "executeHorizon": execute_horizon,
+        "actionCalls": len(actions),
+        "policyCalls": len(policy_calls),
+        "networkRequests": len(network),
+        "frames": frame_count,
+        "fps": fps,
+        "videoSeconds": video_seconds,
+        "elapsedSeconds": transcript["elapsed_s"],
+        "policyActions": policy_action_count,
+        "scriptActions": frame_count - policy_action_count,
+        "actionCounts": dict(action_counts),
+        "nativeSuccess": native_success,
+        "truncated": bool(states[-1]["truncated"]),
+        "finalState": states[-1]["step_idx"],
+        "mcpEndpoint": endpoint_match[1] if endpoint_match else "未单独记录",
+        "bridgeEndpoint": f"http://{bridge_config['host']}:{bridge_config['port']}",
+        "policyEndpoint": f"ws://{policy_config['host']}:{policy_config['port']}",
+        "date": log_start.strftime("%Y.%m.%d"),
+        "bridgeStatus": {
+            **(bridge_status or {}),
+            "metadata": {k: v for k, v in (bridge_status or {}).get("metadata", {}).items() if k != "task_vocabulary"},
+        },
+    }
     data = {
-        "title": "沙拉酱入篮 · 一次真实实验的数据流",
+        "title": f"沙拉酱入篮 · GPT + {policy_label} 数据流",
+        "presentation": presentation,
         "run": output.name,
         "path": str(output),
         "reviewPath": str(review),
@@ -525,6 +591,7 @@ def build(output):
         "launchSources": [
             source(ROOT / "scripts/run-liberopro.sh"),
             source(ROOT / "scripts/run_libero_codex.py"),
+            source(ROOT / f"scripts/{backend}_rpent_bridge.py"),
             source(ROOT / "RPent/rpent/planner/codex.py"),
             source(
                 ROOT / ".venv/lib/python3.11/site-packages/openai_codex/client.py",
@@ -535,12 +602,13 @@ def build(output):
         "sourceHashes": source_hashes,
         "notes": [
             "时间统一为 Asia/Shanghai。事件有毫秒时间；启动日志只有秒级精度。工具区间取 item/started 与 item/completed，网络时间取本地 time_unix。",
-            "启动日志 10:42:16 到汇总日志 10:50:26 约 490 秒；RPent 自己报告的 elapsed_s=482.0 使用稍晚开始的计时区间。页头采用该原生统计，不把两者当作相同计时起点。",
-            "视频位置由保存动作帧数推导，不是墙钟时间。move_to.steps_used 含一次未执行动作的到达检查；本轮 7 次 move_to 各减 1；两次 VLA 各执行 8×5 个动作，合计 344 帧。",
-            "19 次模型回复是 tokenUsage 更新计数；不等于 19 个顶层 SDK turn，也不等于 19 条可见文字。原始记录含 18 条 agentMessage、36 条工具调用、16 条 reasoning 事件。",
-            "16 条 reasoning 事件的 summary 与 content 均为空。可以还原公开计划、工具决策与结果，无法还原完整内部推理。194 个 reasoning token 的计数不意味着存在可读推理全文。",
+            f"页头采用 RPent 原生 elapsed_s={transcript['elapsed_s']}，不把包含前置启动的日志区间当作相同计时起点。",
+            f"视频位置由动作帧数推导，不是墙钟时间。move_to.steps_used 含一次未执行动作的到达检查，本轮 {action_counts['move_to']} 次移动各减 1；策略执行 {policy_action_count} 个动作，脚本执行 {frame_count-policy_action_count} 个，合计 {frame_count} 帧，已实际逐帧解码核对。",
+            f"原生统计记载 {transcript['stats']['turns_used']} 次模型回复、{transcript['stats']['tool_calls']} 次工具调用。事件包含 {type_counts['mcpToolCall']} 次 MCP 调用和 {type_counts['commandExecution']} 次本地命令调用；模型公开文字与内部推理记录分别保存。",
+            f"原始事件包含 {len(reasoning_items)} 条 reasoning 事件；累计 reasoning token 为 {transcript['stats'].get('total_reasoning_output_tokens', 0)}。事件字段为空时，不能从 token 数还原内部推理全文。",
             "初始提示词是 RPent 提交给 Codex 的完整 turn 文本，不等于模型服务端全部输入。Codex 基础指令和 MCP 工具声明另外生效；指南与记忆是之后经工具读取的上下文。",
-            "本轮无 segment 调用，SAM3 虽已配置，但实际定位采用 GPT 图像选点 + back_project；不能把部署了 SAM3 说成这轮用它做了分割。",
+            "定位是否调用 SAM3 以时间轴中的 segment 调用为准；配置了 SAM3 endpoint 不等于实际使用了分割。",
+            f"pi0_pick / pi0_doubled 是沿用的工具接口名，本轮实际策略为 {policy_label}；配置、bridge.log 后端元数据和逐次网络记录共同提供证据。工具返回的局部 success 与环境原生成功分别记录。",
             "页面说明为事后整理；代码链接用于解释机制，历史实际内容以原始事件和状态记录为准。未运行新实验，也未新增 GPT 调用。",
         ],
     }
@@ -559,7 +627,7 @@ def build(output):
     for name, checksum in source_hashes.items():
         assert hashlib.sha256((output / name).read_bytes()).hexdigest() == checksum
     print(
-        f"{target}\nPrompt: {len(prompt)} chars; {len(events)} aligned events; 11 action records; 344 video frames."
+        f"{target}\nPrompt: {len(prompt)} chars; {len(events)} aligned events; {len(actions)} action records; {frame_count} video frames."
     )
 
 
