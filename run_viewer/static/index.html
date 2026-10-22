@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Run / 实验回放</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="实验回放首页"><span class="brand-mark">r<span>·</span></span><span>实验回放<span class="brand-sub">RUN VIEWER</span></span></a>
+    <span class="local-indicator"><i></i>本机解析 · 无模型调用</span>
+  </header>
+  <main class="shell">
+    <section class="import-panel" aria-labelledby="page-title">
+      <div class="intro"><div><p class="eyebrow">FOLLOW THE RUN</p><h1 id="page-title">每一步，都有迹可循。</h1><p class="intro-copy">输入实验路径，按时间查看启动、公开文字、工具和画面。</p></div><div class="import-number" aria-hidden="true">↗</div></div>
+      <form id="path-form" class="path-form">
+        <label class="sr-only" for="path-input">本机 outputs 或具体实验目录</label>
+        <span class="folder-icon" aria-hidden="true">▱</span>
+        <input id="path-input" name="path" type="text" spellcheck="false" autocomplete="off" placeholder="/home/jh/getscore/outputs/实验目录" required>
+        <button id="open-button" class="primary" type="submit">打开目录 <span aria-hidden="true">↗</span></button>
+      </form>
+      <div class="import-bottom"><span>可输入单次实验目录，也可以输入 outputs 后选择实验。</span><button class="text-button" id="reload" type="button" hidden>重新读取 ↻</button></div>
+      <div id="error" class="error" role="alert" hidden></div>
+      <div id="runs" class="runs" hidden><label for="run-select">选择实验</label><select id="run-select"></select><button id="load-run" class="secondary" type="button">查看这轮 →</button></div>
+    </section>
+
+    <section id="report" hidden>
+      <div class="run-heading"><div><h2 id="run-title"></h2><p id="run-subtitle"></p></div><span id="run-status" class="status"></span></div>
+      <div class="metrics" aria-label="实验汇总">
+        <article><div class="metric-label">总耗时 <span>01</span></div><div class="metric-value" id="elapsed">—</div><div class="metric-note" id="elapsed-note"></div></article>
+        <article><div class="metric-label">动作时间 <span>02</span></div><div class="metric-value" id="action-time">—</div><div class="metric-note" id="action-note"></div></article>
+        <article><div class="metric-label">工具调用 <span>03</span></div><div class="metric-value" id="tool-count">—</div><div class="metric-note" id="tool-note"></div></article>
+        <article><div class="metric-label">消耗 Token <span>04</span></div><div class="metric-value" id="token-count">—</div><div class="metric-note" id="token-note"></div></article>
+      </div>
+      <details id="warnings-box" class="warnings" hidden><summary>部分记录不完整</summary><ul id="warnings"></ul></details>
+      <section class="timeline-section" aria-labelledby="timeline-title">
+        <div class="section-heading"><div><span class="section-kicker">THE TIMELINE</span><h2 id="timeline-title">全部公开事件与工具</h2></div><span id="event-count"></span></div>
+        <div class="timeline-workspace">
+          <aside class="timeline-sidebar" aria-label="事件列表">
+            <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索文字或工具" aria-label="搜索事件"></label>
+            <div id="event-list" class="event-list" role="list"></div>
+          </aside>
+          <section id="detail" class="detail" aria-live="polite"></section>
+        </div>
+      </section>
+      <p class="footnote">模型文字保持原文。仅展示实际保存的公开文字与推理摘要；没有返回的内部推理不会补写。时间统一为北京时间。</p>
+      <section id="full-recording" class="full-recording" aria-labelledby="full-recording-title" hidden>
+        <div class="section-heading"><h2 id="full-recording-title">完整视频</h2><span id="full-recording-note"></span></div>
+        <div class="full-recording-player"><video id="full-video" controls preload="metadata" playsinline aria-label="完整实验视频"></video></div>
+      </section>
+    </section>
+    <section id="empty" class="empty-state"><span class="empty-icon" aria-hidden="true">↳</span><h2>从一次实验开始</h2><p>记录留在本机，按原始事件还原过程。</p><div class="empty-line"><span>启动</span><i></i><span>Turn 01</span><i></i><span>工具与画面</span><i></i><span>结果</span></div></section>
+  </main>
+  <dialog id="image-dialog"><button id="close-image" class="dialog-close" aria-label="关闭图片">×</button><img id="full-image" alt="观测原图"><p id="full-image-label"></p></dialog>
+</body>
+</html>
