@@ -48,7 +48,7 @@ GAWM 使用固定训练任务向量，不支持 π0.5 那样任意改写子指�
 
 后续命名统一为“仿真名-动作策略名-指挥策略名-时间”：fake 使用 `liberopro-gawm-fake-YYYYMMDD-HHMMSS/`，当前真实指挥模型使用 `liberopro-gawm-gpt6astra-YYYYMMDD-HHMMSS/`。时间为北京时间，精确到秒，不含微秒；同秒重名时报错，不覆盖已有记录。
 
-启动器默认只保存 `outputs/` 原始记录，不自动生成 `review/` Markdown 或 HTML；仅在用户明确要求时整理可读复盘。此前 fake 派生审核文件已清理，以下链接直接指向保留的原始记录。
+启动器只保存 `outputs/` 原始记录，过程复盘统一使用[本地实验回放网站](run_viewer/README.md)（`./scripts/run-viewer.sh`），不再生成或维护手工 `review/` Markdown、HTML。旧目录已删除，历史材料可从 Git 历史查看；以下链接直接指向保留的原始记录。
 
 | 检查 | 结果 |
 | --- | --- |

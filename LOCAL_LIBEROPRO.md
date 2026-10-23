@@ -47,9 +47,10 @@ RPent 不强制使用 API key：`api`、`codex`、`claude_code` 是不同规划�
 - `codex_*.txt.stream.jsonl`：SDK 原始事件，便于核对工具调用、错误、token 和推理 token。
 - `codex_*.txt.last`：模型最后的文字回复（存在时）。
 - `transcript_*.json`：RPent 汇总的规划结果和用量。
-- 初始完整 RPent 输入位于 `codex_*.txt.stream.jsonl` 的第一条 `item/completed → payload.item.type=userMessage → content[0].text`；不是在 `transcript_*.json` 的 `messages` 中。本次首轮实验已在 `review/liberopro-pi05-gpt6astra-20261020-104215/` 导出 `initial-prompt.txt`（33,730 字符），并生成 `task-flow.html` 与 `task-flow-data.json`，用于查看数据流、毫秒事件与视频对齐及源文件位置。这是指定历史实验的整理，不是启动器对后续实验自动生成的 HTML 报告。
-- `review/<实验目录>/transcript_*.md`：仅在用户明确要求生成可读复盘时创建，含原始任务、环境结果、逐次动作参数与返回值，以及按 turn 分段的 GPT 文字。fake 和 Codex 启动器默认只保存 `outputs/<实验目录>/` 原始产物，不自动生成 Markdown 或 HTML。按需运行 `.venv/bin/python -m scripts.render_libero_transcript outputs/<实验目录>`，只读取已有记录并写入对应的 `review/` 子目录，不调用模型。
+- 初始完整 RPent 输入位于 `codex_*.txt.stream.jsonl` 的第一条 `item/completed → payload.item.type=userMessage → content[0].text`；不是在 `transcript_*.json` 的 `messages` 中。可在 `run_viewer` 中查看启动输入、事件时间、工具参数和返回结果及前后画面。
 - `configuration.json`：本轮模型、推理强度、完整启动参数及结果；`run_status=finished` 只表示运行结束，`task_success` 取自环境的原生终止标志，两者分别记录。`planner_finish` 是模型的结束声明，需要与环境结果对照。
+
+过程复盘统一使用[本地实验回放网站](run_viewer/README.md)：运行 `./scripts/run-viewer.sh`，打开 http://127.0.0.1:8765，输入 `outputs/` 或某次实验目录。fake 和 Codex 启动器只保存原始产物；不再生成或维护手工 `review/` Markdown、HTML。旧目录已删除，历史材料可从 Git 历史查看。
 
 ## 服务与权重
 

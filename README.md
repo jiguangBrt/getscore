@@ -10,7 +10,7 @@
 - [第 3 步准备](STEP3_BASELINE.md)：近期复现意向、需要了解的问题和待确定事项。
 - [本地 LIBERO-PRO 运行说明](LOCAL_LIBEROPRO.md)：本机仿真、远程官方 π0.5/SAM3、fake 或真实 Codex 规划器、超时配置和启动命令。
 - [GAWM + LIBERO-PRO 接入](LOCAL_GAWM_LIBERO.md)：50.73 上的 GAWM 服务、fake 验证、真实 Codex 完成沙拉酱入篮的记录与启动入口。
-- [本地实验回放网站](run_viewer/README.md)：输入 outputs 路径，查看四项统计、每个 Turn 的公开事件、工具调用和前后画面；启动 `./scripts/run-viewer.sh`。
+- [本地实验回放网站](run_viewer/README.md)：后续实验过程统一使用 `run_viewer` 复盘，不再维护手工整理的 `review/`。输入 outputs 路径，查看四项统计、每个 Turn 的公开事件、工具调用和前后画面；启动 `./scripts/run-viewer.sh`。
 - [论文索引](paper/README.md)：GPT-Policy、GPT-as-Policy 和 RPent / Harness VLA 的本地 PDF、论文来源及代码入口。
 
 ## 推进流程
