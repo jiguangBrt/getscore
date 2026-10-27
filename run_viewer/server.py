@@ -6,15 +6,41 @@ import argparse
 import hashlib
 import json
 import mimetypes
+import re
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlsplit
 
 from run_viewer.parser import parse_run, read_object
+from run_viewer.naming import canonical_name, experiment_parts
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = Path(__file__).parent / "static"
+
+
+def discover_runs(path):
+    runs = []
+    for child in sorted(path.iterdir(), key=lambda child: (
+        tuple(int(part) if index % 2 else part.casefold()
+              for index, part in enumerate(re.split(r"([0-9]+)", child.name))),
+        child.name,
+    )):
+        if not child.is_dir() or child.name.startswith((".", "_")):
+            continue
+        marker = child / "configuration.json"
+        if not marker.is_file():
+            continue
+        try:
+            config = read_object(marker)
+            runs.append(dict(name=child.name, path=str(child),
+                             selection=experiment_parts(child.name),
+                             model=config.get("model", config.get("planner")),
+                             success=config.get("task_success"),
+                             modified=marker.stat().st_mtime))
+        except (ValueError, TypeError, OSError):
+            continue
+    return runs
 
 
 class ViewerServer(ThreadingHTTPServer):
@@ -143,45 +169,48 @@ class ViewerHandler(BaseHTTPRequestHandler):
             if not isinstance(raw_path, str) or not raw_path.strip():
                 raise ValueError("请输入本机的实验目录。")
             path = Path(raw_path.strip()).expanduser()
-            path = (ROOT / path).resolve() if not path.is_absolute() else path.resolve()
+            requested_path = path if path.is_absolute() else ROOT / path
+            path = requested_path.resolve()
+            if not path.is_dir():
+                candidates = [path.with_name(canonical_name(path.name)),
+                              path.parent / "_archive" / "runs" / path.name]
+                if path.is_relative_to(ROOT / "outputs"):
+                    candidates.append(ROOT / "outputs" / "long120_1027" / canonical_name(path.name))
+                for candidate in candidates:
+                    if (candidate / "configuration.json").is_file():
+                        path = candidate.resolve()
+                        break
             if not path.is_dir():
                 raise ValueError("找不到该目录，请检查本机路径是否正确。")
+            if (path / "long120_1027").is_dir():
+                path = path / "long120_1027"
+                requested_path = path
             if (
                 (path / "configuration.json").is_file()
                 or next(path.glob("*.stream.jsonl"), None)
                 or next(path.glob("transcript_*.json"), None)
             ):
-                self.json_response({"report": self.server.report(path)})
+                # Promoted runs may be aliases to another batch's recordings.
+                # Keep the user's 120-run catalog when opening such an alias;
+                # assets still use the resolved, registered recording root.
+                catalog = path.parent
+                display_path = path
+                if requested_path.is_dir() and requested_path.resolve() == path:
+                    catalog = requested_path.parent
+                    display_path = requested_path
+                report = dict(self.server.report(path), path=str(display_path))
+                self.json_response({"report": report,
+                                    "runs": discover_runs(catalog),
+                                    "path": str(catalog)})
                 return
-            runs = []
-            for child in sorted(path.iterdir(), reverse=True):
-                if not child.is_dir() or child.name.startswith((".", "_")):
-                    continue
-                marker = child / "configuration.json"
-                if not marker.is_file():
-                    continue
-                try:
-                    config = read_object(marker)
-                    runs.append(
-                        {
-                            "name": child.name,
-                            "path": str(child),
-                            "model": config.get("model", config.get("planner")),
-                            "success": config.get("task_success"),
-                            "modified": marker.stat().st_mtime,
-                        }
-                    )
-                except (ValueError, TypeError, OSError):
-                    continue
-                if len(runs) == 300:
-                    break
+            runs = discover_runs(path)
             if not runs:
                 raise ValueError(
                     "该目录里没有实验记录。请选择包含 configuration.json 的实验目录，或它的上级 outputs 目录。"
                 )
             self.json_response(
                 {
-                    "runs": sorted(runs, key=lambda row: row["modified"], reverse=True),
+                    "runs": runs,
                     "path": str(path),
                 }
             )
@@ -248,7 +277,8 @@ class ViewerHandler(BaseHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--default-path", type=Path, default=ROOT / "outputs")
+    latest = ROOT / "outputs" / "long120_1027"
+    parser.add_argument("--default-path", type=Path, default=latest if latest.is_dir() else ROOT / "outputs")
     args = parser.parse_args()
     server = ViewerServer(("127.0.0.1", args.port), args.default_path)
     print(f"服务已启动，请在浏览器打开：http://127.0.0.1:{server.server_port}", flush=True)

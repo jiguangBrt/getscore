@@ -25,11 +25,29 @@
       </form>
       <div class="import-bottom"><span>可输入单次实验目录，也可以输入 outputs 后选择实验。</span><button class="text-button" id="reload" type="button" hidden>重新读取 ↻</button></div>
       <div id="error" class="error" role="alert" hidden></div>
-      <div id="runs" class="runs" hidden><label for="run-select">选择实验</label><select id="run-select"></select><button id="load-run" class="secondary" type="button">查看这轮 →</button></div>
+      <section id="runs" class="runs" aria-label="选择实验" hidden>
+        <div class="run-filters" id="run-filters">
+          <div><label for="simulation-select">仿真名</label><select id="simulation-select"></select></div>
+          <div><label for="experiment-select">试验编号</label><select id="experiment-select"></select></div>
+          <div><label for="language-model-select">语言模型</label><select id="language-model-select"></select></div>
+          <div><label for="action-model-select">动作模型</label><select id="action-model-select"></select></div>
+          <button id="load-run" class="secondary" type="button">查看实验 →</button>
+        </div>
+        <div id="other-runs" class="other-runs" hidden><label for="run-select">其他实验</label><select id="run-select"></select></div>
+        <p id="run-match" class="run-match" role="status" aria-live="polite"></p>
+      </section>
     </section>
 
     <section id="report" hidden>
       <div class="run-heading"><div><h2 id="run-title"></h2><p id="run-subtitle"></p></div><span id="run-status" class="status"></span></div>
+      <section id="run-task-panel" class="run-task" aria-labelledby="run-task-label" hidden>
+        <h3 id="run-task-label">任务描述</h3>
+        <div class="task-description"><p id="run-task" lang="en"></p><span id="task-result" class="task-result" role="status"></span></div>
+        <p id="task-failure" class="task-failure" hidden></p>
+        <p id="task-result-detail" class="task-result-detail"></p>
+        <p id="task-failure-note" class="task-failure-note" hidden>失败类型按本次运行记录归类。LIBERO 只判断目标是否达成，不提供抓取失败、物体掉落等细分原因标签。</p>
+        <details id="task-finish-box" class="task-finish-box" hidden><summary>查看结束说明</summary><p id="task-model-summary" class="task-model-summary" hidden></p><pre id="task-runtime-error" class="code-block" hidden></pre></details>
+      </section>
       <div class="metrics" aria-label="实验汇总">
         <article><div class="metric-label">总耗时 <span>01</span></div><div class="metric-value" id="elapsed">—</div><div class="metric-note" id="elapsed-note"></div></article>
         <article><div class="metric-label">动作时间 <span>02</span></div><div class="metric-value" id="action-time">—</div><div class="metric-note" id="action-note"></div></article>

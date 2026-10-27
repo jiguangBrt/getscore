@@ -1,7 +1,9 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const state = { report: null, selected: null, camera: "agentview", filtered: [], request: 0 };
+const state = { report: null, selected: null, camera: "agentview", filtered: [], request: 0, runs: [], directory: null };
+const runFields = { simulation: "simulation-select", experiment: "experiment-select", language_model: "language-model-select", action_model: "action-model-select" };
+const nameOrder = new Intl.Collator("en", { numeric: true, sensitivity: "base" });
 const number = (n) => n === null || n === undefined ? "—" : Number(n).toLocaleString("en-US");
 const seconds = (n) => n === null || n === undefined ? "—" : Number(n).toLocaleString("en-US", { maximumFractionDigits: 2 });
 const clock = (ms) => ms === null || ms === undefined ? "未记录时间" : new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Shanghai", hour: "2-digit", minute: "2-digit", second: "2-digit", fractionalSecondDigits: 3, hour12: false }).format(ms);
@@ -56,6 +58,62 @@ function metric(id, value, unit = "") {
   if (unit && value !== "—") $(id).append(node("small", "", unit));
 }
 
+function setCatalog(runs, directory, selectedPath) {
+  state.runs = runs; state.directory = directory;
+  $("path-input").value = directory;
+  $("runs").hidden = !runs.length;
+  const indexed = runs.filter((run) => run.selection);
+  $("run-filters").hidden = !indexed.length;
+  const selected = runs.find((run) => run.path === selectedPath) || indexed[0] || runs[0];
+  for (const [field, id] of Object.entries(runFields)) {
+    const previous = $(id).value;
+    const values = [...new Set(indexed.map((run) => run.selection[field]))].sort(nameOrder.compare);
+    $(id).replaceChildren(...values.map((value) => { const option = node("option", "", value); option.value = value; return option; }));
+    const chosen = selected?.selection?.[field] || previous;
+    if (values.includes(chosen)) $(id).value = chosen;
+  }
+  const other = runs.filter((run) => !run.selection);
+  $("other-runs").hidden = !other.length;
+  $("run-select").replaceChildren(node("option", "", "选择其他实验…"), ...other.map((run) => {
+    const option = node("option", "", `${run.name}${run.success === true ? " · 成功" : ""}`);
+    option.value = run.path; return option;
+  }));
+  $("run-select").options[0].value = "";
+  if (selected && !selected.selection) $("run-select").value = selected.path;
+  updateRunMatch();
+}
+
+function updateRunMatch() {
+  const parts = Object.fromEntries(Object.entries(runFields).map(([field, id]) => [field, $(id).value]));
+  const name = Object.values(parts).join("-");
+  const run = $("run-select").value ? state.runs.find((entry) => entry.path === $("run-select").value)
+    : state.runs.find((entry) => entry.selection && Object.entries(parts).every(([field, value]) => entry.selection[field] === value));
+  $("load-run").disabled = !run;
+  $("run-match").classList.toggle("not-found", !run);
+  $("run-match").textContent = run ? `${run.path}${run.success === true ? " · 成功" : ""}` : `未找到实验：${name}。请调整选项，或重新读取目录。`;
+  return run;
+}
+
+function clearReport() {
+  ++state.request;
+  state.report = null;
+  $("full-video").pause();
+  $("detail").querySelectorAll("video").forEach((video) => video.pause());
+  $("report").hidden = true; $("empty").hidden = true; $("reload").hidden = true;
+  $("error").hidden = true;
+}
+
+function loadSelection() {
+  const run = updateRunMatch();
+  clearReport();
+  if (run) openPath(run.path, false);
+  else {
+    $("open-button").disabled = false;
+    $("open-button").textContent = "打开目录 ↗";
+    history.replaceState(null, "", "/?" + new URLSearchParams({ path: state.directory }));
+  }
+}
+
 async function openPath(path, selectFirst = true) {
   const request = ++state.request;
   $("open-button").disabled = true;
@@ -66,18 +124,16 @@ async function openPath(path, selectFirst = true) {
     const data = await response.json();
     if (request !== state.request) return;
     if (!response.ok) throw new Error(data.error || "读取失败，请检查目录。");
-    if (data.runs) {
-      $("runs").hidden = false;
-      $("run-select").replaceChildren(...data.runs.map((run) => {
-        const option = node("option", "", `${run.name}${run.success === true ? " · 成功" : ""}`);
-        option.value = run.path; return option;
-      }));
-      localStorage.setItem("run-viewer:path", data.path);
-      if (selectFirst) await openPath(data.runs[0].path, false);
-    } else {
+    if (data.report) {
+      setCatalog(data.runs || [], data.path, data.report.path);
       state.report = data.report;
-      localStorage.setItem("run-viewer:path", $("path-input").value);
+      localStorage.setItem("run-viewer:path", data.report.path);
       showReport();
+    } else if (data.runs) {
+      const selected = data.runs.find((run) => run.path === state.report?.path) || data.runs[0];
+      setCatalog(data.runs, data.path, selected?.path);
+      localStorage.setItem("run-viewer:path", data.path);
+      if (selectFirst && selected) await openPath(selected.path, false);
     }
   } catch (error) {
     if (request === state.request) { $("error").textContent = error.message; $("error").hidden = false; }
@@ -93,8 +149,25 @@ function showReport() {
   const report = state.report;
   $("report").hidden = false; $("empty").hidden = true; $("reload").hidden = false;
   $("run-title").textContent = report.name;
-  $("run-subtitle").textContent = [report.task, report.model, report.backend === "openpi" ? "π0.5" : report.backend.toUpperCase()].filter(Boolean).join("  /  ");
-  $("run-status").textContent = ({ success: "环境确认成功", running: "运行中", finished: "已结束" })[report.status] || "已读取";
+  $("run-subtitle").textContent = [report.model, report.backend === "openpi" ? "π0.5" : report.backend.toUpperCase()].filter(Boolean).join("  /  ");
+  $("run-task").textContent = report.task || "";
+  $("run-task-panel").hidden = false;
+  $("run-task").hidden = !report.task;
+  const outcome = report.outcome;
+  $("task-result").textContent = outcome.label;
+  $("task-result").className = `task-result ${outcome.status}`;
+  $("task-result").title = outcome.evidence.map((entry) => `${entry.source}: ${entry.field}=${JSON.stringify(entry.value)}`).join("\n");
+  $("task-failure").hidden = !outcome.failure_label;
+  $("task-failure").textContent = outcome.failure_label ? `${outcome.status === "interrupted" ? "中断类型" : "失败类型"}：${outcome.failure_label}` : "";
+  $("task-result-detail").textContent = outcome.detail;
+  $("task-failure-note").hidden = !outcome.failure_label;
+  $("task-finish-box").hidden = !outcome.failure_label || !(outcome.model_summary || outcome.error);
+  $("task-model-summary").hidden = !outcome.model_summary;
+  $("task-model-summary").textContent = outcome.model_summary ? `模型结束说明（自述）：${outcome.model_summary}` : "";
+  $("task-runtime-error").hidden = !outcome.error;
+  $("task-runtime-error").textContent = outcome.error || "";
+  $("run-status").textContent = ({ success: "环境确认成功", running: "运行中", failure: "任务失败", interrupted: "运行中断", unknown: "结果未确认" })[report.status] || "已读取";
+  $("run-status").classList.toggle("failed", report.status === "failure");
   $("run-status").classList.toggle("neutral", report.status !== "success");
   const m = report.metrics, t = m.tokens;
   metric("elapsed", seconds(m.elapsed_s), "s");
@@ -103,9 +176,10 @@ function showReport() {
   $("action-note").textContent = m.action_frames !== null ? `${number(m.action_frames)} 帧仿真 · 工具实耗 ${seconds(m.action_execution_s)} s` : `视频未保存 · 工具实耗 ${seconds(m.action_execution_s)} s`;
   metric("tool-count", number(m.tool_calls), "次");
   $("tool-note").textContent = `${number(m.turns)} 个 Turn · 本地命令与 MCP 均计入`;
-  metric("token-count", number(t.input_tokens + t.output_tokens));
-  $("token-note").textContent = `输入 ${number(t.input_tokens)} · 输出 ${number(t.output_tokens)}`;
-  $("token-count").title = `缓存输入 ${number(t.cached_input_tokens)}（已包含在输入中）\nReasoning ${number(t.reasoning_output_tokens)}（已包含在输出中）`;
+  const hasTokenUsage = m.token_usage_available !== false;
+  metric("token-count", hasTokenUsage ? number(t.input_tokens + t.output_tokens) : "—");
+  $("token-note").textContent = hasTokenUsage ? `输入 ${number(t.input_tokens)} · 输出 ${number(t.output_tokens)}` : "规划器未提供 Token 用量";
+  $("token-count").title = hasTokenUsage ? `缓存输入 ${number(t.cached_input_tokens)}（已包含在输入中）\nReasoning ${number(t.reasoning_output_tokens)}（已包含在输出中）` : "原始记录未返回用量，无法统计。";
   $("warnings-box").hidden = !report.warnings.length;
   $("warnings").replaceChildren(...report.warnings.map((text) => node("li", "", text)));
   const fullVideo = $("full-video");
@@ -246,6 +320,7 @@ function renderImages(area, event) {
   }
   heading.append(cameraSwitch); area.append(heading);
   const photos = node("div", pair ? "image-pair" : "single-image");
+  const policyOrientation = state.report.image_orientation === "libero_calibration";
   const entries = pair ? [["调用前", event.before_state], ["调用后", event.after_state]] : [["保存的观测", event.after_state ?? event.before_state]];
   for (const [label, index] of entries) {
     const figure = node("figure");
@@ -254,14 +329,18 @@ function renderImages(area, event) {
     const path = observation?.images[state.camera];
     if (path) {
       const button = node("button", "image-button"); button.type = "button";
-      const image = node("img"); image.src = asset(path); image.alt = `${label} · ${state.camera === "agentview" ? "主相机" : "腕部"} · 观测 ${index}`;
+      const image = node("img", policyOrientation ? "policy-orientation" : ""); image.src = asset(path); image.alt = `${label} · ${state.camera === "agentview" ? "主相机" : "腕部"} · 观测 ${index}`;
+      const resolution = node("div", "image-note");
+      image.addEventListener("load", () => { resolution.textContent = `${image.naturalWidth} × ${image.naturalHeight} · 完整画面`; });
       image.loading = "lazy"; button.append(image); button.addEventListener("click", () => {
-        $("full-image").src = image.src; $("full-image").alt = image.alt; $("full-image-label").textContent = image.alt; $("image-dialog").showModal();
-      }); figure.append(button);
+        $("full-image").classList.toggle("policy-orientation", policyOrientation);
+        $("full-image").src = image.src; $("full-image").alt = image.alt; $("full-image-label").textContent = `${image.alt}${policyOrientation ? " · 与策略输入及视频同向" : ""}`; $("image-dialog").showModal();
+      }); figure.append(button, resolution);
     } else figure.append(node("div", "image-missing", "该位置未保存观测图片"));
     photos.append(figure);
   }
   area.append(photos);
+  if (policyOrientation) area.append(node("div", "image-note", "与策略输入及视频同向显示；保留已保存观测的完整视野。"));
   if (pair && event.before_state === event.after_state) area.append(node("div", "image-note", "该工具没有生成新的观测，两侧展示同一份已保存画面。"));
   if (pair && event.after_state === null) area.append(node("div", "image-note", "调用后没有可核对的观测，未推测执行结果。"));
   if (event.reference_state !== undefined && event.reference_state !== event.after_state) area.append(node("div", "image-note", `此工具读取的是历史观测 ${event.reference_state}，没有改变当前场景。`));
@@ -280,9 +359,10 @@ function renderImages(area, event) {
   }
 }
 
-$("path-form").addEventListener("submit", (event) => { event.preventDefault(); $("runs").hidden = true; openPath($("path-input").value); });
-$("load-run").addEventListener("click", () => openPath($("run-select").value, false));
-$("run-select").addEventListener("change", () => openPath($("run-select").value, false));
+$("path-form").addEventListener("submit", (event) => { event.preventDefault(); clearReport(); $("runs").hidden = true; openPath($("path-input").value); });
+$("load-run").addEventListener("click", loadSelection);
+for (const id of Object.values(runFields)) $(id).addEventListener("change", () => { $("run-select").value = ""; loadSelection(); });
+$("run-select").addEventListener("change", loadSelection);
 $("reload").addEventListener("click", () => state.report && openPath(state.report.path, false));
 $("search").addEventListener("input", () => {
   renderList();
@@ -291,6 +371,10 @@ $("search").addEventListener("input", () => {
   else $("detail").replaceChildren(node("p", "no-matches", "没有匹配的事件"));
 });
 $("close-image").addEventListener("click", () => $("image-dialog").close());
+$("full-video").addEventListener("loadedmetadata", () => {
+  const video = $("full-video"), recording = state.report?.video;
+  if (recording) $("full-recording-note").textContent = `${video.videoWidth} × ${video.videoHeight} · ${seconds(recording.duration_s)} s · ${number(recording.frames)} 帧`;
+});
 $("image-dialog").addEventListener("click", (event) => { if (event.target === $("image-dialog")) $("image-dialog").close(); });
 
 fetch("/api/bootstrap").then((response) => response.json()).then((data) => {

@@ -11,6 +11,8 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from run_viewer.outcomes import task_outcome
+
 TZ = ZoneInfo("Asia/Shanghai")
 LOG_TIME = re.compile(r"^(\d{4}-\d\d-\d\d \d\d:\d\d:\d\d)")
 TOOL_TYPES = {
@@ -191,6 +193,8 @@ def parse_run(directory: Path):
     }
     unused_states = [state for state in states if state.get("command")]
     video = video_metadata(root / "episode.mp4")
+    native_counts = read_object(root / "native-action-counts.json")
+    exact_counts = native_counts.get("steps", {}) if video and native_counts.get("total_frames") == video["frames"] else {}
     frame_cursor = 0
     backend = config.get("policy_backend", "openpi")
     policy = config.get("config", {}).get(backend, {})
@@ -251,6 +255,9 @@ def parse_run(directory: Path):
                 count = outcome.get("steps_used")
             elif name == "execute_action":
                 count = 1
+            exact = exact_counts.get(str(matched["step_idx"]), {})
+            if exact.get("action") == name and isinstance(exact.get("frames"), int) and exact["frames"] >= 0:
+                count = exact["frames"]
             if count is not None and frame_cursor >= 0 and video and video["fps"]:
                 event["video_range"] = {
                     "start_s": frame_cursor / video["fps"],
@@ -328,6 +335,24 @@ def parse_run(directory: Path):
             after_state=initial,
             source={"file": "configuration.json"},
         )
+
+    # A recovered policy proposal can finish before the planner connects. This
+    # is a recorded environment action, not a new model/MCP call. Link it before
+    # live tool events so its exact frames are included without inventing a call
+    # or a wall-clock timestamp.
+    for state in list(unused_states):
+        command = state["command"]
+        if command.get("action") == "resume_pending_policy_actions":
+            arguments = {key: value for key, value in command.items() if key != "action"}
+            event = add(
+                "续执行旧动作块",
+                arguments=arguments,
+                result=state.get("result"),
+                recovery_prefix=True,
+                precision="unrecorded",
+                source={"file": "states.json", "step": state["step_idx"]},
+            )
+            link_tool(event, command["action"], arguments, {"step": state["step_idx"]})
 
     current_turn, latest_clock = 1, log_start
     usage_total = {key: 0 for key in TOKEN_KEYS}
@@ -440,7 +465,8 @@ def parse_run(directory: Path):
                 text = item.get("text") or ""
                 if text.strip():
                     last_public = text
-                    add("Codex 公开文字", end, text=text, **common)
+                    label = "Kimi 公开文字" if raw.get("origin") == "kimi" else "Codex 公开文字"
+                    add(label, end, text=text, **common)
             elif kind == "reasoning":
                 text = public_text(item.get("summary") or item.get("content"))
                 if text.strip():
@@ -589,7 +615,11 @@ def parse_run(directory: Path):
         key=lambda event: (
             event["at_ms"]
             if event["at_ms"] is not None
-            else (-math.inf if event["title"] == "启动配置" else math.inf),
+            else (
+                (log_start if log_start is not None else -math.inf)
+                if event.get("recovery_prefix")
+                else (-math.inf if event["title"] == "启动配置" else math.inf)
+            ),
             event["sequence"],
         )
     )
@@ -609,25 +639,28 @@ def parse_run(directory: Path):
     overall = transcript.get("elapsed_s")
     if overall is None:
         overall = native_stats.get("elapsed_s")
-    status = (
-        "success"
-        if states and states[-1].get("terminated")
-        else (
-            "running"
-            if config.get("run_status") in {"starting", "running"}
-            else "finished"
-        )
-    )
+    outcome = task_outcome(config, transcript, states)
     command = config.get("command")
+    suite = (
+        config.get("suite")
+        or config.get("config", {}).get("simulation", {}).get("suite")
+        or transcript.get("suite")
+        or ""
+    )
     return {
         "name": root.name,
         "path": str(root),
-        "task": states[0].get("extras", {}).get("task_language")
-        if states
-        else config.get("task_language"),
+        "task": (states[0].get("extras", {}).get("task_language") if states else None)
+        or config.get("task_language")
+        or config.get("policy_prompt"),
         "model": config.get("model", transcript.get("model", config.get("planner"))),
         "backend": backend,
-        "status": status,
+        # LIBERO saves calibration RGB as raw[::-1], while policy inputs and
+        # episode video use raw[::-1, ::-1]. Keep source pixels unchanged and
+        # let the viewer align the saved observations with policy orientation.
+        "image_orientation": "libero_calibration" if suite.startswith("libero_") else "saved",
+        "status": outcome["status"],
+        "outcome": outcome,
         "metrics": {
             "elapsed_s": overall,
             "wall_elapsed_s": (log_end - zero) / 1000
@@ -640,6 +673,11 @@ def parse_run(directory: Path):
             "recorded_tool_calls": native_stats.get("tool_calls"),
             "turns": max(turns, default=0),
             "tokens": token_stats,
+            "token_usage_available": (
+                config.get("planner") == "none"
+                or bool(seen_usage)
+                or any("total_" + key in native_stats for key in TOKEN_KEYS)
+            ),
         },
         "command": shlex.join(command) if isinstance(command, list) else command,
         "events": events,
