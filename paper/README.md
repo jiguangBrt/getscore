@@ -21,3 +21,15 @@ GPT-Policy 和 GPT-as-Policy 的本地 PDF 均为 arXiv v1；Harness VLA 为 v5�
 - [阅读与服务器实现对照笔记](GAWM_READING_NOTE.md)；[下载来源、版本及 SHA-256](../rules/2026-10-20/gawm_paper_snapshot.json)。
 
 [专家示范包中文导读](DEMO_PACKAGE_GUIDE.md)：已下载作者发布的十份 RoboDojo 示范，结合“把物品装入盒子”展示图片、阶段说明、机器人状态和动作参考，并解释换布局后为什么不能直接重放坐标。
+
+## Kimi 辅助机器人任务调查（2026-10-23）
+
+调查报告见根目录的 [Kimi 模型、推理配置与 GPT 差距调查](../KIMI_ROBOTICS_SURVEY.md)。新增三份论文均保存 arXiv 原始 PDF，并固定版本；页数与 SHA-256 记录在报告中。已有 GPT-Policy.pdf 保留，不覆盖。
+
+| 本地 PDF | 论文 | 固定来源 | 重点 |
+| --- | --- | --- | --- |
+| [EmbodiedSkillBench.pdf](EmbodiedSkillBench.pdf) | Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks | [2610.16238v1](https://arxiv.org/abs/2610.16238v1)，24 页 | Kimi/GPT 调用相同具身技能、VLA 与资源开销 |
+| [CodeActionBench.pdf](CodeActionBench.pdf) | CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation | [2609.33807v1](https://arxiv.org/abs/2609.33807v1)，28 页 | 低层代码控制、明确的模型 ID 与推理档位 |
+| [RobotWorld.pdf](RobotWorld.pdf) | RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments | [2610.10409v1](https://arxiv.org/abs/2610.10409v1)，62 页 | 多任务、多机器人工具控制与失败分析 |
+
+[Robot-eval-bench](https://github.com/kite-ml/robot-eval-bench) 作为成功检测评测项目列入报告，本次未找到并归档其正式论文 PDF。
