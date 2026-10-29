@@ -34,7 +34,7 @@ cd getscore
 ./scripts/setup-liberopro-reproduction.sh
 ```
 
-准备脚本会按固定提交获取 RLinf、LIBERO、LIBERO-PRO、OpenPI client，建立 `.venv`，按 [依赖快照](configs/liberopro-reproduction.requirements.txt) 安装本地环境，下载固定版本的仿真资产并生成当前机器的路径配置。不会安装远程模型服务或下载模型权重。RPent 本身固定为子模块提交 `d4e52f0f050305c8d3695c5a5b0da970234b48b1`；其代码同步在本仓库的 `rpent-runtime` 分支，子模块可从内网获取。该版本修正 Long 任务 4、6 的左右参照：按初始全局 agentview 解释任务左右，通过标定映射到世界坐标，手腕细化保留该目标对应关系。其他源码仍需访问 GitHub，资产来自 `RLinf/LIBERO-PRO-assets` 的 `e4b10c9adc5735c9c8776917527178e693ef10b3`。
+准备脚本会按固定提交获取 RLinf、LIBERO、LIBERO-PRO、OpenPI client，建立 `.venv`，按 [依赖快照](configs/liberopro-reproduction.requirements.txt) 安装本地环境，下载固定版本的仿真资产并生成当前机器的路径配置。不会安装远程模型服务或下载模型权重。RPent 本身固定为子模块提交 `af1113869bc4d7903003f65a303ea20a36b2e13f`，对应其 GitHub `main` 合并版本；代码同步在内网 GitLab 的 `rpent-runtime` 分支，子模块可从内网获取。该版本修正 Long 任务 4、6 的左右参照：按初始全局 agentview 解释任务左右，通过标定映射到世界坐标，手腕细化保留该目标对应关系。其他源码仍需访问 GitHub，资产来自 `RLinf/LIBERO-PRO-assets` 的 `e4b10c9adc5735c9c8776917527178e693ef10b3`。
 
 内网克隆命令临时禁用 Git HTTP 代理，避免把 `192.168.50.20` 转发给外网代理；不会修改全局代理设置。后续下载 GitHub / Hugging Face 文件仍需自行保证网络或代理可用。
 

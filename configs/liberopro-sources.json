@@ -2,8 +2,8 @@
   "rpent": {
     "path": "/home/jh/getscore/RPent",
     "commit": "efc392adc98a30045d8fb83c4097917f28e20a94",
-    "local_patch_commit": "d4e52f0f050305c8d3695c5a5b0da970234b48b1",
-    "local_patch_branch": "codex/liberopro-remote-openpi"
+    "local_patch_commit": "af1113869bc4d7903003f65a303ea20a36b2e13f",
+    "local_patch_branch": "main"
   },
   "rlinf": {
     "path": "/home/jh/getscore/data/rlinf-runtime",

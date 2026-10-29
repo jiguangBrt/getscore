@@ -24,7 +24,7 @@
 
 ## 已有资料与待确定配置
 
-RPent 源码已作为 `RPent/` 子模块引入；基于 `efc392adc98a30045d8fb83c4097917f28e20a94` 增加本地部署适配，当前子模块提交为 `d4e52f0f050305c8d3695c5a5b0da970234b48b1`，包含 Long 任务 4、6 的左右参照修正。origin 为 `https://github.com/jiguangBrt/RPent.git`，upstream 为 `https://github.com/RLinf/RPent.git`。适配已提交并推送至个人 fork 的 `codex/liberopro-remote-openpi` 分支。
+RPent 源码已作为 `RPent/` 子模块引入；基于 `efc392adc98a30045d8fb83c4097917f28e20a94` 增加本地部署适配，当前子模块提交为 `af1113869bc4d7903003f65a303ea20a36b2e13f`，包含 Long 任务 4、6 的左右参照修正。origin 为 `https://github.com/jiguangBrt/RPent.git`，upstream 为 `https://github.com/RLinf/RPent.git`。`codex/liberopro-remote-openpi` 已合并至个人 fork 的 `main` 分支；内网 GitLab 的 `rpent-runtime` 分支同步该合并版本。
 
 2026-10-19 已按用户选择配置本机 LIBERO-PRO、远程官方 π0.5-LIBERO/SAM3 和本地 fake 规划器，先使用阻塞式同步推理。真实链路验证了 3 次模型调用、15 个仿真动作及视频记录；GPT token 用量为 0。该检查不代表完整任务成功或基线成功率复现。配置、启动、超时与 RTC 范围、版本及验证记录见 [本地运行说明](LOCAL_LIBEROPRO.md)。
 
