@@ -33,4 +33,4 @@ Long 实验沿用相同命名规则。2026-10-27 整理后的 `long120_1027` 包
 
 验证：`env -u PYTHONPATH PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 .venv/bin/python -m pytest tests/test_run_viewer.py`（隔离本机 ROS 的 pytest 插件）。
 
-选定的 13 项 2000 步实验复用原 120 项的整理函数，补齐 `00-planner.stream.jsonl`（Kimi）、`native-action-counts.json`、任务审计、命令轨迹与 `artifact-completeness.json`。可运行 `.venv/bin/python scripts/package_selected_long_2000.py` 重新整理，只读取已保存的记录，不调用模型或仿真。续跑记录的时间轴与 `episode.mp4` 只覆盖追加段；`episode-full.mp4` 保留原 1000 步加追加段的连续回放。恢复时自动续执行的旧动作块单独显示，不计作新的模型工具调用；加载 Kimi 历史会话时回放的旧文字不计入本次时间轴。原始规划器未返回 Token 用量时显示“未提供”，不将缺失值解释为实际消耗 0。
+选定的 13 项 2000 步实验复用原 120 项的整理函数，补齐 `00-planner.stream.jsonl`（Kimi）、`native-action-counts.json`、任务审计、命令轨迹与 `artifact-completeness.json`。可运行 `.venv/bin/python scripts/package_selected_long_2000.py` 重新整理，只读取已保存的记录，不调用模型或仿真。当前 `long120_1027` 的 3 次原续跑已整理为完整单轮记录：标准工具日志、状态、图像编号、原始轨迹和 `episode.mp4` 均从第 0 步覆盖至实际结束，直接打开原实验目录即可。分段原件另行归档。恢复时自动续执行的旧动作块单独显示，不计作新的模型工具调用；加载 Kimi 历史会话时回放的旧文字不计入本次时间轴。原始规划器未返回 Token 用量时显示“未提供”，不将缺失值解释为实际消耗 0。
