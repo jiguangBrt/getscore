@@ -28,13 +28,15 @@
 推荐 Linux x86_64、Python 3.11、支持 EGL 的 NVIDIA 驱动。本项目在 RTX 3060 Laptop 6GB 上进行本地渲染，推理模型放在服务器；本地建议预留 30–50 GiB，长实验录像另计。需要 Git、`uv`、SSH，以及下载 GitHub / Hugging Face 公开源码和资产的网络条件。
 
 ```bash
-git clone --branch main --recurse-submodules \
+git -c http.proxy= clone --branch main --recurse-submodules \
   http://192.168.50.20/wangyihan/rpent.git getscore
 cd getscore
 ./scripts/setup-liberopro-reproduction.sh
 ```
 
 准备脚本会按固定提交获取 RLinf、LIBERO、LIBERO-PRO、OpenPI client，建立 `.venv`，按 [依赖快照](configs/liberopro-reproduction.requirements.txt) 安装本地环境，下载固定版本的仿真资产并生成当前机器的路径配置。不会安装远程模型服务或下载模型权重。RPent 本身固定为子模块提交 `e2eac0c29f3da273a96e96c1cd14c54b34b66a58`；其代码同步在本仓库的 `rpent-runtime` 分支，子模块可从内网获取。其他源码仍需访问 GitHub，资产来自 `RLinf/LIBERO-PRO-assets` 的 `e4b10c9adc5735c9c8776917527178e693ef10b3`。
+
+内网克隆命令临时禁用 Git HTTP 代理，避免把 `192.168.50.20` 转发给外网代理；不会修改全局代理设置。后续下载 GitHub / Hugging Face 文件仍需自行保证网络或代理可用。
 
 本地关键版本为 Torch 2.7.1、NumPy 1.26.4、MuJoCo 3.3.0、robosuite 1.5.2。不要用最新依赖替代快照，也不要把 MuJoCo 升级到 3.4+ 后仍假定实验条件相同。脚本会拒绝不同提交的已有源码及不匹配的已有资产链接/配置，需先人工检查；不负责覆盖旧环境。既有环境原始清单见 [configs/liberopro-environment.freeze.txt](configs/liberopro-environment.freeze.txt)，其中的旧绝对路径不能直接用于另一台机器。
 

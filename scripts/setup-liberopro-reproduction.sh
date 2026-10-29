@@ -16,7 +16,8 @@ unset PYTHONPATH PYTHONHOME VIRTUAL_ENV CONDA_PREFIX
 export PYTHONNOUSERSITE=1
 command -v uv >/dev/null
 command -v git >/dev/null
-git submodule update --init --recursive RPent
+git -c http.proxy= submodule sync -- RPent
+git -c http.proxy= submodule update --init --recursive RPent
 
 # Existing checkouts are verified, never reset or overwritten.
 pinned_source() {
