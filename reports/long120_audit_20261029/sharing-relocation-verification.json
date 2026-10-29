@@ -1,0 +1,14 @@
+{
+  "status": "verified",
+  "runs": 120,
+  "language_model_runs": 80,
+  "resumed_runs": 3,
+  "copied_prefix_files": 1150,
+  "original_hashes_verified": 603,
+  "merged_resumed_calls": 256,
+  "total_llm_function_calls": 4208,
+  "local_html_links": 1405,
+  "external_archive_required": false,
+  "relocation_test_passed": true,
+  "validation": "Ran the bundled standalone verifier from a different directory on a relocated copy; all generated links resolve inside that copy."
+}

@@ -1,0 +1,13 @@
+AUDITED 10 /120; failures 0
+AUDITED 20 /120; failures 0
+AUDITED 30 /120; failures 0
+AUDITED 40 /120; failures 0
+AUDITED 50 /120; failures 0
+AUDITED 60 /120; failures 0
+AUDITED 70 /120; failures 0
+AUDITED 80 /120; failures 0
+AUDITED 90 /120; failures 0
+AUDITED 100 /120; failures 0
+AUDITED 110 /120; failures 0
+AUDITED 120 /120; failures 0
+COMPLETE {"audited": 120, "llm_runs": 80, "total_mcp": 4208, "tools": ["back_project", "finish", "list_dir", "move_pose", "move_to", "pi0_doubled", "pi0_pick", "read_text_file", "release", "rotate_pitch", "rotate_wrist", "segment", "set_gripper", "view_env_state", "write_text_file"]}

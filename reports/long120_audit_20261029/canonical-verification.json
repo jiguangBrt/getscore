@@ -1,0 +1,36 @@
+{
+  "status": "verified",
+  "runs": 120,
+  "language_model_runs": 80,
+  "function_calls": 4208,
+  "file_hashes_checked": 609,
+  "observation_files_checked": 24709,
+  "viewer_warnings": 0,
+  "canonical_single_episode_records": [
+    {
+      "name": "long-original-4-kimi-pi05",
+      "tools": 67,
+      "observations": 30,
+      "video_frames": 1265,
+      "action_events": 29,
+      "warnings": []
+    },
+    {
+      "name": "long-original-6-kimi-gawm",
+      "tools": 85,
+      "observations": 47,
+      "video_frames": 2000,
+      "action_events": 46,
+      "warnings": []
+    },
+    {
+      "name": "long-original-6-kimi-pi05",
+      "tools": 104,
+      "observations": 51,
+      "video_frames": 2000,
+      "action_events": 50,
+      "warnings": []
+    }
+  ],
+  "external_archive_required": false
+}

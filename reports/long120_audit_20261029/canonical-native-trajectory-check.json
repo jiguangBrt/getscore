@@ -1,0 +1,23 @@
+[
+  {
+    "name": "long-original-4-kimi-pi05",
+    "actions_exact": true,
+    "states_exact": true,
+    "primitive_and_policy_indices_correct": true,
+    "boundary_budget_correct": true
+  },
+  {
+    "name": "long-original-6-kimi-gawm",
+    "actions_exact": true,
+    "states_exact": true,
+    "primitive_and_policy_indices_correct": true,
+    "boundary_budget_correct": true
+  },
+  {
+    "name": "long-original-6-kimi-pi05",
+    "actions_exact": true,
+    "states_exact": true,
+    "primitive_and_policy_indices_correct": true,
+    "boundary_budget_correct": true
+  }
+]

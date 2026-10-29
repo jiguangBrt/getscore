@@ -1,0 +1,41 @@
+[
+  {
+    "name": "long-original-4-kimi-pi05",
+    "tools": 67,
+    "observations": 30,
+    "frames": 1265,
+    "action_events": 29,
+    "boundary_event": "续执行旧动作块",
+    "boundary_start_seconds": 50.0,
+    "images_checked": 6,
+    "catalog_runs": 120,
+    "video_range_works": true,
+    "warnings": []
+  },
+  {
+    "name": "long-original-6-kimi-gawm",
+    "tools": 85,
+    "observations": 47,
+    "frames": 2000,
+    "action_events": 46,
+    "boundary_event": "move_to",
+    "boundary_start_seconds": 50.0,
+    "images_checked": 6,
+    "catalog_runs": 120,
+    "video_range_works": true,
+    "warnings": []
+  },
+  {
+    "name": "long-original-6-kimi-pi05",
+    "tools": 104,
+    "observations": 51,
+    "frames": 2000,
+    "action_events": 50,
+    "boundary_event": "move_to",
+    "boundary_start_seconds": 50.0,
+    "images_checked": 6,
+    "catalog_runs": 120,
+    "video_range_works": true,
+    "warnings": []
+  }
+]
