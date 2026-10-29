@@ -37,9 +37,12 @@ def normalize_events(source,planner):
         raw=[json.loads(line) for line in p.read_text().splitlines()]
         # session/load replays historical messages. Only the new prompt's
         # responses belong to this continuation's timeline.
-        prompt_at=next((e['time_unix'] for e in raw
-            if e.get('direction')=='client' and e.get('message',{}).get('method')=='session/prompt'),None)
+        prompt_times={}
+        for e in raw:
+            if e.get('direction')=='client' and e.get('message',{}).get('method')=='session/prompt':
+                prompt_times.setdefault(e.get('recording_segment','single'),e['time_unix'])
         for i,e in enumerate(raw):
+            prompt_at=prompt_times.get(e.get('recording_segment','single'))
             if prompt_at is not None and e['time_unix']<prompt_at:continue
             m=e.get('message',{});u=m.get('params',{}).get('update',{})
             c=u.get('content',{})
@@ -110,8 +113,9 @@ def package_case(source, batch, reference):
         if (ids<0).any():raise RuntimeError(f'{source}: native actions lack primitive ids')
         frames_by_id=dict(zip(ids.tolist(),counts.tolist()))
     frame_counts={str(s['step_idx']):dict(action=s['command']['action'],frames=frames_by_id.get(i,0)) for i,s in enumerate(commands)}
-    if sum(e['frames'] for e in frame_counts.values())!=result['frames']:raise RuntimeError(f'{source}: action-frame mismatch')
-    write(source/'native-action-counts.json',dict(total_frames=result['frames'],steps=frame_counts,
+    recorded_frames=result.get('continuation_frames',result['frames'])
+    if sum(e['frames'] for e in frame_counts.values())!=recorded_frames:raise RuntimeError(f'{source}: action-frame mismatch')
+    write(source/'native-action-counts.json',dict(total_frames=recorded_frames,steps=frame_counts,
         source='trajectory transitions.npz primitive_id; matched against episode.json primitive_names and states.json commands'))
     audit=source/f'{tag}.json'
     if not audit.exists():

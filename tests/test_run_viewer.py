@@ -240,6 +240,36 @@ def test_native_action_counts_override_tool_estimates(saved_run):
     assert not any("帧数不一致" in warning for warning in report["warnings"])
 
 
+@pytest.mark.parametrize("prefix,valid", [(1000, True), (999, False)])
+def test_full_replay_offsets_continuation_clips_without_inventing_prefix_calls(saved_run, prefix, valid):
+    mp4(saved_run / "episode.mp4", frames=1018)
+    write_json(saved_run / "native-action-counts.json", {
+        "total_frames": 18,
+        "steps": {"1": {"action": "move_to", "frames": 3},
+                  "2": {"action": "pi0_pick", "frames": 15}},
+    })
+    write_json(saved_run / "video-timeline.json", {
+        "prefix_frames": prefix, "continuation_frames": 18, "total_frames": 1018,
+    })
+    report = parse_run(saved_run)
+    assert report["metrics"]["tool_calls"] == 4
+    if valid:
+        head = report["events"][0]
+        assert head["video_prefix"] and head["at_ms"] is None
+        assert not head.get("tool") and not head.get("action")
+        assert head["video_range"] == {"start_s": 0, "end_s": 100, "frames": 1000}
+        actions = [e for e in report["events"] if e.get("action")]
+        assert [e["video_range"] for e in actions] == [
+            {"start_s": 100, "end_s": 100.3, "frames": 3},
+            {"start_s": 100.3, "end_s": 101.8, "frames": 15},
+        ]
+        assert sum(e.get("video_range", {}).get("frames", 0) for e in report["events"]) == 1018
+        assert not any("帧数" in warning for warning in report["warnings"])
+    else:
+        assert not any("video_range" in e for e in report["events"])
+        assert any("前段与续跑段" in warning for warning in report["warnings"])
+
+
 def test_pending_recovery_actions_have_clips_without_inventing_model_calls(tmp_path):
     write_json(tmp_path / "configuration.json", {"policy_backend": "openpi"})
     write_json(tmp_path / "states.json", {"steps": [
@@ -291,6 +321,60 @@ def test_kimi_normalization_excludes_replayed_session_history(tmp_path):
     assert events[0]["payload"]["item"]["text"] == "new response continued"
     assert events[1]["payload"]["item"]["tool"] == "view_env_state"
     assert all(event["source"]["file"] in {"kimi_acp.stream.jsonl", "kimi_tool_calls.jsonl"} for event in events)
+
+
+def test_merged_episode_places_restored_actions_at_the_recorded_boundary(tmp_path):
+    write_json(tmp_path / "configuration.json", {"policy_backend": "openpi"})
+    write_json(tmp_path / "states.json", {"steps": [
+        {"step_idx": 0},
+        {"step_idx": 1, "command": {"action": "move_to", "xyz": [1, 0, 0]}, "result": {}},
+        {"step_idx": 2, "command": {"action": "resume_pending_policy_actions"},
+         "result": {"executed_steps": 3}, "recorded_at_ms": 2000},
+        {"step_idx": 3, "command": {"action": "move_to", "xyz": [2, 0, 0]}, "result": {}, "terminated": True},
+    ]})
+    mp4(tmp_path / "episode.mp4", frames=10)
+    write_json(tmp_path / "native-action-counts.json", {"total_frames": 10, "steps": {
+        "1": {"action": "move_to", "frames": 5},
+        "2": {"action": "resume_pending_policy_actions", "frames": 3},
+        "3": {"action": "move_to", "frames": 2},
+    }})
+    events = [{"method": "item/completed", "payload": {"completed_at_ms": at, "item": {
+        "id": str(step), "type": "mcpToolCall", "tool": "move_to", "arguments": {"xyz": xyz},
+        "result": {"step": step}, "status": "completed",
+    }}} for step, at, xyz in [(1, 1000, [1, 0, 0]), (3, 3000, [2, 0, 0])]]
+    (tmp_path / "00-planner.stream.jsonl").write_text("".join(json.dumps(e) + "\n" for e in events))
+    report = parse_run(tmp_path)
+    assert report["warnings"] == []
+    assert report["metrics"]["tool_calls"] == 2
+    actions = [event for event in report["events"] if event.get("action")]
+    assert [event["after_state"] for event in actions] == [1, 2, 3]
+    assert [event["video_range"] for event in actions] == [
+        {"start_s": 0, "end_s": 0.5, "frames": 5},
+        {"start_s": 0.5, "end_s": 0.8, "frames": 3},
+        {"start_s": 0.8, "end_s": 1, "frames": 2},
+    ]
+    assert actions[0]["before_state"] == 0
+
+
+def test_merged_kimi_normalization_filters_each_sessions_replayed_history(tmp_path):
+    from scripts.organize_long_benchmark import normalize_events
+
+    rows = []
+    for segment, base in [("prefix", 0), ("continuation", 100)]:
+        def chunk(at, text):
+            return {"recording_segment": segment, "time_unix": at, "direction": "server",
+                    "message": {"method": "session/update", "params": {"update": {
+                        "sessionUpdate": "agent_message_chunk", "content": {"type": "text", "text": text}}}}}
+        rows.extend([chunk(base + 1, "old loaded context"),
+                     {"recording_segment": segment, "time_unix": base + 2, "direction": "client",
+                      "message": {"method": "session/prompt"}}, chunk(base + 3, segment)])
+    (tmp_path / "kimi_acp.stream.jsonl").write_text("".join(json.dumps(row) + "\n" for row in rows))
+    (tmp_path / "kimi_tool_calls.jsonl").write_text("")
+    name = normalize_events(tmp_path, "kimi")
+    events = [json.loads(line) for line in (tmp_path / name).read_text().splitlines()]
+    texts = "".join(e["payload"]["item"]["text"] for e in events)
+    assert texts == "prefixcontinuation"
+    assert "old loaded context" not in texts
 
 
 def test_absent_usage_is_distinguished_from_recorded_zero_usage(tmp_path):

@@ -54,8 +54,11 @@ def prepare_case(source, batch):
         raise RuntimeError(f'{source.name}: viewer interpretation failed: {report["warnings"]}, {report["status"]}')
     if not report['video'] or not report['observations'] or not report['metrics']['tool_calls']:
         raise RuntimeError(f'{source.name}: missing viewer video/observations/tool events')
-    if len(actions) != len(commands) or len(clips) != len(commands) or sum(clip['frames'] for clip in clips) != row['frames']:
+    recorded_frames = row.get('continuation_frames', row['frames'])
+    if len(actions) != len(commands) or len(clips) != len(commands) or sum(clip['frames'] for clip in clips) != recorded_frames:
         raise RuntimeError(f'{source.name}: action clips do not cover the recorded video exactly')
+    if sum(event.get('video_range', {}).get('frames', 0) for event in report['events']) != row['frames']:
+        raise RuntimeError(f'{source.name}: full replay clips do not cover the video exactly')
     if report['metrics']['recorded_tool_calls'] is not None and report['metrics']['tool_calls'] != report['metrics']['recorded_tool_calls']:
         raise RuntimeError(f'{source.name}: normalized tools disagree with planner tool count')
     expected_steps = [state['step_idx'] for state in commands]
@@ -70,13 +73,16 @@ def prepare_case(source, batch):
         video_frames=row['frames'], native_actions=row['actions'], total_episode_actions=row['total_episode_actions'],
         execution_mode=row['execution_mode'], trajectory_scope=row['trajectory_scope'],
         recipe_expected=row['success'],
-        recipe_note='Recipes exist only for native successes. A resumed run retains its suffix trace and separate full replay.',
+        recipe_note='Recipes exist only for native successes. Resumed traces contain the continuation; video-timeline.json maps them into the full replay when present.',
         raw_trajectory=row['trajectory'], recorded_artifact_hashes_preserved=True,
         viewer=dict(video_loaded=True, observations=len(report['observations']), tool_events=report['metrics']['tool_calls'],
                     action_events=len(actions), action_clip_frames=sum(clip['frames'] for clip in clips),
                     recovery_action_events=sum(bool(event.get('recovery_prefix')) for event in actions),
                     backend=report['backend'], warnings=report['warnings']),
     )
+    if recorded_frames != row['frames']:
+        check.update(continuation_frames=recorded_frames, video_scope='full_episode')
+        check['viewer']['prefix_clip_frames'] = row['frames'] - recorded_frames
     write(source / 'artifact-completeness.json', check)
     return check
 

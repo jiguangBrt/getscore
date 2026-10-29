@@ -194,8 +194,31 @@ def parse_run(directory: Path):
     unused_states = [state for state in states if state.get("command")]
     video = video_metadata(root / "episode.mp4")
     native_counts = read_object(root / "native-action-counts.json")
-    exact_counts = native_counts.get("steps", {}) if video and native_counts.get("total_frames") == video["frames"] else {}
-    frame_cursor = 0
+    timeline = read_object(root / "video-timeline.json")
+    prefix_frames = 0
+    if timeline and video:
+        prefix = timeline.get("prefix_frames")
+        suffix = timeline.get("continuation_frames")
+        if (type(prefix) is int and prefix > 0 and type(suffix) is int and suffix >= 0
+                and prefix + suffix == timeline.get("total_frames") == video["frames"]
+                and suffix == native_counts.get("total_frames")):
+            prefix_frames = prefix
+        else:
+            warnings.append("完整回放的前段与续跑段帧数记录不一致，未偏移动作片段。")
+    exact_counts = native_counts.get("steps", {}) if video and native_counts.get("total_frames") == video["frames"] - prefix_frames else {}
+    # Saved actions have an intrinsic state order. Restored pending actions may
+    # be discovered before older tool events, so their clip positions must not
+    # depend on the order in which events happen to be parsed.
+    exact_ranges = {}
+    cursor = prefix_frames
+    for state in states:
+        command = state.get("command") or {}
+        exact = exact_counts.get(str(state["step_idx"]), {})
+        count = exact.get("frames")
+        if command and exact.get("action") == command.get("action") and type(count) is int and count >= 0:
+            exact_ranges[state["step_idx"]] = (cursor, cursor + count)
+            cursor += count
+    frame_cursor = prefix_frames
     backend = config.get("policy_backend", "openpi")
     policy = config.get("config", {}).get(backend, {})
     horizon = policy.get("execute_horizon", 5 if backend == "openpi" else None)
@@ -240,6 +263,11 @@ def parse_run(directory: Path):
                 native_success=matched.get("terminated"),
                 truncated=matched.get("truncated"),
             )
+            if name == "resume_pending_policy_actions":
+                event["before_state"] = max(
+                    (state["step_idx"] for state in states if state["step_idx"] < latest_state),
+                    default=initial,
+                )
             outcome = matched.get("result") or {}
             count = None
             if name == "move_to" and isinstance(
@@ -259,9 +287,12 @@ def parse_run(directory: Path):
             if exact.get("action") == name and isinstance(exact.get("frames"), int) and exact["frames"] >= 0:
                 count = exact["frames"]
             if count is not None and frame_cursor >= 0 and video and video["fps"]:
+                start_frame, end_frame = exact_ranges.get(
+                    matched["step_idx"], (frame_cursor, frame_cursor + count)
+                )
                 event["video_range"] = {
-                    "start_s": frame_cursor / video["fps"],
-                    "end_s": (frame_cursor + count) / video["fps"],
+                    "start_s": start_frame / video["fps"],
+                    "end_s": end_frame / video["fps"],
                     "frames": count,
                 }
                 frame_cursor += count
@@ -279,6 +310,16 @@ def parse_run(directory: Path):
             )
         ):
             event["after_state"] = None
+
+    if prefix_frames:
+        add(
+            f"原 episode 前 {prefix_frames} 步回放",
+            precision="unrecorded",
+            video_prefix=True,
+            text="前段来自归档原 episode；下面的观测和工具记录对应续跑段。",
+            video_range={"start_s": 0, "end_s": prefix_frames / video["fps"], "frames": prefix_frames},
+            source={"file": "video-timeline.json"},
+        )
 
     log_path = root / "run.log"
     log_start = log_end = None
@@ -346,14 +387,21 @@ def parse_run(directory: Path):
             arguments = {key: value for key, value in command.items() if key != "action"}
             event = add(
                 "续执行旧动作块",
+                state.get("recorded_at_ms"),
                 arguments=arguments,
                 result=state.get("result"),
                 recovery_prefix=True,
-                precision="unrecorded",
+                precision="adjacent" if state.get("recorded_at_ms") is not None else "unrecorded",
                 source={"file": "states.json", "step": state["step_idx"]},
             )
             link_tool(event, command["action"], arguments, {"step": state["step_idx"]})
 
+    # Linking a recovered action early must not make the first historical tool
+    # appear to start from that later state.
+    if any(state.get("recorded_at_ms") is not None
+           and (state.get("command") or {}).get("action") == "resume_pending_policy_actions"
+           for state in states):
+        latest_state = initial
     current_turn, latest_clock = 1, log_start
     usage_total = {key: 0 for key in TOKEN_KEYS}
     seen_usage, starts, completed = set(), {}, set()
@@ -616,9 +664,11 @@ def parse_run(directory: Path):
             event["at_ms"]
             if event["at_ms"] is not None
             else (
-                (log_start if log_start is not None else -math.inf)
-                if event.get("recovery_prefix")
-                else (-math.inf if event["title"] == "启动配置" else math.inf)
+                -math.inf if event.get("video_prefix") else (
+                    (log_start if log_start is not None else -math.inf)
+                    if event.get("recovery_prefix")
+                    else (-math.inf if event["title"] == "启动配置" else math.inf)
+                )
             ),
             event["sequence"],
         )
