@@ -1,0 +1,622 @@
+{
+  "snapshot_date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "scope": "Saved historical evidence; full videos, trajectories, assets and weights are not in Git.",
+  "current_results": {
+    "updated_at": "2026-10-29T10:41:55+08:00",
+    "completed": 120,
+    "successes": 63,
+    "groups": {
+      "original-gpt6-gawm": {
+        "successes": 6,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.6
+      },
+      "original-gpt6-pi05": {
+        "successes": 5,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.5
+      },
+      "original-kimi-gawm": {
+        "successes": 7,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.7
+      },
+      "original-kimi-pi05": {
+        "successes": 7,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.7
+      },
+      "original-none-gawm": {
+        "successes": 10,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 1.0
+      },
+      "original-none-pi05": {
+        "successes": 10,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 1.0
+      },
+      "swap-gpt6-gawm": {
+        "successes": 2,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.2
+      },
+      "swap-gpt6-pi05": {
+        "successes": 4,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.4
+      },
+      "swap-kimi-gawm": {
+        "successes": 5,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.5
+      },
+      "swap-kimi-pi05": {
+        "successes": 5,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.5
+      },
+      "swap-none-gawm": {
+        "successes": 1,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.1
+      },
+      "swap-none-pi05": {
+        "successes": 1,
+        "total": 10,
+        "errors": 0,
+        "success_rate": 0.1
+      }
+    },
+    "composition": {
+      "unchanged_original_runs": 94,
+      "selected_new_runs": 26,
+      "resumed": 3,
+      "restarted": 10,
+      "fresh_swap_reruns": 13
+    },
+    "budget_note": "94 runs retain their original budgets; 13 selected original-scene runs and 13 selected swap Kimi reruns use a 2000-action total budget.",
+    "swap_initialization_note": "8 swap reruns differ in initial RGB due to existing fixture-layout randomization; nominal task/seed/init-file and robot state match. Not strictly fixed-layout paired trials.",
+    "replacement_manifest": "/home/jh/getscore/outputs/_archive/records/replace-swap-2000step-20261029-104138/manifest.json"
+  },
+  "evidence": {
+    "output/investigations/server-migration-20261028/pi05-rpent-smoke/verification.json": {
+      "sha256": "883f9a04a393a8102dd0d2d2c55f66d36d70a7361ee6c93f5520bf637a018bf0",
+      "record": {
+        "status": "passed",
+        "scope": "RPent scripted planner + migrated pi05 + native simulation + video",
+        "paid_model_calls": 0,
+        "tool_calls": 3,
+        "policy_queries": 2,
+        "actions": 10,
+        "frames": 10,
+        "native_success": false
+      }
+    },
+    "output/investigations/server-migration-20261028/gawm-rpent-smoke/verification.json": {
+      "sha256": "06ad0202924bfdd81c4bd1a0d413bae8546c8fc311d2ace10db97449094f722f",
+      "record": {
+        "status": "passed",
+        "scope": "RPent scripted planner + SAM3 text segmentation/world localization + GAWM + native simulation + video",
+        "paid_model_calls": 0,
+        "tool_calls": 6,
+        "policy_queries": 2,
+        "actions": 17,
+        "frames": 17,
+        "segmentation_scores": [
+          0.871,
+          0.165
+        ],
+        "native_success": false,
+        "video": "/home/jh/getscore/output/investigations/server-migration-20261028/gawm-rpent-smoke/episode.mp4"
+      }
+    },
+    "output/investigations/server-migration-20261028/pi05-smoke/verification.json": {
+      "sha256": "045f9814981f1b1b845484f367721c6a0251e0d59d8653ca2712067bd84733f4",
+      "record": {
+        "status": "passed",
+        "policy": "pi05",
+        "native_success": false,
+        "truncated": true,
+        "actions": 16,
+        "frames": 16,
+        "policy_queries": 4,
+        "video": "/home/jh/getscore/output/investigations/server-migration-20261028/pi05-smoke/episode.mp4",
+        "elapsed_s": 30.79,
+        "scope": "real policy/renderer/action/video chain; SAM3 and planner excluded",
+        "metadata": {}
+      }
+    },
+    "output/investigations/server-migration-20261028/gawm-smoke/verification.json": {
+      "sha256": "2abb25a44ffdc9b99522a28183c5298b009919c94dcabda9a92580b79adbf4f5",
+      "record": {
+        "status": "passed",
+        "policy": "gawm",
+        "native_success": false,
+        "truncated": true,
+        "actions": 16,
+        "frames": 16,
+        "policy_queries": 2,
+        "video": "/home/jh/getscore/output/investigations/server-migration-20261028/gawm-smoke/episode.mp4",
+        "elapsed_s": 8.86,
+        "scope": "real policy/renderer/action/video chain; SAM3 and planner excluded",
+        "metadata": {
+          "source": "starvla-gawm-libero",
+          "checkpoint_sha256": "f698e76ae129ccfbe8349418acd79044f2a1ca6366d098546afb477fd79e7e13",
+          "strict_load": {
+            "missing_keys": [],
+            "unexpected_keys": []
+          },
+          "action_chunk_size": 8,
+          "action_dim": 7,
+          "image_size": [
+            256,
+            256
+          ],
+          "image_resize_resample": "opencv_linear",
+          "task_vocabulary": [
+            "franka:close the bottom drawer of the cabinet",
+            "franka:close the bottom drawer of the cabinet and open the top drawer",
+            "franka:close the microwave",
+            "franka:close the top drawer of the cabinet",
+            "franka:close the top drawer of the cabinet and put the black bowl on top of it",
+            "franka:open the bottom drawer of the cabinet",
+            "franka:open the microwave",
+            "franka:open the middle drawer of the cabinet",
+            "franka:open the top drawer and put the bowl inside",
+            "franka:open the top drawer of the cabinet",
+            "franka:open the top drawer of the cabinet and put the bowl in it",
+            "franka:pick up the alphabet soup and place it in the basket",
+            "franka:pick up the alphabet soup and put it in the basket",
+            "franka:pick up the alphabet soup and put it in the tray",
+            "franka:pick up the bbq sauce and place it in the basket",
+            "franka:pick up the black bowl between the plate and the ramekin and place it on the plate",
+            "franka:pick up the black bowl from table center and place it on the plate",
+            "franka:pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+            "franka:pick up the black bowl next to the cookie box and place it on the plate",
+            "franka:pick up the black bowl next to the plate and place it on the plate",
+            "franka:pick up the black bowl next to the ramekin and place it on the plate",
+            "franka:pick up the black bowl on the cookie box and place it on the plate",
+            "franka:pick up the black bowl on the left and put it in the tray",
+            "franka:pick up the black bowl on the ramekin and place it on the plate",
+            "franka:pick up the black bowl on the stove and place it on the plate",
+            "franka:pick up the black bowl on the wooden cabinet and place it on the plate",
+            "franka:pick up the book and place it in the back compartment of the caddy",
+            "franka:pick up the book and place it in the front compartment of the caddy",
+            "franka:pick up the book and place it in the left compartment of the caddy",
+            "franka:pick up the book and place it in the right compartment of the caddy",
+            "franka:pick up the book in the middle and place it on the cabinet shelf",
+            "franka:pick up the book on the left and place it on top of the shelf",
+            "franka:pick up the book on the right and place it on the cabinet shelf",
+            "franka:pick up the book on the right and place it under the cabinet shelf",
+            "franka:pick up the butter and place it in the basket",
+            "franka:pick up the butter and put it in the basket",
+            "franka:pick up the butter and put it in the tray",
+            "franka:pick up the chocolate pudding and place it in the basket",
+            "franka:pick up the chocolate pudding and put it in the tray",
+            "franka:pick up the cream cheese and place it in the basket",
+            "franka:pick up the cream cheese and put it in the tray",
+            "franka:pick up the cream cheese box and put it in the basket",
+            "franka:pick up the ketchup and place it in the basket",
+            "franka:pick up the ketchup and put it in the basket",
+            "franka:pick up the ketchup and put it in the tray",
+            "franka:pick up the milk and place it in the basket",
+            "franka:pick up the milk and put it in the basket",
+            "franka:pick up the orange juice and place it in the basket",
+            "franka:pick up the orange juice and put it in the basket",
+            "franka:pick up the red mug and place it to the right of the caddy",
+            "franka:pick up the salad dressing and place it in the basket",
+            "franka:pick up the salad dressing and put it in the tray",
+            "franka:pick up the tomato sauce and place it in the basket",
+            "franka:pick up the tomato sauce and put it in the basket",
+            "franka:pick up the tomato sauce and put it in the tray",
+            "franka:pick up the white mug and place it to the right of the caddy",
+            "franka:pick up the yellow and white mug and place it to the right of the caddy",
+            "franka:push the plate to the front of the stove",
+            "franka:put both moka pots on the stove",
+            "franka:put both the alphabet soup and the cream cheese box in the basket",
+            "franka:put both the alphabet soup and the tomato sauce in the basket",
+            "franka:put both the cream cheese box and the butter in the basket",
+            "franka:put the black bowl at the back on the plate",
+            "franka:put the black bowl at the front on the plate",
+            "franka:put the black bowl in the bottom drawer of the cabinet",
+            "franka:put the black bowl in the bottom drawer of the cabinet and close it",
+            "franka:put the black bowl in the top drawer of the cabinet",
+            "franka:put the black bowl on the plate",
+            "franka:put the black bowl on top of the cabinet",
+            "franka:put the bowl on the plate",
+            "franka:put the bowl on the stove",
+            "franka:put the bowl on top of the cabinet",
+            "franka:put the butter at the back in the top drawer of the cabinet and close it",
+            "franka:put the butter at the front in the top drawer of the cabinet and close it",
+            "franka:put the chocolate pudding in the top drawer of the cabinet and close it",
+            "franka:put the chocolate pudding to the left of the plate",
+            "franka:put the chocolate pudding to the right of the plate",
+            "franka:put the cream cheese in the bowl",
+            "franka:put the frying pan on the cabinet shelf",
+            "franka:put the frying pan on the stove",
+            "franka:put the frying pan on top of the cabinet",
+            "franka:put the frying pan under the cabinet shelf",
+            "franka:put the ketchup in the top drawer of the cabinet",
+            "franka:put the middle black bowl on the plate",
+            "franka:put the middle black bowl on top of the cabinet",
+            "franka:put the moka pot on the stove",
+            "franka:put the red mug on the left plate",
+            "franka:put the red mug on the plate",
+            "franka:put the red mug on the right plate",
+            "franka:put the right moka pot on the stove",
+            "franka:put the white bowl on the plate",
+            "franka:put the white bowl on top of the cabinet",
+            "franka:put the white bowl to the right of the plate",
+            "franka:put the white mug on the left plate",
+            "franka:put the white mug on the left plate and put the yellow and white mug on the right plate",
+            "franka:put the white mug on the plate",
+            "franka:put the white mug on the plate and put the chocolate pudding to the right of the plate",
+            "franka:put the wine bottle in the bottom drawer of the cabinet",
+            "franka:put the wine bottle on the rack",
+            "franka:put the wine bottle on the wine rack",
+            "franka:put the wine bottle on top of the cabinet",
+            "franka:put the yellow and white mug in the microwave and close it",
+            "franka:put the yellow and white mug on the right plate",
+            "franka:put the yellow and white mug to the front of the white mug",
+            "franka:stack the black bowl at the front on the black bowl in the middle",
+            "franka:stack the left bowl on the right bowl and place them in the tray",
+            "franka:stack the middle black bowl on the back black bowl",
+            "franka:stack the right bowl on the left bowl and place them in the tray",
+            "franka:turn off the stove",
+            "franka:turn on the stove",
+            "franka:turn on the stove and put the frying pan on it",
+            "franka:turn on the stove and put the moka pot on it"
+          ],
+          "state_normalization": "training PolicyNormProcessor",
+          "action_unnormalization": "training PolicyNormProcessor",
+          "gripper_encoding": "open_probability; client converts >0.5 to -1 else +1",
+          "torch": "2.8.0+cu128",
+          "gpu": "NVIDIA RTX PRO 5000 72GB Blackwell"
+        }
+      }
+    },
+    "output/investigations/server-migration-20261028/sam3-verification.json": {
+      "sha256": "5419d4c16624f121c682b1e576a89c997919b28705d91a9c6343cdaeb85b0212",
+      "record": {
+        "status": "passed",
+        "image": "/home/jh/getscore/output/investigations/server-migration-20261028/gawm-smoke/initial.png",
+        "prompt": "basket",
+        "found": true,
+        "score": 0.8359375,
+        "box": [
+          -0.5288848876953125,
+          114.73080444335938,
+          59.92245101928711,
+          197.28207397460938
+        ],
+        "mask_shape": [
+          256,
+          256
+        ],
+        "mask_pixels": 4681,
+        "checkpoint_sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e"
+      }
+    },
+    "output/investigations/server-migration-20261028/sam3-point-verification.json": {
+      "sha256": "2f26bcccc406e16796745d67b4139edc48a905da644ff15986b93a7c6e539703",
+      "record": {
+        "status": "passed",
+        "point": [
+          162,
+          23
+        ],
+        "score": 0.74609375,
+        "mask_pixels": 4708,
+        "mask_shape": [
+          256,
+          256
+        ]
+      }
+    },
+    "outputs/swap-kimi-2000step-20261027/final-audit/verification.json": {
+      "sha256": "8740ecf7503c43775b48e819604af4a731dfb441f7def465ee77e62e28d31d38",
+      "record": {
+        "status": "verified_complete",
+        "checked_at": "2026-10-28T20:43:14+08:00",
+        "expected": 13,
+        "completed": 13,
+        "successes": 3,
+        "source_results_unchanged": true,
+        "comparison": {
+          "pi05": {
+            "original_successes": 3,
+            "total": 10,
+            "reruns": 7,
+            "rerun_successes": 2,
+            "combined_successes": 5
+          },
+          "gawm": {
+            "original_successes": 4,
+            "total": 10,
+            "reruns": 6,
+            "rerun_successes": 1,
+            "combined_successes": 5
+          }
+        },
+        "initial_observation_nonidentical_cases": 8,
+        "initial_condition_note": "Known LIBERO-PRO fixture-layout randomization already occurs among original same-task/seed runs; nominal conditions and robot state match, RGB equality is recorded rather than claimed.",
+        "checks": [
+          {
+            "name": "long-swap-0-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": true,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 1,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-0-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 772,
+            "model_confirmed": true,
+            "native_success": true,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": true,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 1,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-3-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-3-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-4-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": true,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 1,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-5-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 621,
+            "model_confirmed": true,
+            "native_success": true,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-5-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 425,
+            "model_confirmed": true,
+            "native_success": true,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-6-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": true,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 1,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-6-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 1548,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": true,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 1,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-8-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-8-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-9-kimi-gawm",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          },
+          {
+            "name": "long-swap-9-kimi-pi05",
+            "source_unchanged": true,
+            "recorded_artifact_hashes_match": true,
+            "video_decodes": true,
+            "frames": 2000,
+            "model_confirmed": true,
+            "native_success": false,
+            "task_seed_and_init_index_match": true,
+            "task_asset_hashes_match": true,
+            "initial_robot_state_exact": true,
+            "initial_observation_exact": false,
+            "original_reference_count": 6,
+            "original_distinct_initial_observations": 6,
+            "comparison_scope": "nominal task/seed/init-file pairing; fixture layout is not serialized in init-state data"
+          }
+        ]
+      }
+    },
+    "outputs/long120_1027/consolidation.json": {
+      "sha256": "7c65b804bf9732ec795ba7a393be2d0b1e5b3fa3817f759f76f50b816d7b8557",
+      "record": {
+        "status": "verified",
+        "real_experiment_directories": 120,
+        "latest_symlinks": 0,
+        "successes": 63,
+        "all_recorded_hashes_preserved": true,
+        "all_viewer_warnings_empty": true,
+        "manifest": "/home/jh/getscore/outputs/_archive/records/replace-swap-2000step-20261029-104138/manifest.json",
+        "historical_outputs": "/home/jh/getscore/outputs/_archive",
+        "replaced_swap_runs": 13,
+        "archived_originals": "/home/jh/getscore/outputs/_archive/batches/swap-before-2000step-20261029-104138",
+        "viewer_parse_verified": 120,
+        "previous_consolidation": "/home/jh/getscore/outputs/_archive/records/replace-swap-2000step-20261029-104138/metadata-before/long120_1027/consolidation.json",
+        "live_viewer_verified": 120,
+        "live_verification": "/home/jh/getscore/outputs/_archive/records/replace-swap-2000step-20261029-104138/live-viewer-verification.json"
+      }
+    }
+  },
+  "readme_validation": {
+    "date": "2026-10-29",
+    "environment": "existing local Python 3.11 environment",
+    "offline_tests": {
+      "passed": 79,
+      "skipped": 1
+    },
+    "dependency_snapshot": {
+      "packages": 223,
+      "install_dry_run": "no changes",
+      "compatibility": "passed"
+    },
+    "scripted_real_model_checks": {
+      "pi05": {
+        "status": "completed",
+        "paid_api_calls": 0,
+        "tool_calls": 3,
+        "frames": 10,
+        "task_success": false,
+        "configuration_sha256": "043147172ae5f61962922929af1aff90f95ebdc9e70cfa04080574e6efe2930e",
+        "source": "outputs/readme-check-20261029-pi05"
+      },
+      "gawm": {
+        "status": "completed",
+        "paid_api_calls": 0,
+        "tool_calls": 6,
+        "frames": 17,
+        "task_success": false,
+        "configuration_sha256": "c47409386809cb2bd1c67a9282559b12bd8e97e7ed60ceac4da49910cf5311cb",
+        "source": "outputs/readme-check-20261029-gawm"
+      }
+    },
+    "fresh_machine_install": "not executed; setup shell syntax and portable requirements checked"
+  }
+}

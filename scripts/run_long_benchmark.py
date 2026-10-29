@@ -17,6 +17,7 @@ import subprocess
 import sys
 import threading
 import time
+import tomllib
 from zoneinfo import ZoneInfo
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -37,6 +38,14 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def free_port():
     with socket.socket() as sock:
         sock.bind(('127.0.0.1',0));return sock.getsockname()[1]
+
+
+def inference_services(path=None):
+    if path is None:
+        return dict(openpi=dict(host='192.168.50.73',port=8008),
+                    gawm=dict(host='192.168.50.73',port=8115),
+                    simulation=dict(sam3_endpoint='http://192.168.50.73:8114'))
+    return tomllib.loads(Path(path).read_text())
 
 
 def environment():
@@ -139,14 +148,16 @@ def run_case(batch,case,policy,env,args):
     horizon=5 if policy=='pi05' else 8
     rpc_timeout=330 if policy=='pi05' else 150
     request_timeout=300 if policy=='pi05' else 120
+    services=inference_services(getattr(args,'inference_config',None))
+    policy_service=services[backend]
     config=output/'bridge.toml'
-    config.write_text(f'[{backend}]\nhost = "192.168.50.73"\nport = {8008 if policy=="pi05" else 8115}\nconnect_timeout_s = 20.0\nrequest_timeout_s = {request_timeout}.0\n'+
+    config.write_text(f'[{backend}]\nhost = {json.dumps(policy_service["host"])}\nport = {int(policy_service["port"])}\nconnect_timeout_s = 20.0\nrequest_timeout_s = {request_timeout}.0\n'+
         ('execute_horizon = 8\n' if policy=='gawm' else '')+
         f'\n[bridge]\nhost = "127.0.0.1"\nport = {port}\nrpc_timeout_s = {rpc_timeout}.0\n')
     command=[str(PYTHON),str(getattr(args,'entrypoint',ROOT/'scripts/long_benchmark_entrypoint.py')),'--robot','libero','--libero-type','pro',
         '--suite',case['suite'],'--task',str(case['task']),'--seed','0','--cuda-device','0',
         '--max-episode-steps',str(args.max_steps),'--vla-endpoint',endpoint,'--vla-timeout-s',str(rpc_timeout),
-        '--sam3-endpoint','http://192.168.50.73:8114','--planner',{'gpt6':'codex','none':'none','kimi':'kimi'}[case['planner']],
+        '--sam3-endpoint',services['simulation']['sam3_endpoint'],'--planner',{'gpt6':'codex','none':'none','kimi':'kimi'}[case['planner']],
         '--model',{'gpt6':'gpt-6-astra','none':'pure-policy','kimi':'kimi-code/k3.1-pro'}[case['planner']],
         '--reasoning-effort',{'gpt6':'low','none':'none','kimi':'high'}[case['planner']],
         '--max-turns',str(args.max_turns),'--planner-timeout-s',str(args.timeout),
@@ -161,6 +172,8 @@ def run_case(batch,case,policy,env,args):
         reasoning_effort={'gpt6':'low','none':None,'kimi':'high'}[case['planner']],command=command,
         run_status='starting',started_at=now(),max_episode_steps=args.max_steps,max_turns=args.max_turns,planner_timeout_s=args.timeout,
         memory='empty, read-only, no per-task external memory',policy_horizon=horizon,task_success=None)
+    if getattr(args,'inference_config',None):
+        manifest['inference_config']=dict(path=str(Path(args.inference_config).resolve()),sha256=sha(Path(args.inference_config)))
     for kind,ext in [('bddl_files','.bddl'),('init_files','.pruned_init')]:
         path=PRO/kind/case['suite']/(case['name']+ext)
         manifest[kind]=dict(path=str(path),sha256=sha(path))
@@ -214,6 +227,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True);parser.add_argument('--max-steps',type=int,default=1000)
     parser.add_argument('--max-turns',type=int,default=80);parser.add_argument('--timeout',type=int,default=1200)
+    parser.add_argument('--inference-config',type=Path)
     parser.add_argument('--only-policy',choices=['pi05','gawm']);parser.add_argument('--only-planner',choices=['none','gpt6','kimi'])
     parser.add_argument('--pilot',action='store_true')
     args=parser.parse_args();batch=args.output.resolve();batch.mkdir(parents=True,exist_ok=True);(batch/'cases').mkdir(exist_ok=True)

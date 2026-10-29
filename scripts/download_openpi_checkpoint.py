@@ -18,8 +18,11 @@ import google_crc32c
 
 
 def download(
-    destination: Path, workers: int = 64, mirror_prefix: str | None = None
+    destination: Path, workers: int = 64, mirror_prefix: str | None = None,
+    chunk_bytes: int = 512 * 1024,
 ) -> None:
+    if workers < 1 or chunk_bytes < 1:
+        raise ValueError('workers and chunk_bytes must be positive')
     prefix = "checkpoints/pi05_libero/"
     api = "https://storage.googleapis.com/storage/v1/b/openpi-assets/o?"
     objects = []
@@ -121,7 +124,6 @@ def download(
     )
     jobs = []
     large = []
-    chunk_bytes = 512 * 1024
     for item in objects:
         target = destination / item["name"][len(prefix) :]
         if int(item["size"]) < chunk_bytes or valid(target, item):
@@ -136,15 +138,24 @@ def download(
                 raise RuntimeError("Existing chunk download has a different generation")
             previous_chunk = progress["chunk_bytes"]
             if previous_chunk != chunk_bytes:
-                if previous_chunk % chunk_bytes:
+                if previous_chunk % chunk_bytes == 0:
+                    progress["done"] = [
+                        start + offset
+                        for start in progress["done"]
+                        for offset in range(
+                            0, min(previous_chunk, int(item["size"]) - start), chunk_bytes
+                        )
+                    ]
+                elif chunk_bytes % previous_chunk == 0:
+                    completed = set(progress["done"])
+                    progress["done"] = [
+                        start for start in range(0, int(item["size"]), chunk_bytes)
+                        if all(offset in completed for offset in range(
+                            start, min(start + chunk_bytes, int(item["size"])), previous_chunk
+                        ))
+                    ]
+                else:
                     raise RuntimeError("Cannot resume incompatible chunk sizes")
-                progress["done"] = [
-                    start + offset
-                    for start in progress["done"]
-                    for offset in range(
-                        0, min(previous_chunk, int(item["size"]) - start), chunk_bytes
-                    )
-                ]
                 progress["chunk_bytes"] = chunk_bytes
         else:
             progress = {
@@ -258,5 +269,6 @@ if __name__ == "__main__":
     parser.add_argument("destination", type=Path)
     parser.add_argument("--workers", type=int, default=64)
     parser.add_argument("--mirror-prefix", default=None)
+    parser.add_argument("--chunk-bytes", type=int, default=512 * 1024)
     args = parser.parse_args()
-    download(args.destination, args.workers, args.mirror_prefix)
+    download(args.destination, args.workers, args.mirror_prefix, args.chunk_bytes)

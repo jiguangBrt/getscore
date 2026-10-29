@@ -71,6 +71,8 @@ def main():
     parser.add_argument('--server', type=Path, required=True)
     parser.add_argument('--completion-prompt-file', type=Path,
                         help='Use this batch-specific completion message')
+    parser.add_argument('--status-file', type=Path,
+                        help='Separate status record for concurrent completion hooks')
     parser.add_argument('--probe', action='store_true', help='Read this thread; do not send a message')
     args = parser.parse_args()
     batch = args.batch.resolve()
@@ -93,7 +95,7 @@ def main():
     record = {'status': 'waiting', 'supervisor_pid': args.pid, 'thread_id': args.thread_id,
               'mechanism': 'Linux pidfd process-exit event -> codex-app-tools send_message_to_thread',
               'registered_at_unix': time.time()}
-    status_path = batch/'completion-hook.json'
+    status_path = args.status_file.resolve() if args.status_file else batch/'completion-hook.json'
     status_path.write_text(json.dumps(record, indent=2)+'\n')
     try:
         try:

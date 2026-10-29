@@ -1,0 +1,34 @@
+[openpi]
+host = "127.0.0.1"
+port = 18008
+connect_timeout_s = 20.0
+request_timeout_s = 300.0
+
+[gawm]
+host = "127.0.0.1"
+port = 18115
+connect_timeout_s = 20.0
+request_timeout_s = 120.0
+execute_horizon = 8
+
+[bridge]
+host = "127.0.0.1"
+port = 8113
+rpc_timeout_s = 330.0
+
+[simulation]
+suite = "libero_object_swap"
+task = 2
+seed = 0
+max_episode_steps = 1000
+action_chunks = 3
+cuda_device = 0
+sam3_endpoint = "http://127.0.0.1:18114"
+
+[codex]
+model = "gpt-6-astra"
+reasoning_effort = "low"
+max_turns = 24
+planner_timeout_s = 600
+max_episode_steps = 400
+memory_dir = "data/liberopro-codex-memory"
