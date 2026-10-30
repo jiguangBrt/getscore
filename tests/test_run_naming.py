@@ -96,3 +96,18 @@ def test_migration_refuses_to_rename_a_running_experiment(tmp_path):
     with pytest.raises(RuntimeError):
         migrate(tmp_path, apply=True)
     assert run.is_dir()
+
+
+def test_summary_reads_flat_catalog_without_cases_or_deferred_results(tmp_path):
+    from scripts.run_long_benchmark import refresh
+
+    run = tmp_path / 'long-swap-6-kimi-pi05'
+    run.mkdir()
+    write_json(run / 'configuration.json', {'run_status': 'finished'})
+    write_json(run / 'benchmark_result.json', dict(name=run.name, variant='swap',
+        planner='kimi', policy='pi05', success=True, error=None))
+    # Deferred experiments need not have a directory or result yet.
+    summary = refresh(tmp_path)
+    assert summary['completed'] == 1
+    assert summary['groups']['swap-kimi-pi05']['successes'] == 1
+    assert [r['name'] for r in summary['results']] == [run.name]

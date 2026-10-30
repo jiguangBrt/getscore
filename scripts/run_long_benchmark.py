@@ -76,7 +76,8 @@ def refresh(batch):
     with LOCK, (batch/'.organize.lock').open('a') as filesystem_lock:
         fcntl.flock(filesystem_lock,fcntl.LOCK_EX)
         results=[]
-        for directory in case_directories(batch):
+        directories = case_directories(batch) if (batch/'cases').is_dir() else sorted(batch.glob('long-*'))
+        for directory in directories:
             p=directory/'benchmark_result.json'
             if not p.is_file():continue
             row=json.loads(p.read_text());results.append(row)
@@ -137,7 +138,7 @@ def run_case(batch,case,policy,env,args):
     from rpent.utils.rpc import wait_for_ready
     from rpent.utils.rpc.http_rpc import HttpRpcClient
     name=experiment_name(f"long-{case['variant']}",case['task'],case['planner'],policy)
-    output=batch/'cases'/name
+    output=Path(getattr(args,'output_root',batch/'cases'))/name
     if (output/'benchmark_result.json').exists():return
     if output.exists():
         archive=batch/'incomplete'/f'{name}-{int(time.time())}'
