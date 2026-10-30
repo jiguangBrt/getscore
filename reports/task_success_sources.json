@@ -1,0 +1,1082 @@
+[
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "original",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 0,
+    "task_zh": "把字母汤和番茄意面酱都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 1,
+    "task_zh": "把奶油奶酪盒和黄油都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 2,
+    "task_zh": "打开炉子，把摩卡壶放上去",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 3,
+    "task_zh": "把黑碗放进柜子底层抽屉，并关上抽屉",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 4,
+    "task_zh": "把白色杯子放到左边盘子上，把黄白色杯子放到右边盘子上",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "纯 π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "纯 GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 5,
+    "task_zh": "拿起书，放进收纳架后面的格子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": true,
+    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": true,
+    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 6,
+    "task_zh": "把白色杯子放到盘子上，把巧克力布丁放到盘子右边",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "GPT6 + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "GPT6 + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "Kimi + π0.5",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 7,
+    "task_zh": "把字母汤和奶油奶酪盒都放进篮子",
+    "model": "Kimi + GAWM",
+    "success": true,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 8,
+    "task_zh": "把两个摩卡壶都放到炉子上",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "纯 π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "纯 GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "GPT6 + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "GPT6 + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-gawm/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "Kimi + π0.5",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-pi05/benchmark_result.json"
+  },
+  {
+    "variant": "swap",
+    "task": 9,
+    "task_zh": "把黄白色杯子放进微波炉，并关上门",
+    "model": "Kimi + GAWM",
+    "success": false,
+    "archived_fallback": false,
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-gawm/benchmark_result.json"
+  }
+]
