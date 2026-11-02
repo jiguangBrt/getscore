@@ -6,7 +6,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-pi05/benchmark_result.json",
+    "elapsed_s": 33.2,
+    "display_elapsed": "00:33",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T17:58:52+08:00",
+    "finished_at": "2026-10-23T17:59:26+08:00",
+    "configuration_wall_s": 34.0,
+    "video_duration_s": 16.75
   },
   {
     "variant": "original",
@@ -15,7 +22,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-none-gawm/benchmark_result.json",
+    "elapsed_s": 29.07,
+    "display_elapsed": "00:29",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T17:58:52+08:00",
+    "finished_at": "2026-10-23T17:59:23+08:00",
+    "configuration_wall_s": 31.0,
+    "video_duration_s": 18.4
   },
   {
     "variant": "original",
@@ -24,7 +38,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 420.42,
+    "display_elapsed": "07:00",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:14:58+08:00",
+    "finished_at": "2026-10-23T18:22:01+08:00",
+    "configuration_wall_s": 423.0,
+    "video_duration_s": 42.25
   },
   {
     "variant": "original",
@@ -33,7 +54,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 335.36,
+    "display_elapsed": "05:35",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:11:54+08:00",
+    "finished_at": "2026-10-23T18:17:32+08:00",
+    "configuration_wall_s": 338.0,
+    "video_duration_s": 31.5
   },
   {
     "variant": "original",
@@ -42,7 +70,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 424.77,
+    "display_elapsed": "07:05",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T15:31:57+08:00",
+    "finished_at": "2026-10-25T15:39:03+08:00",
+    "configuration_wall_s": 426.0,
+    "video_duration_s": 23.45
   },
   {
     "variant": "original",
@@ -51,7 +86,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-0-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 422.68,
+    "display_elapsed": "07:03",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T15:31:57+08:00",
+    "finished_at": "2026-10-25T15:39:02+08:00",
+    "configuration_wall_s": 425.0,
+    "video_duration_s": 20.85
   },
   {
     "variant": "original",
@@ -60,7 +102,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-pi05/benchmark_result.json",
+    "elapsed_s": 28.1,
+    "display_elapsed": "00:28",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:01+08:00",
+    "finished_at": "2026-10-23T18:00:31+08:00",
+    "configuration_wall_s": 30.0,
+    "video_duration_s": 12.0
   },
   {
     "variant": "original",
@@ -69,7 +118,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-none-gawm/benchmark_result.json",
+    "elapsed_s": 24.29,
+    "display_elapsed": "00:24",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:01+08:00",
+    "finished_at": "2026-10-23T18:00:27+08:00",
+    "configuration_wall_s": 26.0,
+    "video_duration_s": 12.0
   },
   {
     "variant": "original",
@@ -78,7 +134,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 328.64,
+    "display_elapsed": "05:29",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:22:01+08:00",
+    "finished_at": "2026-10-23T18:27:31+08:00",
+    "configuration_wall_s": 330.0,
+    "video_duration_s": 33.3
   },
   {
     "variant": "original",
@@ -87,7 +150,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 309.8,
+    "display_elapsed": "05:10",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:17:32+08:00",
+    "finished_at": "2026-10-23T18:22:43+08:00",
+    "configuration_wall_s": 311.0,
+    "video_duration_s": 31.85
   },
   {
     "variant": "original",
@@ -96,7 +166,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 442.72,
+    "display_elapsed": "07:23",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T15:39:03+08:00",
+    "finished_at": "2026-10-25T15:46:28+08:00",
+    "configuration_wall_s": 445.0,
+    "video_duration_s": 24.6
   },
   {
     "variant": "original",
@@ -105,7 +182,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-1-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 397.75,
+    "display_elapsed": "06:38",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T15:39:02+08:00",
+    "finished_at": "2026-10-25T15:45:40+08:00",
+    "configuration_wall_s": 398.0,
+    "video_duration_s": 20.95
   },
   {
     "variant": "original",
@@ -114,7 +198,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-pi05/benchmark_result.json",
+    "elapsed_s": 24.69,
+    "display_elapsed": "00:25",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:31+08:00",
+    "finished_at": "2026-10-23T18:00:56+08:00",
+    "configuration_wall_s": 25.0,
+    "video_duration_s": 11.0
   },
   {
     "variant": "original",
@@ -123,7 +214,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-none-gawm/benchmark_result.json",
+    "elapsed_s": 24.59,
+    "display_elapsed": "00:25",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:27+08:00",
+    "finished_at": "2026-10-23T18:00:52+08:00",
+    "configuration_wall_s": 25.0,
+    "video_duration_s": 15.6
   },
   {
     "variant": "original",
@@ -132,7 +230,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 213.31,
+    "display_elapsed": "03:33",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:27:31+08:00",
+    "finished_at": "2026-10-23T18:31:06+08:00",
+    "configuration_wall_s": 215.0,
+    "video_duration_s": 23.2
   },
   {
     "variant": "original",
@@ -141,7 +246,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 228.24,
+    "display_elapsed": "03:48",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:22:43+08:00",
+    "finished_at": "2026-10-23T18:26:33+08:00",
+    "configuration_wall_s": 230.0,
+    "video_duration_s": 19.35
   },
   {
     "variant": "original",
@@ -150,7 +262,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 311.02,
+    "display_elapsed": "05:11",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T15:46:28+08:00",
+    "finished_at": "2026-10-25T15:51:40+08:00",
+    "configuration_wall_s": 312.0,
+    "video_duration_s": 18.85
   },
   {
     "variant": "original",
@@ -159,7 +278,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-2-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 2471.18,
+    "display_elapsed": "41:11",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T16:13:03+08:00",
+    "finished_at": "2026-10-26T16:54:19+08:00",
+    "configuration_wall_s": 2476.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -168,7 +294,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-pi05/benchmark_result.json",
+    "elapsed_s": 24.84,
+    "display_elapsed": "00:25",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:56+08:00",
+    "finished_at": "2026-10-23T18:01:21+08:00",
+    "configuration_wall_s": 25.0,
+    "video_duration_s": 11.0
   },
   {
     "variant": "original",
@@ -177,7 +310,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-none-gawm/benchmark_result.json",
+    "elapsed_s": 21.43,
+    "display_elapsed": "00:21",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:00:52+08:00",
+    "finished_at": "2026-10-23T18:01:15+08:00",
+    "configuration_wall_s": 23.0,
+    "video_duration_s": 11.2
   },
   {
     "variant": "original",
@@ -186,7 +326,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 294.9,
+    "display_elapsed": "04:55",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:31:06+08:00",
+    "finished_at": "2026-10-23T18:36:03+08:00",
+    "configuration_wall_s": 297.0,
+    "video_duration_s": 33.4
   },
   {
     "variant": "original",
@@ -195,7 +342,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 362.07,
+    "display_elapsed": "06:02",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:26:33+08:00",
+    "finished_at": "2026-10-23T18:32:37+08:00",
+    "configuration_wall_s": 364.0,
+    "video_duration_s": 42.65
   },
   {
     "variant": "original",
@@ -204,7 +358,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 2438.52,
+    "display_elapsed": "40:39",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T15:03:49+08:00",
+    "finished_at": "2026-10-26T15:44:32+08:00",
+    "configuration_wall_s": 2443.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -213,7 +374,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-3-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1500.85,
+    "display_elapsed": "25:01",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T16:54:19+08:00",
+    "finished_at": "2026-10-26T17:19:23+08:00",
+    "configuration_wall_s": 1504.0,
+    "video_duration_s": 71.25
   },
   {
     "variant": "original",
@@ -222,7 +390,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-pi05/benchmark_result.json",
+    "elapsed_s": 27.95,
+    "display_elapsed": "00:28",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:01:21+08:00",
+    "finished_at": "2026-10-23T18:01:50+08:00",
+    "configuration_wall_s": 29.0,
+    "video_duration_s": 12.25
   },
   {
     "variant": "original",
@@ -231,7 +406,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-none-gawm/benchmark_result.json",
+    "elapsed_s": 23.53,
+    "display_elapsed": "00:24",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:01:15+08:00",
+    "finished_at": "2026-10-23T18:01:39+08:00",
+    "configuration_wall_s": 24.0,
+    "video_duration_s": 12.0
   },
   {
     "variant": "original",
@@ -240,7 +422,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 473.07,
+    "display_elapsed": "07:53",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T16:23:38+08:00",
+    "finished_at": "2026-10-29T16:31:34+08:00",
+    "configuration_wall_s": 476.0,
+    "video_duration_s": 38.0
   },
   {
     "variant": "original",
@@ -249,7 +438,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 814.73,
+    "display_elapsed": "13:35",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T16:23:38+08:00",
+    "finished_at": "2026-10-29T16:37:17+08:00",
+    "configuration_wall_s": 819.0,
+    "video_duration_s": 68.1
   },
   {
     "variant": "original",
@@ -258,7 +454,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 2187.85,
+    "display_elapsed": "36:28",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T16:31:34+08:00",
+    "finished_at": "2026-10-29T17:08:07+08:00",
+    "configuration_wall_s": 2193.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -267,7 +470,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-4-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1807.07,
+    "display_elapsed": "30:07",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T16:37:17+08:00",
+    "finished_at": "2026-10-29T17:07:29+08:00",
+    "configuration_wall_s": 1812.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -276,7 +486,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-pi05/benchmark_result.json",
+    "elapsed_s": 22.49,
+    "display_elapsed": "00:22",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:01:50+08:00",
+    "finished_at": "2026-10-23T18:02:14+08:00",
+    "configuration_wall_s": 24.0,
+    "video_duration_s": 10.0
   },
   {
     "variant": "original",
@@ -285,7 +502,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-none-gawm/benchmark_result.json",
+    "elapsed_s": 19.92,
+    "display_elapsed": "00:20",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:01:39+08:00",
+    "finished_at": "2026-10-23T18:02:00+08:00",
+    "configuration_wall_s": 21.0,
+    "video_duration_s": 9.6
   },
   {
     "variant": "original",
@@ -294,7 +518,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 380.01,
+    "display_elapsed": "06:20",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T18:19:59+08:00",
+    "finished_at": "2026-10-26T18:26:22+08:00",
+    "configuration_wall_s": 383.0,
+    "video_duration_s": 47.85
   },
   {
     "variant": "original",
@@ -303,7 +534,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 355.76,
+    "display_elapsed": "05:56",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:39:25+08:00",
+    "finished_at": "2026-10-23T18:45:23+08:00",
+    "configuration_wall_s": 358.0,
+    "video_duration_s": 49.0
   },
   {
     "variant": "original",
@@ -312,7 +550,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 309.94,
+    "display_elapsed": "05:10",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T16:18:52+08:00",
+    "finished_at": "2026-10-26T16:24:03+08:00",
+    "configuration_wall_s": 311.0,
+    "video_duration_s": 21.95
   },
   {
     "variant": "original",
@@ -321,7 +566,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-5-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 803.73,
+    "display_elapsed": "13:24",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T17:19:23+08:00",
+    "finished_at": "2026-10-26T17:32:48+08:00",
+    "configuration_wall_s": 805.0,
+    "video_duration_s": 22.2
   },
   {
     "variant": "original",
@@ -330,7 +582,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-pi05/benchmark_result.json",
+    "elapsed_s": 39.58,
+    "display_elapsed": "00:40",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:02:14+08:00",
+    "finished_at": "2026-10-23T18:02:55+08:00",
+    "configuration_wall_s": 41.0,
+    "video_duration_s": 24.75
   },
   {
     "variant": "original",
@@ -339,7 +598,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-none-gawm/benchmark_result.json",
+    "elapsed_s": 22.79,
+    "display_elapsed": "00:23",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:02:00+08:00",
+    "finished_at": "2026-10-23T18:02:24+08:00",
+    "configuration_wall_s": 24.0,
+    "video_duration_s": 12.0
   },
   {
     "variant": "original",
@@ -348,7 +614,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 694.09,
+    "display_elapsed": "11:34",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:08:08+08:00",
+    "finished_at": "2026-10-29T17:19:45+08:00",
+    "configuration_wall_s": 697.0,
+    "video_duration_s": 56.85
   },
   {
     "variant": "original",
@@ -357,7 +630,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 714.96,
+    "display_elapsed": "11:55",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:07:30+08:00",
+    "finished_at": "2026-10-29T17:19:29+08:00",
+    "configuration_wall_s": 719.0,
+    "video_duration_s": 68.4
   },
   {
     "variant": "original",
@@ -366,7 +646,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 1858.28,
+    "display_elapsed": "30:58",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:19:46+08:00",
+    "finished_at": "2026-10-29T17:50:49+08:00",
+    "configuration_wall_s": 1863.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -375,7 +662,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-6-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1448.45,
+    "display_elapsed": "24:08",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:19:30+08:00",
+    "finished_at": "2026-10-29T17:43:43+08:00",
+    "configuration_wall_s": 1453.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -384,7 +678,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-pi05/benchmark_result.json",
+    "elapsed_s": 26.94,
+    "display_elapsed": "00:27",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:02:55+08:00",
+    "finished_at": "2026-10-23T18:03:23+08:00",
+    "configuration_wall_s": 28.0,
+    "video_duration_s": 12.25
   },
   {
     "variant": "original",
@@ -393,7 +694,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-none-gawm/benchmark_result.json",
+    "elapsed_s": 25.05,
+    "display_elapsed": "00:25",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:02:24+08:00",
+    "finished_at": "2026-10-23T18:02:50+08:00",
+    "configuration_wall_s": 26.0,
+    "video_duration_s": 15.6
   },
   {
     "variant": "original",
@@ -402,7 +710,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 381.75,
+    "display_elapsed": "06:22",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:57:04+08:00",
+    "finished_at": "2026-10-23T19:03:28+08:00",
+    "configuration_wall_s": 384.0,
+    "video_duration_s": 32.9
   },
   {
     "variant": "original",
@@ -411,7 +726,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 262.2,
+    "display_elapsed": "04:22",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:51:38+08:00",
+    "finished_at": "2026-10-23T18:56:02+08:00",
+    "configuration_wall_s": 264.0,
+    "video_duration_s": 27.85
   },
   {
     "variant": "original",
@@ -420,7 +742,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 451.21,
+    "display_elapsed": "07:31",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T16:46:32+08:00",
+    "finished_at": "2026-10-25T16:54:05+08:00",
+    "configuration_wall_s": 453.0,
+    "video_duration_s": 28.4
   },
   {
     "variant": "original",
@@ -429,7 +758,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-7-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 452.78,
+    "display_elapsed": "07:33",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T16:47:11+08:00",
+    "finished_at": "2026-10-25T16:54:45+08:00",
+    "configuration_wall_s": 454.0,
+    "video_duration_s": 24.7
   },
   {
     "variant": "original",
@@ -438,7 +774,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-pi05/benchmark_result.json",
+    "elapsed_s": 33.77,
+    "display_elapsed": "00:34",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:03:23+08:00",
+    "finished_at": "2026-10-23T18:03:58+08:00",
+    "configuration_wall_s": 35.0,
+    "video_duration_s": 19.75
   },
   {
     "variant": "original",
@@ -447,7 +790,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-none-gawm/benchmark_result.json",
+    "elapsed_s": 26.99,
+    "display_elapsed": "00:27",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:02:50+08:00",
+    "finished_at": "2026-10-23T18:03:18+08:00",
+    "configuration_wall_s": 28.0,
+    "video_duration_s": 19.2
   },
   {
     "variant": "original",
@@ -456,7 +806,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 780.12,
+    "display_elapsed": "13:00",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T18:26:22+08:00",
+    "finished_at": "2026-10-26T18:39:25+08:00",
+    "configuration_wall_s": 783.0,
+    "video_duration_s": 86.95
   },
   {
     "variant": "original",
@@ -465,7 +822,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 287.31,
+    "display_elapsed": "04:47",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:56:02+08:00",
+    "finished_at": "2026-10-23T19:00:51+08:00",
+    "configuration_wall_s": 289.0,
+    "video_duration_s": 36.45
   },
   {
     "variant": "original",
@@ -474,7 +838,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 1110.84,
+    "display_elapsed": "18:31",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T16:37:05+08:00",
+    "finished_at": "2026-10-26T16:55:39+08:00",
+    "configuration_wall_s": 1114.0,
+    "video_duration_s": 74.45
   },
   {
     "variant": "original",
@@ -483,7 +854,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-8-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1160.0,
+    "display_elapsed": "19:20",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T18:00:37+08:00",
+    "finished_at": "2026-10-26T18:19:59+08:00",
+    "configuration_wall_s": 1162.0,
+    "video_duration_s": 62.1
   },
   {
     "variant": "original",
@@ -492,7 +870,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-pi05/benchmark_result.json",
+    "elapsed_s": 26.64,
+    "display_elapsed": "00:27",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:03:58+08:00",
+    "finished_at": "2026-10-23T18:04:26+08:00",
+    "configuration_wall_s": 28.0,
+    "video_duration_s": 12.75
   },
   {
     "variant": "original",
@@ -501,7 +886,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-none-gawm/benchmark_result.json",
+    "elapsed_s": 22.43,
+    "display_elapsed": "00:22",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:03:18+08:00",
+    "finished_at": "2026-10-23T18:03:41+08:00",
+    "configuration_wall_s": 23.0,
+    "video_duration_s": 12.0
   },
   {
     "variant": "original",
@@ -510,7 +902,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 287.58,
+    "display_elapsed": "04:48",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:03:51+08:00",
+    "finished_at": "2026-10-25T14:08:41+08:00",
+    "configuration_wall_s": 290.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "original",
@@ -519,7 +918,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 205.13,
+    "display_elapsed": "03:25",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T19:00:51+08:00",
+    "finished_at": "2026-10-23T19:04:18+08:00",
+    "configuration_wall_s": 207.0,
+    "video_duration_s": 25.05
   },
   {
     "variant": "original",
@@ -528,7 +934,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 2431.29,
+    "display_elapsed": "40:31",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-26T16:55:39+08:00",
+    "finished_at": "2026-10-26T17:36:14+08:00",
+    "configuration_wall_s": 2435.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "original",
@@ -537,7 +950,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-original-9-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 484.11,
+    "display_elapsed": "08:04",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T17:08:32+08:00",
+    "finished_at": "2026-10-25T17:16:38+08:00",
+    "configuration_wall_s": 486.0,
+    "video_duration_s": 26.5
   },
   {
     "variant": "swap",
@@ -546,7 +966,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-pi05/benchmark_result.json",
+    "elapsed_s": 65.87,
+    "display_elapsed": "01:06",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:04:26+08:00",
+    "finished_at": "2026-10-23T18:05:35+08:00",
+    "configuration_wall_s": 69.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -555,7 +982,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-none-gawm/benchmark_result.json",
+    "elapsed_s": 52.88,
+    "display_elapsed": "00:53",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:03:41+08:00",
+    "finished_at": "2026-10-23T18:04:37+08:00",
+    "configuration_wall_s": 56.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -564,7 +998,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 315.43,
+    "display_elapsed": "05:15",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:08:41+08:00",
+    "finished_at": "2026-10-25T14:13:59+08:00",
+    "configuration_wall_s": 318.0,
+    "video_duration_s": 44.6
   },
   {
     "variant": "swap",
@@ -573,7 +1014,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 329.25,
+    "display_elapsed": "05:29",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T13:57:56+08:00",
+    "finished_at": "2026-10-25T14:03:28+08:00",
+    "configuration_wall_s": 332.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -582,7 +1030,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 865.66,
+    "display_elapsed": "14:26",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T17:51:13+08:00",
+    "finished_at": "2026-10-28T18:05:41+08:00",
+    "configuration_wall_s": 868.0,
+    "video_duration_s": 38.6
   },
   {
     "variant": "swap",
@@ -591,7 +1046,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-0-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 2139.25,
+    "display_elapsed": "35:39",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T17:51:13+08:00",
+    "finished_at": "2026-10-28T18:26:57+08:00",
+    "configuration_wall_s": 2144.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -600,7 +1062,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-pi05/benchmark_result.json",
+    "elapsed_s": 69.68,
+    "display_elapsed": "01:10",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:05:35+08:00",
+    "finished_at": "2026-10-23T18:06:47+08:00",
+    "configuration_wall_s": 72.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -609,7 +1078,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-none-gawm/benchmark_result.json",
+    "elapsed_s": 53.39,
+    "display_elapsed": "00:53",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:04:37+08:00",
+    "finished_at": "2026-10-23T18:05:32+08:00",
+    "configuration_wall_s": 55.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -618,7 +1094,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 261.13,
+    "display_elapsed": "04:21",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:13:59+08:00",
+    "finished_at": "2026-10-25T14:18:23+08:00",
+    "configuration_wall_s": 264.0,
+    "video_duration_s": 37.55
   },
   {
     "variant": "swap",
@@ -627,7 +1110,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 312.33,
+    "display_elapsed": "05:12",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:03:28+08:00",
+    "finished_at": "2026-10-25T14:08:43+08:00",
+    "configuration_wall_s": 315.0,
+    "video_duration_s": 42.8
   },
   {
     "variant": "swap",
@@ -636,7 +1126,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 573.91,
+    "display_elapsed": "09:34",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T18:54:53+08:00",
+    "finished_at": "2026-10-25T19:04:28+08:00",
+    "configuration_wall_s": 575.0,
+    "video_duration_s": 22.95
   },
   {
     "variant": "swap",
@@ -645,7 +1142,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-1-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 643.17,
+    "display_elapsed": "10:43",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T18:52:56+08:00",
+    "finished_at": "2026-10-25T19:03:41+08:00",
+    "configuration_wall_s": 645.0,
+    "video_duration_s": 35.1
   },
   {
     "variant": "swap",
@@ -654,7 +1158,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-pi05/benchmark_result.json",
+    "elapsed_s": 65.31,
+    "display_elapsed": "01:05",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:06:47+08:00",
+    "finished_at": "2026-10-23T18:07:54+08:00",
+    "configuration_wall_s": 67.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -663,7 +1174,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-none-gawm/benchmark_result.json",
+    "elapsed_s": 48.61,
+    "display_elapsed": "00:49",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:05:32+08:00",
+    "finished_at": "2026-10-23T18:06:23+08:00",
+    "configuration_wall_s": 51.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -672,7 +1190,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 260.83,
+    "display_elapsed": "04:21",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:18:23+08:00",
+    "finished_at": "2026-10-25T14:22:46+08:00",
+    "configuration_wall_s": 263.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -681,7 +1206,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 139.71,
+    "display_elapsed": "02:20",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:08:43+08:00",
+    "finished_at": "2026-10-25T14:11:04+08:00",
+    "configuration_wall_s": 141.0,
+    "video_duration_s": 20.9
   },
   {
     "variant": "swap",
@@ -690,7 +1222,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 514.6,
+    "display_elapsed": "08:35",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T19:04:28+08:00",
+    "finished_at": "2026-10-25T19:13:05+08:00",
+    "configuration_wall_s": 517.0,
+    "video_duration_s": 32.4
   },
   {
     "variant": "swap",
@@ -699,7 +1238,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-2-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 432.18,
+    "display_elapsed": "07:12",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T19:03:41+08:00",
+    "finished_at": "2026-10-25T19:10:56+08:00",
+    "configuration_wall_s": 435.0,
+    "video_duration_s": 35.8
   },
   {
     "variant": "swap",
@@ -708,7 +1254,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-pi05/benchmark_result.json",
+    "elapsed_s": 61.84,
+    "display_elapsed": "01:02",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:07:54+08:00",
+    "finished_at": "2026-10-23T18:08:58+08:00",
+    "configuration_wall_s": 64.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -717,7 +1270,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-none-gawm/benchmark_result.json",
+    "elapsed_s": 47.46,
+    "display_elapsed": "00:47",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:06:23+08:00",
+    "finished_at": "2026-10-23T18:07:13+08:00",
+    "configuration_wall_s": 50.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -726,7 +1286,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 220.53,
+    "display_elapsed": "03:41",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:22:46+08:00",
+    "finished_at": "2026-10-25T14:26:28+08:00",
+    "configuration_wall_s": 222.0,
+    "video_duration_s": 35.45
   },
   {
     "variant": "swap",
@@ -735,7 +1302,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 254.7,
+    "display_elapsed": "04:15",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:11:04+08:00",
+    "finished_at": "2026-10-25T14:15:20+08:00",
+    "configuration_wall_s": 256.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -744,7 +1318,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 1287.94,
+    "display_elapsed": "21:28",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T18:05:41+08:00",
+    "finished_at": "2026-10-28T18:27:13+08:00",
+    "configuration_wall_s": 1292.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -753,7 +1334,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-3-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 2291.81,
+    "display_elapsed": "38:12",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T18:26:57+08:00",
+    "finished_at": "2026-10-28T19:05:12+08:00",
+    "configuration_wall_s": 2295.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -762,7 +1350,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-pi05/benchmark_result.json",
+    "elapsed_s": 68.02,
+    "display_elapsed": "01:08",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:08:58+08:00",
+    "finished_at": "2026-10-23T18:10:09+08:00",
+    "configuration_wall_s": 71.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -771,7 +1366,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-none-gawm/benchmark_result.json",
+    "elapsed_s": 52.54,
+    "display_elapsed": "00:53",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:07:13+08:00",
+    "finished_at": "2026-10-23T18:08:07+08:00",
+    "configuration_wall_s": 54.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -780,7 +1382,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 572.04,
+    "display_elapsed": "09:32",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:50:50+08:00",
+    "finished_at": "2026-10-29T18:00:25+08:00",
+    "configuration_wall_s": 575.0,
+    "video_duration_s": 54.1
   },
   {
     "variant": "swap",
@@ -789,7 +1398,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 638.53,
+    "display_elapsed": "10:39",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:43:44+08:00",
+    "finished_at": "2026-10-29T17:54:27+08:00",
+    "configuration_wall_s": 643.0,
+    "video_duration_s": 66.9
   },
   {
     "variant": "swap",
@@ -798,7 +1414,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 901.24,
+    "display_elapsed": "15:01",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T18:00:26+08:00",
+    "finished_at": "2026-10-29T18:15:28+08:00",
+    "configuration_wall_s": 902.0,
+    "video_duration_s": 40.3
   },
   {
     "variant": "swap",
@@ -807,7 +1430,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-4-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1086.07,
+    "display_elapsed": "18:06",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T17:54:27+08:00",
+    "finished_at": "2026-10-29T18:12:36+08:00",
+    "configuration_wall_s": 1089.0,
+    "video_duration_s": 67.35
   },
   {
     "variant": "swap",
@@ -816,7 +1446,14 @@
     "model": "纯 π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-pi05/benchmark_result.json",
+    "elapsed_s": 22.23,
+    "display_elapsed": "00:22",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:10:09+08:00",
+    "finished_at": "2026-10-23T18:10:32+08:00",
+    "configuration_wall_s": 23.0,
+    "video_duration_s": 9.0
   },
   {
     "variant": "swap",
@@ -825,7 +1462,14 @@
     "model": "纯 GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-none-gawm/benchmark_result.json",
+    "elapsed_s": 21.14,
+    "display_elapsed": "00:21",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:08:07+08:00",
+    "finished_at": "2026-10-23T18:08:29+08:00",
+    "configuration_wall_s": 22.0,
+    "video_duration_s": 10.4
   },
   {
     "variant": "swap",
@@ -834,7 +1478,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 319.13,
+    "display_elapsed": "05:19",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:31:53+08:00",
+    "finished_at": "2026-10-25T14:37:15+08:00",
+    "configuration_wall_s": 322.0,
+    "video_duration_s": 46.7
   },
   {
     "variant": "swap",
@@ -843,7 +1494,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 294.3,
+    "display_elapsed": "04:54",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:20:56+08:00",
+    "finished_at": "2026-10-25T14:25:53+08:00",
+    "configuration_wall_s": 297.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -852,7 +1510,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 581.06,
+    "display_elapsed": "09:41",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T19:02:00+08:00",
+    "finished_at": "2026-10-28T19:11:43+08:00",
+    "configuration_wall_s": 583.0,
+    "video_duration_s": 21.25
   },
   {
     "variant": "swap",
@@ -861,7 +1526,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-5-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 687.79,
+    "display_elapsed": "11:28",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T19:05:12+08:00",
+    "finished_at": "2026-10-28T19:16:42+08:00",
+    "configuration_wall_s": 690.0,
+    "video_duration_s": 31.05
   },
   {
     "variant": "swap",
@@ -870,7 +1542,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-pi05/benchmark_result.json",
+    "elapsed_s": 63.9,
+    "display_elapsed": "01:04",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:10:32+08:00",
+    "finished_at": "2026-10-23T18:11:38+08:00",
+    "configuration_wall_s": 66.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -879,7 +1558,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-none-gawm/benchmark_result.json",
+    "elapsed_s": 50.27,
+    "display_elapsed": "00:50",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:08:29+08:00",
+    "finished_at": "2026-10-23T18:09:22+08:00",
+    "configuration_wall_s": 53.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -888,7 +1574,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": true,
-    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 400.0,
+    "display_elapsed": "06:40",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:37:15+08:00",
+    "finished_at": "2026-10-25T14:43:58+08:00",
+    "configuration_wall_s": 403.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -897,7 +1590,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": true,
-    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/_archive/batches/left-right-before-2000step-20261029/long-swap-6-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 379.92,
+    "display_elapsed": "06:20",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:25:53+08:00",
+    "finished_at": "2026-10-25T14:32:16+08:00",
+    "configuration_wall_s": 383.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -906,7 +1606,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 737.34,
+    "display_elapsed": "12:17",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T18:15:29+08:00",
+    "finished_at": "2026-10-29T18:27:48+08:00",
+    "configuration_wall_s": 739.0,
+    "video_duration_s": 29.85
   },
   {
     "variant": "swap",
@@ -915,7 +1622,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-6-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1733.74,
+    "display_elapsed": "28:54",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-29T18:12:37+08:00",
+    "finished_at": "2026-10-29T18:41:35+08:00",
+    "configuration_wall_s": 1738.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -924,7 +1638,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-pi05/benchmark_result.json",
+    "elapsed_s": 63.67,
+    "display_elapsed": "01:04",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:11:38+08:00",
+    "finished_at": "2026-10-23T18:12:45+08:00",
+    "configuration_wall_s": 67.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -933,7 +1654,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-none-gawm/benchmark_result.json",
+    "elapsed_s": 50.92,
+    "display_elapsed": "00:51",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:09:22+08:00",
+    "finished_at": "2026-10-23T18:10:15+08:00",
+    "configuration_wall_s": 53.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -942,7 +1670,14 @@
     "model": "GPT6 + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 341.05,
+    "display_elapsed": "05:41",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:43:58+08:00",
+    "finished_at": "2026-10-25T14:49:42+08:00",
+    "configuration_wall_s": 344.0,
+    "video_duration_s": 45.6
   },
   {
     "variant": "swap",
@@ -951,7 +1686,14 @@
     "model": "GPT6 + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 281.96,
+    "display_elapsed": "04:42",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:32:16+08:00",
+    "finished_at": "2026-10-25T14:37:00+08:00",
+    "configuration_wall_s": 284.0,
+    "video_duration_s": 38.75
   },
   {
     "variant": "swap",
@@ -960,7 +1702,14 @@
     "model": "Kimi + π0.5",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 592.41,
+    "display_elapsed": "09:52",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T20:06:33+08:00",
+    "finished_at": "2026-10-25T20:16:28+08:00",
+    "configuration_wall_s": 595.0,
+    "video_duration_s": 42.65
   },
   {
     "variant": "swap",
@@ -969,7 +1718,14 @@
     "model": "Kimi + GAWM",
     "success": true,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-7-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 565.69,
+    "display_elapsed": "09:26",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T20:02:44+08:00",
+    "finished_at": "2026-10-25T20:12:12+08:00",
+    "configuration_wall_s": 568.0,
+    "video_duration_s": 34.6
   },
   {
     "variant": "swap",
@@ -978,7 +1734,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-pi05/benchmark_result.json",
+    "elapsed_s": 62.52,
+    "display_elapsed": "01:03",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:12:45+08:00",
+    "finished_at": "2026-10-23T18:13:50+08:00",
+    "configuration_wall_s": 65.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -987,7 +1750,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-none-gawm/benchmark_result.json",
+    "elapsed_s": 47.17,
+    "display_elapsed": "00:47",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:10:15+08:00",
+    "finished_at": "2026-10-23T18:11:04+08:00",
+    "configuration_wall_s": 49.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -996,7 +1766,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 306.04,
+    "display_elapsed": "05:06",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:49:42+08:00",
+    "finished_at": "2026-10-25T14:54:50+08:00",
+    "configuration_wall_s": 308.0,
+    "video_duration_s": 49.15
   },
   {
     "variant": "swap",
@@ -1005,7 +1782,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 296.56,
+    "display_elapsed": "04:57",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:37:00+08:00",
+    "finished_at": "2026-10-25T14:41:58+08:00",
+    "configuration_wall_s": 298.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -1014,7 +1798,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 1699.14,
+    "display_elapsed": "28:19",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T19:43:12+08:00",
+    "finished_at": "2026-10-28T20:11:35+08:00",
+    "configuration_wall_s": 1703.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -1023,7 +1814,14 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-8-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1032.76,
+    "display_elapsed": "17:13",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T19:51:19+08:00",
+    "finished_at": "2026-10-28T20:08:36+08:00",
+    "configuration_wall_s": 1037.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -1032,7 +1830,14 @@
     "model": "纯 π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-pi05/benchmark_result.json",
+    "elapsed_s": 66.23,
+    "display_elapsed": "01:06",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:13:50+08:00",
+    "finished_at": "2026-10-23T18:14:58+08:00",
+    "configuration_wall_s": 68.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -1041,7 +1846,14 @@
     "model": "纯 GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-none-gawm/benchmark_result.json",
+    "elapsed_s": 47.65,
+    "display_elapsed": "00:48",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-23T18:11:04+08:00",
+    "finished_at": "2026-10-23T18:11:54+08:00",
+    "configuration_wall_s": 50.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -1050,7 +1862,14 @@
     "model": "GPT6 + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-pi05/benchmark_result.json",
+    "elapsed_s": 312.36,
+    "display_elapsed": "05:12",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:54:50+08:00",
+    "finished_at": "2026-10-25T15:00:04+08:00",
+    "configuration_wall_s": 314.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -1059,7 +1878,14 @@
     "model": "GPT6 + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-gpt6-gawm/benchmark_result.json",
+    "elapsed_s": 277.35,
+    "display_elapsed": "04:37",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-25T14:41:58+08:00",
+    "finished_at": "2026-10-25T14:46:38+08:00",
+    "configuration_wall_s": 280.0,
+    "video_duration_s": 50.0
   },
   {
     "variant": "swap",
@@ -1068,7 +1894,14 @@
     "model": "Kimi + π0.5",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-pi05/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-pi05/benchmark_result.json",
+    "elapsed_s": 1474.51,
+    "display_elapsed": "24:35",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T20:11:35+08:00",
+    "finished_at": "2026-10-28T20:36:14+08:00",
+    "configuration_wall_s": 1479.0,
+    "video_duration_s": 100.0
   },
   {
     "variant": "swap",
@@ -1077,6 +1910,13 @@
     "model": "Kimi + GAWM",
     "success": false,
     "archived_fallback": false,
-    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-gawm/benchmark_result.json"
+    "result_file": "/home/jh/getscore/outputs/long120_1027/long-swap-9-kimi-gawm/benchmark_result.json",
+    "elapsed_s": 1439.23,
+    "display_elapsed": "23:59",
+    "timing_field": "benchmark_result.elapsed_s",
+    "started_at": "2026-10-28T20:08:36+08:00",
+    "finished_at": "2026-10-28T20:32:39+08:00",
+    "configuration_wall_s": 1443.0,
+    "video_duration_s": 100.0
   }
 ]

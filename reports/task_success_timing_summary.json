@@ -1,0 +1,175 @@
+{
+  "elapsed_field": "benchmark_result.elapsed_s",
+  "mean_scope": "successful runs only",
+  "rate_denominator": "10 per variant; 20 pooled; two deferred GPT cases use archived results",
+  "groups": {
+    "original": [
+      {
+        "model": "纯 π0.5",
+        "total": 10,
+        "successes": 10,
+        "success_rate": 1.0,
+        "mean_success_elapsed_s": 28.82,
+        "mean_display": "00:29",
+        "rate_display": "10/10（100%）"
+      },
+      {
+        "model": "纯 GAWM",
+        "total": 10,
+        "successes": 10,
+        "success_rate": 1.0,
+        "mean_success_elapsed_s": 24.009,
+        "mean_display": "00:24",
+        "rate_display": "10/10（100%）"
+      },
+      {
+        "model": "GPT6 + π0.5",
+        "total": 10,
+        "successes": 6,
+        "success_rate": 0.6,
+        "mean_success_elapsed_s": 352.01500000000004,
+        "mean_display": "05:52",
+        "rate_display": "6/10（60%）"
+      },
+      {
+        "model": "GPT6 + GAWM",
+        "total": 10,
+        "successes": 6,
+        "success_rate": 0.6,
+        "mean_success_elapsed_s": 283.8,
+        "mean_display": "04:44",
+        "rate_display": "6/10（60%）"
+      },
+      {
+        "model": "Kimi + π0.5",
+        "total": 10,
+        "successes": 6,
+        "success_rate": 0.6,
+        "mean_success_elapsed_s": 508.4166666666667,
+        "mean_display": "08:28",
+        "rate_display": "6/10（60%）"
+      },
+      {
+        "model": "Kimi + GAWM",
+        "total": 10,
+        "successes": 7,
+        "success_rate": 0.7,
+        "mean_success_elapsed_s": 745.9857142857143,
+        "mean_display": "12:26",
+        "rate_display": "7/10（70%）"
+      }
+    ],
+    "swap": [
+      {
+        "model": "纯 π0.5",
+        "total": 10,
+        "successes": 1,
+        "success_rate": 0.1,
+        "mean_success_elapsed_s": 22.23,
+        "mean_display": "00:22",
+        "rate_display": "1/10（10%）"
+      },
+      {
+        "model": "纯 GAWM",
+        "total": 10,
+        "successes": 1,
+        "success_rate": 0.1,
+        "mean_success_elapsed_s": 21.14,
+        "mean_display": "00:21",
+        "rate_display": "1/10（10%）"
+      },
+      {
+        "model": "GPT6 + π0.5",
+        "total": 10,
+        "successes": 5,
+        "success_rate": 0.5,
+        "mean_success_elapsed_s": 342.036,
+        "mean_display": "05:42",
+        "rate_display": "5/10（50%）"
+      },
+      {
+        "model": "GPT6 + GAWM",
+        "total": 10,
+        "successes": 3,
+        "success_rate": 0.3,
+        "mean_success_elapsed_s": 410.94,
+        "mean_display": "06:51",
+        "rate_display": "3/10（30%）"
+      },
+      {
+        "model": "Kimi + π0.5",
+        "total": 10,
+        "successes": 7,
+        "success_rate": 0.7,
+        "mean_success_elapsed_s": 680.8885714285715,
+        "mean_display": "11:21",
+        "rate_display": "7/10（70%）"
+      },
+      {
+        "model": "Kimi + GAWM",
+        "total": 10,
+        "successes": 5,
+        "success_rate": 0.5,
+        "mean_success_elapsed_s": 682.98,
+        "mean_display": "11:23",
+        "rate_display": "5/10（50%）"
+      }
+    ],
+    "all": [
+      {
+        "model": "纯 π0.5",
+        "total": 20,
+        "successes": 11,
+        "success_rate": 0.55,
+        "mean_success_elapsed_s": 28.220909090909092,
+        "mean_display": "00:28",
+        "rate_display": "11/20（55%）"
+      },
+      {
+        "model": "纯 GAWM",
+        "total": 20,
+        "successes": 11,
+        "success_rate": 0.55,
+        "mean_success_elapsed_s": 23.74818181818182,
+        "mean_display": "00:24",
+        "rate_display": "11/20（55%）"
+      },
+      {
+        "model": "GPT6 + π0.5",
+        "total": 20,
+        "successes": 11,
+        "success_rate": 0.55,
+        "mean_success_elapsed_s": 347.4790909090909,
+        "mean_display": "05:47",
+        "rate_display": "11/20（55%）"
+      },
+      {
+        "model": "GPT6 + GAWM",
+        "total": 20,
+        "successes": 9,
+        "success_rate": 0.45,
+        "mean_success_elapsed_s": 326.18,
+        "mean_display": "05:26",
+        "rate_display": "9/20（45%）"
+      },
+      {
+        "model": "Kimi + π0.5",
+        "total": 20,
+        "successes": 13,
+        "success_rate": 0.65,
+        "mean_success_elapsed_s": 601.2861538461538,
+        "mean_display": "10:01",
+        "rate_display": "13/20（65%）"
+      },
+      {
+        "model": "Kimi + GAWM",
+        "total": 20,
+        "successes": 12,
+        "success_rate": 0.6,
+        "mean_success_elapsed_s": 719.7333333333332,
+        "mean_display": "12:00",
+        "rate_display": "12/20（60%）"
+      }
+    ]
+  }
+}
