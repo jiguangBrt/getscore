@@ -1,8 +1,8 @@
 # RPent / LIBERO-PRO 实验与回放（getscore）
 
-本项目用 RPent 连接高层语言规划器、LIBERO-PRO 仿真和远程动作模型，比较纯策略、GPT-6 Astra、Kimi 3.1pro 搭配 π0.5 / GAWM 的表现，并提供实验回放页面。**本机负责规划、仿真、动作执行与记录；`49.233.66.228` 提供 GPU 模型推理。** 当前成果是已有模型的接入、评测和回放，没有在本项目中重新训练这些模型，也不是 RoboTwin / RoboCasa 的正式榜单成绩。
+本项目用 RPent 连接高层语言规划器、LIBERO-PRO 仿真和远程动作模型，比较纯策略、GPT-6 Astra、Kimi 3.1pro 搭配 π0.5 / GAWM 的表现，并提供实验回放页面。历史批量实验由本机负责规划、仿真和记录，`49.233.66.228` 提供模型推理；当前第 4 步的独立技能训练与仿真均运行在该服务器。已有结果不是 RoboTwin / RoboCasa 的正式榜单成绩。
 
-**2026-11-03 进度：第 4 步已在 `.228` 为 π0.5 跑通三类技能的最小 RL 流程：训练采样、一次受限 PPO 更新、检查点权重重载与同步。没有开展评测或大规模训练。** 视频与核验见[本轮记录](reports/rl_skill_smoke_20261103/report.md)，正式训练前需决定的参数见[决策清单](reports/rl_skill_smoke_20261103/DECISIONS.md)。目标与方案见 [STEP4_RL_SKILLS](STEP4_RL_SKILLS.md)，总进度见 [ROADMAP](ROADMAP.md)。
+**2026-11-03 进度：用户已修改决策表并授权约 12 小时的 π0.5 三技能 LoRA + PPO 试训，使用物理 GPU 0、1、3、16 并行环境，W&B 离线记录，每 3 小时保存和评测。** 启动配置、预检与结果入口见[12 小时运行记录](reports/rl_skills_12h_20261103/README.md)。早前一次更新的 smoke 视频和核验见[前阶段记录](reports/rl_skill_smoke_20261103/report.md)。目标与方案见 [STEP4_RL_SKILLS](STEP4_RL_SKILLS.md)，总进度见 [ROADMAP](ROADMAP.md)。
 
 以下运行与评测记录截至 **2026-10-29（北京时间）**。新复现使用本文的 `*-228.toml` 配置；其他文档中的 `192.168.50.73` 是已经收回的旧服务器，不能继续作为启动地址。
 

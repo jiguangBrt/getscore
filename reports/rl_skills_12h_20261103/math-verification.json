@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows": 128,
+  "three_rank_gradient_vs_serial_max_abs": 1.1920928955078125e-07,
+  "relative": 1.5420029261047524e-07,
+  "nonzero_actor_gradient_tensors": 108,
+  "logprob_max_error": 0.0,
+  "checkpoint_exact_reload": true,
+  "seconds": 11.14142394065857
+}

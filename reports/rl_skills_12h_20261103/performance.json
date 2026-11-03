@@ -1,0 +1,157 @@
+{
+  "hardware": [
+    {
+      "logical": 0,
+      "physical": 0,
+      "name": "NVIDIA RTX PRO 5000 72GB Blackwell",
+      "total_gib": 71.12371826171875,
+      "bf16_matmul_tflops": 250.81704044231714,
+      "device_copy_read_write_gb_s": 1106.239055368257
+    },
+    {
+      "logical": 1,
+      "physical": 1,
+      "name": "NVIDIA RTX PRO 5000 72GB Blackwell",
+      "total_gib": 71.12371826171875,
+      "bf16_matmul_tflops": 253.17525230529998,
+      "device_copy_read_write_gb_s": 1104.951437550736
+    },
+    {
+      "logical": 2,
+      "physical": 3,
+      "name": "NVIDIA RTX PRO 5000 72GB Blackwell",
+      "total_gib": 71.12371826171875,
+      "bf16_matmul_tflops": 254.6970144831017,
+      "device_copy_read_write_gb_s": 1107.4226660046356
+    }
+  ],
+  "inference": [
+    {
+      "batch": 1,
+      "seconds": 0.260174049064517,
+      "chunks_per_second": 3.843580878245177,
+      "peak_gib": 6.668015956878662
+    },
+    {
+      "batch": 2,
+      "seconds": 0.2961786773521453,
+      "chunks_per_second": 6.7526805706613215,
+      "peak_gib": 6.837425231933594
+    },
+    {
+      "batch": 4,
+      "seconds": 0.35667196940630674,
+      "chunks_per_second": 11.214786535252948,
+      "peak_gib": 7.158906936645508
+    },
+    {
+      "batch": 8,
+      "seconds": 0.4875784961041063,
+      "chunks_per_second": 16.407614494737405,
+      "peak_gib": 7.7921552658081055
+    },
+    {
+      "batch": 16,
+      "seconds": 0.7710756736341864,
+      "chunks_per_second": 20.750233144549593,
+      "peak_gib": 9.071664810180664
+    }
+  ],
+  "backward": [
+    {
+      "batch": 1,
+      "seconds": 0.11470193509012461,
+      "peak_gib": 6.6680121421813965,
+      "finite_grad": true
+    },
+    {
+      "batch": 2,
+      "seconds": 0.15651352796703577,
+      "peak_gib": 6.837419033050537,
+      "finite_grad": true
+    },
+    {
+      "batch": 4,
+      "seconds": 0.26084461295977235,
+      "peak_gib": 7.158895015716553,
+      "finite_grad": true
+    }
+  ],
+  "model": {
+    "trainable": 5261313,
+    "lora_modules": [
+      "llm.layers.0.attn.q_proj.1",
+      "llm.layers.0.attn.k_proj.1",
+      "llm.layers.0.attn.v_proj.1",
+      "llm.layers.0.attn.o_proj.1",
+      "llm.layers.1.attn.q_proj.1",
+      "llm.layers.1.attn.k_proj.1",
+      "llm.layers.1.attn.v_proj.1",
+      "llm.layers.1.attn.o_proj.1",
+      "llm.layers.2.attn.q_proj.1",
+      "llm.layers.2.attn.k_proj.1",
+      "llm.layers.2.attn.v_proj.1",
+      "llm.layers.2.attn.o_proj.1",
+      "llm.layers.3.attn.q_proj.1",
+      "llm.layers.3.attn.k_proj.1",
+      "llm.layers.3.attn.v_proj.1",
+      "llm.layers.3.attn.o_proj.1",
+      "llm.layers.4.attn.q_proj.1",
+      "llm.layers.4.attn.k_proj.1",
+      "llm.layers.4.attn.v_proj.1",
+      "llm.layers.4.attn.o_proj.1",
+      "llm.layers.5.attn.q_proj.1",
+      "llm.layers.5.attn.k_proj.1",
+      "llm.layers.5.attn.v_proj.1",
+      "llm.layers.5.attn.o_proj.1",
+      "llm.layers.6.attn.q_proj.1",
+      "llm.layers.6.attn.k_proj.1",
+      "llm.layers.6.attn.v_proj.1",
+      "llm.layers.6.attn.o_proj.1",
+      "llm.layers.7.attn.q_proj.1",
+      "llm.layers.7.attn.k_proj.1",
+      "llm.layers.7.attn.v_proj.1",
+      "llm.layers.7.attn.o_proj.1",
+      "llm.layers.8.attn.q_proj.1",
+      "llm.layers.8.attn.k_proj.1",
+      "llm.layers.8.attn.v_proj.1",
+      "llm.layers.8.attn.o_proj.1",
+      "llm.layers.9.attn.q_proj.1",
+      "llm.layers.9.attn.k_proj.1",
+      "llm.layers.9.attn.v_proj.1",
+      "llm.layers.9.attn.o_proj.1",
+      "llm.layers.10.attn.q_proj.1",
+      "llm.layers.10.attn.k_proj.1",
+      "llm.layers.10.attn.v_proj.1",
+      "llm.layers.10.attn.o_proj.1",
+      "llm.layers.11.attn.q_proj.1",
+      "llm.layers.11.attn.k_proj.1",
+      "llm.layers.11.attn.v_proj.1",
+      "llm.layers.11.attn.o_proj.1",
+      "llm.layers.12.attn.q_proj.1",
+      "llm.layers.12.attn.k_proj.1",
+      "llm.layers.12.attn.v_proj.1",
+      "llm.layers.12.attn.o_proj.1",
+      "llm.layers.13.attn.q_proj.1",
+      "llm.layers.13.attn.k_proj.1",
+      "llm.layers.13.attn.v_proj.1",
+      "llm.layers.13.attn.o_proj.1",
+      "llm.layers.14.attn.q_proj.1",
+      "llm.layers.14.attn.k_proj.1",
+      "llm.layers.14.attn.v_proj.1",
+      "llm.layers.14.attn.o_proj.1",
+      "llm.layers.15.attn.q_proj.1",
+      "llm.layers.15.attn.k_proj.1",
+      "llm.layers.15.attn.v_proj.1",
+      "llm.layers.15.attn.o_proj.1",
+      "llm.layers.16.attn.q_proj.1",
+      "llm.layers.16.attn.k_proj.1",
+      "llm.layers.16.attn.v_proj.1",
+      "llm.layers.16.attn.o_proj.1",
+      "llm.layers.17.attn.q_proj.1",
+      "llm.layers.17.attn.k_proj.1",
+      "llm.layers.17.attn.v_proj.1",
+      "llm.layers.17.attn.o_proj.1"
+    ]
+  }
+}

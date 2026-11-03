@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "completed_updates": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "all_logprob_errors_zero": true,
+  "parallel_gradient_gpus": [
+    0,
+    1,
+    3
+  ],
+  "final_global_batch": 512,
+  "final_update_seconds": 10.207581281661987,
+  "final_iteration_seconds": 66.88710737228394,
+  "resume_from_update4_to5": true,
+  "timer_test": "artificial clock +3h; milestone and evaluation verified",
+  "checkpoint_files": [
+    "latest.pt",
+    "milestone-3.0h.pt",
+    "best.pt",
+    "final.pt",
+    "initial.pt"
+  ]
+}

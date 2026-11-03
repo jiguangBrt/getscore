@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "time": 1793702714.81462,
+  "checkpoint_update": 5,
+  "changed_lora_tensors": 216,
+  "changed_critic_tensors": 8,
+  "max_lora_delta": 1.9739941592433752e-07,
+  "checkpoint_bytes": 116496523
+}
