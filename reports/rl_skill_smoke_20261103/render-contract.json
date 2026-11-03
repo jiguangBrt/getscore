@@ -1,0 +1,22 @@
+{
+  "pid": 1754990,
+  "physical_gpu": 3,
+  "owned_gpu_rows": [
+    [
+      "3",
+      "1754990",
+      "G",
+      "705",
+      "0",
+      "python"
+    ]
+  ],
+  "full_state_restore": true,
+  "initial_supported": true,
+  "frame_shape": [
+    256,
+    256,
+    3
+  ],
+  "scope": "environment/render contract only, no model evaluation"
+}

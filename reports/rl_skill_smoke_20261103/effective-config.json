@@ -1,0 +1,90 @@
+{
+  "scope": "training plumbing only; no evaluation or success-rate experiment",
+  "policy_prompt": "pick up the white mug",
+  "skills": [
+    "pick",
+    "place",
+    "upright"
+  ],
+  "physical_gpus": [
+    0,
+    1,
+    3
+  ],
+  "rollout_physical_gpu": 1,
+  "learner_physical_gpu": 0,
+  "render_physical_gpu": 3,
+  "seed": 42,
+  "environment": "LIBERO-PRO custom skill resets over libero_10 task 6",
+  "camera_size": 256,
+  "model_image_size": 224,
+  "control_hz": 20,
+  "max_native_steps_per_skill": 200,
+  "action_horizon": 10,
+  "execute_horizon": 5,
+  "flow_steps": 10,
+  "noise_method": "flow_sde",
+  "noise_level": 0.5,
+  "joint_logprob": false,
+  "value_after_vlm": true,
+  "train_expert_only": true,
+  "discrete_state_input": false,
+  "precision": "bf16 backbone, fp32 heads and norm/stem islands",
+  "algorithm": "PPO smoke: one optimizer step, six sampled chunks across three skills",
+  "max_optimizer_steps": 1,
+  "learner_chunks_per_skill": 2,
+  "actor_lr": 1e-06,
+  "critic_lr": 1e-05,
+  "adam_betas": [
+    0.9,
+    0.95
+  ],
+  "adam_eps": 1e-08,
+  "weight_decay": 0.01,
+  "max_grad_norm": 1.0,
+  "gamma_per_native_step": 0.998,
+  "gae_lambda_per_chunk": 0.95,
+  "ppo_clip": 0.2,
+  "value_clip": 0.2,
+  "huber_delta": 10.0,
+  "entropy_coefficient": 0.0,
+  "kl_coefficient": 0.0,
+  "normalize_advantages": true,
+  "evaluation_enabled": false,
+  "policy_version": 0,
+  "reward": {
+    "terminal_bonus": 1.0,
+    "potential_scale": 0.1,
+    "step_penalty": 0.0001
+  },
+  "success": {
+    "lift_m": 0.05,
+    "pick_hold_steps": 10,
+    "upright_degrees": 15.0,
+    "stable_steps": 20,
+    "linear_speed_m_s": 0.03,
+    "angular_speed_rad_s": 0.3,
+    "target_radius_m": 0.1,
+    "eef_clearance_m": 0.1
+  },
+  "decision_status": "All values in this file are temporary smoke-test recommendations, not user-approved settings for sustained training.",
+  "gripper_mapping": "Pass through official pi05_libero native continuous action; no GAWM probability inversion",
+  "critic_loss_coefficient": 1.0,
+  "logprob_reduction": "sum executed coordinates",
+  "micro_batch_size": 1,
+  "global_diagnostic_batch": 6,
+  "update_epochs": 1,
+  "lr_schedule": "constant, single optimizer step",
+  "smoke_update_scope": [
+    "action_out_proj",
+    "value_head"
+  ],
+  "formal_update_scope": "User decision pending; recommended action expert plus critic after plumbing checks",
+  "gpu_uuids": [
+    "GPU-32a18ee9-861a-b562-5a71-a54d056f063c",
+    "GPU-4d64f7aa-dd53-214b-a16c-72840622d125",
+    "GPU-90654270-b6da-2df9-5947-695584cc64c9"
+  ],
+  "render_egl_index": 4,
+  "gpu_binding": "CUDA UUID whitelist and EGL_CUDA_DEVICE_NV enumeration, not raw physical index"
+}

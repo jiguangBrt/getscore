@@ -1,0 +1,35 @@
+{
+  "trainable_parameters": 2787361,
+  "total_parameters": 3356188433,
+  "rl_config": {
+    "add_value_head": true,
+    "noise_method": "flow_sde",
+    "noise_level": 0.5,
+    "noise_logvar_range": [
+      0.08,
+      0.16
+    ],
+    "joint_logprob": false,
+    "ignore_last": false,
+    "value_after_vlm": true,
+    "value_vlm_mode": "mean_token",
+    "detach_critic_input": true,
+    "chunk_critic_input": false,
+    "train_expert_only": true,
+    "is_nft": false,
+    "config_name": "pi05_libero"
+  },
+  "model_config": {
+    "dtype": "bfloat16",
+    "paligemma_variant": "gemma_2b",
+    "action_expert_variant": "gemma_300m",
+    "pointnet_variant": "pcd",
+    "action_dim": 32,
+    "action_horizon": 10,
+    "max_token_len": 200,
+    "pi05": true,
+    "discrete_state_input": false,
+    "pcd": false
+  },
+  "physical_gpu": 1
+}

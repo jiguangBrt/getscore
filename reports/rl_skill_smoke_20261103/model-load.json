@@ -1,0 +1,17 @@
+{
+  "total_parameters": 3356188433,
+  "trainable_parameters": 2787361,
+  "trainable_names": [
+    "action_out_proj.weight",
+    "action_out_proj.bias",
+    "value_head.mlp.0.weight",
+    "value_head.mlp.0.bias",
+    "value_head.mlp.2.weight",
+    "value_head.mlp.2.bias",
+    "value_head.mlp.4.weight",
+    "value_head.mlp.4.bias",
+    "value_head.mlp.6.weight",
+    "value_head.mlp.6.bias"
+  ],
+  "loaded_real_checkpoint": true
+}

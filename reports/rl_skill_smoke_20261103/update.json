@@ -1,0 +1,72 @@
+{
+  "optimizer_steps": 1,
+  "used_chunks": 6,
+  "gradient_norm": 12.922246932983398,
+  "metrics": [
+    {
+      "skill": "pick",
+      "actor_loss": 0.8247284889221191,
+      "critic_loss": 0.021618638187646866,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": -0.8247284862198551,
+      "return_target": 0.9829706558148896
+    },
+    {
+      "skill": "pick",
+      "actor_loss": 0.5003053545951843,
+      "critic_loss": 0.015108357183635235,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": -0.5003053257266857,
+      "return_target": 0.9977173583018866
+    },
+    {
+      "skill": "place",
+      "actor_loss": 0.9208363890647888,
+      "critic_loss": 0.02377060241997242,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": -0.9208363760941536,
+      "return_target": 0.9734168746592496
+    },
+    {
+      "skill": "place",
+      "actor_loss": -1.3086674213409424,
+      "critic_loss": 0.00013358477735891938,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": 1.3086674363378892,
+      "return_target": 0.9978108814887434
+    },
+    {
+      "skill": "upright",
+      "actor_loss": 0.7044023871421814,
+      "critic_loss": 0.019068317487835884,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": -0.7044023720936664,
+      "return_target": 0.9970278829506021
+    },
+    {
+      "skill": "upright",
+      "actor_loss": -1.3888026475906372,
+      "critic_loss": 0.0003067710786126554,
+      "max_logprob_recompute_error": 0.0,
+      "advantage": 1.388802691083257,
+      "return_target": 1.2548520887849235
+    }
+  ],
+  "changed_tensors": 10,
+  "max_parameter_delta": 1.004338264465332e-05,
+  "physical_gpu": 0,
+  "evaluation_enabled": false,
+  "checkpoint_reloaded_exactly": true,
+  "deltas": {
+    "action_out_proj.weight": 1.000240445137024e-06,
+    "action_out_proj.bias": 1.000240445137024e-06,
+    "value_head.mlp.0.weight": 1.0028481483459473e-05,
+    "value_head.mlp.0.bias": 9.999821486417204e-06,
+    "value_head.mlp.2.weight": 1.004338264465332e-05,
+    "value_head.mlp.2.bias": 9.99984513327945e-06,
+    "value_head.mlp.4.weight": 1.004338264465332e-05,
+    "value_head.mlp.4.bias": 9.99978874460794e-06,
+    "value_head.mlp.6.weight": 1.0006129741668701e-05,
+    "value_head.mlp.6.bias": 9.999989742937032e-06
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "RLinf": {
+    "origin": "https://github.com/RLinf/RLinf",
+    "commit": "b6c6250587fcbd31dbc1d59ea1907f888a0dd748"
+  },
+  "OpenPI": {
+    "origin": "https://github.com/Physical-Intelligence/openpi",
+    "commit": "3ab5477b975d5683b2368d7c4cb97e83cb86e36f"
+  },
+  "LIBERO-PRO": {
+    "origin": "https://github.com/RLinf/LIBERO-PRO",
+    "commit": "d1e11fb181b8544487d27742c0caa3a4d46452ad",
+    "notes": "existing robosuite-1.5 compatibility adaptation"
+  },
+  "transport": "Own workstation public-source caches transferred into standalone directories; direct server GitHub clone unavailable. No source/environment from other server users."
+}

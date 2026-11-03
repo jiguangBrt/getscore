@@ -1,0 +1,8 @@
+{
+  "source_physical_gpu": 0,
+  "destination_physical_gpu": 1,
+  "policy_version": 1,
+  "trainable_tensors": 10,
+  "all_equal": true,
+  "scope": "weight transfer only; no evaluation rollout"
+}

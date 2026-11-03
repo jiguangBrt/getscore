@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "scope": "RL plumbing and artifact integrity only, no evaluation",
+  "evaluation_enabled": false,
+  "actual_training_optimizer_steps": 1,
+  "rollout_native_actions": 414,
+  "rollout_chunks": 84,
+  "videos": [
+    {
+      "skill": "pick",
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/pick/training.mp4",
+      "decoded_frames": 73,
+      "native_actions": 72,
+      "sha256": "37c1c6072a2f8060d79ff278e040716ad9d864af39e0399a03a5a5f193e24f73"
+    },
+    {
+      "skill": "place",
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/place/training.mp4",
+      "decoded_frames": 143,
+      "native_actions": 142,
+      "sha256": "4cefeab2e58b7640d9d2713fd6e6e28b4e59d83fb0cc7e666e046630e1ba11ec"
+    },
+    {
+      "skill": "upright",
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/upright/training.mp4",
+      "decoded_frames": 201,
+      "native_actions": 200,
+      "sha256": "687b831724d61282af4d567847d521ef82f2a1a44996808a1f205be855427315"
+    }
+  ],
+  "overview_frames": 417,
+  "update_tensors": 10,
+  "weight_sync": {
+    "source_physical_gpu": 0,
+    "destination_physical_gpu": 1,
+    "policy_version": 1,
+    "trainable_tensors": 10,
+    "all_equal": true,
+    "scope": "weight transfer only; no evaluation rollout"
+  },
+  "renderer": {
+    "pid": 1754990,
+    "physical_gpu": 3,
+    "owned_gpu_rows": [
+      [
+        "3",
+        "1754990",
+        "G",
+        "705",
+        "0",
+        "python"
+      ]
+    ],
+    "full_state_restore": true,
+    "initial_supported": true,
+    "frame_shape": [
+      256,
+      256,
+      3
+    ],
+    "scope": "environment/render contract only, no model evaluation"
+  },
+  "foreign_data_directory_imports": [],
+  "source_hashes": {
+    "code/convert_checkpoint.py": "fd815cbd156d6b7da4ab669e8efdc5e321132c203de009eb15cf8486b2e4b8ae",
+    "code/runtime.py": "caf8d8dd7a8c0ae5f5593b77fe8bd24cfec3b7d53ea05c8a5444d5a16b023374",
+    "code/skill_env.py": "9e99cdf8af6102272205356d21fbde23ef28094c916489629edabb3990f97e9a",
+    "code/smoke_driver.py": "77abda70c1d7ff6828e750e747c24d53459274b1cc5ab7861f9bc86e62639fc4",
+    "code/verify_artifacts.py": "cef701e90ec61ed675107da7d0d0ed8f1e8823c0c6546d118e7a9afa454896cc",
+    "code/verify_render_binding.py": "b71ad2e3d095eb859d3fe26d4d29231a8f97a49d8c865b7fd675b45b32c13d4d"
+  }
+}

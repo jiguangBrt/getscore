@@ -1,0 +1,13 @@
+{
+  "source": "/data/wangyihan/getscore-inference-20261028/checkpoints/pi05_libero",
+  "source_manifest": "/data/wangyihan/getscore-inference-20261028/checkpoints/pi05_libero/download-manifest.json",
+  "output": "/data/wangyihan/getscore-rl-skills/checkpoints/pi05_libero_torch/model.safetensors",
+  "bytes": 13413809816,
+  "sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59",
+  "elapsed_s": 22.777283191680908,
+  "official_pi05_libero": true,
+  "layout": "RLinf vendored OpenPI torch",
+  "action_horizon": 10,
+  "action_dim": 32,
+  "discrete_state_input": false
+}

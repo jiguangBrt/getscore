@@ -1,0 +1,118 @@
+{
+  "episodes": [
+    {
+      "skill": "pick",
+      "native_actions": 72,
+      "chunks": 15,
+      "bootstrap": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "final": {
+        "object_pos": [
+          -0.04404643073850721,
+          -0.10375428397332094,
+          0.5540997214945741
+        ],
+        "eef_pos": [
+          -0.05060560375861663,
+          -0.06938186311698785,
+          0.6299824569366703
+        ],
+        "tilt_degrees": 7.233785929699186,
+        "lift_m": 0.11972976063554347,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2219464078985498,
+        "eef_distance": 0.043524729294943984,
+        "linear_speed": 0.23540497813403546,
+        "angular_speed": 0.14953486095776,
+        "gripper_opening": 0.005720607096406968,
+        "skill_success": true,
+        "failure": false,
+        "stable_count": 0,
+        "pick_count": 10
+      },
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/pick/training.mp4",
+      "scope": "single training rollout, no evaluation"
+    },
+    {
+      "skill": "place",
+      "native_actions": 142,
+      "chunks": 29,
+      "bootstrap": 0.0,
+      "terminated": true,
+      "truncated": false,
+      "final": {
+        "object_pos": [
+          0.14734456904254475,
+          0.023228396877376684,
+          0.4426808771245953
+        ],
+        "eef_pos": [
+          0.07119597494179045,
+          0.07706682937122916,
+          0.5977934342178658
+        ],
+        "tilt_degrees": 1.4667800217001032,
+        "lift_m": 0.008310916265564683,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.01760450182759627,
+        "eef_distance": 0.1405198735254291,
+        "linear_speed": 3.5284420107621467e-07,
+        "angular_speed": 1.3654605047800761e-05,
+        "gripper_opening": 0.0791934042140414,
+        "skill_success": true,
+        "failure": false,
+        "stable_count": 20,
+        "pick_count": 0
+      },
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/place/training.mp4",
+      "scope": "single training rollout, no evaluation"
+    },
+    {
+      "skill": "upright",
+      "native_actions": 200,
+      "chunks": 40,
+      "bootstrap": 1.2677861452102661,
+      "terminated": false,
+      "truncated": true,
+      "final": {
+        "object_pos": [
+          0.0901887745087447,
+          0.030569314852345184,
+          0.5042032086103849
+        ],
+        "eef_pos": [
+          0.14100617460741144,
+          -0.004674697455972456,
+          0.5437301329098502
+        ],
+        "tilt_degrees": 86.02488454180076,
+        "lift_m": 0.0698332477513543,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.06387997761568949,
+        "eef_distance": 0.06272347145212828,
+        "linear_speed": 0.004922956059175128,
+        "angular_speed": 0.062258295519061015,
+        "gripper_opening": 0.014587612701021034,
+        "skill_success": false,
+        "failure": false,
+        "stable_count": 0,
+        "pick_count": 0
+      },
+      "video": "/data/wangyihan/getscore-rl-skills/outputs/smoke_20261103_v2/upright/training.mp4",
+      "scope": "single training rollout, no evaluation"
+    }
+  ],
+  "chunks": 84,
+  "native_actions": 414,
+  "policy_version": 0,
+  "advantage_mean": -0.12123314961094253,
+  "advantage_std": 0.10512864927607637,
+  "evaluation_enabled": false
+}
