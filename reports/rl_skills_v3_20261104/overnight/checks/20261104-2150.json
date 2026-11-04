@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-11-04T21:50:20+08:00",
+  "state": "training",
+  "update": 358,
+  "native_steps": 1988044,
+  "additional_updates": 101,
+  "additional_native_steps": 615127,
+  "attempt": 0,
+  "logprob_recompute_error": 0.0,
+  "approx_kl": 0.00031797681003808975,
+  "cloud_relay_last_update": 358,
+  "cloud_url": "https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257",
+  "training_cutoff": "2026-11-05T08:50:00+08:00",
+  "hard_deadline": "2026-11-05T09:00:00+08:00",
+  "evaluations": [
+    {
+      "file": "evaluation-baseline.json",
+      "tag": "baseline",
+      "update": 257,
+      "metrics": {
+        "eval/pick_success": 0.0,
+        "eval/pick_valid": 24,
+        "eval/pick_invalid_reset": 0,
+        "eval/place_success": 0.0,
+        "eval/place_valid": 21,
+        "eval/place_invalid_reset": 3,
+        "eval/upright_success": 0.0,
+        "eval/upright_valid": 24,
+        "eval/upright_invalid_reset": 0,
+        "eval/macro_success": 0.0
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "file": "best.pt",
+      "bytes": 116543977
+    },
+    {
+      "file": "continuation-start.pt",
+      "bytes": 116554084
+    },
+    {
+      "file": "initial.pt",
+      "bytes": 116547100
+    },
+    {
+      "file": "latest.pt",
+      "bytes": 116554827
+    }
+  ],
+  "intervention": false
+}
