@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-04T11:30:14.831992+00:00",
+  "parent_checkpoint_sha256": "9151d9974e6d0a79c09efa1110b417a70a5847b4368cf99ec0f85f6923411169",
+  "imported_update": 257,
+  "imported_native_steps": 1372917,
+  "weights_optimizer_all_rng_exact": true,
+  "reward_unchanged": true,
+  "first_update": 258,
+  "first_update_native_steps": 1379014,
+  "first_update_added_native_steps": 6097,
+  "rank_chunks": [
+    192,
+    192,
+    192,
+    192
+  ],
+  "sampling_gpus": [
+    1,
+    3,
+    2
+  ],
+  "gradient_gpus": [
+    0,
+    1,
+    3,
+    2
+  ],
+  "actor_lr": 1e-06,
+  "critic_warmup": false,
+  "logprob_error": 0.0,
+  "gradient_norm": 1.3946523666381836,
+  "approx_kl": 0.00012933975085616112,
+  "synced_policy_version": 259,
+  "max_weight_change": 2.123415470123291e-05,
+  "training_pid": 1809466,
+  "actor_pids": [
+    1811871,
+    1811872,
+    1811873
+  ],
+  "uuid_bindings_verified": true,
+  "checkpoint_interval_seconds": 10800,
+  "training_cutoff": "2026-11-05T08:50:00+08:00",
+  "hard_deadline": "2026-11-05T09:00:00+08:00",
+  "wandb_cloud": "https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257",
+  "server_wandb_offline_archive": true
+}

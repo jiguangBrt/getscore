@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "hard_deadline_terminates_only_disposable_child_group": true,
+  "no_retry_after_deadline": true,
+  "attempt_budget_persists_across_supervisor_restarts": true,
+  "production_processes_untouched": true
+}
