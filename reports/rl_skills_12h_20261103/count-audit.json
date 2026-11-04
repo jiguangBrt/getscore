@@ -1,0 +1,42 @@
+{
+  "formal_training_runs": 1,
+  "collection_update_iterations": 862,
+  "optimizer_steps": 862,
+  "critic_only_warmup_updates": 3,
+  "actor_critic_updates": 859,
+  "training_valid_episode_starts": {
+    "pick": 7971,
+    "place": 5253,
+    "upright": 3971
+  },
+  "training_valid_episode_starts_total": 17195,
+  "training_naturally_terminated": {
+    "pick": 3362,
+    "place": 71,
+    "upright": 20
+  },
+  "training_naturally_terminated_total": 3453,
+  "training_successful_terminated": {
+    "pick": 3355,
+    "place": 68,
+    "upright": 0
+  },
+  "training_rollout_boundary_cutoff_total": 13742,
+  "training_failed_initializations": 2775,
+  "action_chunks": 441344,
+  "native_actions": 3520609,
+  "chunks_by_skill": {
+    "pick": 171944,
+    "place": 153649,
+    "upright": 115751
+  },
+  "evaluation_passes": 5,
+  "evaluation_valid_starts": {
+    "pick": 120,
+    "place": 80,
+    "upright": 115
+  },
+  "evaluation_attempts": 360,
+  "evaluation_successful_initializations": 315,
+  "classification_crosscheck_mismatches": []
+}
