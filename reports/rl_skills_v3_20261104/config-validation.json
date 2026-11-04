@@ -1,0 +1,102 @@
+{
+  "timestamp_utc": "2026-11-04T03:31:11.229741+00:00",
+  "status": "configuration_and_launch_guard_checks_passed",
+  "checks": [
+    {
+      "name": "active_v3_structural_validation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_max_native_steps_per_skill",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_pick.horizontal_failure_radius_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_pick.horizontal_free_radius_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_pick.descent_penalty_enabled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_place.initial_object_clearance_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_place.initialization_actions_in_training_data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_continue_env_across_updates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_preserve_training_env_during_evaluation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_hold_time_included_in_episode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reject_physical_gpus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_edited_python_files_compile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "launcher_shell_syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical_v2_config_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "active_config_link_points_to_v3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "block_v3_on_legacy_long_train.py",
+      "passed": true,
+      "detail": "Rejected before torch/model/worker imports"
+    },
+    {
+      "name": "block_v3_on_legacy_supervise_long.py",
+      "passed": true,
+      "detail": "Rejected before torch/model/worker imports"
+    },
+    {
+      "name": "explicit_historical_config_guard_passes_without_training",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checks_count": 18,
+  "training_started": false,
+  "physical_or_ppo_preflight_performed": false,
+  "runtime_implementation_status": "pending_v3_adapter_and_preflight",
+  "active_config_sha256": "97ccf85cc75f1d6d23d826100be798c34c3171fae33dab381b5046d078b0fa4f",
+  "note": "This only validates saved specification and blocks incompatible legacy launches; v3 runtime and real preflight remain required."
+}

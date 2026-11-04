@@ -1,0 +1,8 @@
+{
+  "previous_config": "/data/wangyihan/getscore-rl-skills/configs/long12.json",
+  "previous_sha256": "60db695b8c035b855fcc0d804615d3824a7736a166389bad86558f8b0a447aae",
+  "active_config": "/data/wangyihan/getscore-rl-skills/configs/current.json",
+  "v3_config": "/data/wangyihan/getscore-rl-skills/configs/skills-v3.json",
+  "training_started": false,
+  "runtime_implementation_status": "pending_v3_adapter_and_preflight"
+}
