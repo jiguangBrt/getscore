@@ -2,7 +2,7 @@
 
 本项目用 RPent 连接高层语言规划器、LIBERO-PRO 仿真和远程动作模型，比较纯策略、GPT-6 Astra、Kimi 3.1pro 搭配 π0.5 / GAWM 的表现，并提供实验回放页面。历史批量实验由本机负责规划、仿真和记录，`49.233.66.228` 提供模型推理；当前第 4 步的独立技能训练与仿真均运行在该服务器。已有结果不是 RoboTwin / RoboCasa 的正式榜单成绩。
 
-**2026-11-03 进度：用户已修改决策表并授权约 12 小时的 π0.5 三技能 LoRA + PPO 试训，使用物理 GPU 0、1、3、16 并行环境，W&B 离线记录，每 3 小时保存和评测。** 启动配置、预检与结果入口见[12 小时运行记录](reports/rl_skills_12h_20261103/README.md)。早前一次更新的 smoke 视频和核验见[前阶段记录](reports/rl_skill_smoke_20261103/report.md)。目标与方案见 [STEP4_RL_SKILLS](STEP4_RL_SKILLS.md)，总进度见 [ROADMAP](ROADMAP.md)。
+**2026-11-04 进度：π0.5 三技能 LoRA + PPO 的 12 小时试训已正常结束，完成 862 次更新、352 万原生动作。最终抓取 16/24（原 14/24）、放置 0/16（原 1/16）、扶正 0/23，整体技能提升目标尚未达到。** 评测、限制与产物见[完成记录](reports/rl_skills_12h_20261103/completion.md)，启动配置和预检见[运行记录](reports/rl_skills_12h_20261103/README.md)。早前 smoke 见[前阶段记录](reports/rl_skill_smoke_20261103/report.md)。目标与方案见 [STEP4_RL_SKILLS](STEP4_RL_SKILLS.md)，总进度见 [ROADMAP](ROADMAP.md)。
 
 以下运行与评测记录截至 **2026-10-29（北京时间）**。新复现使用本文的 `*-228.toml` 配置；其他文档中的 `192.168.50.73` 是已经收回的旧服务器，不能继续作为启动地址。
 
