@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-04T22:50:20+08:00",
+  "state": "training",
+  "update": 397,
+  "native_steps": 2225523,
+  "additional_updates": 140,
+  "additional_native_steps": 852606,
+  "attempt": 0,
+  "logprob_recompute_error": 0.0,
+  "approx_kl": 4.21423465013504e-05,
+  "cloud_relay_last_update": 397,
+  "cloud_url": "https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257",
+  "training_cutoff": "2026-11-05T08:50:00+08:00",
+  "hard_deadline": "2026-11-05T09:00:00+08:00",
+  "evaluations": [
+    {
+      "file": "evaluation-3.0h.json",
+      "tag": "3.0h",
+      "update": 382,
+      "metrics": {
+        "eval/pick_success": 0.0,
+        "eval/pick_valid": 24,
+        "eval/pick_invalid_reset": 0,
+        "eval/place_success": 0.0,
+        "eval/place_valid": 21,
+        "eval/place_invalid_reset": 3,
+        "eval/upright_success": 0.0,
+        "eval/upright_valid": 24,
+        "eval/upright_invalid_reset": 0,
+        "eval/macro_success": 0.0
+      }
+    },
+    {
+      "file": "evaluation-baseline.json",
+      "tag": "baseline",
+      "update": 257,
+      "metrics": {
+        "eval/pick_success": 0.0,
+        "eval/pick_valid": 24,
+        "eval/pick_invalid_reset": 0,
+        "eval/place_success": 0.0,
+        "eval/place_valid": 21,
+        "eval/place_invalid_reset": 3,
+        "eval/upright_success": 0.0,
+        "eval/upright_valid": 24,
+        "eval/upright_invalid_reset": 0,
+        "eval/macro_success": 0.0
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "file": "best.pt",
+      "bytes": 116543977
+    },
+    {
+      "file": "continuation-start.pt",
+      "bytes": 116554084
+    },
+    {
+      "file": "initial.pt",
+      "bytes": 116547100
+    },
+    {
+      "file": "latest.pt",
+      "bytes": 116554379
+    },
+    {
+      "file": "milestone-3.0h.pt",
+      "bytes": 116561811
+    }
+  ],
+  "intervention": false
+}
