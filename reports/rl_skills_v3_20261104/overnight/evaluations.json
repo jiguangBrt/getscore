@@ -1,0 +1,18 @@
+[
+  {
+    "tag": "baseline",
+    "update": 257,
+    "metrics": {
+      "eval/pick_success": 0.0,
+      "eval/pick_valid": 24,
+      "eval/pick_invalid_reset": 0,
+      "eval/place_success": 0.0,
+      "eval/place_valid": 21,
+      "eval/place_invalid_reset": 3,
+      "eval/upright_success": 0.0,
+      "eval/upright_valid": 24,
+      "eval/upright_invalid_reset": 0,
+      "eval/macro_success": 0.0
+    }
+  }
+]

@@ -1,0 +1,1443 @@
+{
+  "continuation": {
+    "passed": true,
+    "created_at": "2026-11-04T11:23:08.505279+00:00",
+    "parent_run": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu",
+    "parent_checkpoint": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/checkpoints/final.pt",
+    "parent_checkpoint_sha256": "9151d9974e6d0a79c09efa1110b417a70a5847b4368cf99ec0f85f6923411169",
+    "update": 257,
+    "native_steps": 1372917,
+    "weights_optimizer_rng_exact": true,
+    "optimizer_state_count": 224,
+    "parent_budget_truncated_episodes": 21,
+    "active_environment_restore": false,
+    "reward_and_model_unchanged": true,
+    "inherited_physics_and_ppo_preflight": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/preflight-acceptance.json",
+    "unchanged_computational_sources": {
+      "runtime.py": "157b1ccee0fcec32b9e369e3bbb6e7841bd437da72df004be6ad4f8e1d65c0cf",
+      "train_runtime.py": "6879b56c9fd18d5a60dd8cbaab836a556ece2f1d92e2858d3311f0b8c30c4812",
+      "skill_env.py": "9e99cdf8af6102272205356d21fbde23ef28094c916489629edabb3990f97e9a",
+      "v3_skill_env.py": "14efd05e51516a0015d41c9ba5a6a25afbe8038cc1eb67b8524f837bcc83ca47",
+      "v3_reward.py": "136ea6f8e011732772a4a5edef5281776161fdeba8318b8607eb1e0961bb59e7",
+      "ppo_update.py": "a388b989cb93807c81d7c1b53bf7d78e4fbe4e5f5556c52a100a0185524075db",
+      "v3_verify_math.py": "41d529ad1d91330274c00c4d8000aa5d1c0c634cf0c1f5a13df6486a8481aa58"
+    },
+    "config_changes": {
+      "runtime_entrypoint": {
+        "old": "/data/wangyihan/getscore-rl-skills/experiments/four-gpu-v3-20261104/code/v3_train.py",
+        "new": "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_train.py"
+      },
+      "absolute_deadline": {
+        "old": 1793786380.4073858,
+        "new": 1793839800
+      },
+      "checkpoint_interval_seconds": {
+        "old": 7200,
+        "new": 10800
+      },
+      "runtime_preflight_report": {
+        "old": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/preflight-acceptance.json",
+        "new": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/launch-validation.json"
+      },
+      "continuation_checkpoint": {
+        "old": null,
+        "new": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/checkpoints/final.pt"
+      },
+      "resource_migration_authorization": {
+        "old": "User explicitly selected same-model24-environment four-GPU training and accepted one controlled restart with unfinished-trajectory discard.",
+        "new": "User authorized 2026-11-04: continue current checkpoint/rewards until tomorrow09:00, checkpoint/evaluate every3h, Git and W&B monitoring."
+      },
+      "walltime_seconds": {
+        "old": 21600,
+        "new": 48411.82085943222
+      },
+      "curriculum_offset_seconds": {
+        "old": null,
+        "new": 21704.0839908123
+      },
+      "resume_previous_run": {
+        "old": false,
+        "new": true
+      },
+      "scope": {
+        "old": "next skill run specification; implement v3 environment and collector before training",
+        "new": "User-authorized overnight same-v3 checkpoint continuation to 2026-11-05 09:00 Asia/Shanghai"
+      },
+      "resource_migration_from": {
+        "old": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938",
+        "new": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu"
+      },
+      "continuation_same_task": {
+        "old": null,
+        "new": true
+      },
+      "evaluation_interval_seconds": {
+        "old": 7200,
+        "new": 10800
+      },
+      "initial_policy_source": {
+        "old": "original_pi05_libero_base_with_fresh_lora_and_critic",
+        "new": "parent final checkpoint update257: exact LoRA/critic/optimizer/RNG continuation"
+      },
+      "reporting_deadline": {
+        "old": null,
+        "new": 1793840400
+      }
+    },
+    "config_sha256": "cd85d53871a0c8fd97df0210c8a68f72c6b5ba959e2f5e32ecf429b7cd804ab4",
+    "runtime_sha256": {
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/cutover.py": "93ed8d46ae879fd3c1681febe88972dc5b5135244293ae9e821842971c9d456b",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/plot_run.py": "719269575751eea05697530f614d0d6e5467a12ccd04ae965810153a06d3e1a6",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_skill_env.py": "14efd05e51516a0015d41c9ba5a6a25afbe8038cc1eb67b8524f837bcc83ca47",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_finalize.py": "d4af2466c92fcb0a2cd5caff06856a03051caea50336aa0185a2e49596b9593f",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_train.py": "54e5a91adb25baafbf0fe59ccd815e2928d1c2197ad9c6e239b00a522b5e79f6",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/skill_env.py": "9e99cdf8af6102272205356d21fbde23ef28094c916489629edabb3990f97e9a",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/ppo_update.py": "a388b989cb93807c81d7c1b53bf7d78e4fbe4e5f5556c52a100a0185524075db",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/runtime.py": "157b1ccee0fcec32b9e369e3bbb6e7841bd437da72df004be6ad4f8e1d65c0cf",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/verify_continuation.py": "22c447a9c1a9be65096160354c85bdee2e96469b53dbad32ea3d08891d1047c8",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/train_runtime.py": "6879b56c9fd18d5a60dd8cbaab836a556ece2f1d92e2858d3311f0b8c30c4812",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_summary.py": "6289500ae22915c7e117eebef089a905768a37aabfd3d300f38297e9ab54d59a",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_verify_math.py": "41d529ad1d91330274c00c4d8000aa5d1c0c634cf0c1f5a13df6486a8481aa58",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_reward.py": "136ea6f8e011732772a4a5edef5281776161fdeba8318b8607eb1e0961bb59e7",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/overnight_control.py": "549914b464e08150d696501b409b39d9ebcc75fe0282c0eda2c2375172d0984a",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/config_contract.py": "3e21540ce20b7a4dbe2f43b580557eb765ada8ade570b0dfed83869cfcaa3f74",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/code/v3_supervise.py": "e22f1ecf4c40d57fcb77bba769285733bc35a4fb4abe889dd6d5e35f5ee2e208",
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/run.sh": "93946d38238d1ea385118367b402f514f46c4a31665022dce365a596409ec2b9"
+    },
+    "hard_deadline": "2026-11-05T09:00:00+08:00",
+    "training_cutoff": "2026-11-05T08:50:00+08:00",
+    "wandb_connectivity": "server direct403; offline archive + workstation authenticated live cloud relay"
+  },
+  "wandb": {
+    "mode": "offline",
+    "run_id": "suiipg6k",
+    "dir": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/wandb/offline-run-20261104_192521-suiipg6k/files",
+    "url": null,
+    "project": "rpent-pi05-skills",
+    "entity": "",
+    "sync": "automatic online sync; local run files retained"
+  },
+  "wandb_cloud": {
+    "url": "https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257",
+    "run_id": "overnight20261104u257",
+    "entity": "jiguangbrt-university-of-dundee",
+    "project": "rpent-pi05-skills",
+    "mode": "online metrics relay; server retains full offline W&B run",
+    "local_pid": 1376898,
+    "remote_run": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900"
+  },
+  "additional_updates": 16,
+  "additional_native_steps": 97421,
+  "resource_migration": {},
+  "initialization_failures": 53,
+  "budget_truncated": null,
+  "outcomes": {
+    "pick": {
+      "success": 0,
+      "failure": 216,
+      "timeout": 59
+    },
+    "place": {
+      "success": 0,
+      "failure": 0,
+      "timeout": 223
+    },
+    "upright": {
+      "success": 0,
+      "failure": 38,
+      "timeout": 108
+    }
+  },
+  "restart_truncated": 0,
+  "updated_at": 1793793033.193734,
+  "state": "training",
+  "status": {
+    "state": "training",
+    "trainer_pid": 1809466,
+    "update": 273,
+    "elapsed_seconds": 1608.5894343852997,
+    "native_steps": 1470338,
+    "learner": {
+      "actor_loss": -6.05359673500061e-09,
+      "critic_loss": 0.04316889544619092,
+      "max_logprob_recompute_error": 0.0,
+      "gradient_norm": 1.0502489805221558,
+      "actor_lr": 1e-06,
+      "critic_warmup": false,
+      "advantage_mean": 0.025467276381071952,
+      "advantage_std": 0.2927271896920401,
+      "seconds": 9.738162755966187,
+      "microbatch": 8,
+      "chunks": 768,
+      "parallel_gradient_gpus": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "per_rank": [
+        {
+          "actor_loss": 0.02497998469819625,
+          "critic_loss": 0.049843307894965015,
+          "max_logprob_recompute_error": 0.0,
+          "chunks": 192,
+          "seconds": 8.00655484199524,
+          "microbatch": 8
+        },
+        {
+          "actor_loss": 0.09640144122143586,
+          "critic_loss": 0.04246190143749118,
+          "max_logprob_recompute_error": 0.0,
+          "chunks": 192,
+          "seconds": 7.838464021682739,
+          "microbatch": 8
+        },
+        {
+          "actor_loss": -0.11651768783728282,
+          "critic_loss": 0.0379853665169018,
+          "max_logprob_recompute_error": 0.0,
+          "chunks": 192,
+          "seconds": 7.870380878448486,
+          "microbatch": 8
+        },
+        {
+          "actor_loss": -0.00486376229673624,
+          "critic_loss": 0.042385005935405694,
+          "max_logprob_recompute_error": 0.0,
+          "chunks": 192,
+          "seconds": 8.128283500671387,
+          "microbatch": 8
+        }
+      ],
+      "peak_gib": 7.9226884841918945,
+      "approx_kl": 2.2164080291986465e-05,
+      "ratio_mean": 0.9979549702256918,
+      "clip_fraction": 0.0
+    },
+    "rollouts": [
+      {
+        "continued": [
+          {
+            "env": 0,
+            "episode_id": 3978,
+            "native_step": 40
+          },
+          {
+            "env": 1,
+            "episode_id": 3980,
+            "native_step": 24
+          },
+          {
+            "env": 2,
+            "episode_id": 3970,
+            "native_step": 128
+          },
+          {
+            "env": 3,
+            "episode_id": 3971,
+            "native_step": 128
+          },
+          {
+            "env": 4,
+            "episode_id": 3974,
+            "native_step": 80
+          },
+          {
+            "env": 5,
+            "episode_id": 3972,
+            "native_step": 88
+          },
+          {
+            "env": 6,
+            "episode_id": 3975,
+            "native_step": 72
+          },
+          {
+            "env": 7,
+            "episode_id": 3967,
+            "native_step": 160
+          }
+        ],
+        "active": [
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "pick"
+            },
+            "seed": 60413136,
+            "steps": 96,
+            "reward": -0.06934610628237356,
+            "episode_id": 3988
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 2,
+              "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+              "skill": "pick"
+            },
+            "seed": 48466636,
+            "steps": 8,
+            "reward": -0.0008000000000000001,
+            "episode_id": 3994
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 14856333,
+            "steps": 184,
+            "reward": -1.7907822853977335,
+            "episode_id": 3983
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "upright"
+            },
+            "seed": 22382944,
+            "steps": 104,
+            "reward": -0.04253693088442581,
+            "episode_id": 3987
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 2,
+              "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+              "skill": "place"
+            },
+            "seed": 33980569,
+            "steps": 136,
+            "reward": -0.9792457473067822,
+            "episode_id": 3985
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 67695683,
+            "steps": 16,
+            "reward": -0.004788102952808312,
+            "episode_id": 3992
+          },
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 1,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+              "skill": "place"
+            },
+            "seed": 49009266,
+            "steps": 88,
+            "reward": -2.9115606944968153,
+            "episode_id": 3989
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "place"
+            },
+            "seed": 79055369,
+            "steps": 16,
+            "reward": -0.5852760520834304,
+            "episode_id": 3993
+          }
+        ],
+        "coverage": [
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "pick"
+            },
+            "seed": 439071,
+            "episode_id": 3981
+          },
+          {
+            "spec": {
+              "type": "milk",
+              "object": "milk_1",
+              "label": "milk carton",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 1,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 7624528,
+            "episode_id": 3982
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 14856333,
+            "episode_id": 3983
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 43976746,
+            "episode_id": 3984
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 2,
+              "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+              "skill": "place"
+            },
+            "seed": 33980569,
+            "episode_id": 3985
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "pick"
+            },
+            "seed": 5184615,
+            "episode_id": 3986
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "upright"
+            },
+            "seed": 22382944,
+            "episode_id": 3987
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "pick"
+            },
+            "seed": 60413136,
+            "episode_id": 3988
+          },
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 1,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+              "skill": "place"
+            },
+            "seed": 49009266,
+            "episode_id": 3989
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "pick"
+            },
+            "seed": 39023530,
+            "episode_id": 3991
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 67695683,
+            "episode_id": 3992
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "place"
+            },
+            "seed": 79055369,
+            "episode_id": 3993
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 2,
+              "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+              "skill": "pick"
+            },
+            "seed": 48466636,
+            "episode_id": 3994
+          }
+        ],
+        "cumulative": {
+          "started": 3690,
+          "completed": 3667,
+          "success": 0,
+          "failure": 1404,
+          "timeout": 2263
+        },
+        "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/scratch/rollout-v272-actor0.pt",
+        "version": 272,
+        "chunks": 256,
+        "native_steps": 2036,
+        "reset_errors": [
+          {
+            "spec": {
+              "type": "plate",
+              "object": "plate_1",
+              "label": "plate",
+              "upright_eligible": false,
+              "placement_orientation": "flat",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 68759788,
+            "error": "all real-grasp initializations failed"
+          }
+        ],
+        "seconds": 62.23725914955139,
+        "inference_seconds": 16.43278694152832,
+        "environment_seconds": 2.810865640640259,
+        "physical_gpu": 1,
+        "cuda_peak_gib": 7.850996971130371,
+        "video": null
+      },
+      {
+        "continued": [
+          {
+            "env": 0,
+            "episode_id": 10003920,
+            "native_step": 72
+          },
+          {
+            "env": 1,
+            "episode_id": 10003917,
+            "native_step": 96
+          },
+          {
+            "env": 2,
+            "episode_id": 10003915,
+            "native_step": 104
+          },
+          {
+            "env": 3,
+            "episode_id": 10003922,
+            "native_step": 56
+          },
+          {
+            "env": 4,
+            "episode_id": 10003923,
+            "native_step": 48
+          },
+          {
+            "env": 5,
+            "episode_id": 10003924,
+            "native_step": 16
+          },
+          {
+            "env": 6,
+            "episode_id": 10003916,
+            "native_step": 104
+          },
+          {
+            "env": 7,
+            "episode_id": 10003921,
+            "native_step": 72
+          }
+        ],
+        "active": [
+          null,
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "upright"
+            },
+            "seed": 57800212,
+            "steps": 152,
+            "reward": 0.015336209933800549,
+            "episode_id": 10003929
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "place"
+            },
+            "seed": 32758816,
+            "steps": 160,
+            "reward": -1.5386792605290895,
+            "episode_id": 10003926
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "upright"
+            },
+            "seed": 62410123,
+            "steps": 112,
+            "reward": -0.07314358801216637,
+            "episode_id": 10003931
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_2",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 9683024,
+            "steps": 104,
+            "reward": -0.11856930106562331,
+            "episode_id": 10003932
+          },
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 7,
+              "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 32291271,
+            "steps": 24,
+            "reward": 0.039220783461630604,
+            "episode_id": 10003935
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 20769392,
+            "steps": 160,
+            "reward": -1.6508114243109024,
+            "episode_id": 10003927
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 5,
+              "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+              "skill": "upright"
+            },
+            "seed": 21235832,
+            "steps": 160,
+            "reward": -0.051042632138407845,
+            "episode_id": 10003928
+          }
+        ],
+        "coverage": [
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 7,
+              "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 79488364,
+            "episode_id": 10003925
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "place"
+            },
+            "seed": 32758816,
+            "episode_id": 10003926
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 20769392,
+            "episode_id": 10003927
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 5,
+              "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+              "skill": "upright"
+            },
+            "seed": 21235832,
+            "episode_id": 10003928
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "upright"
+            },
+            "seed": 57800212,
+            "episode_id": 10003929
+          },
+          {
+            "spec": {
+              "type": "alphabet_soup",
+              "object": "alphabet_soup_1",
+              "label": "alphabet soup can",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 4288714,
+            "episode_id": 10003930
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "upright"
+            },
+            "seed": 62410123,
+            "episode_id": 10003931
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_2",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 9683024,
+            "episode_id": 10003932
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "pick"
+            },
+            "seed": 38066815,
+            "episode_id": 10003933
+          },
+          {
+            "spec": {
+              "type": "tomato_sauce",
+              "object": "tomato_sauce_1",
+              "label": "tomato sauce can",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 7,
+              "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 16076478,
+            "episode_id": 10003934
+          },
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 7,
+              "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 32291271,
+            "episode_id": 10003935
+          }
+        ],
+        "cumulative": {
+          "started": 3638,
+          "completed": 3615,
+          "success": 0,
+          "failure": 1307,
+          "timeout": 2308
+        },
+        "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/scratch/rollout-v272-actor1.pt",
+        "version": 272,
+        "chunks": 256,
+        "native_steps": 2035,
+        "reset_errors": [],
+        "seconds": 48.68928837776184,
+        "inference_seconds": 16.182835578918457,
+        "environment_seconds": 2.573955774307251,
+        "physical_gpu": 3,
+        "cuda_peak_gib": 7.850996971130371,
+        "video": null
+      },
+      {
+        "continued": [
+          {
+            "env": 0,
+            "episode_id": 20002592,
+            "native_step": 80
+          },
+          {
+            "env": 1,
+            "episode_id": 20002588,
+            "native_step": 120
+          },
+          {
+            "env": 2,
+            "episode_id": 20002593,
+            "native_step": 56
+          },
+          {
+            "env": 3,
+            "episode_id": 20002595,
+            "native_step": 48
+          },
+          {
+            "env": 4,
+            "episode_id": 20002586,
+            "native_step": 128
+          },
+          {
+            "env": 5,
+            "episode_id": 20002594,
+            "native_step": 56
+          },
+          {
+            "env": 6,
+            "episode_id": 20002589,
+            "native_step": 104
+          },
+          {
+            "env": 7,
+            "episode_id": 20002591,
+            "native_step": 96
+          }
+        ],
+        "active": [
+          {
+            "spec": {
+              "type": "tomato_sauce",
+              "object": "tomato_sauce_1",
+              "label": "tomato sauce can",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 33692066,
+            "steps": 16,
+            "reward": 0.020520317139590388,
+            "episode_id": 20002607
+          },
+          {
+            "spec": {
+              "type": "milk",
+              "object": "milk_1",
+              "label": "milk carton",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 40301632,
+            "steps": 144,
+            "reward": 0.00034157644132722597,
+            "episode_id": 20002602
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "upright"
+            },
+            "seed": 49727208,
+            "steps": 112,
+            "reward": -0.21593924693027183,
+            "episode_id": 20002604
+          },
+          {
+            "spec": {
+              "type": "milk",
+              "object": "milk_1",
+              "label": "milk carton",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 74819816,
+            "steps": 104,
+            "reward": -0.0754877464836359,
+            "episode_id": 20002605
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_2",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "place"
+            },
+            "seed": 10858594,
+            "steps": 144,
+            "reward": -1.826866332922479,
+            "episode_id": 20002603
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 5,
+              "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+              "skill": "pick"
+            },
+            "seed": 29309687,
+            "steps": 176,
+            "reward": -0.028197372929113566,
+            "episode_id": 20002600
+          },
+          null,
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 45937592,
+            "steps": 152,
+            "reward": -1.5831644390388138,
+            "episode_id": 20002601
+          }
+        ],
+        "coverage": [
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_1",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "pick"
+            },
+            "seed": 40902192,
+            "episode_id": 20002596
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 9,
+              "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+              "skill": "pick"
+            },
+            "seed": 69623433,
+            "episode_id": 20002597
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "pick"
+            },
+            "seed": 10856055,
+            "episode_id": 20002598
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "pick"
+            },
+            "seed": 13663059,
+            "episode_id": 20002599
+          },
+          {
+            "spec": {
+              "type": "white_yellow_mug",
+              "object": "white_yellow_mug_1",
+              "label": "yellow and white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 5,
+              "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+              "skill": "pick"
+            },
+            "seed": 29309687,
+            "episode_id": 20002600
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 6,
+              "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+              "skill": "place"
+            },
+            "seed": 45937592,
+            "episode_id": 20002601
+          },
+          {
+            "spec": {
+              "type": "milk",
+              "object": "milk_1",
+              "label": "milk carton",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 40301632,
+            "episode_id": 20002602
+          },
+          {
+            "spec": {
+              "type": "moka_pot",
+              "object": "moka_pot_2",
+              "label": "moka pot",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 8,
+              "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+              "skill": "place"
+            },
+            "seed": 10858594,
+            "episode_id": 20002603
+          },
+          {
+            "spec": {
+              "type": "porcelain_mug",
+              "object": "porcelain_mug_1",
+              "label": "white mug",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 4,
+              "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+              "skill": "upright"
+            },
+            "seed": 49727208,
+            "episode_id": 20002604
+          },
+          {
+            "spec": {
+              "type": "milk",
+              "object": "milk_1",
+              "label": "milk carton",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 74819816,
+            "episode_id": 20002605
+          },
+          {
+            "spec": {
+              "type": "ketchup",
+              "object": "ketchup_1",
+              "label": "ketchup bottle",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "pick"
+            },
+            "seed": 63554018,
+            "episode_id": 20002606
+          },
+          {
+            "spec": {
+              "type": "tomato_sauce",
+              "object": "tomato_sauce_1",
+              "label": "tomato sauce can",
+              "upright_eligible": true,
+              "placement_orientation": "upright",
+              "task_index": 0,
+              "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+              "skill": "upright"
+            },
+            "seed": 33692066,
+            "episode_id": 20002607
+          }
+        ],
+        "cumulative": {
+          "started": 2381,
+          "completed": 2369,
+          "success": 0,
+          "failure": 898,
+          "timeout": 1471
+        },
+        "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/scratch/rollout-v272-actor2.pt",
+        "version": 272,
+        "chunks": 256,
+        "native_steps": 2032,
+        "reset_errors": [],
+        "seconds": 50.762864112854004,
+        "inference_seconds": 16.105976819992065,
+        "environment_seconds": 2.7675790786743164,
+        "physical_gpu": 2,
+        "cuda_peak_gib": 7.850996971130371,
+        "video": null
+      }
+    ],
+    "metrics": {
+      "train/actor_loss": -6.05359673500061e-09,
+      "train/critic_loss": 0.04316889544619092,
+      "train/max_logprob_recompute_error": 0.0,
+      "train/gradient_norm": 1.0502489805221558,
+      "train/actor_lr": 1e-06,
+      "train/critic_warmup": false,
+      "train/advantage_mean": 0.025467276381071952,
+      "train/advantage_std": 0.2927271896920401,
+      "train/seconds": 9.738162755966187,
+      "train/microbatch": 8,
+      "train/chunks": 768,
+      "train/peak_gib": 7.9226884841918945,
+      "train/approx_kl": 2.2164080291986465e-05,
+      "train/ratio_mean": 0.9979549702256918,
+      "train/clip_fraction": 0.0,
+      "train/pick_completed": 20,
+      "train/pick_failure_count": 14,
+      "train/pick_timeout_count": 6,
+      "train/pick_success": 0.0,
+      "train/pick_episode_reward": -1.0412711937192023,
+      "train/pick_episode_steps": 110.6,
+      "train/pick_chunk_reward": -0.07146650568531589,
+      "train/pick_chunks": 286,
+      "train/place_completed": 7,
+      "train/place_failure_count": 0,
+      "train/place_timeout_count": 7,
+      "train/place_success": 0.0,
+      "train/place_episode_reward": -2.876864934950786,
+      "train/place_episode_steps": 200.0,
+      "train/place_chunk_reward": -0.08614439758915511,
+      "train/place_chunks": 241,
+      "train/upright_completed": 11,
+      "train/upright_failure_count": 2,
+      "train/upright_timeout_count": 9,
+      "train/upright_success": 0.0,
+      "train/upright_episode_reward": -0.5230646019535762,
+      "train/upright_episode_steps": 190.8181818181818,
+      "train/upright_chunk_reward": -0.022667695305787543,
+      "train/upright_chunks": 241,
+      "train/native_steps": 1470338,
+      "train/update": 273,
+      "train/iteration_seconds": 72.32926034927368,
+      "train/native_steps_per_second": 84.37802114535614,
+      "train/reset_errors": 1,
+      "system/elapsed_hours": 0.4468298631244236,
+      "update": 273,
+      "coverage/scene0_chunks": 105,
+      "coverage/scene1_chunks": 52,
+      "coverage/scene2_chunks": 18,
+      "coverage/scene4_chunks": 97,
+      "coverage/scene5_chunks": 139,
+      "coverage/scene6_chunks": 79,
+      "coverage/scene7_chunks": 15,
+      "coverage/scene8_chunks": 112,
+      "coverage/scene9_chunks": 151,
+      "coverage/alphabet_soup_chunks": 16,
+      "coverage/ketchup_chunks": 37,
+      "coverage/milk_chunks": 78,
+      "coverage/moka_pot_chunks": 130,
+      "coverage/orange_juice_chunks": 9,
+      "coverage/porcelain_mug_chunks": 217,
+      "coverage/tomato_sauce_chunks": 32,
+      "coverage/white_yellow_mug_chunks": 249
+    },
+    "deadline": 1793839800,
+    "wandb_mode": "offline"
+  },
+  "supervisor": {
+    "state": "running",
+    "attempt": 0,
+    "pid": 1809466,
+    "command": [
+      "/data/wangyihan/getscore-rl-skills/experiments/overnight-v3-20261104/run.sh",
+      "v3_train.py",
+      "--out",
+      "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900",
+      "--hours",
+      "14.0",
+      "--envs",
+      "24",
+      "--chunks",
+      "32"
+    ],
+    "log": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/trainer-attempt0.log"
+  },
+  "run_meta": {
+    "started_at": 1793791388.1791406,
+    "deadline": 1793839800,
+    "reporting_deadline": 1793840400,
+    "run_name": "pi05-skills-v3-overnight-20261104-to-20261105-0900",
+    "parent_run": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu",
+    "continuation": true
+  },
+  "completed_updates": 273,
+  "native_steps": 1470338,
+  "evaluations": [
+    {
+      "file": "evaluation-baseline.json",
+      "tag": "baseline",
+      "update": 257,
+      "metrics": {
+        "eval/pick_success": 0.0,
+        "eval/pick_valid": 24,
+        "eval/pick_invalid_reset": 0,
+        "eval/place_success": 0.0,
+        "eval/place_valid": 21,
+        "eval/place_invalid_reset": 3,
+        "eval/upright_success": 0.0,
+        "eval/upright_valid": 24,
+        "eval/upright_invalid_reset": 0,
+        "eval/macro_success": 0.0
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "file": "best.pt",
+      "bytes": 116543977
+    },
+    {
+      "file": "continuation-start.pt",
+      "bytes": 116554084
+    },
+    {
+      "file": "initial.pt",
+      "bytes": 116547100
+    },
+    {
+      "file": "latest.pt",
+      "bytes": 116554315
+    }
+  ],
+  "videos": [
+    "videos/eval-baseline-actor0-pick.mp4",
+    "videos/eval-baseline-actor0-place.mp4",
+    "videos/eval-baseline-actor0-upright.mp4",
+    "videos/eval-baseline-actor1-pick.mp4",
+    "videos/eval-baseline-actor1-place.mp4",
+    "videos/eval-baseline-actor1-upright.mp4",
+    "videos/eval-baseline-actor2-pick.mp4",
+    "videos/eval-baseline-actor2-place.mp4",
+    "videos/eval-baseline-actor2-upright.mp4",
+    "videos/train-v260-actor0.mp4",
+    "videos/train-v260-actor1.mp4",
+    "videos/train-v260-actor2.mp4",
+    "videos/train-v270-actor0.mp4",
+    "videos/train-v270-actor1.mp4",
+    "videos/train-v270-actor2.mp4"
+  ],
+  "wandb_offline_dirs": [
+    "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/wandb/offline-run-20261104_192521-suiipg6k"
+  ]
+}
