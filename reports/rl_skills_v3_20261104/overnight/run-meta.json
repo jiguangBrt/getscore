@@ -1,0 +1,8 @@
+{
+  "started_at": 1793791388.1791406,
+  "deadline": 1793839800,
+  "reporting_deadline": 1793840400,
+  "run_name": "pi05-skills-v3-overnight-20261104-to-20261105-0900",
+  "parent_run": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu",
+  "continuation": true
+}

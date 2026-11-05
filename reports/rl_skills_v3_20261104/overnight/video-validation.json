@@ -1,0 +1,29 @@
+[
+  {
+    "file": "videos/eval-final-actor0-pick.mp4",
+    "frames": 39,
+    "fps": 20.0,
+    "duration_seconds": 1.95,
+    "width": 512,
+    "height": 476,
+    "first_and_last_frames_decodable": true
+  },
+  {
+    "file": "videos/eval-final-actor0-place.mp4",
+    "frames": 200,
+    "fps": 20.0,
+    "duration_seconds": 10.0,
+    "width": 512,
+    "height": 476,
+    "first_and_last_frames_decodable": true
+  },
+  {
+    "file": "videos/eval-final-actor0-upright.mp4",
+    "frames": 200,
+    "fps": 20.0,
+    "duration_seconds": 10.0,
+    "width": 512,
+    "height": 476,
+    "first_and_last_frames_decodable": true
+  }
+]

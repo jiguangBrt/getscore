@@ -1,0 +1,108 @@
+{
+  "delivered_at": "2026-11-05T14:28:10+08:00",
+  "training_completed_at": "2026-11-05T08:51:54.916937+08:00",
+  "training_state": "completed",
+  "notification_delayed": true,
+  "imported_update": 257,
+  "final_update": 807,
+  "additional_updates": 550,
+  "imported_native_steps": 1372917,
+  "final_native_steps": 4722269,
+  "additional_native_steps": 3349352,
+  "skills": {
+    "pick": {
+      "attempts": 24,
+      "valid": 24,
+      "invalid_reset": 0,
+      "baseline_successes": 0,
+      "final_successes": 0
+    },
+    "place": {
+      "attempts": 24,
+      "valid": 21,
+      "invalid_reset": 3,
+      "baseline_successes": 0,
+      "final_successes": 0
+    },
+    "upright": {
+      "attempts": 24,
+      "valid": 24,
+      "invalid_reset": 0,
+      "baseline_successes": 0,
+      "final_successes": 0
+    }
+  },
+  "training_outcomes": {
+    "pick": {
+      "success": 0,
+      "failure": 7382,
+      "timeout": 2392
+    },
+    "place": {
+      "success": 0,
+      "failure": 5,
+      "timeout": 7843
+    },
+    "upright": {
+      "success": 0,
+      "failure": 1339,
+      "timeout": 3446
+    }
+  },
+  "initialization_failure_attempts": 1778,
+  "restarts": 0,
+  "budget_truncated": 24,
+  "numerics": {
+    "max_logprob_recompute_error": 0.0,
+    "max_approx_kl": 0.0009712069295346737,
+    "min_gradient_norm": 0.22491317987442017
+  },
+  "checkpoints": {
+    "final.pt": {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/checkpoints/final.pt",
+      "update": 807,
+      "native_steps": 4722269,
+      "sha256": "4901535e7d7578df5db5aace37534b3a25ab247077b9698c1b32ddc39e78151d",
+      "bytes": 116554106,
+      "optimizer_states": 224,
+      "all_optimizer_steps": [
+        807.0
+      ],
+      "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59"
+    },
+    "best.pt": {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/checkpoints/best.pt",
+      "update": 257,
+      "native_steps": 1372917,
+      "sha256": "3850860311d72c874cd0107e1f1f40d261b81c92fd92cc353e326456b1bcaca8",
+      "bytes": 116543977,
+      "optimizer_states": 224,
+      "all_optimizer_steps": [
+        257.0
+      ],
+      "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59"
+    },
+    "max_trainable_weight_change_from_best": 0.004641197621822357
+  },
+  "cloud_sync": {
+    "passed": true,
+    "synchronized_at_utc": "2026-11-05T06:25:21.643436+00:00",
+    "cloud_url": "https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257",
+    "previous_cloud_update": 807,
+    "relay_interrupted_after_update": 562,
+    "backfilled_updates": 245,
+    "updates_submitted_this_pass": 0,
+    "added_evaluations": [
+      "12.0h:745",
+      "9.0h:622",
+      "final:807"
+    ],
+    "final_update": 807,
+    "total_native_steps": 4722269,
+    "terminal_state": "completed",
+    "server_archive_complete": true,
+    "note": "Real-time relay stopped after 02:59:56+08:00. Retained server metrics were backfilled after delayed final-report trigger."
+  },
+  "server_final_git_commit": "d156063",
+  "reward_changed": false
+}

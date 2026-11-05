@@ -1,0 +1,27 @@
+{
+  "final.pt": {
+    "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/checkpoints/final.pt",
+    "update": 807,
+    "native_steps": 4722269,
+    "sha256": "4901535e7d7578df5db5aace37534b3a25ab247077b9698c1b32ddc39e78151d",
+    "bytes": 116554106,
+    "optimizer_states": 224,
+    "all_optimizer_steps": [
+      807.0
+    ],
+    "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59"
+  },
+  "best.pt": {
+    "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/checkpoints/best.pt",
+    "update": 257,
+    "native_steps": 1372917,
+    "sha256": "3850860311d72c874cd0107e1f1f40d261b81c92fd92cc353e326456b1bcaca8",
+    "bytes": 116543977,
+    "optimizer_states": 224,
+    "all_optimizer_steps": [
+      257.0
+    ],
+    "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59"
+  },
+  "max_trainable_weight_change_from_best": 0.004641197621822357
+}

@@ -3,3 +3,7 @@ relay.log
 relay.lock
 relay-pid.json
 relay-state.json
+checkpoints/
+metrics.jsonl
+events.jsonl
+final-cloud-sync.log

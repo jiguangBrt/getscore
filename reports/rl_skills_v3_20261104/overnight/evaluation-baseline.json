@@ -1,0 +1,5792 @@
+{
+  "tag": "baseline",
+  "update": 257,
+  "metrics": {
+    "eval/pick_success": 0.0,
+    "eval/pick_valid": 24,
+    "eval/pick_invalid_reset": 0,
+    "eval/place_success": 0.0,
+    "eval/place_valid": 21,
+    "eval/place_invalid_reset": 3,
+    "eval/upright_success": 0.0,
+    "eval/upright_valid": 24,
+    "eval/upright_invalid_reset": 0,
+    "eval/macro_success": 0.0
+  },
+  "results": [
+    {
+      "case": {
+        "id": "pick-09",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000009
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 27,
+      "final": {
+        "clearance_m": 0.0121285538269843,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.09390383444809547,
+          -0.21539193955727412,
+          0.4479710130089445
+        ],
+        "eef_pos": [
+          -0.09708203247744532,
+          -0.1807830065659294,
+          0.5563213387285133
+        ],
+        "tilt_degrees": 6.292907772071537,
+        "lift_m": 0.013601052149913861,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.06268588658702003,
+        "eef_distance": 0.06791641699245424,
+        "linear_speed": 0.11923081495883799,
+        "angular_speed": 2.792647585257382,
+        "gripper_opening": 0.00657234779026741,
+        "eef_object_center_distance": 0.11378783884514991,
+        "native_step": 27,
+        "remaining_steps": 173,
+        "max_object_lift_m": 0.018909774422341097,
+        "object_lift_m": 0.013601052149913861,
+        "xy_offset_m": 0.06268588658702003,
+        "xy_path_m": 0.06730139291683307,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.06654312415399218,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0666431241539922,
+        "episode_reward": -1.3392069645841653,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000000
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 39,
+      "final": {
+        "clearance_m": 0.09991347630870884,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.05531566659190284,
+          -0.12868708842115623,
+          0.5358789056250277
+        ],
+        "eef_pos": [
+          -0.07983972838957076,
+          -0.10544126324663075,
+          0.6185237373557428
+        ],
+        "tilt_degrees": 2.095925904645272,
+        "lift_m": 0.10150894476599709,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05142598322211117,
+        "eef_distance": 0.04698385929047485,
+        "linear_speed": 0.21880161962864103,
+        "angular_speed": 0.15822544017695706,
+        "gripper_opening": 0.008117710842079965,
+        "eef_object_center_distance": 0.08928586790135747,
+        "native_step": 39,
+        "remaining_steps": 161,
+        "max_object_lift_m": 0.10150894476599709,
+        "object_lift_m": 0.10150894476599709,
+        "xy_offset_m": 0.05142598322211117,
+        "xy_path_m": 0.07123927676350178,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04093351453699077,
+          "descent": -0.0,
+          "height": 0.029833492937207717,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.011200021599783,
+        "episode_reward": -1.0600963838175088,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-18",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000018
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 39,
+      "final": {
+        "clearance_m": 0.027862893070883243,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.020237748327850785,
+          -0.1978804583669922,
+          0.4714471819125584
+        ],
+        "eef_pos": [
+          -0.07220486248543295,
+          -0.15538968667789407,
+          0.5536666237987817
+        ],
+        "tilt_degrees": 28.152235435890752,
+        "lift_m": 0.03707722105352779,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.06820489828732063,
+        "eef_distance": 0.07445897573873789,
+        "linear_speed": 0.08516068633611101,
+        "angular_speed": 0.9711651862080047,
+        "gripper_opening": 0.017452451013930885,
+        "eef_object_center_distance": 0.1061418072989352,
+        "native_step": 39,
+        "remaining_steps": 161,
+        "max_object_lift_m": 0.03707722105352779,
+        "object_lift_m": 0.03707722105352779,
+        "xy_offset_m": 0.06820489828732063,
+        "xy_path_m": 0.07104444274663241,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.25886948814587435,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.2589694881458744,
+        "episode_reward": -1.359122213733162,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-21",
+        "spec": {
+          "type": "chocolate_pudding",
+          "object": "chocolate_pudding_1",
+          "label": "chocolate pudding",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000021
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 45,
+      "final": {
+        "clearance_m": 0.15644621144053905,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.011359011661190509,
+          0.10256660594854146,
+          0.6075242274131757
+        ],
+        "eef_pos": [
+          0.007029729031159693,
+          0.1036935806613729,
+          0.6029803207199504
+        ],
+        "tilt_degrees": 1.5868882706044825,
+        "lift_m": 0.15768430589317572,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.0508216523145263,
+        "eef_distance": 0.05472705471202807,
+        "linear_speed": 0.1935311976304763,
+        "angular_speed": 0.14840252097614307,
+        "gripper_opening": 0.04584094507043409,
+        "eef_object_center_distance": 0.006376507518288141,
+        "native_step": 45,
+        "remaining_steps": 155,
+        "max_object_lift_m": 0.15768430589317572,
+        "object_lift_m": 0.15768430589317572,
+        "xy_offset_m": 0.0508216523145263,
+        "xy_path_m": 0.06511800931258507,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04013442522551916,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0402344252255191,
+        "episode_reward": -1.0300900465629252,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "chocolate pudding",
+        "prompt": "pick up the chocolate pudding",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-12",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "pick"
+        },
+        "seed": 90000012
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 79,
+      "final": {
+        "clearance_m": 0.326328813339287,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.07227103131795125,
+          -0.07554649353329769,
+          1.217915696066539
+        ],
+        "eef_pos": [
+          -0.07512553412524758,
+          -0.09050833136136194,
+          1.3251951001276336
+        ],
+        "tilt_degrees": 8.000337821291936,
+        "lift_m": 0.3326886948022272,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.054961929554582706,
+        "eef_distance": 0.05927001693153381,
+        "linear_speed": 0.14797531660840077,
+        "angular_speed": 0.16683689426311024,
+        "gripper_opening": 0.009895006174968229,
+        "eef_object_center_distance": 0.10835531972715405,
+        "native_step": 79,
+        "remaining_steps": 121,
+        "max_object_lift_m": 0.3326886948022272,
+        "object_lift_m": 0.3326886948022272,
+        "xy_offset_m": 0.054961929554582706,
+        "xy_path_m": 0.1261398583842824,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.037567638009537316,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0376676380095373,
+        "episode_reward": -1.338599291921412,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-03",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "pick"
+        },
+        "seed": 90000003
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -2.4195629044765354e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.0928717546774957,
+          0.01640790189561801,
+          0.8852270012643118
+        ],
+        "eef_pos": [
+          -0.10741233986915408,
+          0.05160327800328874,
+          1.0435320355501931
+        ],
+        "tilt_degrees": 1.2074182697257333e-06,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.004630640065633038,
+        "eef_distance": 0.1148047192790532,
+        "linear_speed": 2.3152887657252207e-14,
+        "angular_speed": 2.84323893246972e-14,
+        "gripper_opening": 0.07919113633578584,
+        "eef_object_center_distance": 0.1628208432521167,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.017030354878040166,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.004630640065633038,
+        "xy_path_m": 0.023507861432006696,
+        "hold_steps": 0,
+        "stable_count": 27,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.3375393071600334,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-06",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "pick"
+        },
+        "seed": 90000006
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -4.475452972108052e-06,
+        "table_z": 0.9,
+        "object_pos": [
+          0.0528554819951882,
+          -0.04003467207654454,
+          0.9661058538799802
+        ],
+        "eef_pos": [
+          0.04366741296798055,
+          -0.06500289866499537,
+          1.0909558365007654
+        ],
+        "tilt_degrees": 2.831646840510158e-06,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.014843348138710714,
+        "eef_distance": 0.07943772938442302,
+        "linear_speed": 2.2803758519995636e-14,
+        "angular_speed": 3.380891026243118e-15,
+        "gripper_opening": 0.07885417247053206,
+        "eef_object_center_distance": 0.1276532455985015,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.009116782185928374,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.014843348138710714,
+        "xy_path_m": 0.15374965310232913,
+        "hold_steps": 0,
+        "stable_count": 23,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.9887482655116455,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-15",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "pick"
+        },
+        "seed": 90000015
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -4.475452972108052e-06,
+        "table_z": 0.9,
+        "object_pos": [
+          0.04335772127320276,
+          -0.004576701613626178,
+          0.9661058538799802
+        ],
+        "eef_pos": [
+          0.014513584703125672,
+          -0.07232650849510619,
+          1.0385423399566562
+        ],
+        "tilt_degrees": 2.561320938754782e-06,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.010177541553871608,
+        "eef_distance": 0.07697672670632323,
+        "linear_speed": 2.30311279615072e-14,
+        "angular_speed": 1.9433202683378864e-15,
+        "gripper_opening": 0.07836793983996265,
+        "eef_object_center_distance": 0.10329116642814903,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.006516959880175532,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.010177541553871608,
+        "xy_path_m": 0.06476978281645256,
+        "hold_steps": 0,
+        "stable_count": 15,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.5438489140822628,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-21",
+        "spec": {
+          "type": "chocolate_pudding",
+          "object": "chocolate_pudding_1",
+          "label": "chocolate pudding",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001021
+      },
+      "valid_reset": false,
+      "error": "all real-grasp initializations failed"
+    },
+    {
+      "case": {
+        "id": "place-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001000
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.008040232766350186,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.14122852992800572,
+          0.01984521924791272,
+          0.4432489761328797
+        ],
+        "eef_pos": [
+          0.08563903363607239,
+          0.11129137275457095,
+          0.4465289261718153
+        ],
+        "tilt_degrees": 2.2340560114170724,
+        "lift_m": 0.0088790152738491,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2913933104314931,
+        "eef_distance": 0.11677051921404874,
+        "linear_speed": 0.001055580709866165,
+        "angular_speed": 0.005543636685620164,
+        "gripper_opening": 0.050739606995623486,
+        "eef_object_center_distance": 0.10706703115997979,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.14146878291446618,
+        "object_lift_m": 0.0088790152738491,
+        "xy_offset_m": 0.2913933104314931,
+        "xy_path_m": 0.32740475163260063,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0008125552803232789,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20091255528032329,
+        "episode_reward": -1.8570237581630031,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-03",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "place"
+        },
+        "seed": 90001003
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.8018577619425287e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.33210765954658356,
+          -0.2314985062863163,
+          0.9174083116598893
+        ],
+        "eef_pos": [
+          -0.27517928436305095,
+          -0.1902738465292685,
+          1.1818221635243287
+        ],
+        "tilt_degrees": 82.67890106705488,
+        "lift_m": 0.0321813103955777,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.3421534434003359,
+        "eef_distance": 0.2256404492649027,
+        "linear_speed": 6.004588166755694e-13,
+        "angular_speed": 1.54122021582603e-11,
+        "gripper_opening": 0.0790080549706472,
+        "eef_object_center_distance": 0.27359641359292536,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.3478025667382376,
+        "object_lift_m": 0.0321813103955777,
+        "xy_offset_m": 0.3421534434003359,
+        "xy_path_m": 0.5691783958799921,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.0839402325707177e-12,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000108394,
+        "episode_reward": -3.0658919793999613,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-06",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "place"
+        },
+        "seed": 90001006
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.030432839300841397,
+        "table_z": 0.9,
+        "object_pos": [
+          0.00589168739473166,
+          0.19151497433258058,
+          1.0011714421653306
+        ],
+        "eef_pos": [
+          -0.04637806046417704,
+          0.13886275961919348,
+          1.0388442348899338
+        ],
+        "tilt_degrees": 8.263996971407215,
+        "lift_m": 0.035065588285350335,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2189758286399451,
+        "eef_distance": 0.07520865837567577,
+        "linear_speed": 0.001251730592589441,
+        "angular_speed": 0.016747598187942258,
+        "gripper_opening": 0.0797593027290891,
+        "eef_object_center_distance": 0.0832083022728467,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.12450564426802413,
+        "object_lift_m": 0.035065588285350335,
+        "xy_offset_m": 0.2189758286399451,
+        "xy_path_m": 0.2688886880103558,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0003829578157721276,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20048295781577213,
+        "episode_reward": -1.564443440051779,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-09",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001009
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.007260776706223937,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.13972690928575113,
+          0.016991132701310682,
+          0.44275549247864854
+        ],
+        "eef_pos": [
+          0.09403791180647006,
+          0.11043164224233322,
+          0.4483378370282304
+        ],
+        "tilt_degrees": 1.4667837714257295,
+        "lift_m": 0.008385531619617914,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.424399491152851,
+        "eef_distance": 0.11309969685927428,
+        "linear_speed": 6.5193461905513606e-09,
+        "angular_speed": 1.3724516158482654e-08,
+        "gripper_opening": 0.0774158423898148,
+        "eef_object_center_distance": 0.10416225748618317,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.185636473071363,
+        "object_lift_m": 0.008385531619617914,
+        "xy_offset_m": 0.424399491152851,
+        "xy_path_m": 0.48901477884277617,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.6293031518883224e-09,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000162930316,
+        "episode_reward": -2.6650738942138816,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-12",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "place"
+        },
+        "seed": 90001012
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.07517095662613082,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.35445823059394044,
+          -0.13801340624800662,
+          0.9640032219077647
+        ],
+        "eef_pos": [
+          -0.3057355604668936,
+          -0.09181817912072562,
+          1.2038911173575555
+        ],
+        "tilt_degrees": 5.9746076330265145,
+        "lift_m": 0.07877622064345302,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.301193716680443,
+        "eef_distance": 0.2014083176832596,
+        "linear_speed": 3.840062390271409e-07,
+        "angular_speed": 4.633555968021507e-06,
+        "gripper_opening": 0.07917370764212919,
+        "eef_object_center_distance": 0.2491066036398471,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.3432962320449884,
+        "object_lift_m": 0.07877622064345302,
+        "xy_offset_m": 0.301193716680443,
+        "xy_path_m": 0.5385488824526358,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -8.959600502404837e-08,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010008959600503,
+        "episode_reward": -2.9127444122631823,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-15",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "place"
+        },
+        "seed": 90001015
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.030495524547027864,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.019546346492696386,
+          0.18991783920022723,
+          0.9966058538799801
+        ],
+        "eef_pos": [
+          -0.11136511573058668,
+          0.10306457450570675,
+          1.034730966661098
+        ],
+        "tilt_degrees": 3.306651113363206e-06,
+        "lift_m": 0.03049999999999997,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2026453093021091,
+        "eef_distance": 0.1269456140200147,
+        "linear_speed": 2.4001520338738942e-14,
+        "angular_speed": 2.535332440007782e-15,
+        "gripper_opening": 0.07969752908958286,
+        "eef_object_center_distance": 0.13201401515380987,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.11794413830359396,
+        "object_lift_m": 0.03049999999999997,
+        "xy_offset_m": 0.2026453093021091,
+        "xy_path_m": 0.23554533817271553,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -1.3977266908635768,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-18",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001018
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.00031437640625381347,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.21315557449140396,
+          0.04224121238287373,
+          0.5029445008040233
+        ],
+        "eef_pos": [
+          0.1362526269334547,
+          0.10741665371605914,
+          0.4501870055647848
+        ],
+        "tilt_degrees": 103.14369948111298,
+        "lift_m": 0.06857453994499269,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.45497544944767926,
+        "eef_distance": 0.14394792226329048,
+        "linear_speed": 0.24287824803832037,
+        "angular_speed": 4.685950715297344,
+        "gripper_opening": 0.04898731164109085,
+        "eef_object_center_distance": 0.11377721564528841,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.1872097354253467,
+        "object_lift_m": 0.06857453994499269,
+        "xy_offset_m": 0.45497544944767926,
+        "xy_path_m": 0.5362446402055023,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.028816197422366623,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.22891619742236663,
+        "episode_reward": -2.9012232010275127,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-09",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "upright"
+        },
+        "seed": 90002009
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 65,
+      "final": {
+        "clearance_m": 0.14733681135570054,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.07138470689066115,
+          -0.04363711907697303,
+          0.6351577496915027
+        ],
+        "eef_pos": [
+          0.01660156727169286,
+          -0.06290958802338897,
+          0.6787440138177162
+        ],
+        "tilt_degrees": 89.51894942457909,
+        "lift_m": 0.20078778883247217,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2083394915398857,
+        "eef_distance": 0.058427360488564235,
+        "linear_speed": 0.2217961921921214,
+        "angular_speed": 0.015804548534161838,
+        "gripper_opening": 0.04828134994448252,
+        "eef_object_center_distance": 0.07261117590482874,
+        "native_step": 65,
+        "remaining_steps": 135,
+        "max_object_lift_m": 0.20078778883247217,
+        "object_lift_m": 0.20078778883247217,
+        "xy_offset_m": 0.2083394915398857,
+        "xy_path_m": 0.22595685048873565,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "manipulate",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.02287775911208439,
+          "approach": 0.0,
+          "orientation": 0.0,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0229777591120843,
+        "episode_reward": -1.3250614358956023,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.619644487004312,
+          "stability": 0.0,
+          "orientation": 0.00790013577217748
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-21",
+        "spec": {
+          "type": "alphabet_soup",
+          "object": "alphabet_soup_1",
+          "label": "alphabet soup can",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 0,
+          "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+          "skill": "upright"
+        },
+        "seed": 90002021
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 122,
+      "final": {
+        "clearance_m": 0.22629955347893493,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.01571659623383122,
+          0.01141297886856271,
+          0.6998305892441775
+        ],
+        "eef_pos": [
+          -0.017991176192004334,
+          0.006243433640836751,
+          0.7210251039001895
+        ],
+        "tilt_degrees": 87.4014320503572,
+        "lift_m": 0.22466046528365202,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.20117215115679932,
+        "eef_distance": 0.02935394177534491,
+        "linear_speed": 0.20744460485294408,
+        "angular_speed": 0.09344031575561201,
+        "gripper_opening": 0.07263698989668156,
+        "eef_object_center_distance": 0.021934114145584566,
+        "native_step": 122,
+        "remaining_steps": 78,
+        "max_object_lift_m": 0.22466046528365202,
+        "object_lift_m": 0.22466046528365202,
+        "xy_offset_m": 0.20117215115679932,
+        "xy_path_m": 0.2680214698210167,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.02136943600521866,
+          "approach": 0.0,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0214694360052186,
+        "episode_reward": -1.3883346479416914,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.954816387592387,
+          "stability": 0.0,
+          "orientation": 0.04055824106907538
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "alphabet soup can",
+        "prompt": "pick up the alphabet soup can and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "upright"
+        },
+        "seed": 90002000
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.005445172433856116,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.10689253722750479,
+          -0.16061080452341714,
+          0.4929173922164138
+        ],
+        "eef_pos": [
+          -0.16567047188248588,
+          -0.17185753947778468,
+          0.521588026714573
+        ],
+        "tilt_degrees": 87.35554991644787,
+        "lift_m": 0.05854743135738316,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.01921606083561543,
+        "eef_distance": 0.06353169667300042,
+        "linear_speed": 0.06273186647556983,
+        "angular_speed": 0.0909663519869801,
+        "gripper_opening": 0.07531699723836563,
+        "eef_object_center_distance": 0.06635766671580653,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.06641426073856588,
+        "object_lift_m": 0.05854743135738316,
+        "xy_offset_m": 0.01921606083561543,
+        "xy_path_m": 0.11853005500964874,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.001636694328817372,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20173669432881738,
+        "episode_reward": -0.3077915407129151,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.7974183302436073,
+          "stability": 0.0,
+          "orientation": 0.03132550931400744
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-03",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "upright"
+        },
+        "seed": 90002003
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.801857741958514e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.10931849588592288,
+          0.018241428719664495,
+          0.9174083116598944
+        ],
+        "eef_pos": [
+          -0.07892155445054032,
+          0.0043081732595663435,
+          1.046932451713175
+        ],
+        "tilt_degrees": 82.67890106705259,
+        "lift_m": 0.03218131039558281,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 1.5154544286133387e-14,
+        "eef_distance": 0.08626817783839076,
+        "linear_speed": 2.1417502625493886e-14,
+        "angular_speed": 7.845941343465845e-14,
+        "gripper_opening": 0.01806506296786141,
+        "eef_object_center_distance": 0.1337707461027421,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.03218131039558281,
+        "object_lift_m": 0.03218131039558281,
+        "xy_offset_m": 1.30069566228741e-14,
+        "xy_path_m": 1.30069566228741e-14,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.3183898417423734e-16,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000000014,
+        "episode_reward": -0.1872603799301905,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.6547924013967081,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-06",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "upright"
+        },
+        "seed": 90002006
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.030373111925963148,
+        "table_z": 0.9,
+        "object_pos": [
+          0.0015441871203223999,
+          0.1778929595223244,
+          0.9673478839145485
+        ],
+        "eef_pos": [
+          -0.038086292589647214,
+          0.18473897542348047,
+          1.005788335939027
+        ],
+        "tilt_degrees": 89.96812208939107,
+        "lift_m": 0.0012420300345683533,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.1551299499867796,
+        "eef_distance": 0.04184574058562685,
+        "linear_speed": 0.0010549761136698184,
+        "angular_speed": 0.02441820689666299,
+        "gripper_opening": 0.08000416193492069,
+        "eef_object_center_distance": 0.05563372365398009,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.09065830439485367,
+        "object_lift_m": 0.0012420300345683533,
+        "xy_offset_m": 0.1551326681586488,
+        "xy_path_m": 0.18999961562396275,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.00011659044668464886,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20021659044668466,
+        "episode_reward": -0.5540376275887777,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.919232073182957,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-12",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "upright"
+        },
+        "seed": 90002012
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.794493148578937e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.07808913620227034,
+          -0.010667791256530841,
+          0.9173129671817359
+        ],
+        "eef_pos": [
+          -0.14737008506266486,
+          -0.03789280976699913,
+          1.0295153819956653
+        ],
+        "tilt_degrees": 82.60670715418058,
+        "lift_m": 0.032085965917424186,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0005452421523716966,
+        "eef_distance": 0.0970061437053142,
+        "linear_speed": 1.2052896543522546e-06,
+        "angular_speed": 1.3724579945200459e-05,
+        "gripper_opening": 0.017928980513000424,
+        "eef_object_center_distance": 0.13464929779976206,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.03414073799258155,
+        "object_lift_m": 0.032085965917424186,
+        "xy_offset_m": 0.0005452421523740409,
+        "xy_path_m": 0.00828610424103836,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -3.8515931429834797e-07,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001003851593143,
+        "episode_reward": -0.21756314277400376,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.3801813141614582,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-15",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 2,
+          "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+          "skill": "upright"
+        },
+        "seed": 90002015
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -5.2367691233623503e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.07253001218486481,
+          0.023324001770095828,
+          0.9383932608448182
+        ],
+        "eef_pos": [
+          0.05180367416748372,
+          0.0705844414816729,
+          1.0086335409838518
+        ],
+        "tilt_degrees": 89.99706004348471,
+        "lift_m": -0.027712593035162048,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0015755624950734909,
+        "eef_distance": 0.05543283493967184,
+        "linear_speed": 2.314911046096475e-14,
+        "angular_speed": 2.1746678388842424e-14,
+        "gripper_opening": 0.07756616261872014,
+        "eef_object_center_distance": 0.08715977973441802,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": -0.026400773033936842,
+        "object_lift_m": -0.027712593035162048,
+        "xy_offset_m": 0.001575562495077258,
+        "xy_path_m": 0.017425549152822503,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.21103395844446668,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.8763427972235651,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-18",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "upright"
+        },
+        "seed": 90002018
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -2.87106377394597e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.045693674597416474,
+          -0.043026328665553434,
+          0.47798740773560766
+        ],
+        "eef_pos": [
+          0.06824001459633035,
+          -0.004730613947837485,
+          0.5756071662560713
+        ],
+        "tilt_degrees": 89.99985176374503,
+        "lift_m": 0.04361744687657704,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.17139495427306156,
+        "eef_distance": 0.06513478805242694,
+        "linear_speed": 8.673168081834835e-15,
+        "angular_speed": 4.686288685236503e-14,
+        "gripper_opening": 0.04815448885607784,
+        "eef_object_center_distance": 0.1072591090149501,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.17661435501928724,
+        "object_lift_m": 0.04361744687657704,
+        "xy_offset_m": 0.17139495427306156,
+        "xy_path_m": 0.25221225381902607,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -3.469446951953614e-16,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000000036,
+        "episode_reward": -0.6780497449905363,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9274952529503151,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-10",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "pick"
+        },
+        "seed": 90000010
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 30,
+      "final": {
+        "clearance_m": 0.055124824342592305,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.07467378770858024,
+          -0.17430789245280698,
+          0.49382279459431566
+        ],
+        "eef_pos": [
+          -0.09713435486099384,
+          -0.1230869256480723,
+          0.5813054140774374
+        ],
+        "tilt_degrees": 16.692894166061677,
+        "lift_m": 0.05945283373541943,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05037913111661853,
+        "eef_distance": 0.0673276412815443,
+        "linear_speed": 0.18734078396200124,
+        "angular_speed": 0.13534889260908248,
+        "gripper_opening": 0.016443750045426673,
+        "eef_object_center_distance": 0.10383291014340533,
+        "native_step": 30,
+        "remaining_steps": 170,
+        "max_object_lift_m": 0.05945283373541943,
+        "object_lift_m": 0.05945283373541943,
+        "xy_offset_m": 0.05037913111662737,
+        "xy_path_m": 0.05675151379893308,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.021501935788562847,
+          "descent": -0.0,
+          "height": 0.04109910368354734,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -0.9805028321050155,
+        "episode_reward": -1.1813839670646522,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.35124533976671085,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "pick"
+        },
+        "seed": 90000001
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 35,
+      "final": {
+        "clearance_m": 0.08299260164674283,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.06713879509064188,
+          -0.2135526683733221,
+          0.5202554113979806
+        ],
+        "eef_pos": [
+          -0.08182301958583744,
+          -0.17259722108031603,
+          0.5975988611117654
+        ],
+        "tilt_degrees": 8.70191269362793,
+        "lift_m": 0.08588545053894997,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.053909077206502815,
+        "eef_distance": 0.05138715164557942,
+        "linear_speed": 0.19726583758069946,
+        "angular_speed": 0.09540399666828697,
+        "gripper_opening": 0.005720607865585943,
+        "eef_object_center_distance": 0.08874110843134798,
+        "native_step": 35,
+        "remaining_steps": 165,
+        "max_object_lift_m": 0.08588545053894997,
+        "object_lift_m": 0.08588545053894997,
+        "xy_offset_m": 0.053909077206502815,
+        "xy_path_m": 0.08255241825088602,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0445494727263045,
+          "descent": -0.0,
+          "height": 0.02437938969989979,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0202700830264047,
+        "episode_reward": -1.1840119286674704,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.7741672086231994,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-04",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "pick"
+        },
+        "seed": 90000004
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 40,
+      "final": {
+        "clearance_m": 0.08661868914594795,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.01819875858292901,
+          0.13848572161347628,
+          0.5257024036490482
+        ],
+        "eef_pos": [
+          -0.013987624074013523,
+          0.18832010779430372,
+          0.6051206857597177
+        ],
+        "tilt_degrees": 9.807414519922249,
+        "lift_m": 0.0888454023847361,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05149025735743053,
+        "eef_distance": 0.05802271126218558,
+        "linear_speed": 0.20172050728766105,
+        "angular_speed": 0.0759020414284311,
+        "gripper_opening": 0.010283120804599316,
+        "eef_object_center_distance": 0.09385341354091448,
+        "native_step": 40,
+        "remaining_steps": 160,
+        "max_object_lift_m": 0.0888454023847361,
+        "object_lift_m": 0.0888454023847361,
+        "xy_offset_m": 0.05149025735743053,
+        "xy_path_m": 0.07145606981770294,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04364960697010021,
+          "descent": -0.0,
+          "height": 0.028181464634451814,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0155681423356484,
+        "episode_reward": -1.1148224176417816,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.8215264381557774,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-19",
+        "spec": {
+          "type": "red_coffee_mug",
+          "object": "red_coffee_mug_1",
+          "label": "red mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000019
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 37,
+      "final": {
+        "clearance_m": 0.0007147687041076378,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.1341711991631667,
+          0.021329620905298163,
+          0.4462972961973502
+        ],
+        "eef_pos": [
+          -0.12893400274712855,
+          0.04178077184708525,
+          0.5711285178470078
+        ],
+        "tilt_degrees": 12.421087479956386,
+        "lift_m": 0.007698274811097083,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05992271081556638,
+        "eef_distance": 0.07775210308875322,
+        "linear_speed": 0.19501014570222475,
+        "angular_speed": 0.035005494068589035,
+        "gripper_opening": 0.081685123060383,
+        "eef_object_center_distance": 0.12660375863176362,
+        "native_step": 37,
+        "remaining_steps": 163,
+        "max_object_lift_m": 0.00961413413113038,
+        "object_lift_m": 0.007698274811097083,
+        "xy_offset_m": 0.05992271081556638,
+        "xy_path_m": 0.060229142396866706,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.05029516460488709,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.050395164604887,
+        "episode_reward": -1.3048457119843335,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "red mug",
+        "prompt": "pick up the red mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-13",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "pick"
+        },
+        "seed": 90000013
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 41,
+      "final": {
+        "clearance_m": 0.10530659822176247,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.03575362236409754,
+          0.1231053465153017,
+          0.5435829352936546
+        ],
+        "eef_pos": [
+          -0.020309981810322158,
+          0.17637301515677617,
+          0.6205056520654231
+        ],
+        "tilt_degrees": 4.63656114146273,
+        "lift_m": 0.10672593402934255,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.056015427929393374,
+        "eef_distance": 0.0616504925724442,
+        "linear_speed": 0.20611981930144369,
+        "angular_speed": 0.10253814198361831,
+        "gripper_opening": 0.010543095388376642,
+        "eef_object_center_distance": 0.09483171891093108,
+        "native_step": 41,
+        "remaining_steps": 159,
+        "max_object_lift_m": 0.10672593402934255,
+        "object_lift_m": 0.10672593402934255,
+        "xy_offset_m": 0.056015427929393374,
+        "xy_path_m": 0.08380172296584179,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04425657003302733,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0443565700330273,
+        "episode_reward": -1.1231086148292089,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-22",
+        "spec": {
+          "type": "black_book",
+          "object": "black_book_1",
+          "label": "book",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "pick"
+        },
+        "seed": 90000022
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 44,
+      "final": {
+        "clearance_m": 0.17802582125781274,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.22300902642232748,
+          0.07955909653738956,
+          1.0645218272942547
+        ],
+        "eef_pos": [
+          -0.20031149459994754,
+          0.07211617873745083,
+          1.1910422982930198
+        ],
+        "tilt_degrees": 4.550383706540242,
+        "lift_m": 0.18156198425425507,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.052688763115486946,
+        "eef_distance": 0.0801620699463121,
+        "linear_speed": 0.24484874782060112,
+        "angular_speed": 0.06523015239794086,
+        "gripper_opening": 0.03499764039557345,
+        "eef_object_center_distance": 0.12875560010327297,
+        "native_step": 44,
+        "remaining_steps": 156,
+        "max_object_lift_m": 0.18156198425425507,
+        "object_lift_m": 0.18156198425425507,
+        "xy_offset_m": 0.052688763115486946,
+        "xy_path_m": 0.05919215520407483,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.043099123272779025,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.043199123272779,
+        "episode_reward": -1.0003607760203743,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "book",
+        "prompt": "pick up the book",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-07",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "pick"
+        },
+        "seed": 90000007
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 54,
+      "final": {
+        "clearance_m": 0.08878655557476933,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.058336184326121684,
+          0.17180137498502931,
+          1.057617642097234
+        ],
+        "eef_pos": [
+          -0.05343786518883092,
+          0.17055761077085466,
+          1.1418334845047606
+        ],
+        "tilt_degrees": 3.9754848124374256,
+        "lift_m": 0.09151178821725381,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.052347199540750004,
+        "eef_distance": 0.03458705468015309,
+        "linear_speed": 0.20425823248457262,
+        "angular_speed": 0.10857141340250205,
+        "gripper_opening": 0.014814608006256148,
+        "eef_object_center_distance": 0.08436734316191638,
+        "native_step": 54,
+        "remaining_steps": 146,
+        "max_object_lift_m": 0.09151178821725381,
+        "object_lift_m": 0.09151178821725381,
+        "xy_offset_m": 0.052347199540750004,
+        "xy_path_m": 0.06753830651858381,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04211926523674938,
+          "descent": -0.0,
+          "height": 0.02872710488968515,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0134921603470641,
+        "episode_reward": -1.0838349491501007,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.8641886114760609,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-16",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "pick"
+        },
+        "seed": 90000016
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 51,
+      "final": {
+        "clearance_m": 0.13531288258754526,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.048933417651348454,
+          0.29716267070806607,
+          1.1048278823323479
+        ],
+        "eef_pos": [
+          -0.04958095721004715,
+          0.2897284633417749,
+          1.18119008389736
+        ],
+        "tilt_degrees": 5.417205628339794,
+        "lift_m": 0.13872202845236759,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05170401998093598,
+        "eef_distance": 0.027398036754472384,
+        "linear_speed": 0.17279030908184248,
+        "angular_speed": 0.10854732956102241,
+        "gripper_opening": 0.012895370499160161,
+        "eef_object_center_distance": 0.0767259576316948,
+        "native_step": 51,
+        "remaining_steps": 149,
+        "max_object_lift_m": 0.13872202845236759,
+        "object_lift_m": 0.13872202845236759,
+        "xy_offset_m": 0.05170401998093598,
+        "xy_path_m": 0.08522799302432466,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.04096143595172645,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0410614359517265,
+        "episode_reward": -1.1312399651216234,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "place"
+        },
+        "seed": 90001001
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.008315411031662334,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.04560809155407008,
+          -0.2745335508287961,
+          0.44468401364670984
+        ],
+        "eef_pos": [
+          0.018882734617126064,
+          0.39905914265024844,
+          0.6435141990788577
+        ],
+        "tilt_degrees": 4.033023103294535,
+        "lift_m": 0.010314052787679218,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.09477868967123045,
+        "eef_distance": 0.6928467416856091,
+        "linear_speed": 1.9453052421210195e-07,
+        "angular_speed": 3.6061530005431998e-06,
+        "gripper_opening": 0.07931278027217534,
+        "eef_object_center_distance": 0.7052798210693255,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.11086403811840134,
+        "object_lift_m": 0.010314052787679218,
+        "xy_offset_m": 0.09477868967123045,
+        "xy_path_m": 0.12601358990764772,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -4.674897368142536e-08,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001000467489737,
+        "episode_reward": -0.8500679495382384,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-04",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "place"
+        },
+        "seed": 90001004
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.0074769980560676075,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.010124557586181259,
+          0.29973490049488993,
+          0.44536988235656777
+        ],
+        "eef_pos": [
+          -0.032539344342051586,
+          0.1429622246447898,
+          0.5950773333277425
+        ],
+        "tilt_degrees": 5.2159017431686,
+        "lift_m": 0.008512881092255675,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.19394630662137308,
+        "eef_distance": 0.18714077679031077,
+        "linear_speed": 3.1401221601638933e-07,
+        "angular_speed": 1.8871165387257702e-06,
+        "gripper_opening": 0.07990478371996948,
+        "eef_object_center_distance": 0.21792754629646613,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.12754347223131124,
+        "object_lift_m": 0.008512881092255675,
+        "xy_offset_m": 0.19394630662137308,
+        "xy_path_m": 0.21251846068844107,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -7.825074798345537e-08,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.200100078250748,
+        "episode_reward": -1.2825923034422049,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-07",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "place"
+        },
+        "seed": 90001007
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -5.452650738391185e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.18230475346365538,
+          -0.2918732087487971,
+          0.9563931170768207
+        ],
+        "eef_pos": [
+          -0.029191476802649743,
+          0.016583543320937977,
+          1.1146278930081515
+        ],
+        "tilt_degrees": 107.0002619356768,
+        "lift_m": -0.009712736803159538,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.5389013396390643,
+        "eef_distance": 0.3609764675268805,
+        "linear_speed": 0.00015851930877075086,
+        "angular_speed": 0.004157516191205046,
+        "gripper_opening": 0.0792566241187326,
+        "eef_object_center_distance": 0.3789821733291925,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.1782342688791323,
+        "object_lift_m": -0.009712736803159538,
+        "xy_offset_m": 0.5389013396390643,
+        "xy_path_m": 0.6330199477171186,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -5.784965355765924e-05,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20015784965355768,
+        "episode_reward": -3.3850997385855943,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-10",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "place"
+        },
+        "seed": 90001010
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.007084187661819452,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.005033896675860949,
+          -0.2848174986399002,
+          0.4425667212829018
+        ],
+        "eef_pos": [
+          0.049056562932880424,
+          0.35645907779935015,
+          0.5949496901610687
+        ],
+        "tilt_degrees": 1.4668051493245753,
+        "lift_m": 0.008196760423999694,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.18022250469447784,
+        "eef_distance": 0.6508885580115311,
+        "linear_speed": 5.807955205821828e-09,
+        "angular_speed": 1.3477825158325614e-09,
+        "gripper_opening": 0.07823771825985348,
+        "eef_object_center_distance": 0.6606014016319879,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.12358384090210761,
+        "object_lift_m": 0.008196760423999694,
+        "xy_offset_m": 0.18022250469447784,
+        "xy_path_m": 0.20805933686718636,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.451512223261687e-09,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000145151224,
+        "episode_reward": -1.2602966843359267,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-13",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "place"
+        },
+        "seed": 90001013
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.007655397612375714,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.011424831774326474,
+          0.27880047554185433,
+          0.4457755552451603
+        ],
+        "eef_pos": [
+          -0.11143422202363382,
+          -0.07505152216743123,
+          0.6052048840878174
+        ],
+        "tilt_degrees": 6.24403996636752,
+        "lift_m": 0.008918553980848232,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.19697835309980627,
+        "eef_distance": 0.39023116404758945,
+        "linear_speed": 2.879389043668927e-07,
+        "angular_speed": 1.972574032800689e-06,
+        "gripper_opening": 0.028034882800625646,
+        "eef_object_center_distance": 0.4070912603805225,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.12346611531171214,
+        "object_lift_m": 0.008918553980848232,
+        "xy_offset_m": 0.19697835309980627,
+        "xy_path_m": 0.2241969920141111,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -7.176096663816984e-08,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010007176096664,
+        "episode_reward": -1.3409849600705557,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-16",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "place"
+        },
+        "seed": 90001016
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.2632383124144738,
+        "table_z": 0.9,
+        "object_pos": [
+          0.14550269249500705,
+          0.011102614442243504,
+          1.2357135994537678
+        ],
+        "eef_pos": [
+          0.13810832461503975,
+          -0.06791304792217893,
+          1.2468003271903736
+        ],
+        "tilt_degrees": 88.04735383900311,
+        "lift_m": 0.2696077455737875,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.31836049508224,
+        "eef_distance": 0.08838774990618183,
+        "linear_speed": 0.11564515377641238,
+        "angular_speed": 0.24089575871781876,
+        "gripper_opening": 0.012878637640394337,
+        "eef_object_center_distance": 0.08013156124236143,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.4016393553538742,
+        "object_lift_m": 0.2696077455737875,
+        "xy_offset_m": 0.31836049508224,
+        "xy_path_m": 0.9771319600194905,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "manipulate",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.02213836119484911,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.22223836119484913,
+        "episode_reward": -5.105659800097456,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-19",
+        "spec": {
+          "type": "red_coffee_mug",
+          "object": "red_coffee_mug_1",
+          "label": "red mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001019
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.008130550050789942,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.1289332322224652,
+          0.025608095622607886,
+          0.46792660696842797
+        ],
+        "eef_pos": [
+          0.18604952346250986,
+          -0.045766401125476266,
+          0.5407798047027756
+        ],
+        "tilt_degrees": 36.55664592539101,
+        "lift_m": 0.029327585582174853,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.31537736315551845,
+        "eef_distance": 0.0942276931572936,
+        "linear_speed": 0.005283150225460855,
+        "angular_speed": 0.13916782801086824,
+        "gripper_opening": 0.01942877293987933,
+        "eef_object_center_distance": 0.11689387465209561,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.14774039567726827,
+        "object_lift_m": 0.029327585582174853,
+        "xy_offset_m": 0.31537736315551845,
+        "xy_path_m": 0.4246212281923937,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "manipulate",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.000969611239323267,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20106961123932326,
+        "episode_reward": -2.343106140961967,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "red mug",
+        "prompt": "place the red mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-22",
+        "spec": {
+          "type": "black_book",
+          "object": "black_book_1",
+          "label": "book",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "place"
+        },
+        "seed": 90001022
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -1.569048505567494e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.26118913475646305,
+          -0.2233946085081831,
+          1.0216998430951496
+        ],
+        "eef_pos": [
+          -0.2561364950671632,
+          -0.21236297240382676,
+          1.1083883033130786
+        ],
+        "tilt_degrees": 180.0,
+        "lift_m": 0.13874000005514997,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.36379715378742467,
+        "eef_distance": 0.038642842495491714,
+        "linear_speed": 3.446125051349017e-09,
+        "angular_speed": 1.747185649949408e-13,
+        "gripper_opening": 0.0768542136860485,
+        "eef_object_center_distance": 0.08753350957161653,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.2963030173881551,
+        "object_lift_m": 0.13874000005514997,
+        "xy_offset_m": 0.36379715378742467,
+        "xy_path_m": 0.6318600893795293,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.5014329821558e-14,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000001502,
+        "episode_reward": -3.3793004468976453,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "book",
+        "prompt": "place the book flat nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-22",
+        "spec": {
+          "type": "tomato_sauce",
+          "object": "tomato_sauce_1",
+          "label": "tomato sauce can",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 0,
+          "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+          "skill": "upright"
+        },
+        "seed": 90002022
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 121,
+      "final": {
+        "clearance_m": 0.154065237706146,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.05653242724728317,
+          0.2514065477058697,
+          0.6194348825314143
+        ],
+        "eef_pos": [
+          -0.054869330442536564,
+          0.2492120322050218,
+          0.6235453905991583
+        ],
+        "tilt_degrees": 89.14950537694502,
+        "lift_m": 0.14426573215272148,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.20322922360024925,
+        "eef_distance": 0.04597202691926927,
+        "linear_speed": 0.14186833134970558,
+        "angular_speed": 0.08711083478665987,
+        "gripper_opening": 0.07286943392082379,
+        "eef_object_center_distance": 0.004947531287461245,
+        "native_step": 121,
+        "remaining_steps": 79,
+        "max_object_lift_m": 0.15705429765619133,
+        "object_lift_m": 0.14426573215272148,
+        "xy_offset_m": 0.20322922360024837,
+        "xy_path_m": 0.22433964027022307,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "manipulate",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.012733732638977,
+          "approach": 0.0,
+          "orientation": 0.00011411666283847043,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0127196159761385,
+        "episode_reward": -1.3111986793005086,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.9297042311005442,
+          "stability": 0.0,
+          "orientation": 0.010317965616367872
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "tomato sauce can",
+        "prompt": "pick up the tomato sauce can and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-04",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "upright"
+        },
+        "seed": 90002004
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 170,
+      "final": {
+        "clearance_m": 0.05032048074077777,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.010700692820035239,
+          0.2881884633141315,
+          0.5292547820585688
+        ],
+        "eef_pos": [
+          -0.0038414853173300376,
+          0.2841527654348155,
+          0.6009392679209115
+        ],
+        "tilt_degrees": 87.71711153193637,
+        "lift_m": 0.0923977807942567,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2014030934960763,
+        "eef_distance": 0.026419287073388587,
+        "linear_speed": 0.87693496204442,
+        "angular_speed": 0.5359573148172095,
+        "gripper_opening": 0.056855887157300215,
+        "eef_object_center_distance": 0.07325590294099435,
+        "native_step": 170,
+        "remaining_steps": 30,
+        "max_object_lift_m": 0.14584744999536559,
+        "object_lift_m": 0.0923977807942567,
+        "xy_offset_m": 0.2014030934960763,
+        "xy_path_m": 0.22212672728446584,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.01912189136545607,
+          "approach": 0.0,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.019221891365456,
+        "episode_reward": -1.3100549008325764,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.830549358608472,
+          "stability": 0.0,
+          "orientation": 0.032236952686439356
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "upright"
+        },
+        "seed": 90002001
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.06075113437577834,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.08483075300735113,
+          -0.23703581101241306,
+          0.5483858942237847
+        ],
+        "eef_pos": [
+          -0.023330271346478682,
+          -0.23884084281157833,
+          0.5952992692698749
+        ],
+        "tilt_degrees": 91.03909423017097,
+        "lift_m": 0.11401593336475407,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.06891865485525075,
+        "eef_distance": 0.061604339440670945,
+        "linear_speed": 0.10360056353911463,
+        "angular_speed": 0.32140405792171123,
+        "gripper_opening": 0.05043191943640912,
+        "eef_object_center_distance": 0.07737203721326215,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.1195301666085598,
+        "object_lift_m": 0.11401593336475407,
+        "xy_offset_m": 0.06891865485525075,
+        "xy_path_m": 0.09904248878093296,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.008953618938972627,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20905361893897265,
+        "episode_reward": -0.2895060426350987,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.5715786985353446,
+          "stability": 0.0,
+          "orientation": 0.0
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-07",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "upright"
+        },
+        "seed": 90002007
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.565788035486683e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.06705754533225272,
+          0.2596086860337967,
+          0.9603983510341487
+        ],
+        "eef_pos": [
+          -0.09036191689164585,
+          -0.3230600265961545,
+          1.0403346945302414
+        ],
+        "tilt_degrees": 63.5545685627827,
+        "lift_m": -0.005707502845831547,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 2.7895796884382456e-13,
+        "eef_distance": 0.5839024807907045,
+        "linear_speed": 2.6384659740424853e-14,
+        "angular_speed": 4.501632379127694e-14,
+        "gripper_opening": 0.02674524092896633,
+        "eef_object_center_distance": 0.5885879215742948,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": -0.005707502845736956,
+        "object_lift_m": -0.005707502845831547,
+        "xy_offset_m": 2.7895796884382456e-13,
+        "xy_path_m": 3.572417316547775e-13,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.2108030233253962,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.18393953350636572,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-10",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "upright"
+        },
+        "seed": 90002010
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.007626834866408749,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.033302758911973,
+          -0.24892817150239255,
+          0.490605417935389
+        ],
+        "eef_pos": [
+          -0.0417528599276934,
+          0.15111414296547657,
+          0.5704095255139662
+        ],
+        "tilt_degrees": 78.17036186693555,
+        "lift_m": 0.05623545707635752,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.1750832609456925,
+        "eef_distance": 0.4081120974839758,
+        "linear_speed": 9.023109539402866e-08,
+        "angular_speed": 7.10312650947801e-07,
+        "gripper_opening": 0.010724595888908232,
+        "eef_object_center_distance": 0.4147720999182899,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.14812755961524443,
+        "object_lift_m": 0.05623545707635752,
+        "xy_offset_m": 0.1750832609456925,
+        "xy_path_m": 0.2633755474375978,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -9.017872262383441e-09,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000901787228,
+        "episode_reward": -0.6091143024554141,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.7527358483956258,
+          "stability": 0.0,
+          "orientation": 0.0
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-13",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "upright"
+        },
+        "seed": 90002013
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.674487306648544e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.05650645641560214,
+          0.05964348379800242,
+          0.46894298511565474
+        ],
+        "eef_pos": [
+          -0.10304343333777814,
+          0.09914271974178943,
+          0.5552359611588482
+        ],
+        "tilt_degrees": 82.60671417172142,
+        "lift_m": 0.03208598385134265,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0056238008530184545,
+        "eef_distance": 0.07101450535820068,
+        "linear_speed": 7.62587271053266e-15,
+        "angular_speed": 4.6214118854221675e-14,
+        "gripper_opening": 0.0735844176090133,
+        "eef_object_center_distance": 0.10569937358182052,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.038505340246205055,
+        "object_lift_m": 0.03208598385134265,
+        "xy_offset_m": 0.0056238008530184545,
+        "xy_path_m": 0.08971565483164512,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.36941928069178576,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.6002405794300901,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-16",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_1",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "upright"
+        },
+        "seed": 90002016
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -5.2367691233623503e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.019252705736113356,
+          0.25000576431476107,
+          0.9383932608448182
+        ],
+        "eef_pos": [
+          0.06656685841268382,
+          0.04946901204229917,
+          1.0392851477208311
+        ],
+        "tilt_degrees": 89.99706004348478,
+        "lift_m": -0.027712593035162048,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.21223478085669525,
+        "linear_speed": 2.3326645665187576e-14,
+        "angular_speed": 4.292225037747153e-14,
+        "gripper_opening": 0.0764042650043336,
+        "eef_object_center_distance": 0.2294183752293847,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": -0.027712593035162048,
+        "object_lift_m": -0.027712593035162048,
+        "xy_offset_m": 0.0,
+        "xy_path_m": 0.0,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.21999999999999995,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-19",
+        "spec": {
+          "type": "red_coffee_mug",
+          "object": "red_coffee_mug_1",
+          "label": "red mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "upright"
+        },
+        "seed": 90002019
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.337377284529097e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.15983301729238092,
+          0.024011835353950628,
+          0.4644078914625474
+        ],
+        "eef_pos": [
+          0.1373915554152012,
+          0.04017853383953429,
+          0.5351215078511355
+        ],
+        "tilt_degrees": 86.43552500881516,
+        "lift_m": 0.025808870076294288,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.00486027724105436,
+        "eef_distance": 0.29838375067188583,
+        "linear_speed": 9.075564891853344e-15,
+        "angular_speed": 1.1335038607353795e-14,
+        "gripper_opening": 0.07958765218482453,
+        "eef_object_center_distance": 0.30594807452226425,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.05566388260110433,
+        "object_lift_m": 0.025808870076294288,
+        "xy_offset_m": 0.00486027724105436,
+        "xy_path_m": 0.023058487927126534,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.26339378741694913,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.05446376874608683,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "red mug",
+        "prompt": "pick up the red mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-14",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "pick"
+        },
+        "seed": 90000014
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 42,
+      "final": {
+        "clearance_m": 0.10108384030796025,
+        "table_z": 0.9,
+        "object_pos": [
+          0.017304161743131985,
+          0.04020769520147752,
+          1.0135441434856505
+        ],
+        "eef_pos": [
+          -0.02432924808916288,
+          0.016759003147752364,
+          1.0821458109218287
+        ],
+        "tilt_degrees": 15.44861240279061,
+        "lift_m": 0.1134529896967158,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05203852001737498,
+        "eef_distance": 0.05127576430147514,
+        "linear_speed": 0.22617229189258947,
+        "angular_speed": 0.13208653368897286,
+        "gripper_opening": 0.010944110664111068,
+        "eef_object_center_distance": 0.08360245659260414,
+        "native_step": 42,
+        "remaining_steps": 158,
+        "max_object_lift_m": 0.1134529896967158,
+        "object_lift_m": 0.1134529896967158,
+        "xy_offset_m": 0.05203852001737498,
+        "xy_path_m": 0.06432009246358397,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.03287387759512517,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0329738775951252,
+        "episode_reward": -1.02580046231792,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-11",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "pick"
+        },
+        "seed": 90000011
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 53,
+      "final": {
+        "clearance_m": 0.17042591508806193,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.08308468915137092,
+          -0.18847381754396228,
+          1.0923121968538319
+        ],
+        "eef_pos": [
+          -0.10805340327671083,
+          -0.21725532252897875,
+          1.1708669373657283
+        ],
+        "tilt_degrees": 32.74244048103468,
+        "lift_m": 0.1947094426085998,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05124047389205102,
+        "eef_distance": 0.04761496529429814,
+        "linear_speed": 0.2157678622280354,
+        "angular_speed": 0.14952057701443341,
+        "gripper_opening": 0.03078008982555045,
+        "eef_object_center_distance": 0.08730784026172488,
+        "native_step": 53,
+        "remaining_steps": 147,
+        "max_object_lift_m": 0.1947094426085998,
+        "object_lift_m": 0.1947094426085998,
+        "xy_offset_m": 0.05124047389205102,
+        "xy_path_m": 0.08002767937560483,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.029971196788376054,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.030071196788376,
+        "episode_reward": -1.1054383968780241,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-20",
+        "spec": {
+          "type": "plate",
+          "object": "plate_1",
+          "label": "plate",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000020
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 63,
+      "final": {
+        "clearance_m": -4.233708116563317e-05,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          0.13819506818670843,
+          0.06699124788998895,
+          0.4434043816561085
+        ],
+        "eef_pos": [
+          0.13149792695657278,
+          0.14643701459589814,
+          0.45327326027460746
+        ],
+        "tilt_degrees": 5.798458420790782,
+        "lift_m": 0.004131549287743952,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.0526361513433499,
+        "eef_distance": 0.08925798816623026,
+        "linear_speed": 0.07545568283706228,
+        "angular_speed": 0.4261262529660307,
+        "gripper_opening": 0.07946583968533295,
+        "eef_object_center_distance": 0.08033602126899737,
+        "native_step": 63,
+        "remaining_steps": 137,
+        "max_object_lift_m": 0.006695969823717507,
+        "object_lift_m": 0.004131549287743952,
+        "xy_offset_m": 0.0526361513433499,
+        "xy_path_m": 0.0549931526402615,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.014463726172373365,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0145637261723734,
+        "episode_reward": -1.2812657632013076,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "plate",
+        "prompt": "pick up the plate",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-05",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "pick"
+        },
+        "seed": 90000005
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 71,
+      "final": {
+        "clearance_m": 0.11591492835913086,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.0021767893721060774,
+          0.060954450721350154,
+          1.0412191957218933
+        ],
+        "eef_pos": [
+          -0.021814737690762302,
+          0.09092855111051956,
+          1.1132781372571396
+        ],
+        "tilt_degrees": 32.073455520681165,
+        "lift_m": 0.14112804193295858,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05198591042326938,
+        "eef_distance": 0.04207959850048043,
+        "linear_speed": 0.18258318571941975,
+        "angular_speed": 0.015261534525965152,
+        "gripper_opening": 0.029737216924258077,
+        "eef_object_center_distance": 0.08047724376173848,
+        "native_step": 71,
+        "remaining_steps": 129,
+        "max_object_lift_m": 0.14112804193295858,
+        "object_lift_m": 0.14112804193295858,
+        "xy_offset_m": 0.05198591042326938,
+        "xy_path_m": 0.06465421180744386,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.03385753620468587,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0339575362046858,
+        "episode_reward": -1.3303710590372193,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-02",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "pick"
+        },
+        "seed": 90000002
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 103,
+      "final": {
+        "clearance_m": 0.1593106719557119,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.06942651857531415,
+          -0.19870162922813372,
+          1.0613840335181002
+        ],
+        "eef_pos": [
+          -0.10273438537994202,
+          -0.14592431402977296,
+          1.143462886197233
+        ],
+        "tilt_degrees": 22.12249461359163,
+        "lift_m": 0.1637812792728679,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05185395219097881,
+        "eef_distance": 0.07017059056208272,
+        "linear_speed": 0.1954652560999681,
+        "angular_speed": 0.23743904940579075,
+        "gripper_opening": 0.018190309004863806,
+        "eef_object_center_distance": 0.10311060589359722,
+        "native_step": 103,
+        "remaining_steps": 97,
+        "max_object_lift_m": 0.1637812792728679,
+        "object_lift_m": 0.1637812792728679,
+        "xy_offset_m": 0.05185395219097881,
+        "xy_path_m": 0.130016292385395,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "lift",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.036445970461531786,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0365459704615319,
+        "episode_reward": -1.3603814619269752,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-17",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "pick"
+        },
+        "seed": 90000017
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 107,
+      "final": {
+        "clearance_m": 0.06345057777943874,
+        "table_z": 0.9,
+        "object_pos": [
+          0.026451820700935127,
+          0.022229154152253763,
+          1.032196701269928
+        ],
+        "eef_pos": [
+          0.028495523005147703,
+          -0.02464367231164532,
+          1.0991679638622212
+        ],
+        "tilt_degrees": 3.9857560630968414,
+        "lift_m": 0.06609084738994775,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.05057428700846811,
+        "eef_distance": 0.04989250779224881,
+        "linear_speed": 0.17230552902028878,
+        "angular_speed": 0.11127928459222408,
+        "gripper_opening": 0.02373093102578412,
+        "eef_object_center_distance": 0.08177034054612298,
+        "native_step": 107,
+        "remaining_steps": 93,
+        "max_object_lift_m": 0.06609084738994775,
+        "object_lift_m": 0.06609084738994775,
+        "xy_offset_m": 0.05057428700846811,
+        "xy_path_m": 0.07784227505452367,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.033957627366232195,
+          "height": 0.0,
+          "hold": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0340576273662323,
+        "episode_reward": -1.3999113752726187,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "pick_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-08",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "pick"
+        },
+        "seed": 90000008
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.05811267637776163,
+        "table_z": 0.9,
+        "object_pos": [
+          0.067833251242496,
+          0.0648444828644772,
+          1.0253068346715128
+        ],
+        "eef_pos": [
+          0.05245160613078972,
+          -0.003281470962577561,
+          1.0943412152773053
+        ],
+        "tilt_degrees": 1.6695497206780205,
+        "lift_m": 0.059200980791532576,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.02226207190675274,
+        "eef_distance": 0.07238817746175573,
+        "linear_speed": 0.13487728271440808,
+        "angular_speed": 0.17273164746060166,
+        "gripper_opening": 0.021011165131245246,
+        "eef_object_center_distance": 0.09820125404908987,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.059200980791532576,
+        "object_lift_m": 0.059200980791532576,
+        "xy_offset_m": 0.02226207190675274,
+        "xy_path_m": 0.07513116138273966,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.023350713527413126,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.22345071352741314,
+        "episode_reward": -0.5956558069136985,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "pick-23",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "pick"
+        },
+        "seed": 90000023
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -2.4195629044765354e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.0887106709558585,
+          -0.02431246150309215,
+          0.8852270012643118
+        ],
+        "eef_pos": [
+          -0.08505228927546214,
+          0.01294217811746513,
+          1.0931374440604489
+        ],
+        "tilt_degrees": 2.0913097891518726e-06,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.005023650051317078,
+        "eef_distance": 0.16228678280700848,
+        "linear_speed": 2.356424692318283e-14,
+        "angular_speed": 2.2913485623240717e-14,
+        "gripper_opening": 0.04876444975691621,
+        "eef_object_center_distance": 0.21125350684299388,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.002996905150538076,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.005023650051317078,
+        "xy_path_m": 0.013436903172254855,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.28718451586127436,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-02",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "place"
+        },
+        "seed": 90001002
+      },
+      "valid_reset": false,
+      "error": "all real-grasp initializations failed"
+    },
+    {
+      "case": {
+        "id": "place-20",
+        "spec": {
+          "type": "plate",
+          "object": "plate_1",
+          "label": "plate",
+          "upright_eligible": false,
+          "placement_orientation": "flat",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001020
+      },
+      "valid_reset": false,
+      "error": "all real-grasp initializations failed"
+    },
+    {
+      "case": {
+        "id": "place-05",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "place"
+        },
+        "seed": 90001005
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.2079928003132231,
+        "table_z": 0.9,
+        "object_pos": [
+          0.047650645614586394,
+          0.3108433283142172,
+          1.108093971807832
+        ],
+        "eef_pos": [
+          0.13439076485999804,
+          0.1684018520030534,
+          1.1069968145705102
+        ],
+        "tilt_degrees": 0.008352863397592137,
+        "lift_m": 0.2080028180188973,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2937716963620981,
+        "eef_distance": 0.17442574906861558,
+        "linear_speed": 0.004892694942544898,
+        "angular_speed": 0.007771335441049368,
+        "gripper_opening": 0.07973485080473422,
+        "eef_object_center_distance": 0.16677717534007905,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.22076674689946918,
+        "object_lift_m": 0.2080028180188973,
+        "xy_offset_m": 0.2937716963620981,
+        "xy_path_m": 0.2975161255226397,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -6.545823657555362e-06,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010654582365756,
+        "episode_reward": -1.7075806276131946,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-08",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "place"
+        },
+        "seed": 90001008
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.030495524547027864,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.02272771077008435,
+          -0.1772434607158975,
+          0.9966058538799802
+        ],
+        "eef_pos": [
+          -0.07282663867823479,
+          0.22118563476236208,
+          1.0261630994387685
+        ],
+        "tilt_degrees": 1.478779333471098e-06,
+        "lift_m": 0.03049999999999997,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2747320970377068,
+        "eef_distance": 0.40208649928878964,
+        "linear_speed": 2.2930372635286117e-14,
+        "angular_speed": 2.3408023497227553e-15,
+        "gripper_opening": 0.0795550087032281,
+        "eef_object_center_distance": 0.4026528001469661,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.17662632914242216,
+        "object_lift_m": 0.03049999999999997,
+        "xy_offset_m": 0.2747320970377068,
+        "xy_path_m": 0.41635528979412223,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -2.301776448970629,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-11",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "place"
+        },
+        "seed": 90001011
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.20798747879890922,
+        "table_z": 0.9,
+        "object_pos": [
+          0.043926830171815506,
+          0.30243057444854066,
+          1.1074556344146749
+        ],
+        "eef_pos": [
+          0.10041929882782656,
+          0.2888686692350982,
+          1.227940616543678
+        ],
+        "tilt_degrees": 4.79571785907788,
+        "lift_m": 0.2098528801694428,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.5943000327442157,
+        "eef_distance": 0.09134252565806719,
+        "linear_speed": 0.009505523736872842,
+        "angular_speed": 0.7427898879872158,
+        "gripper_opening": 0.043473275140849164,
+        "eef_object_center_distance": 0.13376081341893437,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.24528701621386828,
+        "object_lift_m": 0.2098528801694428,
+        "xy_offset_m": 0.5943000327442157,
+        "xy_path_m": 0.7255943452263904,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0008625821384920175,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20096258213849202,
+        "episode_reward": -3.8479717261319517,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-14",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "place"
+        },
+        "seed": 90001014
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.19679959336897024,
+        "table_z": 0.9,
+        "object_pos": [
+          0.04365951636387122,
+          0.20828793939827792,
+          1.1232070455636656
+        ],
+        "eef_pos": [
+          0.07732554160432563,
+          0.2631573603181012,
+          1.1935242977983653
+        ],
+        "tilt_degrees": 33.983174720508664,
+        "lift_m": 0.2231158917747309,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.20636762985138776,
+        "eef_distance": 0.06750440982584817,
+        "linear_speed": 0.0056525396960478815,
+        "angular_speed": 0.09365129372130498,
+        "gripper_opening": 0.041150294284346384,
+        "eef_object_center_distance": 0.09533399482559222,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.22468314372621112,
+        "object_lift_m": 0.2231158917747309,
+        "xy_offset_m": 0.20636762985138776,
+        "xy_path_m": 0.27172835456874467,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0007681338320237191,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20086813383202373,
+        "episode_reward": -1.5786417728437243,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-17",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "place"
+        },
+        "seed": 90001017
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.030495524547027864,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.0637684510948157,
+          -0.18363434614954954,
+          0.9966058538799802
+        ],
+        "eef_pos": [
+          -0.04311783232929714,
+          0.2080297991592342,
+          1.053518293760835
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.03049999999999997,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.25801991217157844,
+        "eef_distance": 0.39226908188253284,
+        "linear_speed": 2.3819594114202308e-14,
+        "angular_speed": 2.2850169571071563e-15,
+        "gripper_opening": 0.0795797552756701,
+        "eef_object_center_distance": 0.3963158798093394,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.177694402957828,
+        "object_lift_m": 0.03049999999999997,
+        "xy_offset_m": 0.25801991217157844,
+        "xy_path_m": 0.41702989052066003,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -2.305149452603313,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "moka pot",
+        "prompt": "place the moka pot upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "place-23",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "place"
+        },
+        "seed": 90001023
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -7.057894257678221e-05,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.3107773901052407,
+          -0.22718989828638475,
+          0.9173719716210738
+        ],
+        "eef_pos": [
+          -0.2827654703789044,
+          -0.23156637874353803,
+          0.9810376700271602
+        ],
+        "tilt_degrees": 82.6305421832336,
+        "lift_m": 0.032144970356761116,
+        "grasped": false,
+        "supported": true,
+        "target_supported": false,
+        "target_xy_distance": 0.3072556705808622,
+        "eef_distance": 0.03147336240176231,
+        "linear_speed": 0.026591300214714605,
+        "angular_speed": 0.6789811595431782,
+        "gripper_opening": 0.02587852476801956,
+        "eef_object_center_distance": 0.06969320183117803,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.3715527737476507,
+        "object_lift_m": 0.032144970356761116,
+        "xy_offset_m": 0.3072556705808622,
+        "xy_path_m": 0.6156314768480138,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0029279611577861012,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20302796115778612,
+        "episode_reward": -3.2981573842400684,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "lowering": 0.0,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-23",
+        "spec": {
+          "type": "ketchup",
+          "object": "ketchup_1",
+          "label": "ketchup bottle",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 0,
+          "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+          "skill": "upright"
+        },
+        "seed": 90002023
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 82,
+      "final": {
+        "clearance_m": 0.21697451427450332,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.1311261394597553,
+          0.015171435492300617,
+          0.6923250231724773
+        ],
+        "eef_pos": [
+          -0.16147809151247033,
+          0.016139006465945155,
+          0.7036327559896622
+        ],
+        "tilt_degrees": 73.66094698491553,
+        "lift_m": 0.1831451801395198,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.20668219625363604,
+        "eef_distance": 0.049186062322020725,
+        "linear_speed": 0.2035257017060859,
+        "angular_speed": 0.08414372059678348,
+        "gripper_opening": 0.05813960762707489,
+        "eef_object_center_distance": 0.032404351690231245,
+        "native_step": 82,
+        "remaining_steps": 118,
+        "max_object_lift_m": 0.1831451801395198,
+        "object_lift_m": 0.1831451801395198,
+        "xy_offset_m": 0.20668219625363604,
+        "xy_path_m": 0.35893765661662846,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.020630631170407945,
+          "approach": 0.0,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0207306311704079,
+        "episode_reward": -1.6035673680633291,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.889236647718634,
+          "stability": 0.0,
+          "orientation": 0.09348704261331989
+        },
+        "events": [
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "ketchup bottle",
+        "prompt": "pick up the ketchup bottle and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-14",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "upright"
+        },
+        "seed": 90002014
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 175,
+      "final": {
+        "clearance_m": 0.10848942847198428,
+        "table_z": 0.9,
+        "object_pos": [
+          0.013797981721746044,
+          0.171996127670809,
+          1.0450547781590878
+        ],
+        "eef_pos": [
+          -0.037530526038553565,
+          0.20688543444762078,
+          1.099861103762345
+        ],
+        "tilt_degrees": 80.58018721633722,
+        "lift_m": 0.1449636243701531,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.2001515814547144,
+        "eef_distance": 0.06224933896894125,
+        "linear_speed": 0.03890656029699413,
+        "angular_speed": 0.05693564421589154,
+        "gripper_opening": 0.06887716589753924,
+        "eef_object_center_distance": 0.08279862778087486,
+        "native_step": 175,
+        "remaining_steps": 25,
+        "max_object_lift_m": 0.14927114229682514,
+        "object_lift_m": 0.1449636243701531,
+        "xy_offset_m": 0.2001515814547111,
+        "xy_path_m": 0.24647108160773182,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0019396373862277665,
+          "approach": 0.0,
+          "stability": 0.0,
+          "failure": -1.0
+        },
+        "reward": -1.0020396373862277,
+        "episode_reward": -1.3748911793930632,
+        "skill_success": false,
+        "failure": true,
+        "termination_reason": "upright_xy_boundary",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "approach": 0.6046675452857929,
+          "stability": 0.0,
+          "orientation": 0.01772535519370242
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-02",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "upright"
+        },
+        "seed": 90002002
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -6.5304403107036e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.05865228519517988,
+          -0.28055402936813734,
+          0.9245472912353433
+        ],
+        "eef_pos": [
+          -0.03984290711503302,
+          -0.22796523734871796,
+          1.0517139880528412
+        ],
+        "tilt_degrees": 71.38363897614246,
+        "lift_m": 0.026944536990111123,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.02713373372503144,
+        "eef_distance": 0.09525792800364331,
+        "linear_speed": 3.7199459920383465e-08,
+        "angular_speed": 6.21681005421936e-07,
+        "gripper_opening": 0.025205728404901186,
+        "eef_object_center_distance": 0.13889111753203331,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.04524764847251417,
+        "object_lift_m": 0.026944536990111123,
+        "xy_offset_m": 0.02713373372503144,
+        "xy_path_m": 0.1540224812633267,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -3.2480841351416374e-09,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000324808414,
+        "episode_reward": -0.48482796695821884,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.8643399113686867,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-05",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "upright"
+        },
+        "seed": 90002005
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -7.034389204552127e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.028960081322831337,
+          0.021012700422599923,
+          0.9322135750136479
+        ],
+        "eef_pos": [
+          0.05332129522588566,
+          -0.017645709726392414,
+          1.0186733093057825
+        ],
+        "tilt_degrees": 82.6554950042523,
+        "lift_m": 0.032122421224713316,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.014415830848925924,
+        "eef_distance": 0.05845728049380277,
+        "linear_speed": 1.3028197256891071e-08,
+        "angular_speed": 3.986365204628045e-07,
+        "gripper_opening": 0.07757265226779338,
+        "eef_object_center_distance": 0.09779175359888276,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.037904627571769156,
+        "object_lift_m": 0.032122421224713316,
+        "xy_offset_m": 0.014415830848925924,
+        "xy_path_m": 0.07385654507129817,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -2.720853571275121e-09,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000272085357,
+        "episode_reward": -0.22670836634144223,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.7840540306150996,
+          "stability": 0.0,
+          "orientation": 0.006006740901330568
+        },
+        "events": [
+          "controlled_lift",
+          "grasp"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-08",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "upright"
+        },
+        "seed": 90002008
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -3.461379554559052e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.07849114186166571,
+          0.13684596689019118,
+          0.9368079657519363
+        ],
+        "eef_pos": [
+          0.07532461799641009,
+          0.1193355633525261,
+          1.0371522465112148
+        ],
+        "tilt_degrees": 90.00163523416178,
+        "lift_m": -0.029297888128043903,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.015235624117049233,
+        "eef_distance": 0.05339651403050738,
+        "linear_speed": 2.081451790490326e-14,
+        "angular_speed": 3.242104476970695e-14,
+        "gripper_opening": 0.07868360557504224,
+        "eef_object_center_distance": 0.10190984146066578,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.04805670179157384,
+        "object_lift_m": -0.029297888128043903,
+        "xy_offset_m": 0.015235624117049233,
+        "xy_path_m": 0.04517960262935493,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.26638009547379704,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.8795821956982606,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-11",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "upright"
+        },
+        "seed": 90002011
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -5.317491900613813e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.15629581095898815,
+          -0.25741103095338913,
+          0.9411554291059271
+        ],
+        "eef_pos": [
+          -0.06723842110456135,
+          -0.08141134247342177,
+          0.9459334169619188
+        ],
+        "tilt_degrees": 89.97249546445725,
+        "lift_m": 0.04355267486069514,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.009438844941685502,
+        "eef_distance": 0.20236634951266416,
+        "linear_speed": 2.779531472135789e-10,
+        "angular_speed": 3.3462382366788502e-09,
+        "gripper_opening": 0.07903275836364143,
+        "eef_object_center_distance": 0.19730671098743932,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.05518356474105057,
+        "object_lift_m": 0.04355267486069514,
+        "xy_offset_m": 0.009438844941685502,
+        "xy_path_m": 0.1357871470604932,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -2.940961866850124e-11,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000002940964,
+        "episode_reward": -0.4700768247155066,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.42994938810959604,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-17",
+        "spec": {
+          "type": "moka_pot",
+          "object": "moka_pot_2",
+          "label": "moka pot",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 8,
+          "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+          "skill": "upright"
+        },
+        "seed": 90002017
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": 0.03786348901572134,
+        "table_z": 0.9,
+        "object_pos": [
+          0.054827140633205276,
+          0.10584813415449953,
+          0.9900056838657416
+        ],
+        "eef_pos": [
+          0.042948735549496124,
+          0.1028160555785427,
+          1.0292536322251824
+        ],
+        "tilt_degrees": 90.60883882878707,
+        "lift_m": 0.023899829985761345,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.024267326699999366,
+        "eef_distance": 0.016306336875727693,
+        "linear_speed": 0.014789395660323099,
+        "angular_speed": 0.020250714393774953,
+        "gripper_opening": 0.043646117548334064,
+        "eef_object_center_distance": 0.041118018656652155,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.0491067373523979,
+        "object_lift_m": 0.023899829985761345,
+        "xy_offset_m": 0.024267326699999366,
+        "xy_path_m": 0.05967057184648063,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0011213763946413316,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20122137639464135,
+        "episode_reward": -0.2915911042263558,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9550007893321113,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    },
+    {
+      "case": {
+        "id": "upright-20",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 5,
+          "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+          "skill": "upright"
+        },
+        "seed": 90002020
+      },
+      "valid_reset": true,
+      "success": false,
+      "native_steps": 200,
+      "final": {
+        "clearance_m": -4.1288857599575124e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.10348180293683606,
+          -0.031217393528636457,
+          0.9322431523771837
+        ],
+        "eef_pos": [
+          -0.16505182753727043,
+          0.008983943018850332,
+          1.0212951107052637
+        ],
+        "tilt_degrees": 82.99453524716145,
+        "lift_m": 0.04701615111287194,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.08325905859881244,
+        "linear_speed": 2.402635207552495e-14,
+        "angular_speed": 1.480558978569184e-13,
+        "gripper_opening": 0.0779604709490701,
+        "eef_object_center_distance": 0.11548708443617618,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.04701615111287194,
+        "object_lift_m": 0.04701615111287194,
+        "xy_offset_m": 1.3877787807814457e-17,
+        "xy_path_m": 3.1086244689504383e-15,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -3.469446951953614e-17,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000000006,
+        "episode_reward": -0.20023114298448647,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.39537714031039506,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": 257,
+        "task_version": "rpent-skills-v3-20261104"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "skill": "pick",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor0-pick.mp4",
+      "case": {
+        "id": "pick-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "pick"
+        },
+        "seed": 90000000
+      }
+    },
+    {
+      "skill": "place",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor0-place.mp4",
+      "case": {
+        "id": "place-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "place"
+        },
+        "seed": 90001000
+      }
+    },
+    {
+      "skill": "upright",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor0-upright.mp4",
+      "case": {
+        "id": "upright-00",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 6,
+          "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+          "skill": "upright"
+        },
+        "seed": 90002000
+      }
+    },
+    {
+      "skill": "pick",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor1-pick.mp4",
+      "case": {
+        "id": "pick-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "pick"
+        },
+        "seed": 90000001
+      }
+    },
+    {
+      "skill": "place",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor1-place.mp4",
+      "case": {
+        "id": "place-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "place"
+        },
+        "seed": 90001001
+      }
+    },
+    {
+      "skill": "upright",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor1-upright.mp4",
+      "case": {
+        "id": "upright-01",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 4,
+          "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+          "skill": "upright"
+        },
+        "seed": 90002001
+      }
+    },
+    {
+      "skill": "pick",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor2-pick.mp4",
+      "case": {
+        "id": "pick-02",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "pick"
+        },
+        "seed": 90000002
+      }
+    },
+    {
+      "skill": "place",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor2-place.mp4",
+      "case": {
+        "id": "place-05",
+        "spec": {
+          "type": "white_yellow_mug",
+          "object": "white_yellow_mug_1",
+          "label": "yellow and white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "place"
+        },
+        "seed": 90001005
+      }
+    },
+    {
+      "skill": "upright",
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-overnight-20261104-to-20261105-0900/videos/eval-baseline-actor2-upright.mp4",
+      "case": {
+        "id": "upright-02",
+        "spec": {
+          "type": "porcelain_mug",
+          "object": "porcelain_mug_1",
+          "label": "white mug",
+          "upright_eligible": true,
+          "placement_orientation": "upright",
+          "task_index": 9,
+          "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+          "skill": "upright"
+        },
+        "seed": 90002002
+      }
+    }
+  ],
+  "training_state_preserved": true,
+  "environment_checks": [
+    {
+      "training_before": null,
+      "training_after": null
+    },
+    {
+      "training_before": null,
+      "training_after": null
+    },
+    {
+      "training_before": null,
+      "training_after": null
+    }
+  ]
+}

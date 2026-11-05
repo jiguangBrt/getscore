@@ -107,8 +107,8 @@ def main():
                 copy_artifacts()
                 terminal = data['supervisor'].get('state')
                 if terminal in ('completed', 'failed', 'stopped', 'hard_deadline'):
-                    run.summary.update(terminal_state=terminal, final_update=state['last_update'],
-                                       remote_status=data['status'])
+                    run.summary.update(dict(terminal_state=terminal, final_update=state['last_update'],
+                                            remote_status=data['status']))
                     break
             except Exception:
                 traceback.print_exc()

@@ -1,8 +1,8 @@
 # π0.5 三技能训练结果
 
-更新时间：2026-11-05 02:50:36 CST
-状态：training
-完成更新：556；原生动作步数：3193611
+更新时间：2026-11-05 08:52:06 CST
+状态：completed
+完成更新：807；原生动作步数：4722269
 
 受控续训：物理 GPU 0、1、2、3，共享同一 action-expert LoRA + critic；24环境；夜间续训硬截止为北京时间2026-11-05 09:00，08:50起预留最终评测。
 W&B 模式：offline；云端：https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/overnight20261104u257；本地日志保留在 wandb/。
@@ -14,6 +14,9 @@ W&B 模式：offline；云端：https://forge.coreweave.com/wandb/jiguangbrt-uni
 | baseline | 257 | 0.0% | 0.0% | 0.0% | 69/72 |
 | 3.0h | 382 | 0.0% | 0.0% | 0.0% | 69/72 |
 | 6.0h | 497 | 0.0% | 0.0% | 0.0% | 69/72 |
+| 9.0h | 622 | 0.0% | 0.0% | 0.0% | 69/72 |
+| 12.0h | 745 | 0.0% | 0.0% | 0.0% | 69/72 |
+| final | 807 | 0.0% | 0.0% | 0.0% | 69/72 |
 
 成功率分母为有效物理初态；初始化失败另列，不计作策略成功。评测是自定义技能环境，不能当作 LIBERO 原基准或 RPent 全流程成绩。
 
@@ -21,43 +24,46 @@ W&B 模式：offline；云端：https://forge.coreweave.com/wandb/jiguangbrt-uni
 
 - [best.pt](checkpoints/best.pt) (111.1 MiB)
 - [continuation-start.pt](checkpoints/continuation-start.pt) (111.2 MiB)
+- [final.pt](checkpoints/final.pt) (111.2 MiB)
 - [initial.pt](checkpoints/initial.pt) (111.1 MiB)
 - [latest.pt](checkpoints/latest.pt) (111.2 MiB)
+- [milestone-12.0h.pt](checkpoints/milestone-12.0h.pt) (111.2 MiB)
 - [milestone-3.0h.pt](checkpoints/milestone-3.0h.pt) (111.2 MiB)
 - [milestone-6.0h.pt](checkpoints/milestone-6.0h.pt) (111.2 MiB)
+- [milestone-9.0h.pt](checkpoints/milestone-9.0h.pt) (111.2 MiB)
 
 Checkpoint 包含 LoRA、value head、优化器、RNG、配置和基础模型哈希。推理时需与指定原始基础权重组合；不可直接当作完整基础模型。活动环境跨采样批次继续；进程重启时丢弃未完成环境轨迹并单独记录，不能逐位续跑。
 
 ## 视频
 
-- [videos/train-v500-actor0.mp4](videos/train-v500-actor0.mp4)
-- [videos/train-v500-actor1.mp4](videos/train-v500-actor1.mp4)
-- [videos/train-v500-actor2.mp4](videos/train-v500-actor2.mp4)
-- [videos/train-v510-actor0.mp4](videos/train-v510-actor0.mp4)
-- [videos/train-v510-actor1.mp4](videos/train-v510-actor1.mp4)
-- [videos/train-v510-actor2.mp4](videos/train-v510-actor2.mp4)
-- [videos/train-v520-actor0.mp4](videos/train-v520-actor0.mp4)
-- [videos/train-v520-actor1.mp4](videos/train-v520-actor1.mp4)
-- [videos/train-v520-actor2.mp4](videos/train-v520-actor2.mp4)
-- [videos/train-v530-actor0.mp4](videos/train-v530-actor0.mp4)
-- [videos/train-v530-actor1.mp4](videos/train-v530-actor1.mp4)
-- [videos/train-v530-actor2.mp4](videos/train-v530-actor2.mp4)
-- [videos/train-v540-actor0.mp4](videos/train-v540-actor0.mp4)
-- [videos/train-v540-actor1.mp4](videos/train-v540-actor1.mp4)
-- [videos/train-v540-actor2.mp4](videos/train-v540-actor2.mp4)
-- [videos/train-v550-actor0.mp4](videos/train-v550-actor0.mp4)
-- [videos/train-v550-actor1.mp4](videos/train-v550-actor1.mp4)
-- [videos/train-v550-actor2.mp4](videos/train-v550-actor2.mp4)
+- [videos/train-v750-actor0.mp4](videos/train-v750-actor0.mp4)
+- [videos/train-v750-actor1.mp4](videos/train-v750-actor1.mp4)
+- [videos/train-v750-actor2.mp4](videos/train-v750-actor2.mp4)
+- [videos/train-v760-actor0.mp4](videos/train-v760-actor0.mp4)
+- [videos/train-v760-actor1.mp4](videos/train-v760-actor1.mp4)
+- [videos/train-v760-actor2.mp4](videos/train-v760-actor2.mp4)
+- [videos/train-v770-actor0.mp4](videos/train-v770-actor0.mp4)
+- [videos/train-v770-actor1.mp4](videos/train-v770-actor1.mp4)
+- [videos/train-v770-actor2.mp4](videos/train-v770-actor2.mp4)
+- [videos/train-v780-actor0.mp4](videos/train-v780-actor0.mp4)
+- [videos/train-v780-actor1.mp4](videos/train-v780-actor1.mp4)
+- [videos/train-v780-actor2.mp4](videos/train-v780-actor2.mp4)
+- [videos/train-v790-actor0.mp4](videos/train-v790-actor0.mp4)
+- [videos/train-v790-actor1.mp4](videos/train-v790-actor1.mp4)
+- [videos/train-v790-actor2.mp4](videos/train-v790-actor2.mp4)
+- [videos/train-v800-actor0.mp4](videos/train-v800-actor0.mp4)
+- [videos/train-v800-actor1.mp4](videos/train-v800-actor1.mp4)
+- [videos/train-v800-actor2.mp4](videos/train-v800-actor2.mp4)
 
-平均每轮耗时：87.99 秒。详细训练曲线见 metrics.jsonl 和 W&B；所有评测逐例结果均保留。
+平均每轮耗时：86.75 秒。详细训练曲线见 metrics.jsonl 和 W&B；所有评测逐例结果均保留。
 
 ## 夜间续训来源
 
-父checkpoint：/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/checkpoints/final.pt；导入更新257，原生步1372917。新增更新：299；新增原生步：1820694。权重、优化器及RNG逐项相同：True。上一阶段预算结束的活动环境不跨进程恢复。
+父checkpoint：/data/wangyihan/getscore-rl-skills/runs/pi05-skills-v3-6h-20261104-115938-four-gpu/checkpoints/final.pt；导入更新257，原生步1372917。新增更新：550；新增原生步：3349352。权重、优化器及RNG逐项相同：True。上一阶段预算结束的活动环境不跨进程恢复。
 
 ## 完成轨迹与限制
 
-自然完成轨迹: 12182；重启截断快照: 0；预算结束未完成: None；训练初始化失败: 959。
-{'pick': {'success': 0, 'failure': 4015, 'timeout': 1273}, 'place': {'success': 0, 'failure': 2, 'timeout': 4238}, 'upright': {'success': 0, 'failure': 728, 'timeout': 1926}}
+自然完成轨迹: 22407；重启截断快照: 0；预算结束未完成: 24；训练初始化失败: 1778。
+{'pick': {'success': 0, 'failure': 7382, 'timeout': 2392}, 'place': {'success': 0, 'failure': 5, 'timeout': 7843}, 'upright': {'success': 0, 'failure': 1339, 'timeout': 3446}}
 
 本阶段从上一轮final checkpoint恢复LoRA/critic、优化器和全部RNG，奖励权重不变。扶正零成功时不宣称已学会；不使用未经验证的 BC 示范。固定评测报告有效初态和初始化失败，语言对照单独见预检。Place 的最终状态成功判定仍允许空中松手后恰好落稳；物理预检中这种动作总回报更低、没有受控接触/释放/撤离事件奖励，不能把终态成功率当作完整动作质量。重启截断记录来自 checkpoint 活动环境快照，崩溃中的未写出步不保证精确恢复。
