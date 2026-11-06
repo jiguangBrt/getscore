@@ -1,0 +1,173 @@
+{
+  "results": [
+    {
+      "type": "porcelain_mug",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 2.4847205483856456,
+      "max_hold": 40,
+      "max_height": 0.09337618551785543,
+      "max_verified": 56,
+      "collision_cost": 0.6889063901919698
+    },
+    {
+      "type": "alphabet_soup",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 2.445517935477566,
+      "max_hold": 40,
+      "max_height": 0.09899442279109816,
+      "max_verified": 59,
+      "collision_cost": 0.7566018489219803
+    },
+    {
+      "type": "ketchup",
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2162356481292873,
+      "max_hold": 40,
+      "max_height": 0.0983182703261466,
+      "max_verified": 59,
+      "collision_cost": 0.021555714956478636
+    },
+    {
+      "type": "tomato_sauce",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 2.445235194123841,
+      "max_hold": 40,
+      "max_height": 0.09892958158288989,
+      "max_verified": 59,
+      "collision_cost": 0.7564735315892591
+    },
+    {
+      "type": "butter",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 3.2213110706026153,
+      "max_hold": 40,
+      "max_height": 0.09873266384085466,
+      "max_verified": 59,
+      "collision_cost": 0.015629908847696973
+    },
+    {
+      "type": "cream_cheese",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 3.2191162244640346,
+      "max_hold": 40,
+      "max_height": 0.09835936959895974,
+      "max_verified": 59,
+      "collision_cost": 0.01600980163584721
+    },
+    {
+      "type": "akita_black_bowl",
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.171237017910636,
+      "max_hold": 40,
+      "max_height": 0.08542475337412114,
+      "max_verified": 56,
+      "collision_cost": 0.0
+    },
+    {
+      "type": "white_yellow_mug",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 2.374191579136795,
+      "max_hold": 40,
+      "max_height": 0.09344744325205101,
+      "max_verified": 58,
+      "collision_cost": 0.792551891155531
+    },
+    {
+      "type": "black_book",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 2.3673910078421723,
+      "max_hold": 40,
+      "max_height": 0.09820945160300953,
+      "max_verified": 59,
+      "collision_cost": 0.8270021779239911
+    },
+    {
+      "type": "chocolate_pudding",
+      "offset": [
+        0,
+        0,
+        0.0
+      ],
+      "success": true,
+      "reward": 3.232563855013303,
+      "max_hold": 40,
+      "max_height": 0.09821777400344622,
+      "max_verified": 59,
+      "collision_cost": 0.0
+    },
+    {
+      "type": "moka_pot",
+      "offset": [
+        0,
+        0,
+        -0.01
+      ],
+      "success": false,
+      "reward": -0.20000000000000004,
+      "max_hold": 0,
+      "max_height": 0.0002096796176257465,
+      "max_verified": 0,
+      "collision_cost": 0.0
+    },
+    {
+      "type": "yellow_moka_pot",
+      "offset": [
+        0,
+        0,
+        -0.01
+      ],
+      "success": false,
+      "reward": -0.20000000000000004,
+      "max_hold": 0,
+      "max_height": 0.0002096796176257465,
+      "max_verified": 0,
+      "collision_cost": 0.0
+    }
+  ],
+  "role": "scripted controls, never policy successes"
+}

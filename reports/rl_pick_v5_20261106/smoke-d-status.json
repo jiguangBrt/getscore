@@ -1,0 +1,316 @@
+{
+  "state": "completed",
+  "update": 4,
+  "native_steps": 8168,
+  "completed_episodes": 41,
+  "elapsed_seconds": 639.1486415863037,
+  "baseline": {
+    "by_object": {
+      "akita_black_bowl": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.07619721648031985,
+        "collision_cost": 0.32057479629648467
+      },
+      "alphabet_soup": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.47800225233908844,
+        "collision_cost": 0.19230900257766742
+      },
+      "black_book": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.2670231500011794,
+        "collision_cost": 0.24976838062802348
+      },
+      "butter": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.21627436179497142,
+        "collision_cost": 0.4259268408915896
+      },
+      "chocolate_pudding": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.7014649667617794,
+        "collision_cost": 0.168332454442645
+      },
+      "cream_cheese": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.017533917815424876,
+        "collision_cost": 0.08750000000000002
+      },
+      "ketchup": {
+        "valid": 4,
+        "successes": 1,
+        "mean_return": 0.4910049434046635,
+        "collision_cost": 0.4561595362159755
+      },
+      "moka_pot": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.3421407118580423,
+        "collision_cost": 0.0
+      },
+      "porcelain_mug": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.7885919768139341,
+        "collision_cost": 1.0764247149755757
+      },
+      "tomato_sauce": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.11848672961188716,
+        "collision_cost": 0.4417802473185251
+      },
+      "white_yellow_mug": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.5053621819202077,
+        "collision_cost": 0.5518952523189168
+      },
+      "yellow_moka_pot": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.3741815430166977,
+        "collision_cost": 0.0
+      }
+    },
+    "valid": 48,
+    "invalid_reset": 0,
+    "successes": 1,
+    "success_rate": 0.020833333333333332,
+    "mean_return": -0.2029810030992705,
+    "reasons": {
+      "severe_xy_boundary": 3,
+      "task_deadline_200": 44,
+      "success": 1
+    }
+  },
+  "final": {
+    "by_object": {
+      "akita_black_bowl": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.017395360875743296,
+        "collision_cost": 0.3186598816711929
+      },
+      "alphabet_soup": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.3547606135816161,
+        "collision_cost": 0.196726714735093
+      },
+      "black_book": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.3441200230171946,
+        "collision_cost": 0.1785091499550525
+      },
+      "butter": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.22550565508065284,
+        "collision_cost": 0.37846299136335065
+      },
+      "chocolate_pudding": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.7079056345476255,
+        "collision_cost": 0.1674636727621493
+      },
+      "cream_cheese": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.01624797089881301,
+        "collision_cost": 0.08950000000000002
+      },
+      "ketchup": {
+        "valid": 4,
+        "successes": 1,
+        "mean_return": 0.5481794091165199,
+        "collision_cost": 0.4402544736072131
+      },
+      "moka_pot": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.339484276835817,
+        "collision_cost": 0.05296917484288936
+      },
+      "porcelain_mug": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.7782238818504141,
+        "collision_cost": 1.0685966761454826
+      },
+      "tomato_sauce": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": 0.16226492682809351,
+        "collision_cost": 0.44612778285169064
+      },
+      "white_yellow_mug": {
+        "valid": 4,
+        "successes": 1,
+        "mean_return": 0.10793587936499394,
+        "collision_cost": 0.5429735101005468
+      },
+      "yellow_moka_pot": {
+        "valid": 4,
+        "successes": 0,
+        "mean_return": -0.10526173601864652,
+        "collision_cost": 0.03214067416091472
+      }
+    },
+    "valid": 48,
+    "invalid_reset": 0,
+    "successes": 2,
+    "success_rate": 0.041666666666666664,
+    "mean_return": -0.1095831856511178,
+    "reasons": {
+      "severe_xy_boundary": 3,
+      "task_deadline_200": 43,
+      "success": 2
+    }
+  },
+  "best_success_rate": 0.041666666666666664,
+  "requested_episodes": 100000,
+  "new_completed_episodes": 41,
+  "new_native_steps": 8168,
+  "new_updates": 4,
+  "resumed_completed_episodes": 0,
+  "stop_reason": "time_or_update_budget",
+  "budget_truncated_active": [
+    {
+      "spec": {
+        "type": "chocolate_pudding",
+        "object": "chocolate_pudding_1",
+        "label": "chocolate pudding",
+        "upright_eligible": false,
+        "placement_orientation": "flat",
+        "task_index": 9,
+        "task": "single_chocolate_pudding_empty_table",
+        "skill": "pick"
+      },
+      "seed": 66580784,
+      "steps": 40,
+      "reward": 0.09435536861522056,
+      "episode_id": 93
+    },
+    {
+      "spec": {
+        "type": "alphabet_soup",
+        "object": "alphabet_soup_1",
+        "label": "alphabet soup can",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 1,
+        "task": "single_alphabet_soup_empty_table",
+        "skill": "pick"
+      },
+      "seed": 24989331,
+      "steps": 112,
+      "reward": 0.36759528920314055,
+      "episode_id": 92
+    },
+    {
+      "spec": {
+        "type": "cream_cheese",
+        "object": "cream_cheese_1",
+        "label": "cream cheese box",
+        "upright_eligible": false,
+        "placement_orientation": "flat",
+        "task_index": 5,
+        "task": "single_cream_cheese_empty_table",
+        "skill": "pick"
+      },
+      "seed": 64381148,
+      "steps": 24,
+      "reward": 0.03255447833786069,
+      "episode_id": 94
+    },
+    {
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 10,
+        "task": "single_moka_pot_empty_table",
+        "skill": "pick"
+      },
+      "seed": 30998270,
+      "steps": 24,
+      "reward": 0.188,
+      "episode_id": 95
+    },
+    {
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 7,
+        "task": "single_white_yellow_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 56021208,
+      "steps": 120,
+      "reward": 1.036726984540701,
+      "episode_id": 91
+    },
+    {
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 10,
+        "task": "single_moka_pot_empty_table",
+        "skill": "pick"
+      },
+      "seed": 23066248,
+      "steps": 24,
+      "reward": 0.188,
+      "episode_id": 96
+    },
+    {
+      "spec": {
+        "type": "yellow_moka_pot",
+        "object": "yellow_moka_pot_1",
+        "label": "yellow moka pot",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 11,
+        "task": "single_yellow_moka_pot_empty_table",
+        "skill": "pick"
+      },
+      "seed": 34972153,
+      "steps": 192,
+      "reward": -0.4506058643337983,
+      "episode_id": 89
+    },
+    {
+      "spec": {
+        "type": "ketchup",
+        "object": "ketchup_1",
+        "label": "ketchup bottle",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 2,
+        "task": "single_ketchup_empty_table",
+        "skill": "pick"
+      },
+      "seed": 54599640,
+      "steps": 24,
+      "reward": 0.03594998123430816,
+      "episode_id": 97
+    }
+  ]
+}

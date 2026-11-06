@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "selected_checkpoint_sha256": "e5df8a0a026f67bfe7180b59b8bc921ef4c24db5fb7f068a6524c1354b80ecc8",
+  "verified_local_success_video_count": 12,
+  "final_trace_audit_passed": true,
+  "long_run_learning_improvement_demonstrated": false
+}

@@ -1,0 +1,155 @@
+{
+  "results": [
+    {
+      "type": "porcelain_mug",
+      "exact_match": true,
+      "variants": [
+        {
+          "skip": false,
+          "reset_seconds": 3.006194591522217,
+          "obs": {
+            "main_images": "aa16b53070bdb83333ee9abde53bf96f1d556cfbad2dc8006bd81a8f1279ede6",
+            "wrist_images": "4d3faf7ad125a1dccde32a2e35049f3ea4a5b5816a79622bed5cc4438cbcd50b",
+            "states": "c2c1240d1ae1491147198ff8935f4051d21016271cfb67cea40cb281535342b1"
+          },
+          "simhash": "789fe277b48e56f27b13a7d0ad178973f1b2171395b5984131a9d90102b4cf7f",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        },
+        {
+          "skip": true,
+          "reset_seconds": 1.3574872016906738,
+          "obs": {
+            "main_images": "aa16b53070bdb83333ee9abde53bf96f1d556cfbad2dc8006bd81a8f1279ede6",
+            "wrist_images": "4d3faf7ad125a1dccde32a2e35049f3ea4a5b5816a79622bed5cc4438cbcd50b",
+            "states": "c2c1240d1ae1491147198ff8935f4051d21016271cfb67cea40cb281535342b1"
+          },
+          "simhash": "789fe277b48e56f27b13a7d0ad178973f1b2171395b5984131a9d90102b4cf7f",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        }
+      ]
+    },
+    {
+      "type": "butter",
+      "exact_match": true,
+      "variants": [
+        {
+          "skip": false,
+          "reset_seconds": 1.5757100582122803,
+          "obs": {
+            "main_images": "293e3843648469d707ae5a8b09af1649899bef1b301fd5aa4a02372088d3730f",
+            "wrist_images": "6c03eea9f613f1aad7f72767c335871cd125cacdd1efbbcd15213a1b816a9d2e",
+            "states": "13cafab1684e690150b02dac4c700b084274f8fe374a74a7d479f8d5d7806bad"
+          },
+          "simhash": "2c4b615de37a629cfec7b5e2f99a7c04c06b340cfad9591c2b4df9f45955e810",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        },
+        {
+          "skip": true,
+          "reset_seconds": 1.229215383529663,
+          "obs": {
+            "main_images": "293e3843648469d707ae5a8b09af1649899bef1b301fd5aa4a02372088d3730f",
+            "wrist_images": "6c03eea9f613f1aad7f72767c335871cd125cacdd1efbbcd15213a1b816a9d2e",
+            "states": "13cafab1684e690150b02dac4c700b084274f8fe374a74a7d479f8d5d7806bad"
+          },
+          "simhash": "2c4b615de37a629cfec7b5e2f99a7c04c06b340cfad9591c2b4df9f45955e810",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        }
+      ]
+    },
+    {
+      "type": "moka_pot",
+      "exact_match": true,
+      "variants": [
+        {
+          "skip": false,
+          "reset_seconds": 1.326338529586792,
+          "obs": {
+            "main_images": "2a51071694e997a568d7b2372d520b59bc77430973d1eec98ae9b46e2f6f784a",
+            "wrist_images": "a66399daddcca3c9f5ed786c090fba70faa99c954f2a05b79e0310df178b8659",
+            "states": "035603bc3ac20edc82c7ebae6fcb1ea2c726d4d4923f1f139eb82a450b962fb8"
+          },
+          "simhash": "bd89b8599ef8169d8c60e23e9a93da267df1ba4cfbc9ef849a03ce690107054f",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        },
+        {
+          "skip": true,
+          "reset_seconds": 1.2071266174316406,
+          "obs": {
+            "main_images": "2a51071694e997a568d7b2372d520b59bc77430973d1eec98ae9b46e2f6f784a",
+            "wrist_images": "a66399daddcca3c9f5ed786c090fba70faa99c954f2a05b79e0310df178b8659",
+            "states": "035603bc3ac20edc82c7ebae6fcb1ea2c726d4d4923f1f139eb82a450b962fb8"
+          },
+          "simhash": "bd89b8599ef8169d8c60e23e9a93da267df1ba4cfbc9ef849a03ce690107054f",
+          "rewards": [
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005,
+            -0.0005
+          ]
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

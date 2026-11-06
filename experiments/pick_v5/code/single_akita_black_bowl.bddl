@@ -1,0 +1,16 @@
+(define (problem LIBERO_Living_Room_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language pick up the white mug and hold it still)
+  (:regions
+    (akita_black_bowl_init_region
+      (:target living_room_table)
+      (:ranges ((-0.125 -0.175 -0.075 -0.125)))
+      (:yaw_rotation ((-0.34906585 0.34906585)))
+    )
+  )
+  (:fixtures living_room_table - living_room_table)
+  (:objects akita_black_bowl_1 - akita_black_bowl)
+  (:obj_of_interest akita_black_bowl_1)
+  (:init (On akita_black_bowl_1 living_room_table_akita_black_bowl_init_region))
+  (:goal (And (On akita_black_bowl_1 living_room_table_akita_black_bowl_init_region)))
+)

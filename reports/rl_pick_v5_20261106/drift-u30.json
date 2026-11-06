@@ -1,0 +1,62 @@
+{
+  "source": {
+    "current": {
+      "path": "/data/wangyihan/getscore-rl-skills/experiments/pick-v5l-20261106/drift-current-u30.pt",
+      "update": 30
+    },
+    "reference": {
+      "path": "/data/wangyihan/getscore-rl-skills/experiments/pick-v5g-20261106/initial-demo-best-e.pt",
+      "update": 600
+    }
+  },
+  "reference_logprob_error": 0.0,
+  "mean_kl": 0.012035443608539254,
+  "by_object": {
+    "alphabet_soup": {
+      "chunks": 48,
+      "mean_kl": 0.012923313367916004,
+      "max_kl": 0.13691440224647522
+    },
+    "white_yellow_mug": {
+      "chunks": 23,
+      "mean_kl": 0.0134749131158732,
+      "max_kl": 0.11820492148399353
+    },
+    "cream_cheese": {
+      "chunks": 30,
+      "mean_kl": 0.013293591628553258,
+      "max_kl": 0.13739533722400665
+    },
+    "ketchup": {
+      "chunks": 32,
+      "mean_kl": 0.012530182432868742,
+      "max_kl": 0.13447242975234985
+    },
+    "akita_black_bowl": {
+      "chunks": 57,
+      "mean_kl": 0.01213007959912622,
+      "max_kl": 0.10604913532733917
+    },
+    "black_book": {
+      "chunks": 40,
+      "mean_kl": 0.011494528887351408,
+      "max_kl": 0.13066305220127106
+    },
+    "moka_pot": {
+      "chunks": 9,
+      "mean_kl": 0.007473213855620189,
+      "max_kl": 0.05155062675476074
+    },
+    "chocolate_pudding": {
+      "chunks": 9,
+      "mean_kl": 0.008403355909346525,
+      "max_kl": 0.06603776663541794
+    },
+    "butter": {
+      "chunks": 8,
+      "mean_kl": 0.00712163915295605,
+      "max_kl": 0.04662435129284859
+    }
+  },
+  "role": "offline parameter-drift diagnosis on recorded states; no training or success episodes"
+}

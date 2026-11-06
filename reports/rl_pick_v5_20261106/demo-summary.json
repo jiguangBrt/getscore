@@ -1,0 +1,1405 @@
+{
+  "config": {
+    "policy_prompt": null,
+    "skills": [
+      "pick"
+    ],
+    "physical_gpus": [
+      6
+    ],
+    "learner_physical_gpu": 6,
+    "seed": 42,
+    "environment": "empty living-room tabletop; one uniformly sampled target asset, randomized XY/yaw",
+    "camera_size": 256,
+    "model_image_size": 224,
+    "control_hz": 20,
+    "max_native_steps_per_skill": 200,
+    "action_horizon": 10,
+    "execute_horizon": 8,
+    "flow_steps": 10,
+    "noise_method": "flow_sde",
+    "noise_level": 0.5,
+    "joint_logprob": false,
+    "value_after_vlm": true,
+    "train_expert_only": true,
+    "discrete_state_input": false,
+    "precision": "bf16 frozen VLM/action backbone; fp32 norm/stem/action/value heads and LoRA adapters",
+    "algorithm": "Flow-SDE clipped PPO: minibatch64,2epochs, full-batch KL guard after each epoch",
+    "actor_lr": 5e-06,
+    "critic_lr": 0.0001,
+    "adam_betas": [
+      0.9,
+      0.95
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "gamma_per_native_step": 0.998,
+    "gae_lambda_per_chunk": 0.95,
+    "ppo_clip": 0.2,
+    "value_clip": 0.2,
+    "huber_delta": 10.0,
+    "entropy_coefficient": 0.0,
+    "kl_coefficient": 0.0,
+    "normalize_advantages": true,
+    "evaluation_enabled": true,
+    "reward": {
+      "terminal_bonus": 2.0,
+      "failure_penalty": 2.0,
+      "timeout_penalty": 0.3,
+      "step_penalty": 0.0005,
+      "no_repeat_event_bonus": true,
+      "high_air_release_reward": false
+    },
+    "success": {
+      "lift_m": 0.05,
+      "pick_hold_steps": 40,
+      "upright_degrees": 5,
+      "stable_steps": 80,
+      "linear_speed_m_s": 0.005,
+      "angular_speed_rad_s": 0.05,
+      "eef_clearance_m": 0.1,
+      "target_radius_source": "per-skill place.target_radius_m / upright.target_radius_m; no scene plate override"
+    },
+    "gripper_mapping": "Pass through official pi05_libero native continuous action; no GAWM probability inversion",
+    "critic_loss_coefficient": 1.0,
+    "logprob_reduction": "sum executed coordinates",
+    "micro_batch_size": 8,
+    "lr_schedule": "3 critic-only updates; actor linear warmup10 updates then constant",
+    "formal_update_scope": "rank16 alpha16 LoRA on action-expert QKVO and gated FFN, plus full critic; frozen base",
+    "gpu_uuids": [
+      "GPU-1e0b062f-33d0-5180-a1e3-ac362dd88fc7"
+    ],
+    "task_version": "random-single-object-pick-v5-20261106",
+    "parallel_envs": 8,
+    "envs_per_actor": 8,
+    "rollout_chunks_per_env": 32,
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "evaluation_episodes_per_skill": 48,
+    "critic_warmup_updates": 3,
+    "actor_warmup_updates": 10,
+    "video_training_every_updates": 10,
+    "task_weights": [
+      1.0
+    ],
+    "recompute_max_error": 0.001,
+    "kl_stop": 0.05,
+    "rollout_physical_gpus": [
+      6
+    ],
+    "global_batch_chunks": 256,
+    "render_physical_gpus": [
+      6
+    ],
+    "episode_seconds": 10,
+    "hold_time_included_in_episode": true,
+    "runtime_implementation_status": "pending_v5_preflight",
+    "runtime_entrypoint": "/data/wangyihan/getscore-rl-skills/experiments/pick-v5d-20261106/code/minibatch_ppo.py",
+    "initial_policy_source": "weight-only transfer from validated v4 update10; reset optimizer",
+    "reset_at_rollout_boundary": false,
+    "continue_env_across_updates": true,
+    "preserve_training_env_during_evaluation": true,
+    "base_checkpoint": "/data/wangyihan/getscore-rl-skills/checkpoints/pi05_libero_torch/model.safetensors",
+    "save_native_traces_for_recorded_episodes": true,
+    "pick": {
+      "lift_reward_max_m": 0.1,
+      "height_reward_budget": 0.5,
+      "height_reward_above_max": "saturate; no additional height bonus",
+      "height_progress_credit": "new progress only; no repeated lift-drop reward farming",
+      "descent_penalty_enabled": true,
+      "descent_penalty_after_earned_lift_only": true,
+      "descent_deadband_m": 0.001,
+      "descent_penalty_per_m": 2.0,
+      "descent_alone_is_terminal": false,
+      "hold_seconds": 2.0,
+      "hold_height_tolerance_m": 0.005,
+      "hold_linear_speed_m_s": 0.01,
+      "hold_angular_speed_rad_s": 0.1,
+      "hold_progress_reward_budget": 0.4,
+      "hard_height_ceiling_m": null,
+      "success_min_lift_m": 0.05,
+      "descent_deadband_scope": "single cumulative noise allowance per episode, not a fresh free decrease on every step; verify slow repeated descent is penalized",
+      "soft_boundary_free_radius_m": 0.03,
+      "soft_boundary_full_radius_m": 0.1,
+      "soft_boundary_cost_per_second": 0.1,
+      "hard_boundary_radius_m": 0.2,
+      "success_xy_radius_m": 0.1,
+      "contact_min_force_n": 0.02,
+      "contact_confirm_steps": 3,
+      "relative_position_tolerance_m": 0.015,
+      "relative_rotation_tolerance_rad": 0.35,
+      "grasp_min_clearance_m": 0.002,
+      "approach_reward_budget": 0.1,
+      "contact_event_bonus": 0.1,
+      "settling_reward_budget": 0.2,
+      "settling_linear_scale_m_s": 0.2,
+      "settling_angular_scale_rad_s": 1.0,
+      "hold_velocity_measurement": "20Hz finite difference of actual object pose; retain instantaneous contact-solver qvel diagnostics"
+    },
+    "preflight_requirements": [
+      "every target type has valid on-table open-gripper resets",
+      "intended finger-target contact exempt; table/palm contacts penalized at physics substeps",
+      "reward/scene isolated from v4; explicit weight-only transfer",
+      "on-policy recomputation and optimizer smoke pass"
+    ],
+    "prompt_templates": {
+      "pick": "pick up the {object} and hold it still",
+      "place_upright": "place the {object} upright nearby on the table",
+      "place_flat": "place the {object} flat nearby on the table",
+      "upright": "pick up the {object} and place it upright nearby"
+    },
+    "cuda_physical_order": [
+      6
+    ],
+    "curriculum_offset_seconds": 0.0,
+    "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59",
+    "evaluate_every_updates": 10,
+    "checkpoint_every_updates": 5,
+    "resume_previous_run": false,
+    "deadline_semantics": "200 native steps is task termination; zero terminal bootstrap",
+    "actor_observation": "original images, robot state and short skill prompt",
+    "critic_observation": "frozen VLM features plus19 privileged task context features",
+    "gradient_clipping": "separate actor and critic norms, each capped at1",
+    "checkpoint_restart": "weights/optimizer/RNG saved; simulators not serialized; interrupted episodes must be explicitly discarded",
+    "batch_numerics": "preserve original8-row sampling groups in both gradients and full-batch diagnostics",
+    "curriculum": "pick only, one uniformly sampled target object, randomized XY/yaw; balanced per-object evaluation",
+    "reward_revision": "v5.1-control-interval-motion-substep-collision",
+    "ppo_minibatch_chunks": 64,
+    "ppo_epochs": 2,
+    "kl_target": 0.01,
+    "scope": "bounded 1000-episode multi-object pilot",
+    "compile_threads": 1,
+    "object_types": [
+      "porcelain_mug",
+      "alphabet_soup",
+      "ketchup",
+      "tomato_sauce",
+      "butter",
+      "cream_cheese",
+      "akita_black_bowl",
+      "white_yellow_mug",
+      "black_book",
+      "chocolate_pudding",
+      "moka_pot",
+      "yellow_moka_pot"
+    ],
+    "evaluation_episodes_per_object": 4,
+    "record_all_eval": true,
+    "collision": {
+      "force_deadband_n": 0.5,
+      "full_force_n": 10.0,
+      "max_cost_per_second": 0.2,
+      "exclude_target_finger_contacts": true,
+      "penalize_palm_target_contacts": true,
+      "terminate_on_collision": false,
+      "sampling": "every MuJoCo physics substep, integrated cost"
+    },
+    "transfer_allowed_task_versions": [
+      "single-white-mug-pick-v4-20261106",
+      "random-single-object-pick-v5-20261106"
+    ],
+    "skip_reset_camera_render": true,
+    "parallel_resets": true
+  },
+  "accepted_by_object": {
+    "porcelain_mug": 6,
+    "alphabet_soup": 6,
+    "ketchup": 6,
+    "tomato_sauce": 6,
+    "butter": 6,
+    "cream_cheese": 6,
+    "akita_black_bowl": 6,
+    "white_yellow_mug": 6,
+    "black_book": 6,
+    "chocolate_pudding": 6,
+    "moka_pot": 6,
+    "yellow_moka_pot": 6
+  },
+  "accepted": 72,
+  "results": [
+    {
+      "type": "porcelain_mug",
+      "seed": 1240000,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.2127643472721834,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240000-try0/demo.npz"
+    },
+    {
+      "type": "porcelain_mug",
+      "seed": 1240001,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.2473214256810765,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240001-try0/demo.npz"
+    },
+    {
+      "type": "porcelain_mug",
+      "seed": 1240002,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.2012963914529973,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.00646000062676967,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240002-try0/demo.npz"
+    },
+    {
+      "type": "porcelain_mug",
+      "seed": 1240003,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.210962262098021,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240003-try0/demo.npz"
+    },
+    {
+      "type": "porcelain_mug",
+      "seed": 1240004,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.2473145979328137,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240004-try0/demo.npz"
+    },
+    {
+      "type": "porcelain_mug",
+      "seed": 1240005,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.2033904239566593,
+      "prompt": "pick up the white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240005-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241000,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.238596309781401,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241000-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241001,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.240122114465587,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241001-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241002,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.238852267872461,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241002-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241003,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.238681087578592,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241003-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241004,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.239525799498476,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241004-try0/demo.npz"
+    },
+    {
+      "type": "alphabet_soup",
+      "seed": 1241005,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.239525420726817,
+      "prompt": "pick up the alphabet soup can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241005-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242000,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2373366810409543,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242000-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242001,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.235127552537408,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242001-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242002,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.236033776448865,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242002-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242003,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2375364516032485,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242003-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242004,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.233570225194868,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 104,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242004-try0/demo.npz"
+    },
+    {
+      "type": "ketchup",
+      "seed": 1242005,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.234198757663238,
+      "prompt": "pick up the ketchup bottle and hold it still",
+      "collision_cost": 0.0,
+      "steps": 105,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242005-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243000,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2391480604649625,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243000-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243001,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.237026608877669,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243001-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243002,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2382029376917383,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243002-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243003,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2390689218030393,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243003-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243004,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2382251356835887,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243004-try0/demo.npz"
+    },
+    {
+      "type": "tomato_sauce",
+      "seed": 1243005,
+      "offset": [
+        0,
+        0,
+        0.04
+      ],
+      "success": true,
+      "reward": 3.2379725054159074,
+      "prompt": "pick up the tomato sauce can and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243005-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244000,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2212930307989236,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.015995466161822795,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244000-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244001,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.205545561903418,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.03053704880710865,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244001-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244002,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.211558429651316,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.024036138910476963,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244002-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244003,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.220615650258357,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.016315962346902704,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244003-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244004,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2151650615981007,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.02207345222783129,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244004-try0/demo.npz"
+    },
+    {
+      "type": "butter",
+      "seed": 1244005,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.211225450171126,
+      "prompt": "pick up the butter box and hold it still",
+      "collision_cost": 0.02442845569346155,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244005-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245000,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2191657982455473,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.017329581225356373,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245000-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245001,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2182394719999645,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.018434717890183836,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245001-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245002,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.222743674580255,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.014059729207459761,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245002-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245003,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.222710617285516,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.014288891701419934,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245003-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245004,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2126249553336823,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.022599861706823987,
+      "steps": 111,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245004-try0/demo.npz"
+    },
+    {
+      "type": "cream_cheese",
+      "seed": 1245005,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.222359599238956,
+      "prompt": "pick up the cream cheese box and hold it still",
+      "collision_cost": 0.01455567916775345,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245005-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246000,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.1802255368333867,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 124,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246000-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246001,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.166654597845658,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 108,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246001-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246002,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.235898362768422,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 108,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246002-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246003,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.1139225403740713,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 108,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246003-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246004,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.1218825224517603,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 108,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246004-try0/demo.npz"
+    },
+    {
+      "type": "akita_black_bowl",
+      "seed": 1246005,
+      "offset": [
+        0,
+        0.04,
+        0.025
+      ],
+      "success": true,
+      "reward": 3.14796924595215,
+      "prompt": "pick up the black bowl and hold it still",
+      "collision_cost": 0.0,
+      "steps": 108,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246005-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247000,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.1911952402635517,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247000-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247001,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.20189009442292,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247001-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247002,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.1948836337556528,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247002-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247003,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.1856623404756985,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247003-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247004,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.1952752757388136,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247004-try0/demo.npz"
+    },
+    {
+      "type": "white_yellow_mug",
+      "seed": 1247005,
+      "offset": [
+        0,
+        0,
+        0.085
+      ],
+      "success": true,
+      "reward": 3.202834115929916,
+      "prompt": "pick up the yellow and white mug and hold it still",
+      "collision_cost": 0.0,
+      "steps": 156,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247005-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248000,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.4360007251762457,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.7577911913677852,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248000-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248001,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.4686503365819474,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.7241218889295071,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248001-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248002,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.4606927866127584,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.7321435652199739,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248002-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248003,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.466885654823685,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.7236925006347465,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248003-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248004,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.477864629352137,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.7199971816119932,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248004-try0/demo.npz"
+    },
+    {
+      "type": "black_book",
+      "seed": 1248005,
+      "offset": [
+        0,
+        0,
+        0.065
+      ],
+      "success": true,
+      "reward": 2.471995417649767,
+      "prompt": "pick up the book and hold it still",
+      "collision_cost": 0.724857053403073,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248005-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249000,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2322137089951335,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249000-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249001,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2349146857592497,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249001-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249002,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2342967133723874,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 113,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249002-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249003,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.236353235135437,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249003-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249004,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2333881940960367,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249004-try0/demo.npz"
+    },
+    {
+      "type": "chocolate_pudding",
+      "seed": 1249005,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "success": true,
+      "reward": 3.2377999749424737,
+      "prompt": "pick up the chocolate pudding and hold it still",
+      "collision_cost": 0.0,
+      "steps": 112,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249005-try0/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250000,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": false,
+      "reward": -0.19942966953671482,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 200,
+      "role": "physically executed scripted demonstration; never a policy success"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250000,
+      "offset": [
+        -0.035,
+        0,
+        0.052
+      ],
+      "success": false,
+      "reward": -0.20415552080749128,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 200,
+      "role": "physically executed scripted demonstration; never a policy success"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250000,
+      "offset": [
+        0,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2087969722482863,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 174,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250000-try2/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250001,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2311097710753462,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 107,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250001-try0/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250002,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2312580101574246,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250002-try0/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250003,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.230742787358038,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250003-try0/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250004,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2319453276340457,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250004-try0/demo.npz"
+    },
+    {
+      "type": "moka_pot",
+      "seed": 1250005,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2315584360767193,
+      "prompt": "pick up the moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250005-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251000,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.232240158548393,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251000-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251001,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2319376530872166,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 107,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251001-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251002,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2321020679114705,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 107,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251002-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251003,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.231541614677306,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251003-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251004,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.231582369641462,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 106,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251004-try0/demo.npz"
+    },
+    {
+      "type": "yellow_moka_pot",
+      "seed": 1251005,
+      "offset": [
+        0.035,
+        0,
+        0.052
+      ],
+      "success": true,
+      "reward": 3.2308788809120284,
+      "prompt": "pick up the yellow moka pot and hold it still",
+      "collision_cost": 0.0,
+      "steps": 107,
+      "role": "physically executed scripted demonstration; never a policy success",
+      "data": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251005-try0/demo.npz"
+    }
+  ]
+}

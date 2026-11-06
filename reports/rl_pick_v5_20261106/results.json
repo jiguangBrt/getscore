@@ -1,0 +1,127 @@
+{
+  "total_complete_rl_episodes": 1288,
+  "main_training": {
+    "episodes": 805,
+    "successes": 374,
+    "success_rate": 0.4645962732919255,
+    "positive_returns": 578,
+    "mean_return": 1.5236771223974241,
+    "mean_collision_cost": 0.07492330777637589
+  },
+  "final_evaluation": {
+    "episodes": 192,
+    "successes": 100,
+    "success_rate": 0.5208333333333334,
+    "positive_returns": 122,
+    "mean_return": 1.5597675068115346,
+    "mean_collision_cost": 0.08106433241665256
+  },
+  "final_by_object": {
+    "porcelain_mug": {
+      "episodes": 16,
+      "successes": 7,
+      "success_rate": 0.4375,
+      "positive_returns": 10,
+      "mean_return": 1.259138228814292,
+      "mean_collision_cost": 0.27549058638671015
+    },
+    "alphabet_soup": {
+      "episodes": 16,
+      "successes": 9,
+      "success_rate": 0.5625,
+      "positive_returns": 11,
+      "mean_return": 1.8038360263709952,
+      "mean_collision_cost": 0.0
+    },
+    "ketchup": {
+      "episodes": 16,
+      "successes": 12,
+      "success_rate": 0.75,
+      "positive_returns": 14,
+      "mean_return": 2.3442264146614678,
+      "mean_collision_cost": 0.1068056868903744
+    },
+    "tomato_sauce": {
+      "episodes": 16,
+      "successes": 10,
+      "success_rate": 0.625,
+      "positive_returns": 12,
+      "mean_return": 2.0091360142021486,
+      "mean_collision_cost": 0.0
+    },
+    "butter": {
+      "episodes": 16,
+      "successes": 10,
+      "success_rate": 0.625,
+      "positive_returns": 12,
+      "mean_return": 2.0283997079191414,
+      "mean_collision_cost": 0.03770385269188271
+    },
+    "cream_cheese": {
+      "episodes": 16,
+      "successes": 12,
+      "success_rate": 0.75,
+      "positive_returns": 13,
+      "mean_return": 2.378749246117995,
+      "mean_collision_cost": 0.03183711062148943
+    },
+    "akita_black_bowl": {
+      "episodes": 16,
+      "successes": 3,
+      "success_rate": 0.1875,
+      "positive_returns": 3,
+      "mean_return": 0.42105710365461657,
+      "mean_collision_cost": 0.0024100888912254063
+    },
+    "white_yellow_mug": {
+      "episodes": 16,
+      "successes": 8,
+      "success_rate": 0.5,
+      "positive_returns": 9,
+      "mean_return": 1.4742065979899566,
+      "mean_collision_cost": 0.08196341787090633
+    },
+    "black_book": {
+      "episodes": 16,
+      "successes": 13,
+      "success_rate": 0.8125,
+      "positive_returns": 15,
+      "mean_return": 2.3213967089845307,
+      "mean_collision_cost": 0.27652969701093244
+    },
+    "chocolate_pudding": {
+      "episodes": 16,
+      "successes": 13,
+      "success_rate": 0.8125,
+      "positive_returns": 14,
+      "mean_return": 2.625661014780523,
+      "mean_collision_cost": 0.009700095725508631
+    },
+    "moka_pot": {
+      "episodes": 16,
+      "successes": 1,
+      "success_rate": 0.0625,
+      "positive_returns": 2,
+      "mean_return": -0.2226310281101862,
+      "mean_collision_cost": 0.07102903535140012
+    },
+    "yellow_moka_pot": {
+      "episodes": 16,
+      "successes": 2,
+      "success_rate": 0.125,
+      "positive_returns": 7,
+      "mean_return": 0.274034046352936,
+      "mean_collision_cost": 0.07930241755940128
+    }
+  },
+  "final_stage_counts": {
+    "success": 100,
+    "stable_hold_interrupted_or_too_late": 23,
+    "no_bilateral_contact": 18,
+    "contact_without_verified_lift": 43,
+    "verified_lift_below_5cm": 8
+  },
+  "selected_checkpoint": "H update9; selected on fixed development coverage before fresh evaluation",
+  "ready_for_larger_evaluation": true,
+  "long_run_learning_improvement_demonstrated": false
+}

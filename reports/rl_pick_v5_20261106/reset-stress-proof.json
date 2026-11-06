@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "type": "porcelain_mug",
+      "repeat": 0,
+      "seconds": 3.2782678604125977,
+      "hashes": {
+        "main_images": "f2dba771027ae419a9ea5b7f2035e393a15288c502f9a4fec0061fb689d3d2a5",
+        "wrist_images": "132199517129d43d116e6beea99ebc47d1bf739e871fd80d44978e5cc1a9a297",
+        "states": "138a2ebabebad7fb730ecc485549dc02ee515787d4a2f6f09de82e50b6a8523a",
+        "sim": "f9944e62e752e9181dd0a3753bb45d69d1d657f31266fc2a1ef2d5f21bf90002"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "alphabet_soup",
+      "repeat": 0,
+      "seconds": 1.539724349975586,
+      "hashes": {
+        "main_images": "47a2eeaa3cc3562d06bc2175f0ee7f4f1bd067f15e6c596320a5d6cdf3eedeff",
+        "wrist_images": "553376b9736efd2d5bf303416ee6fee753af949ddaf7597fbc45340e8a38db0a",
+        "states": "17efd288b697780fb5680c281764d27d7c2bc8a47db5be7415ff9293a3bd56e6",
+        "sim": "77464049b89e2b5f17542d8c96ef9550901d2d0f0393382f2d1c551a36b8cbd5"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "ketchup",
+      "repeat": 0,
+      "seconds": 1.8385095596313477,
+      "hashes": {
+        "main_images": "350011668021f26f2382542ad1b4e35c14d047f98a157ada4b5171acce031840",
+        "wrist_images": "21236e61f50ae7c93663bb4c5013514433634b10779e7616087c00039664019e",
+        "states": "7982b5f26fcf9eba96cf783d2afe95cd570b6cce438013203f0b9c6d2b5f10df",
+        "sim": "f539a0d82ce17e106b88ce725a90b0c2437d547b761cdc55e0fff6240d4ef407"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "tomato_sauce",
+      "repeat": 0,
+      "seconds": 1.6462228298187256,
+      "hashes": {
+        "main_images": "14b030bf5c5cc38e2a9dc8a58052708226b3dd3b61e20c4648a7c4e24252b4f9",
+        "wrist_images": "dd16dcac6f12fee5f75f7ed8c4b91c1eb42fec6c42148d243429b7a0db40f7e6",
+        "states": "fc82ebe5e5c85785830de304d7827b09e59bced497ede1c9981dcb5fec014050",
+        "sim": "5ba7a8a1c54927d06955b9d101ae0a4981a3ee3874fc7715ead5004a43f5818c"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "butter",
+      "repeat": 0,
+      "seconds": 1.562812328338623,
+      "hashes": {
+        "main_images": "082b0f75dcd4bd0e46e05670c38c376c4532ab55ffa247288fee4979f649396e",
+        "wrist_images": "8ed6dd4223b949b694f4e11bc0cc9d1b52ab1c9161db27ddd5d286ab2971550e",
+        "states": "0695933b15037775ed102eb2df160e861c5bc84159155da7511b91747e480c4f",
+        "sim": "742459f503a9343c64410147c906f76e7385dc510df2e5a2f0138b11b7bde168"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "cream_cheese",
+      "repeat": 0,
+      "seconds": 1.557596206665039,
+      "hashes": {
+        "main_images": "2dcfd17d09bf280a184091a11b50453d1e86f13d6a5d59fe056534e738154a3b",
+        "wrist_images": "423fb15ed46547395850fd59d895222b5e50a256a8963ffb2cc71b76e0b0b032",
+        "states": "12f6c6594d4c89cbe9b8770170d70d7bcf1f4d80163c624e95cd437250daf846",
+        "sim": "f6b7087e4e5715fc0afcd1486aeca4ee48881d1853f1d84c175570b8295d8f30"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "akita_black_bowl",
+      "repeat": 0,
+      "seconds": 2.041700839996338,
+      "hashes": {
+        "main_images": "f9c6b3c067fddf2a9aeb1289a7e6d336ca3ee252a9553e0051553b92ab6ab65d",
+        "wrist_images": "56e68a91917dbdcf28040cb2d5c45332d133459dc2642670064209157ef8bd9b",
+        "states": "42d2c8dbe90afc8953e56a5cba4fd427b257686afac155a9b8e656b57235940e",
+        "sim": "f408a3a2191323a4afad88d80d85f1b531776ef2fa798f72586a0b2c8b4e30d7"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "white_yellow_mug",
+      "repeat": 0,
+      "seconds": 1.9093222618103027,
+      "hashes": {
+        "main_images": "10508a4b6a24abdadf49fb8b06c3cec269d5bc4299c58799d63f80a50d2af0c1",
+        "wrist_images": "4220811a839e4ff46edfe7a155e485e4af5e1046772a1f770a6163f34c8d9a20",
+        "states": "39ae8e478c12511ee8d9b5650088fff53630e0cb2cfe0f4a0d82de840c33bdf4",
+        "sim": "f2ee6269c43cf815e2b26e29f5444f9f989db7dbe6a5e630fe4f015e8d2b2a52"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "black_book",
+      "repeat": 0,
+      "seconds": 1.5911502838134766,
+      "hashes": {
+        "main_images": "9e765bb68b9208fa739035444acbb970e6e4413c205deedb39378129c87d741b",
+        "wrist_images": "08a480469c61fe79c88815649f045593046f2252a5c2f2f707f08be6d525d506",
+        "states": "ce5325fefc1b06fb722a1dc784205d17d556e587e5f0c326fb57993e28586f0b",
+        "sim": "a1c57f9a55b89809f65621ed9e68d82c9570202794143c19385dc6324b0a5fbf"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "chocolate_pudding",
+      "repeat": 0,
+      "seconds": 1.6033523082733154,
+      "hashes": {
+        "main_images": "ae2f0d3c21e996f4da94c64b6447e247cb915999fc4b42a05e5182ed8443c17e",
+        "wrist_images": "f0464a2fe91cce4db5ccd758aa9c137370c21f2cd5693f39a874ee9337b37008",
+        "states": "ef8f4b11f8ef16d789037143dbf5ebb157d17261fc9539a07fbb4757e3e93044",
+        "sim": "8250bf86da78e5600b8b47081af509290ca653b282238ebd981fc2a9e3f614be"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "moka_pot",
+      "repeat": 0,
+      "seconds": 1.5619308948516846,
+      "hashes": {
+        "main_images": "3fa6576900ababf974be5139bf19775a8ef495b67808f0152afbfb041a7631eb",
+        "wrist_images": "63a311b06ab10233b48f7253a52d7421074e3bc21eb31df616ca28d7e2b18133",
+        "states": "f2128bbcb6cd70437df8f4601db09a923a03f28342e0d5c4aa5e60344b696dc6",
+        "sim": "bbd923cda6372f93bf17b16353eb673ee8c2dc8e001bf8cca6c45c17f2627b99"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "yellow_moka_pot",
+      "repeat": 0,
+      "seconds": 1.530238151550293,
+      "hashes": {
+        "main_images": "e36815eee387bd5ca103506a8ec618f1acc19c321990bda7bf9a2f158552d86c",
+        "wrist_images": "00418cc4695861052b1928b14d789ad00467f3f23aab6a4e9c458f7e61f6d2ff",
+        "states": "f2128bbcb6cd70437df8f4601db09a923a03f28342e0d5c4aa5e60344b696dc6",
+        "sim": "bbd923cda6372f93bf17b16353eb673ee8c2dc8e001bf8cca6c45c17f2627b99"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "porcelain_mug",
+      "repeat": 1,
+      "seconds": 1.6734552383422852,
+      "hashes": {
+        "main_images": "f2dba771027ae419a9ea5b7f2035e393a15288c502f9a4fec0061fb689d3d2a5",
+        "wrist_images": "132199517129d43d116e6beea99ebc47d1bf739e871fd80d44978e5cc1a9a297",
+        "states": "138a2ebabebad7fb730ecc485549dc02ee515787d4a2f6f09de82e50b6a8523a",
+        "sim": "f9944e62e752e9181dd0a3753bb45d69d1d657f31266fc2a1ef2d5f21bf90002"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "alphabet_soup",
+      "repeat": 1,
+      "seconds": 1.5928981304168701,
+      "hashes": {
+        "main_images": "47a2eeaa3cc3562d06bc2175f0ee7f4f1bd067f15e6c596320a5d6cdf3eedeff",
+        "wrist_images": "553376b9736efd2d5bf303416ee6fee753af949ddaf7597fbc45340e8a38db0a",
+        "states": "17efd288b697780fb5680c281764d27d7c2bc8a47db5be7415ff9293a3bd56e6",
+        "sim": "77464049b89e2b5f17542d8c96ef9550901d2d0f0393382f2d1c551a36b8cbd5"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "ketchup",
+      "repeat": 1,
+      "seconds": 1.5007431507110596,
+      "hashes": {
+        "main_images": "350011668021f26f2382542ad1b4e35c14d047f98a157ada4b5171acce031840",
+        "wrist_images": "21236e61f50ae7c93663bb4c5013514433634b10779e7616087c00039664019e",
+        "states": "7982b5f26fcf9eba96cf783d2afe95cd570b6cce438013203f0b9c6d2b5f10df",
+        "sim": "f539a0d82ce17e106b88ce725a90b0c2437d547b761cdc55e0fff6240d4ef407"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "tomato_sauce",
+      "repeat": 1,
+      "seconds": 1.6796374320983887,
+      "hashes": {
+        "main_images": "14b030bf5c5cc38e2a9dc8a58052708226b3dd3b61e20c4648a7c4e24252b4f9",
+        "wrist_images": "dd16dcac6f12fee5f75f7ed8c4b91c1eb42fec6c42148d243429b7a0db40f7e6",
+        "states": "fc82ebe5e5c85785830de304d7827b09e59bced497ede1c9981dcb5fec014050",
+        "sim": "5ba7a8a1c54927d06955b9d101ae0a4981a3ee3874fc7715ead5004a43f5818c"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "butter",
+      "repeat": 1,
+      "seconds": 1.6828763484954834,
+      "hashes": {
+        "main_images": "082b0f75dcd4bd0e46e05670c38c376c4532ab55ffa247288fee4979f649396e",
+        "wrist_images": "8ed6dd4223b949b694f4e11bc0cc9d1b52ab1c9161db27ddd5d286ab2971550e",
+        "states": "0695933b15037775ed102eb2df160e861c5bc84159155da7511b91747e480c4f",
+        "sim": "742459f503a9343c64410147c906f76e7385dc510df2e5a2f0138b11b7bde168"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "cream_cheese",
+      "repeat": 1,
+      "seconds": 1.6597583293914795,
+      "hashes": {
+        "main_images": "2dcfd17d09bf280a184091a11b50453d1e86f13d6a5d59fe056534e738154a3b",
+        "wrist_images": "423fb15ed46547395850fd59d895222b5e50a256a8963ffb2cc71b76e0b0b032",
+        "states": "12f6c6594d4c89cbe9b8770170d70d7bcf1f4d80163c624e95cd437250daf846",
+        "sim": "f6b7087e4e5715fc0afcd1486aeca4ee48881d1853f1d84c175570b8295d8f30"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "akita_black_bowl",
+      "repeat": 1,
+      "seconds": 1.7358529567718506,
+      "hashes": {
+        "main_images": "f9c6b3c067fddf2a9aeb1289a7e6d336ca3ee252a9553e0051553b92ab6ab65d",
+        "wrist_images": "56e68a91917dbdcf28040cb2d5c45332d133459dc2642670064209157ef8bd9b",
+        "states": "42d2c8dbe90afc8953e56a5cba4fd427b257686afac155a9b8e656b57235940e",
+        "sim": "f408a3a2191323a4afad88d80d85f1b531776ef2fa798f72586a0b2c8b4e30d7"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "white_yellow_mug",
+      "repeat": 1,
+      "seconds": 1.7094292640686035,
+      "hashes": {
+        "main_images": "10508a4b6a24abdadf49fb8b06c3cec269d5bc4299c58799d63f80a50d2af0c1",
+        "wrist_images": "4220811a839e4ff46edfe7a155e485e4af5e1046772a1f770a6163f34c8d9a20",
+        "states": "39ae8e478c12511ee8d9b5650088fff53630e0cb2cfe0f4a0d82de840c33bdf4",
+        "sim": "f2ee6269c43cf815e2b26e29f5444f9f989db7dbe6a5e630fe4f015e8d2b2a52"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "black_book",
+      "repeat": 1,
+      "seconds": 1.4046835899353027,
+      "hashes": {
+        "main_images": "9e765bb68b9208fa739035444acbb970e6e4413c205deedb39378129c87d741b",
+        "wrist_images": "08a480469c61fe79c88815649f045593046f2252a5c2f2f707f08be6d525d506",
+        "states": "ce5325fefc1b06fb722a1dc784205d17d556e587e5f0c326fb57993e28586f0b",
+        "sim": "a1c57f9a55b89809f65621ed9e68d82c9570202794143c19385dc6324b0a5fbf"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "chocolate_pudding",
+      "repeat": 1,
+      "seconds": 1.7149574756622314,
+      "hashes": {
+        "main_images": "ae2f0d3c21e996f4da94c64b6447e247cb915999fc4b42a05e5182ed8443c17e",
+        "wrist_images": "f0464a2fe91cce4db5ccd758aa9c137370c21f2cd5693f39a874ee9337b37008",
+        "states": "ef8f4b11f8ef16d789037143dbf5ebb157d17261fc9539a07fbb4757e3e93044",
+        "sim": "8250bf86da78e5600b8b47081af509290ca653b282238ebd981fc2a9e3f614be"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "moka_pot",
+      "repeat": 1,
+      "seconds": 1.462043046951294,
+      "hashes": {
+        "main_images": "3fa6576900ababf974be5139bf19775a8ef495b67808f0152afbfb041a7631eb",
+        "wrist_images": "63a311b06ab10233b48f7253a52d7421074e3bc21eb31df616ca28d7e2b18133",
+        "states": "f2128bbcb6cd70437df8f4601db09a923a03f28342e0d5c4aa5e60344b696dc6",
+        "sim": "bbd923cda6372f93bf17b16353eb673ee8c2dc8e001bf8cca6c45c17f2627b99"
+      },
+      "immediately_released": true
+    },
+    {
+      "type": "yellow_moka_pot",
+      "repeat": 1,
+      "seconds": 1.4488508701324463,
+      "hashes": {
+        "main_images": "e36815eee387bd5ca103506a8ec618f1acc19c321990bda7bf9a2f158552d86c",
+        "wrist_images": "00418cc4695861052b1928b14d789ad00467f3f23aab6a4e9c458f7e61f6d2ff",
+        "states": "f2128bbcb6cd70437df8f4601db09a923a03f28342e0d5c4aa5e60344b696dc6",
+        "sim": "bbd923cda6372f93bf17b16353eb673ee8c2dc8e001bf8cca6c45c17f2627b99"
+      },
+      "immediately_released": true
+    }
+  ]
+}

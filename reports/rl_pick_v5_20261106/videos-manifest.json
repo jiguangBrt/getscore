@@ -1,0 +1,110 @@
+{
+  "porcelain_mug": {
+    "seed": 94000001,
+    "case_id": "fresh-pick-01",
+    "steps": 161,
+    "return_value": 3.2163972773080074,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-01.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/porcelain_mug.mp4",
+    "sha256": "90a77c69748c48a168b8000072da8c52baef21d1967fa049710c255f372ccfb5"
+  },
+  "alphabet_soup": {
+    "seed": 94000017,
+    "case_id": "fresh-pick-17",
+    "steps": 93,
+    "return_value": 3.1969078888223796,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-17.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/alphabet_soup.mp4",
+    "sha256": "5b8c430a1215d97f3f380226f52e5254ba25c625ebcb72ec16abb5f30971d340"
+  },
+  "ketchup": {
+    "seed": 94000032,
+    "case_id": "fresh-pick-32",
+    "steps": 96,
+    "return_value": 3.047418079721947,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-32.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/ketchup.mp4",
+    "sha256": "d256105d84092a5b3946538854c70816ba3cc543b3069e3a7f5c7b8af4529853"
+  },
+  "tomato_sauce": {
+    "seed": 94000048,
+    "case_id": "fresh-pick-48",
+    "steps": 98,
+    "return_value": 3.2491120803247404,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-48.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/tomato_sauce.mp4",
+    "sha256": "19a2446cc490415cee5b035991d15b67628d2270c9a70d501fefe89e059049aa"
+  },
+  "butter": {
+    "seed": 94000065,
+    "case_id": "fresh-pick-65",
+    "steps": 130,
+    "return_value": 3.1476359554862703,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-65.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/butter.mp4",
+    "sha256": "34991656f2ecdf717243620fa6134d934578920135c25dce568a3ab3b9fcc34d"
+  },
+  "cream_cheese": {
+    "seed": 94000080,
+    "case_id": "fresh-pick-80",
+    "steps": 171,
+    "return_value": 3.0892442580375556,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-80.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/cream_cheese.mp4",
+    "sha256": "40a6b68208069639e602353a8f81d5ee3243a0357b72ac486236d92e1c32d9da"
+  },
+  "akita_black_bowl": {
+    "seed": 94000097,
+    "case_id": "fresh-pick-97",
+    "steps": 178,
+    "return_value": 3.202620778812528,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-97.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/akita_black_bowl.mp4",
+    "sha256": "b8b4bc674e88998d6704f640242f799ddf9bfe02e0c4fff693dd8878f4928f57"
+  },
+  "white_yellow_mug": {
+    "seed": 94000113,
+    "case_id": "fresh-pick-113",
+    "steps": 137,
+    "return_value": 3.0939415745908088,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-113.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/white_yellow_mug.mp4",
+    "sha256": "44143890cb4dba573a3139da7dc0ace302c723e503d1a3c74b4fe517150faad0"
+  },
+  "black_book": {
+    "seed": 94000128,
+    "case_id": "fresh-pick-128",
+    "steps": 161,
+    "return_value": 2.7390077867852627,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-128.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/black_book.mp4",
+    "sha256": "d248eae08cbcdbe45a0587c748c89f7c405c5aab86e0d36158e211afc12e2d25"
+  },
+  "chocolate_pudding": {
+    "seed": 94000145,
+    "case_id": "fresh-pick-145",
+    "steps": 98,
+    "return_value": 3.2438324966683765,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-145.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/chocolate_pudding.mp4",
+    "sha256": "93c665a10a3694dbe8ba8fc6c101a6be814981a179d37d4dd74d3cc66b03888e"
+  },
+  "moka_pot": {
+    "seed": 94000170,
+    "case_id": "fresh-pick-170",
+    "steps": 184,
+    "return_value": 3.1914703253867325,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-170.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/moka_pot.mp4",
+    "sha256": "49949fa6005666726a2348598ff36b3d2b0a6a1e002f41cc08063a2855d2367e"
+  },
+  "yellow_moka_pot": {
+    "seed": 94000177,
+    "case_id": "fresh-pick-177",
+    "steps": 185,
+    "return_value": 3.08451281507638,
+    "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n/videos/eval-fresh-actor0-pick-fresh-pick-177.mp4",
+    "selected_video": "/data/wangyihan/getscore-rl-skills/reports/pick-v5-20261106/selected-videos/yellow_moka_pot.mp4",
+    "sha256": "dfcd2de73036678b558e255ae23a62b0257a0a7647aa7dcf6420c01ef3a3cbfb"
+  }
+}

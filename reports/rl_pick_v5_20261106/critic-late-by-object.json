@@ -1,0 +1,62 @@
+{
+  "akita_black_bowl": {
+    "samples": 290,
+    "value_minus_actual_return_bias": 0.01777734119059004,
+    "mse": 0.8105870110360612
+  },
+  "alphabet_soup": {
+    "samples": 309,
+    "value_minus_actual_return_bias": -0.09564884044670587,
+    "mse": 0.9066225252580716
+  },
+  "black_book": {
+    "samples": 200,
+    "value_minus_actual_return_bias": -0.2563583851503328,
+    "mse": 0.9861337455262278
+  },
+  "butter": {
+    "samples": 177,
+    "value_minus_actual_return_bias": 0.09763651429119205,
+    "mse": 1.2782753358979215
+  },
+  "chocolate_pudding": {
+    "samples": 209,
+    "value_minus_actual_return_bias": -0.20571264173977055,
+    "mse": 1.3318915224990038
+  },
+  "cream_cheese": {
+    "samples": 312,
+    "value_minus_actual_return_bias": 0.10006846160101078,
+    "mse": 1.4261609611218233
+  },
+  "ketchup": {
+    "samples": 223,
+    "value_minus_actual_return_bias": -0.2777824738923616,
+    "mse": 1.250965969966649
+  },
+  "moka_pot": {
+    "samples": 285,
+    "value_minus_actual_return_bias": 0.060067713477998094,
+    "mse": 0.6041834934093118
+  },
+  "porcelain_mug": {
+    "samples": 262,
+    "value_minus_actual_return_bias": 0.4215816777889696,
+    "mse": 0.8383793768074554
+  },
+  "tomato_sauce": {
+    "samples": 378,
+    "value_minus_actual_return_bias": -0.05418247605188218,
+    "mse": 0.841433243294872
+  },
+  "white_yellow_mug": {
+    "samples": 216,
+    "value_minus_actual_return_bias": -0.0442906501788077,
+    "mse": 0.9286123645007158
+  },
+  "yellow_moka_pot": {
+    "samples": 249,
+    "value_minus_actual_return_bias": 0.0651446132145336,
+    "mse": 0.6453080762517138
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "passed": true,
+  "config": "/data/wangyihan/getscore-rl-skills/experiments/pick-v5l-20261106/configs/hold-potential.json",
+  "rows": [
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/cream_cheese-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "cream_cheese",
+      "success": false,
+      "old_return": -0.4089169687354063,
+      "new_return": -0.4089169687354063,
+      "trace_sha256": "47aacca3f4630bc7e0f661da2e9d2d719125ed377a2870814f05451dddfaacbc"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/black_book-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "black_book",
+      "success": false,
+      "old_return": -1.173645024493433,
+      "new_return": -1.173645024493433,
+      "trace_sha256": "a0665ed7bbaa16541eb001042a396a53bc4b1f5bb7417f1b072e30b667afa710"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/ketchup-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "ketchup",
+      "success": false,
+      "old_return": -0.42151602848976044,
+      "new_return": -0.42151602848976044,
+      "trace_sha256": "e863946f32104cfed2a41532a0f2d9af8dd33d94815414e9688130635c6fedd1"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/black_book-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "black_book",
+      "success": true,
+      "old_return": 2.2157613338282958,
+      "new_return": 2.2001613338282957,
+      "trace_sha256": "eae50e80d183ba75af4666a4e21f063c32f1a7444719c45ec8ab8b7371539374"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/tomato_sauce-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "tomato_sauce",
+      "success": false,
+      "old_return": -0.3048040323503456,
+      "new_return": -0.3048040323503456,
+      "trace_sha256": "da26654f97d079231f25cbc762842eed35230371da3b42a8e0344cffd0d2f38a"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/butter-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "butter",
+      "success": false,
+      "old_return": -0.3251106104140678,
+      "new_return": -0.3251106104140678,
+      "trace_sha256": "1792e5e6b2da4e73c51065a9f6cfa04e29ce02059fb84fef2cbe719e9f64e0de"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/ketchup-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "ketchup",
+      "success": true,
+      "old_return": 3.236278842684329,
+      "new_return": 3.220678842684328,
+      "trace_sha256": "5ab7bd1c56016f405782ac12cd0d343d0722380ed47845dea97782c26a6a6b89"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/white_yellow_mug-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "white_yellow_mug",
+      "success": true,
+      "old_return": 2.3729594076657685,
+      "new_return": 2.3573594076657685,
+      "trace_sha256": "658155d3a32957916f6eb26b2ded155ef48e9a282cf797179a5e422ad43407d4"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/cream_cheese-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "cream_cheese",
+      "success": false,
+      "old_return": -0.32454152279131915,
+      "new_return": -0.32454152279131915,
+      "trace_sha256": "3c4e039379cffac5b8ec6a09da75d9e764d50e41506b996df8694e3ff95c9741"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/akita_black_bowl-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "akita_black_bowl",
+      "success": false,
+      "old_return": -0.39614814180028685,
+      "new_return": -0.39614814180028685,
+      "trace_sha256": "6a4021d7ed8f078ebcef82bca73a1fedfe278b33858c9094571a51e4cf4ac3d4"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/yellow_moka_pot-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "yellow_moka_pot",
+      "success": true,
+      "old_return": 3.2006660634830855,
+      "new_return": 3.184866063483084,
+      "trace_sha256": "7bcf0d329c944c175122e24c1f5905654356aa312b9cf09213ccd9c1b5b6f143"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/moka_pot-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "moka_pot",
+      "success": false,
+      "old_return": -0.41469391259356786,
+      "new_return": -0.41469391259356786,
+      "trace_sha256": "146d86bffd10eef2c3da05d563f608f4059120251f3b1392174162e98ec6bf31"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/akita_black_bowl-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "akita_black_bowl",
+      "success": false,
+      "old_return": -0.20000000000000004,
+      "new_return": -0.20000000000000004,
+      "trace_sha256": "541a63ded2f7c2f478d884b2031d1d2f90e32521be7184dd84f4b73dda413336"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/tomato_sauce-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "tomato_sauce",
+      "success": false,
+      "old_return": -0.4147749314952992,
+      "new_return": -0.4147749314952992,
+      "trace_sha256": "d89cb23bf9f3bf276e2076d65f983d51e7ba2c3dd226f5f902f26104ca2922b4"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/akita_black_bowl-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "akita_black_bowl",
+      "success": false,
+      "old_return": -0.20000000000000004,
+      "new_return": -0.20000000000000004,
+      "trace_sha256": "8784f423f4750a31281622e4779b806997a0be2703747355d631289b2b8e3916"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/alphabet_soup-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "alphabet_soup",
+      "success": false,
+      "old_return": -0.3048140301143947,
+      "new_return": -0.3048140301143947,
+      "trace_sha256": "5fe72a5b1a4979ec77b984f96ca940a22f0eb0e1404599de788695a6ca9e7edd"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/white_yellow_mug-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "white_yellow_mug",
+      "success": false,
+      "old_return": -1.0009880517206362,
+      "new_return": -1.0009880517206362,
+      "trace_sha256": "93268ba125614532796de60adf833d6a9e7b6bdfb9dfb508b06953c260a36f5a"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/white_yellow_mug-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "white_yellow_mug",
+      "success": false,
+      "old_return": -0.3815641587146499,
+      "new_return": -0.3815641587146499,
+      "trace_sha256": "076a17202b910f8a55021c8f759f57b6232cce88e51657e513ad6e97f2f39a61"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/cream_cheese-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "cream_cheese",
+      "success": false,
+      "old_return": -0.3218739431678159,
+      "new_return": -0.3218739431678159,
+      "trace_sha256": "e8b52099c63077d6e7ae6fec7bdc2e205cbe6de1b4bec7626aada9eb1c01e59b"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/porcelain_mug-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "porcelain_mug",
+      "success": false,
+      "old_return": -0.600430172688301,
+      "new_return": -0.600430172688301,
+      "trace_sha256": "7264106c6c667b2cbff30b346af6ca2db29572bb33134e46d81c3987497f082e"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/moka_pot-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "moka_pot",
+      "success": false,
+      "old_return": -0.20000000000000007,
+      "new_return": -0.20000000000000007,
+      "trace_sha256": "d836dab865bde730f545ed1829306230be17bdab3930851159599c0621030214"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/yellow_moka_pot-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "yellow_moka_pot",
+      "success": false,
+      "old_return": -0.20000000000000007,
+      "new_return": -0.20000000000000007,
+      "trace_sha256": "4c35835627a8b394396630586b45286822f38ac743e387a3c7e9a2261992c888"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/butter-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "butter",
+      "success": false,
+      "old_return": -0.3219758299419177,
+      "new_return": -0.3219758299419177,
+      "trace_sha256": "d07bd5b5175f6e55c9999c9b019c1cb6a3e5ced51b7bf8b81aadbc19a75386ba"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/porcelain_mug-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "porcelain_mug",
+      "success": true,
+      "old_return": 2.8112704522098118,
+      "new_return": 2.795670452209812,
+      "trace_sha256": "f042de31d98ef545394b98bbf3d70e0ab4535ad3268d03b8e3a0fd7a557e1d12"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/black_book-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "black_book",
+      "success": false,
+      "old_return": -0.3991368271695505,
+      "new_return": -0.3991368271695505,
+      "trace_sha256": "88b76ad9f72c663ad6dd74f5477c94ccf7408af70ba73021ecdd10d6976887d6"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/tomato_sauce-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "tomato_sauce",
+      "success": false,
+      "old_return": -0.3075313670762806,
+      "new_return": -0.3075313670762806,
+      "trace_sha256": "20e91425259647d5799c5942080a852d70f6307c67a8b5c6a006468ff4da26f1"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/moka_pot-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "moka_pot",
+      "success": true,
+      "old_return": 3.2006660634830855,
+      "new_return": 3.184866063483084,
+      "trace_sha256": "6337926c4b0c3f537fdd6f30727e55c3226dd79dd4d191e958609f43d1eb3e6b"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/alphabet_soup-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "alphabet_soup",
+      "success": false,
+      "old_return": -0.4146002083552821,
+      "new_return": -0.4146002083552821,
+      "trace_sha256": "16ec2930b9acf4af53ed11cd1bed94cd9bf907c95201372c9d4bc7e83a789a8b"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/ketchup-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "ketchup",
+      "success": false,
+      "old_return": -0.3226387140485738,
+      "new_return": -0.3226387140485738,
+      "trace_sha256": "a7f71a7c8d0926b08c8b03d2819cbfae1ddf0fb4ca39a0f4363ab6943dbfc7a7"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/alphabet_soup-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "alphabet_soup",
+      "success": false,
+      "old_return": -0.3071399112295715,
+      "new_return": -0.3071399112295715,
+      "trace_sha256": "703877e4566c7eeb29333c413db9936fae9f36edfcba7274b03487f1166a89da"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/butter-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "butter",
+      "success": false,
+      "old_return": -0.4105224961584484,
+      "new_return": -0.4105224961584484,
+      "trace_sha256": "23d26b253d8105685440937094d4a3b3776f2be59a2868df99ebfb3846ae95a6"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/chocolate_pudding-grasp/native-trace.jsonl",
+      "role": "control",
+      "type": "chocolate_pudding",
+      "success": false,
+      "old_return": -0.3190888996172946,
+      "new_return": -0.3190888996172946,
+      "trace_sha256": "b0c85238be883dc70c76d0d075da6a715e376c5f57b0dd9ec34a2ff96e9b0307"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/yellow_moka_pot-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "yellow_moka_pot",
+      "success": false,
+      "old_return": -0.41469391259356786,
+      "new_return": -0.41469391259356786,
+      "trace_sha256": "267a047f2993344afb6a21e15520ca7a27c8cbf802f48413b38f933adaacf1ed"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/porcelain_mug-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "porcelain_mug",
+      "success": false,
+      "old_return": -0.39100631263904584,
+      "new_return": -0.39100631263904584,
+      "trace_sha256": "c8e7402bb9b43044d0305da6ad7b55a32be6f3d85d436773d9f961b8820af7de"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/chocolate_pudding-table_collision/native-trace.jsonl",
+      "role": "control",
+      "type": "chocolate_pudding",
+      "success": false,
+      "old_return": -0.4068713770944238,
+      "new_return": -0.4068713770944238,
+      "trace_sha256": "512cb5bb4e0613bba92173cd6cad340f6b0264fc9d8e685cb85ca5cfb6fee192"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-preflight-20261106-b/chocolate_pudding-open_lift/native-trace.jsonl",
+      "role": "control",
+      "type": "chocolate_pudding",
+      "success": false,
+      "old_return": -0.32173526383255935,
+      "new_return": -0.32173526383255935,
+      "trace_sha256": "01cedb8259a0522a60a56f8ee293e29447049ef671058af443e50a26a963b2c6"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/porcelain_mug-1240000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "porcelain_mug",
+      "success": true,
+      "old_return": 3.2127643472721834,
+      "new_return": 3.197164347272183,
+      "trace_sha256": "9d46b2592735c0fddd204e2559fed1bf4fd28e29377861063e0b6257a7bb3f1b"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/alphabet_soup-1241000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "alphabet_soup",
+      "success": true,
+      "old_return": 3.238596309781401,
+      "new_return": 3.2229963097814,
+      "trace_sha256": "c883ca6c8373ca8a58451f852a9e6aaabe26a7851319e6069099649b7dc215b2"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/ketchup-1242000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "ketchup",
+      "success": true,
+      "old_return": 3.2373366810409543,
+      "new_return": 3.2217366810409533,
+      "trace_sha256": "bee34d33e40a05649715e3aa6b152f87dd7696c5aefdf5925938e608b9ab734f"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/tomato_sauce-1243000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "tomato_sauce",
+      "success": true,
+      "old_return": 3.2391480604649625,
+      "new_return": 3.223548060464962,
+      "trace_sha256": "cf7a4adcda14febc59cec4783b521428120a68cd2bea0656243d52e65ccf8b97"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/butter-1244000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "butter",
+      "success": true,
+      "old_return": 3.2212930307989236,
+      "new_return": 3.2056930307989235,
+      "trace_sha256": "d63b04eab8b25202dd5f3205c89053c6327a3b44f1678c5113cbc7f943b57c28"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/cream_cheese-1245000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "cream_cheese",
+      "success": true,
+      "old_return": 3.2191657982455473,
+      "new_return": 3.2035657982455468,
+      "trace_sha256": "b613ae8fd65f3e05fabc0731bb75058f970dab53b20e7acffa2ce9e0224d1632"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/akita_black_bowl-1246000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "akita_black_bowl",
+      "success": true,
+      "old_return": 3.1802255368333867,
+      "new_return": 3.1635255368333866,
+      "trace_sha256": "22989523e5de94f130879226f6c1ce38094e2011f2640ca224e2ee1f341651d3"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/white_yellow_mug-1247000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "white_yellow_mug",
+      "success": true,
+      "old_return": 3.1911952402635517,
+      "new_return": 3.1755952402635526,
+      "trace_sha256": "0cd89c5ff245d43c43b3304043f30e8d1d44037bb5384b42cb3522b4b83c866a"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/black_book-1248000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "black_book",
+      "success": true,
+      "old_return": 2.4360007251762457,
+      "new_return": 2.420400725176245,
+      "trace_sha256": "4f06acee4c796b49ba4eeb5e99c5e2c3b1a94dd2384778df15eac4f64163e215"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/chocolate_pudding-1249000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "chocolate_pudding",
+      "success": true,
+      "old_return": 3.2322137089951335,
+      "new_return": 3.216613708995134,
+      "trace_sha256": "c547ee44bf5505d37c316d74b1f63faa5ccbd9bffeae0dc5ab13e6e59efc386f"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/moka_pot-1250000-try2/native-trace.jsonl",
+      "role": "positive",
+      "type": "moka_pot",
+      "success": true,
+      "old_return": 3.2087969722482863,
+      "new_return": 3.193196972248285,
+      "trace_sha256": "4671cd3cba2608b6cd11027373c89c35944a0ccd9fc25bb5234e51e89a64046a"
+    },
+    {
+      "path": "/data/wangyihan/getscore-rl-skills/records/pick-v5-demos-20261106-d/yellow_moka_pot-1251000-try0/native-trace.jsonl",
+      "role": "positive",
+      "type": "yellow_moka_pot",
+      "success": true,
+      "old_return": 3.232240158548393,
+      "new_return": 3.216640158548392,
+      "trace_sha256": "bc8de49574fdab3d4525679c2570d2b5e8100eda39503a7f18314d8a4de04573"
+    }
+  ],
+  "note": "reward recomputation on unchanged physically recorded states; not new policy episodes"
+}

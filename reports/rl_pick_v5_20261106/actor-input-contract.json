@@ -1,0 +1,5 @@
+{
+  "max_action_difference_with_without_critic_context": 0.0,
+  "rows": 8,
+  "noise_seed": 98123
+}

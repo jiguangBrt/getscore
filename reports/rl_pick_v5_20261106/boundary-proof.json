@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "control": "recover",
+      "success": false,
+      "reason": "task_deadline_200",
+      "max_xy": 0.07550094080304531,
+      "survived_excursion": true,
+      "failure": false,
+      "max_hold": 34,
+      "positive_soft_cost_steps": 21,
+      "returned_free": true,
+      "reward": 0.7869539692572014
+    },
+    {
+      "control": "severe",
+      "success": false,
+      "reason": "severe_xy_boundary",
+      "max_xy": 0.20087990260646532,
+      "survived_excursion": false,
+      "failure": true,
+      "max_hold": 0,
+      "positive_soft_cost_steps": 29,
+      "returned_free": false,
+      "reward": -1.323141996008283
+    }
+  ],
+  "role": "scripted boundary controls, not policy successes"
+}

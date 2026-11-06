@@ -1,0 +1,110 @@
+{
+  "status": "validated_bounded_pilot",
+  "ready_for_larger_evaluation": true,
+  "long_run_learning_improvement_demonstrated": false,
+  "checkpoint_remote": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-pilot800-20261106-h/checkpoints/final.pt",
+  "checkpoint_local": "/home/jh/getscore/reports/rl_pick_v5_20261106/checkpoints/policy-u9.pt",
+  "sha256": "e5df8a0a026f67bfe7180b59b8bc921ef4c24db5fb7f068a6524c1354b80ecc8",
+  "checkpoint_bytes": 116735747,
+  "update": 9,
+  "completed_training_episodes": 99,
+  "selection": "Among updated PPO checkpoints: prioritize 12-class development coverage, then successes; fresh seeds never used to select",
+  "base_model": "pi05_libero",
+  "base_sha256": "f841dc041275ae9df425eedfb7738d84d86e5197e8e47fbfea754eff67ca1a59",
+  "initial_supervised_checkpoint": "/data/wangyihan/getscore-rl-skills/experiments/pick-v5g-20261106/initial-demo-best-e.pt",
+  "initial_supervised_sha256": "0c2f4e7280a6a0aa1be77a0039a54bcf0e2c046f088090b3d43ffcdd9d6722d9",
+  "development_successes": 27,
+  "development_episodes": 48,
+  "development_successful_object_types": 12,
+  "heldout_evaluation_run": "/data/wangyihan/getscore-rl-skills/runs/pick-v5-final192-20261106-n",
+  "heldout_seed_base": 94000000,
+  "large_training_launched": false,
+  "final_evaluation": {
+    "by_object": {
+      "akita_black_bowl": {
+        "valid": 16,
+        "successes": 3,
+        "mean_return": 0.42105710365461657,
+        "collision_cost": 0.0024100888912254063
+      },
+      "alphabet_soup": {
+        "valid": 16,
+        "successes": 9,
+        "mean_return": 1.8038360263709952,
+        "collision_cost": 0.0
+      },
+      "black_book": {
+        "valid": 16,
+        "successes": 13,
+        "mean_return": 2.3213967089845307,
+        "collision_cost": 0.27652969701093244
+      },
+      "butter": {
+        "valid": 16,
+        "successes": 10,
+        "mean_return": 2.0283997079191414,
+        "collision_cost": 0.03770385269188271
+      },
+      "chocolate_pudding": {
+        "valid": 16,
+        "successes": 13,
+        "mean_return": 2.625661014780523,
+        "collision_cost": 0.009700095725508631
+      },
+      "cream_cheese": {
+        "valid": 16,
+        "successes": 12,
+        "mean_return": 2.378749246117995,
+        "collision_cost": 0.03183711062148943
+      },
+      "ketchup": {
+        "valid": 16,
+        "successes": 12,
+        "mean_return": 2.3442264146614678,
+        "collision_cost": 0.1068056868903744
+      },
+      "moka_pot": {
+        "valid": 16,
+        "successes": 1,
+        "mean_return": -0.2226310281101862,
+        "collision_cost": 0.07102903535140012
+      },
+      "porcelain_mug": {
+        "valid": 16,
+        "successes": 7,
+        "mean_return": 1.259138228814292,
+        "collision_cost": 0.27549058638671015
+      },
+      "tomato_sauce": {
+        "valid": 16,
+        "successes": 10,
+        "mean_return": 2.0091360142021486,
+        "collision_cost": 0.0
+      },
+      "white_yellow_mug": {
+        "valid": 16,
+        "successes": 8,
+        "mean_return": 1.4742065979899566,
+        "collision_cost": 0.08196341787090633
+      },
+      "yellow_moka_pot": {
+        "valid": 16,
+        "successes": 2,
+        "mean_return": 0.274034046352936,
+        "collision_cost": 0.07930241755940128
+      }
+    },
+    "valid": 192,
+    "invalid_reset": 0,
+    "successes": 100,
+    "success_rate": 0.5208333333333334,
+    "mean_return": 1.5597675068115346,
+    "reasons": {
+      "success": 100,
+      "task_deadline_200": 92
+    }
+  },
+  "final_evaluation_audit_passed": true,
+  "actor_input_context_max_difference": 0.0,
+  "total_complete_rl_pilot_episodes": 1288
+}
