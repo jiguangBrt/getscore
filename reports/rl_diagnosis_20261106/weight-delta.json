@@ -1,0 +1,22 @@
+{
+  "comparison": "continuation-start.pt update257 versus final.pt update807; CPU-only read",
+  "actor": {
+    "tensors": 216,
+    "elements": 6930432,
+    "changed_elements": 6930297,
+    "delta_l2": 0.05908441240382332,
+    "initial_l2": 35.32398754537302,
+    "relative_l2": 0.0016726427708063948,
+    "max_abs_change": 0.00012696113844867796
+  },
+  "critic": {
+    "tensors": 8,
+    "elements": 2754561,
+    "changed_elements": 2754141,
+    "delta_l2": 1.2138619819517067,
+    "initial_l2": 84.69907031678049,
+    "relative_l2": 0.014331467599488132,
+    "max_abs_change": 0.004641197621822357
+  },
+  "limitation": "Parameter changes do not directly measure executed-action changes; LoRA norm includes factor initialization."
+}

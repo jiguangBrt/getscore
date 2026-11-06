@@ -1,0 +1,6 @@
+{
+  "approach_has_no_positive_reward": true,
+  "initial_approach_descent_not_penalized": true,
+  "first_5cm_height_credit": 0.06,
+  "descent_after_lift_penalized": true
+}

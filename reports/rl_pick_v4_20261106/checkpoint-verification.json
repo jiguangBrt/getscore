@@ -1,0 +1,12 @@
+{
+  "resume_parent_optimizer_steps": 40,
+  "resume_final_optimizer_steps": [
+    56.0
+  ],
+  "selected_update": 10,
+  "selected_ppo_complete_episodes": 102,
+  "selected_optimizer_steps": 80,
+  "selected_sha256": "54d6e2dafc1640ce6e2d4b09f6449280f0c594e102c546fc158e9c66e5b09071",
+  "selected_trainable_tensors": 224,
+  "checkpoint_integrity_passed": true
+}

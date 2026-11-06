@@ -1,0 +1,31 @@
+{
+  "status": "ready_starting_policy_for_single_white_mug_pick",
+  "checkpoint_remote": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-pilot200-20261106-d/checkpoints/evaluation-update-0010.pt",
+  "checkpoint_local": "/home/jh/getscore/reports/rl_pick_v4_20261106/checkpoints/policy-ready-u10.pt",
+  "sha256": "54d6e2dafc1640ce6e2d4b09f6449280f0c594e102c546fc158e9c66e5b09071",
+  "policy_update": 10,
+  "ppo_episodes_at_checkpoint": 102,
+  "supervised_initialization": {
+    "demos": 32,
+    "optimizer_steps": 400
+  },
+  "fixed32": {
+    "successes": 6,
+    "episodes": 32,
+    "mean_return": 0.722639838731585
+  },
+  "fresh64": {
+    "successes": 13,
+    "episodes": 64,
+    "mean_return": 0.8221397924453937
+  },
+  "last_update17_fixed32": {
+    "successes": 3,
+    "episodes": 32,
+    "mean_return": 0.5172669606140462
+  },
+  "selection": "highest fixed32 success; fresh64 independently verified this update10 policy",
+  "training_not_running": true,
+  "config_remote": "/data/wangyihan/getscore-rl-skills/experiments/pick-v4-ready-20261106/configs/ready.json",
+  "resume_command": "/data/wangyihan/getscore-rl-skills/run-pick-v4.sh --out <new-run-directory> --episodes <additional-episodes> --hours <budget-hours>"
+}

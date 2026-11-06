@@ -1,0 +1,469 @@
+{
+  "recorded_eef_path_fixed_orientation": {
+    "original_pad_detector": {
+      "reward": 0.021032684832167844,
+      "height_score": 0.7982637419128182,
+      "hold_score": 0.9,
+      "termination_reason": null,
+      "ledger_steps": 79
+    },
+    "counterfactual_anyfinger_detector": {
+      "reward": 0.021032684832167844,
+      "height_score": 0.7982637419128182,
+      "hold_score": 0.9,
+      "termination_reason": null,
+      "ledger_steps": 79
+    },
+    "final_contacts": [
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -4.506543409117875e-05,
+        "position": [
+          -0.08157682552613144,
+          -0.11287479929051611,
+          0.6154955544621037
+        ],
+        "normal": [
+          0.030769933365434907,
+          0.9995040176578471,
+          -0.006702975944232521
+        ],
+        "normal_force": 0.8089841244436281
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -4.5059523978787256e-05,
+        "position": [
+          -0.09756923001382026,
+          -0.11238266588331505,
+          0.6154672099465706
+        ],
+        "normal": [
+          0.030769933365434907,
+          0.9995040176578471,
+          -0.006702975944232521
+        ],
+        "normal_force": 0.8088776466463345
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -3.4625088253666895e-05,
+        "position": [
+          -0.08155211508201064,
+          -0.11299330322799848,
+          0.5994960226186938
+        ],
+        "normal": [
+          0.030769933365434907,
+          0.9995040176578471,
+          -0.006702975944232521
+        ],
+        "normal_force": 0.6210043457271458
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -3.46191781412754e-05,
+        "position": [
+          -0.09754451956969946,
+          -0.11250116982079741,
+          0.5994676781031606
+        ],
+        "normal": [
+          0.030769933365434907,
+          0.9995040176578471,
+          -0.006702975944232521
+        ],
+        "normal_force": 0.6208981562462705
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger2_pad_collision",
+        "distance": -4.507989900110832e-05,
+        "position": [
+          -0.09739680847779,
+          -0.10770329126569492,
+          0.5994293413487127
+        ],
+        "normal": [
+          -0.030769933365434907,
+          -0.9995040176578471,
+          0.006702975944232521
+        ],
+        "normal_force": 0.8092567030804203
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger2_pad_collision",
+        "distance": -4.5073988888716824e-05,
+        "position": [
+          -0.08140440399010117,
+          -0.10819542467289597,
+          0.599457685864246
+        ],
+        "normal": [
+          -0.030769933365434907,
+          -0.9995040176578471,
+          0.006702975944232521
+        ],
+        "normal_force": 0.8091502229309281
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger2_pad_collision",
+        "distance": -3.463955316359646e-05,
+        "position": [
+          -0.0974215189219108,
+          -0.10758478732821256,
+          0.6154288731921227
+        ],
+        "normal": [
+          -0.030769933365434907,
+          -0.9995040176578471,
+          0.006702975944232521
+        ],
+        "normal_force": 0.6212728642286857
+      },
+      {
+        "object_geom": "porcelain_mug_1_g13",
+        "gripper_geom": "gripper0_right_finger2_pad_collision",
+        "distance": -3.463364305120497e-05,
+        "position": [
+          -0.08142911443422197,
+          -0.10807692073541361,
+          0.6154572177076558
+        ],
+        "normal": [
+          -0.030769933365434907,
+          -0.9995040176578471,
+          0.006702975944232521
+        ],
+        "normal_force": 0.6211666725061827
+      }
+    ],
+    "last20_max_linear_speed": 9.124061661294419e-05,
+    "last20_height_range_m": [
+      0.0858467749466344,
+      0.0858867871000053
+    ]
+  },
+  "wall_dx0_z35": {
+    "original_pad_detector": {
+      "reward": -0.1001250332976625,
+      "height_score": 0.0,
+      "hold_score": 0.0,
+      "termination_reason": null,
+      "ledger_steps": 186
+    },
+    "counterfactual_anyfinger_detector": {
+      "reward": 1.396829161482605,
+      "height_score": 1.0,
+      "hold_score": 1.0,
+      "termination_reason": "success",
+      "ledger_steps": 186
+    },
+    "final_contacts": [
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_collision",
+        "distance": -0.0008415583595266425,
+        "position": [
+          -0.06586793877606592,
+          -0.12918607486228706,
+          0.6366841087558552
+        ],
+        "normal": [
+          -0.6747678876263163,
+          -0.7059538392838096,
+          0.21521494982637288
+        ],
+        "normal_force": 4.568089093303066
+      },
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -0.00022344612020862927,
+        "position": [
+          -0.06624196208721787,
+          -0.12873310544222025,
+          0.6379141796285042
+        ],
+        "normal": [
+          0.6747678876263107,
+          0.7059538392838077,
+          -0.2152149498263967
+        ],
+        "normal_force": 4.222635585588897
+      },
+      {
+        "object_geom": "porcelain_mug_1_g3",
+        "gripper_geom": "gripper0_right_finger2_collision",
+        "distance": -0.0019515671197856887,
+        "position": [
+          -0.075325157638339,
+          -0.10311291504742101,
+          0.6370863238359314
+        ],
+        "normal": [
+          0.15231685125141656,
+          0.6214198289846938,
+          0.7685290970220243
+        ],
+        "normal_force": 11.125379480368238
+      }
+    ],
+    "last20_max_linear_speed": 0.0010575831676044496,
+    "last20_height_range_m": [
+      0.11605286048504992,
+      0.11703899894717618
+    ]
+  },
+  "wall_dx0_z52": {
+    "original_pad_detector": {
+      "reward": -0.1001250332976625,
+      "height_score": 0.0,
+      "hold_score": 0.0,
+      "termination_reason": null,
+      "ledger_steps": 186
+    },
+    "counterfactual_anyfinger_detector": {
+      "reward": 1.396829161482605,
+      "height_score": 1.0,
+      "hold_score": 1.0,
+      "termination_reason": "success",
+      "ledger_steps": 186
+    },
+    "final_contacts": [
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_collision",
+        "distance": -0.0008415583595266425,
+        "position": [
+          -0.06586793877606592,
+          -0.12918607486228706,
+          0.6366841087558552
+        ],
+        "normal": [
+          -0.6747678876263163,
+          -0.7059538392838096,
+          0.21521494982637288
+        ],
+        "normal_force": 4.568089093303066
+      },
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -0.00022344612020862927,
+        "position": [
+          -0.06624196208721787,
+          -0.12873310544222025,
+          0.6379141796285042
+        ],
+        "normal": [
+          0.6747678876263107,
+          0.7059538392838077,
+          -0.2152149498263967
+        ],
+        "normal_force": 4.222635585588897
+      },
+      {
+        "object_geom": "porcelain_mug_1_g3",
+        "gripper_geom": "gripper0_right_finger2_collision",
+        "distance": -0.0019515671197856887,
+        "position": [
+          -0.075325157638339,
+          -0.10311291504742101,
+          0.6370863238359314
+        ],
+        "normal": [
+          0.15231685125141656,
+          0.6214198289846938,
+          0.7685290970220243
+        ],
+        "normal_force": 11.125379480368238
+      }
+    ],
+    "last20_max_linear_speed": 0.0010575831676044496,
+    "last20_height_range_m": [
+      0.11605286048504992,
+      0.11703899894717618
+    ]
+  },
+  "wall_dx0_z70": {
+    "original_pad_detector": {
+      "reward": -0.12040436006591629,
+      "height_score": 0.0,
+      "hold_score": 0.0,
+      "termination_reason": null,
+      "ledger_steps": 186
+    },
+    "counterfactual_anyfinger_detector": {
+      "reward": 1.3768905043149529,
+      "height_score": 1.0,
+      "hold_score": 1.0,
+      "termination_reason": "success",
+      "ledger_steps": 186
+    },
+    "final_contacts": [
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_collision",
+        "distance": -0.0007857440224722453,
+        "position": [
+          -0.07930964048044536,
+          -0.12666875361442947,
+          0.6371647224541395
+        ],
+        "normal": [
+          -0.631136062093021,
+          -0.755602308023577,
+          0.17530665485131497
+        ],
+        "normal_force": 4.10000999083448
+      },
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -0.00022183975245117736,
+        "position": [
+          -0.0797757306779843,
+          -0.12622426599403083,
+          0.6383781492859488
+        ],
+        "normal": [
+          0.6311360620930401,
+          0.7556023080235799,
+          -0.17530665485123315
+        ],
+        "normal_force": 4.19012339449885
+      },
+      {
+        "object_geom": "porcelain_mug_1_g3",
+        "gripper_geom": "gripper0_right_finger2_collision",
+        "distance": -0.0017795859141795016,
+        "position": [
+          -0.08970556544676675,
+          -0.10300977153003013,
+          0.6365905679775523
+        ],
+        "normal": [
+          0.09807441434616955,
+          0.6509925527107568,
+          0.7527217982533709
+        ],
+        "normal_force": 10.146312414074856
+      }
+    ],
+    "last20_max_linear_speed": 0.0010324305934842311,
+    "last20_height_range_m": [
+      0.1168866723054579,
+      0.11782177117730952
+    ]
+  },
+  "wall_dx12_z52": {
+    "original_pad_detector": {
+      "reward": 1.3647559457306742,
+      "height_score": 1.0,
+      "hold_score": 1.0,
+      "termination_reason": "success",
+      "ledger_steps": 186
+    },
+    "counterfactual_anyfinger_detector": {
+      "reward": 1.3647559457306742,
+      "height_score": 1.0,
+      "hold_score": 1.0,
+      "termination_reason": "success",
+      "ledger_steps": 186
+    },
+    "final_contacts": [
+      {
+        "object_geom": "porcelain_mug_1_g4",
+        "gripper_geom": "gripper0_right_hand_collision",
+        "distance": -7.473289776727221e-05,
+        "position": [
+          -0.06742783152085816,
+          -0.20809279596706684,
+          0.6675897786994283
+        ],
+        "normal": [
+          0.4819452657666033,
+          -0.11945344680836963,
+          0.8680205267450524
+        ],
+        "normal_force": 0.25495677260219374
+      },
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_collision",
+        "distance": -0.0011499294543149351,
+        "position": [
+          -0.042965561101026284,
+          -0.1390728515124596,
+          0.6325375463663834
+        ],
+        "normal": [
+          -0.6211334912076596,
+          -0.6721356389153978,
+          0.4030221693653765
+        ],
+        "normal_force": 6.562222086309204
+      },
+      {
+        "object_geom": "porcelain_mug_1_g12",
+        "gripper_geom": "gripper0_right_finger1_pad_collision",
+        "distance": -0.0002863578712284816,
+        "position": [
+          -0.04323694491720833,
+          -0.13854807112188447,
+          0.6337105956866737
+        ],
+        "normal": [
+          0.6211334912076648,
+          0.6721356389153831,
+          -0.40302216936539326
+        ],
+        "normal_force": 5.617531018238236
+      },
+      {
+        "object_geom": "porcelain_mug_1_g3",
+        "gripper_geom": "gripper0_right_finger2_collision",
+        "distance": -0.0018237701013667457,
+        "position": [
+          -0.05397304363855977,
+          -0.10933129407177686,
+          0.6339189519290255
+        ],
+        "normal": [
+          0.6099224629537082,
+          0.5429457006179705,
+          0.5772387334239999
+        ],
+        "normal_force": 10.40593990255847
+      },
+      {
+        "object_geom": "porcelain_mug_1_g3",
+        "gripper_geom": "gripper0_right_finger2_pad_collision",
+        "distance": -7.152898175376331e-05,
+        "position": [
+          -0.055636718978987434,
+          -0.11048054792617296,
+          0.6382136246973907
+        ],
+        "normal": [
+          -0.6099224629537212,
+          -0.5429457006179778,
+          -0.5772387334239794
+        ],
+        "normal_force": 1.4409235379673464
+      }
+    ],
+    "last20_max_linear_speed": 0.000855256518579496,
+    "last20_height_range_m": [
+      0.12128808927951862,
+      0.12187703999772659
+    ]
+  }
+}

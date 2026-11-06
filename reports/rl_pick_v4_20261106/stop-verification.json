@@ -1,0 +1,7 @@
+{
+  "time": 1793943493.8570647,
+  "active_pick_training_processes": [],
+  "gpu_readout": "0, 10452 MiB, 100 %\n1, 10452 MiB, 0 %\n2, 10452 MiB, 100 %\n3, 10452 MiB, 100 %\n4, 13209 MiB, 100 %\n5, 13209 MiB, 100 %\n6, 0 MiB, 0 %\n7, 0 MiB, 0 %\n",
+  "all_short_experiments_stopped": true,
+  "long_run_started": false
+}

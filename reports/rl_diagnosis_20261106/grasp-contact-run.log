@@ -1,0 +1,41 @@
+/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[robosuite WARNING] No private macro file found! (macros.py:57)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:58)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:59)
+WARNING:robosuite_logs:To setup, run: python /data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+INFO:OpenGL.platform.ctypesloader:Failed to load library ( 'libEGL.so.0' ): libEGL.so.0: cannot open shared object file: No such file or directory
+INFO:OpenGL.platform.ctypesloader:Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+INFO:OpenGL.acceleratesupport:No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "/data/wangyihan/getscore-rl-skills/src/LIBERO-PRO/liberopro/liberopro/envs/__init__.py", line 1, in <module>
+    from .bddl_base_domain import TASK_MAPPING
+  File "/data/wangyihan/getscore-rl-skills/src/LIBERO-PRO/liberopro/liberopro/envs/bddl_base_domain.py", line 3, in <module>
+    import robosuite.utils.transform_utils as T
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/__init__.py", line 1, in <module>
+    from robosuite.environments.base import make
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/environments/__init__.py", line 1, in <module>
+    from .base import REGISTERED_ENVS, MujocoEnv
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/environments/base.py", line 12, in <module>
+    from robosuite.renderers.viewer import OpenCVViewer
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/renderers/viewer/__init__.py", line 1, in <module>
+    from .mjviewer_renderer import MjviewerRenderer
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/robosuite/renderers/viewer/mjviewer_renderer.py", line 1, in <module>
+    from mujoco import viewer
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/mujoco/__init__.py", line 62, in <module>
+    from mujoco.gl_context import *
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/mujoco/gl_context.py", line 41, in <module>
+    from mujoco.egl import GLContext as _GLContext
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/mujoco/egl/__init__.py", line 31, in <module>
+    from mujoco.egl import egl_ext as EGL
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/mujoco/egl/egl_ext.py", line 27, in <module>
+    from OpenGL import EGL
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/OpenGL/EGL/__init__.py", line 2, in <module>
+    from OpenGL.raw.EGL._types import *
+  File "/data/wangyihan/getscore-rl-skills/.venv/lib/python3.11/site-packages/OpenGL/raw/EGL/_types.py", line 87, in <module>
+    raw_eglQueryString = _p.PLATFORM.EGL.eglQueryString
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'eglQueryString'

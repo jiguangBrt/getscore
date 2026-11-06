@@ -1,0 +1,107 @@
+{
+  "native_episodes_validated": 64,
+  "successes": 13,
+  "successful_reward_min": 3.0770661892582427,
+  "successful_reward_max": 3.223828468583987,
+  "successful_mean_steps": 148.92307692307693,
+  "successes_with_pad_misses_in_final_hold": 7,
+  "records": [
+    {
+      "seed": 94000019,
+      "reward": 3.221677850209359,
+      "steps": 146,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env03/episode000028/native-trace.jsonl"
+    },
+    {
+      "seed": 94000043,
+      "reward": 3.1550747062607325,
+      "steps": 161,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env03/episode000052/native-trace.jsonl"
+    },
+    {
+      "seed": 94000056,
+      "reward": 3.223828468583987,
+      "steps": 149,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env00/episode000065/native-trace.jsonl"
+    },
+    {
+      "seed": 94000000,
+      "reward": 3.170494192366597,
+      "steps": 115,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env00/episode000009/native-trace.jsonl"
+    },
+    {
+      "seed": 94000008,
+      "reward": 3.1615787483144726,
+      "steps": 105,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env00/episode000017/native-trace.jsonl"
+    },
+    {
+      "seed": 94000055,
+      "reward": 3.0770661892582427,
+      "steps": 163,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env07/episode000064/native-trace.jsonl"
+    },
+    {
+      "seed": 94000046,
+      "reward": 3.157796520636686,
+      "steps": 140,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env06/episode000055/native-trace.jsonl"
+    },
+    {
+      "seed": 94000001,
+      "reward": 3.2209462305205054,
+      "steps": 137,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env01/episode000010/native-trace.jsonl"
+    },
+    {
+      "seed": 94000049,
+      "reward": 3.220217231780973,
+      "steps": 154,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env01/episode000058/native-trace.jsonl"
+    },
+    {
+      "seed": 94000061,
+      "reward": 3.218311457374508,
+      "steps": 152,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env05/episode000070/native-trace.jsonl"
+    },
+    {
+      "seed": 94000013,
+      "reward": 3.20942712388922,
+      "steps": 177,
+      "pad_misses_during_final_hold": 40,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env05/episode000022/native-trace.jsonl"
+    },
+    {
+      "seed": 94000010,
+      "reward": 3.2022685223460887,
+      "steps": 160,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env02/episode000019/native-trace.jsonl"
+    },
+    {
+      "seed": 94000050,
+      "reward": 3.2077081783751566,
+      "steps": 177,
+      "pad_misses_during_final_hold": 0,
+      "trace": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-fresh64-20261106-u10/eval-environments-fresh64-actor0/env02/episode000059/native-trace.jsonl"
+    }
+  ],
+  "actor_input_contract_passed": true,
+  "post_evaluation_formatter": {
+    "original_issue": "missing import json in final stdout print after complete result/status writes",
+    "fix": "import added; summary regenerated and all64 native traces reconciled; no resampling"
+  },
+  "validated_at": 1793943000.6972568
+}

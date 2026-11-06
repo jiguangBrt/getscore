@@ -1,0 +1,11 @@
+{
+  "source": "/data/wangyihan/getscore-rl-skills/runs/pick-v4-demo-warmup-20261106/eval-environments-step-0400-actor0/env05/episode000038",
+  "role": "rendered replay of recorded policy commands; not a new evaluation",
+  "source_policy_version": 400,
+  "seed": 93000005,
+  "native_steps": 170,
+  "max_position_error_m": 0.0,
+  "max_reward_error": 0.0,
+  "success": true,
+  "reward": 3.1970637811431204
+}

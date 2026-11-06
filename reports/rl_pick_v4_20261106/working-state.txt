@@ -1,0 +1,6 @@
+Completed: all short training processes stopped; no long run started.
+Selected policy update10: 32 verified demonstrations +400 supervised steps +102 PPO complete episodes. Fixed32=6 successes; independent64=13 successes, mean reward0.822.
+Total main PPO pilot D174 episodes25 successes, last update17 regressed3/32; select update10, not final.
+PureRL controls A1012/B728/C649 all0 successes. B/C stopped at readiness.
+Ready remote launcher /data/wangyihan/getscore-rl-skills/run-pick-v4.sh; default restores selected exactSHA checkpoint and optimizer. GPU7 selected; liuyang now uses4/5, untouched.
+Full local report report.md, READY.json, code ../../experiments/pick_v4, checkpoint checkpoints/policy-ready-u10.pt.

@@ -1,0 +1,145 @@
+{
+  "state": "completed",
+  "update": 4,
+  "native_steps": 976,
+  "completed_episodes": 8,
+  "elapsed_seconds": 118.46426796913147,
+  "baseline": {
+    "valid": 8,
+    "invalid_reset": 0,
+    "successes": 0,
+    "success_rate": 0.0,
+    "mean_return": -1.385460961679357,
+    "reasons": {
+      "severe_xy_boundary": 8
+    }
+  },
+  "final": {
+    "valid": 8,
+    "invalid_reset": 0,
+    "successes": 0,
+    "success_rate": 0.0,
+    "mean_return": -1.3878732005386047,
+    "reasons": {
+      "severe_xy_boundary": 8
+    }
+  },
+  "best_success_rate": 0.0,
+  "requested_episodes": 100,
+  "stop_reason": "time_or_update_budget",
+  "budget_truncated_active": [
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 78049788,
+      "steps": 56,
+      "reward": 0.7470451369573384,
+      "episode_id": 20
+    },
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 58860189,
+      "steps": 56,
+      "reward": 0.6203025202484587,
+      "episode_id": 21
+    },
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 60891176,
+      "steps": 56,
+      "reward": 0.6284413539265505,
+      "episode_id": 22
+    },
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 16117562,
+      "steps": 64,
+      "reward": 0.6171547861669806,
+      "episode_id": 17
+    },
+    null,
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 42118318,
+      "steps": 64,
+      "reward": 0.6096996091746977,
+      "episode_id": 19
+    },
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 6875651,
+      "steps": 128,
+      "reward": 0.13599999999999995,
+      "episode_id": 15
+    },
+    {
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": false,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "single_mug_empty_table",
+        "skill": "pick"
+      },
+      "seed": 57398182,
+      "steps": 24,
+      "reward": 0.188,
+      "episode_id": 23
+    }
+  ]
+}
