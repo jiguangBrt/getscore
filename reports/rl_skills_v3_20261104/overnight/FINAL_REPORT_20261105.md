@@ -51,3 +51,14 @@
 服务器自动最终报告提交：`d156063`。本机及服务器的本次交付报告另作范围内Git提交；完整数据见本目录RESULTS.json、evaluation-final.json、metrics.jsonl和events.jsonl。两个自动检查将在交付时暂停。
 
 [机器可读最终汇总](FINAL_SUMMARY.json) · [最终逐例评测](evaluation-final.json) · [服务器完整报告](RESULTS.md)
+
+
+## 2026-11-06 原始 W&B 离线日志上传
+
+已确认本机已有有效W&B登录，账号为`jiguangbrt`，使用本机现有凭据上传，不在服务器或Git保存token。服务器原始offline run已只读拉取至本机缓存，原始记录流SHA-256与服务器一致。
+
+[原始训练记录（包含视频）](https://forge.coreweave.com/wandb/jiguangbrt-university-of-dundee/rpent-pi05-skills/runs/suiipg6k)
+
+云端核验：状态finished；550次训练更新（258–807）全部存在，最终累计4,722,269原生步；219个媒体文件全部存在、无缺失。该run ID为`suiipg6k`，是服务器原始W&B run；此前的`overnight20261104u257`指标中继run保留。两者对应同一训练实验。
+
+[上传核验记录](wandb-original-upload-20261106.json)
