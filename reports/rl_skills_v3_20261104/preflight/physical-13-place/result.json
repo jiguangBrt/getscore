@@ -1,0 +1,182 @@
+{
+  "valid_reset": true,
+  "spec": {
+    "type": "moka_pot",
+    "object": "moka_pot_1",
+    "label": "moka pot",
+    "upright_eligible": true,
+    "placement_orientation": "upright",
+    "task_index": 2,
+    "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+    "skill": "place"
+  },
+  "initial": {
+    "clearance_m": 0.10023403475929105,
+    "table_z": 0.9,
+    "object_pos": [
+      0.06356805659141469,
+      0.01772537513856534,
+      1.0668026367882637
+    ],
+    "eef_pos": [
+      0.07060306626230198,
+      0.019012009405983594,
+      1.1467836356135608
+    ],
+    "tilt_degrees": 0.6551413682104903,
+    "lift_m": 0.10069678290828343,
+    "grasped": true,
+    "supported": false,
+    "target_supported": false,
+    "target_xy_distance": 0.0,
+    "eef_distance": 0.030822184857177706,
+    "linear_speed": 0.002107371644608457,
+    "angular_speed": 0.025208944813903778,
+    "gripper_opening": 0.012954106266673702,
+    "eef_object_center_distance": 0.08030010561574465
+  },
+  "final": {
+    "clearance_m": -4.475452972108052e-06,
+    "table_z": 0.9,
+    "object_pos": [
+      0.0628186862169567,
+      0.018253806180515652,
+      0.9661058538799804
+    ],
+    "eef_pos": [
+      0.07056523313609221,
+      0.01924809926062679,
+      1.1877077084496124
+    ],
+    "tilt_degrees": 0.0,
+    "lift_m": 2.220446049250313e-16,
+    "grasped": false,
+    "supported": true,
+    "target_supported": true,
+    "target_xy_distance": 0.000916948921266611,
+    "eef_distance": 0.17177949266322995,
+    "linear_speed": 2.174136682456632e-14,
+    "angular_speed": 1.273884952498233e-15,
+    "gripper_opening": 0.07992494270619957,
+    "eef_object_center_distance": 0.22173944068793863,
+    "native_step": 135,
+    "remaining_steps": 65,
+    "max_object_lift_m": 0.10069678290828343,
+    "object_lift_m": 2.220446049250313e-16,
+    "xy_offset_m": 0.000916948921266611,
+    "xy_path_m": 0.0015390619147648509,
+    "hold_steps": 0,
+    "stable_count": 80,
+    "pick_count": 0,
+    "phase": "stable",
+    "reward_components": {
+      "step": -0.0001,
+      "horizontal": -0.0,
+      "stability": 0.0024999999999999914,
+      "success": 1.0
+    },
+    "reward": 1.0024,
+    "episode_reward": 1.3783094377382694,
+    "skill_success": true,
+    "failure": false,
+    "termination_reason": "success",
+    "terminated": true,
+    "truncated": false,
+    "earned": {
+      "lowering": 0.9975237365604652,
+      "stability": 1.0
+    },
+    "events": [],
+    "cumulative_descent_m": 0.0,
+    "skill": "place",
+    "object": "moka pot",
+    "prompt": "place the moka pot upright nearby on the table",
+    "policy_start": true,
+    "policy_version": "script",
+    "task_version": "rpent-skills-v3-20261104"
+  },
+  "success": true,
+  "native_steps": 135,
+  "initialization_steps": 265,
+  "script": "physical control attempt, never training/BC data",
+  "table_geoms": [
+    {
+      "name": "table_collision",
+      "pos": [
+        0.0,
+        0.0,
+        0.875
+      ],
+      "size": [
+        0.5,
+        0.6,
+        0.025
+      ]
+    },
+    {
+      "name": "table_visual",
+      "pos": [
+        0.0,
+        0.0,
+        0.875
+      ],
+      "size": [
+        0.5,
+        0.6,
+        0.025
+      ]
+    },
+    {
+      "name": "table_leg1_visual",
+      "pos": [
+        0.4,
+        0.5,
+        0.4375
+      ],
+      "size": [
+        0.025,
+        0.4375,
+        0.0
+      ]
+    },
+    {
+      "name": "table_leg2_visual",
+      "pos": [
+        -0.4,
+        0.5,
+        0.4375
+      ],
+      "size": [
+        0.025,
+        0.4375,
+        0.0
+      ]
+    },
+    {
+      "name": "table_leg3_visual",
+      "pos": [
+        -0.4,
+        -0.5,
+        0.4375
+      ],
+      "size": [
+        0.025,
+        0.4375,
+        0.0
+      ]
+    },
+    {
+      "name": "table_leg4_visual",
+      "pos": [
+        0.4,
+        -0.5,
+        0.4375
+      ],
+      "size": [
+        0.025,
+        0.4375,
+        0.0
+      ]
+    }
+  ]
+}

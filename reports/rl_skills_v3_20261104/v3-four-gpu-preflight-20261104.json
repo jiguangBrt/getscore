@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "accepted_at_utc": "2026-11-04T06:03:22.767363+00:00",
+  "task_version": "rpent-skills-v3-20261104",
+  "physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cuda_physical_order": [
+    0,
+    1,
+    3,
+    2
+  ],
+  "global_batch_chunks": 768,
+  "envs": 24,
+  "semantic_config_sha256": "b43cebf815a54cc3859a53c769937428eea2c92f720fb0c3e2d54d7eec72d0e8",
+  "runtime_sha256": {
+    "experiments/four-gpu-v3-20261104/code/cutover.py": "93ed8d46ae879fd3c1681febe88972dc5b5135244293ae9e821842971c9d456b",
+    "experiments/four-gpu-v3-20261104/code/plot_run.py": "719269575751eea05697530f614d0d6e5467a12ccd04ae965810153a06d3e1a6",
+    "experiments/four-gpu-v3-20261104/code/v3_skill_env.py": "14efd05e51516a0015d41c9ba5a6a25afbe8038cc1eb67b8524f837bcc83ca47",
+    "experiments/four-gpu-v3-20261104/code/v3_finalize.py": "efd983dc7a9d59dc20916426b1ea423f3c401af39c4cec6b89d4b3bae73176a8",
+    "experiments/four-gpu-v3-20261104/code/v3_train.py": "2d8331de1831d0456ae3c3873ea9021aeeb98c660ff4f63289d6da4ce0f1b87f",
+    "experiments/four-gpu-v3-20261104/code/skill_env.py": "9e99cdf8af6102272205356d21fbde23ef28094c916489629edabb3990f97e9a",
+    "experiments/four-gpu-v3-20261104/code/ppo_update.py": "a388b989cb93807c81d7c1b53bf7d78e4fbe4e5f5556c52a100a0185524075db",
+    "experiments/four-gpu-v3-20261104/code/runtime.py": "157b1ccee0fcec32b9e369e3bbb6e7841bd437da72df004be6ad4f8e1d65c0cf",
+    "experiments/four-gpu-v3-20261104/code/train_runtime.py": "6879b56c9fd18d5a60dd8cbaab836a556ece2f1d92e2858d3311f0b8c30c4812",
+    "experiments/four-gpu-v3-20261104/code/v3_summary.py": "ff1691ac23fd4929eaa440a88ebf77e08cc295453981196a721af6b28ecb9fdb",
+    "experiments/four-gpu-v3-20261104/code/v3_verify_math.py": "41d529ad1d91330274c00c4d8000aa5d1c0c634cf0c1f5a13df6486a8481aa58",
+    "experiments/four-gpu-v3-20261104/code/v3_reward.py": "136ea6f8e011732772a4a5edef5281776161fdeba8318b8607eb1e0961bb59e7",
+    "experiments/four-gpu-v3-20261104/code/config_contract.py": "21baaebcc80743d8266be4c4835128629be4ebe68b6b9f2333b0049dbd62bc93",
+    "experiments/four-gpu-v3-20261104/code/v3_supervise.py": "fb8020dbf5c0eb3027166440a55667295e2b127f3d10d908dc03607a2c1d306a",
+    "experiments/four-gpu-v3-20261104/run.sh": "f1f82f973c2dcc01a70e47019fc384f60a1779a73f513bd3f3a9337c259a8cb4"
+  },
+  "numerical": {
+    "passed": true,
+    "checks": {
+      "2h_4h_6h_milestones": true,
+      "terminal_zero_timeout_final_observation_bootstrap": true,
+      "four_rank_gradient_vs_serial": {
+        "max_abs": 4.76837158203125e-07,
+        "relative": 1.2526815998422624e-07,
+        "nonzero_actor_gradient_tensors": 108
+      },
+      "checkpoint_exact_weights_optimizer_rng_reload": {
+        "delta": {
+          "actor": 5.600728769650232e-08,
+          "critic": 4.017353057861328e-05
+        },
+        "optimizer_states": 224,
+        "actor_rngs_saved": true
+      },
+      "live_episode_continues_across_updates_and_independent_eval": {
+        "continued": 71,
+        "evaluation_state_checks": 3
+      },
+      "native_step_trace_continuity_and_200_step_timeouts": {
+        "traces": 54,
+        "timeouts": 22
+      }
+    },
+    "rows": 192,
+    "partial_chunks": 4,
+    "logprob_max_error": 0.0,
+    "seconds": 39.50485920906067
+  },
+  "physics_and_model_code_byte_identical_to_parent": true,
+  "inherited_physical_acceptance": "/data/wangyihan/getscore-rl-skills/records/v3-preflight-20261104/acceptance.json",
+  "original_deadline": 1793786380.4073858,
+  "authorization": "User selected same-model four-GPU24-environment continuation with one controlled restart; no independent branch launched."
+}

@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "task_version": "rpent-skills-v3-20261104",
+  "accepted_at_utc": "2026-11-04T03:58:57.994889+00:00",
+  "semantic_config_sha256": "492430d0ab9b25106e32501662ae84af7d1cf1663fd0716dd3a6c4f78c74f527",
+  "runtime_sha256": {
+    "code/v3_reward.py": "136ea6f8e011732772a4a5edef5281776161fdeba8318b8607eb1e0961bb59e7",
+    "code/v3_skill_env.py": "14efd05e51516a0015d41c9ba5a6a25afbe8038cc1eb67b8524f837bcc83ca47",
+    "code/v3_train.py": "b0fea02daab571336912d39c62286075a772ab18b26edb11d8347ac81c98edb2",
+    "code/v3_supervise.py": "851d4eb1ec826f5865ac6d81e3790edb8a48bb289a0a3fbc47645f2622cce75e",
+    "code/v3_summary.py": "668c8a405256f4b3193cbb42c9c65487016166f87c061cbc5209b86e0e0323b4",
+    "code/v3_finalize.py": "8b29f63cb403bca9b472d378a29c8601cb36497da6f24894223b91baf2ba08f5",
+    "code/ppo_update.py": "5f158be269a26e8c9744b41212f8ab35db2dda18ab18f0965c396d1aee775b4a",
+    "code/train_runtime.py": "6879b56c9fd18d5a60dd8cbaab836a556ece2f1d92e2858d3311f0b8c30c4812",
+    "code/runtime.py": "eca77545e614dbfb41bdf1e7de81cfe6dd6ff10a3efcfb76ef01491e92ccf66d",
+    "code/config_contract.py": "9878f6694e25ae91268dd8f331fe4be3d75d643c06291b81f48bb1712d0f570f",
+    "run-long.sh": "627f500badc1f883a0f37c9245c7ce777cab06f116708b100240bfcafcf46f6e"
+  },
+  "analytic": {
+    "passed": true,
+    "tests": {
+      "height_threshold_saturation_slow_descent_no_repeat": true,
+      "xy_any_travel_cost_return_no_refund_boundary_ge": true,
+      "hold40_timeout200": true,
+      "hold_interrupts_on_motion_or_drop": true,
+      "place_supported_release_retreat_stable80_beats_air_release": true,
+      "upright_supported_release_retreat_stable80_beats_air_release": true
+    }
+  },
+  "physical": {
+    "valid": 18,
+    "attempts": 18,
+    "successes": {
+      "pick": 3,
+      "place": 6,
+      "upright": 0
+    },
+    "place_gaps": [
+      0.10127964447887117,
+      0.10098863924645296,
+      0.10100507328647257,
+      0.10120656179192611,
+      0.10023403475929105,
+      0.10064061224406406
+    ]
+  },
+  "numerical": {
+    "passed": true,
+    "checks": {
+      "2h_4h_6h_milestones": true,
+      "terminal_zero_timeout_final_observation_bootstrap": true,
+      "three_rank_gradient_vs_serial": {
+        "max_abs": 4.76837158203125e-07,
+        "relative": 1.2535744107354106e-07,
+        "nonzero_actor_gradient_tensors": 108
+      },
+      "checkpoint_exact_weights_optimizer_rng_reload": {
+        "delta": {
+          "actor": 5.6007348092634857e-08,
+          "critic": 4.017353057861328e-05
+        },
+        "optimizer_states": 224,
+        "actor_rngs_saved": true
+      },
+      "live_episode_continues_across_updates_and_independent_eval": {
+        "continued": 48,
+        "evaluation_state_checks": 2
+      },
+      "native_step_trace_continuity_and_200_step_timeouts": {
+        "traces": 36,
+        "timeouts": 16
+      }
+    },
+    "rows": 128,
+    "partial_chunks": 2,
+    "logprob_max_error": 0.0,
+    "seconds": 34.282185554504395
+  },
+  "physics_control_ordering": [
+    {
+      "control": "good",
+      "episode_reward": 1.3455899756944572,
+      "final_state_success": true
+    },
+    {
+      "control": "air_release",
+      "episode_reward": 1.157141358118173,
+      "final_state_success": true
+    },
+    {
+      "control": "far",
+      "episode_reward": -1.0464490214820634,
+      "final_state_success": false
+    },
+    {
+      "control": "tip",
+      "episode_reward": -0.8046686770825955,
+      "final_state_success": false
+    }
+  ],
+  "paired_instruction": {
+    "identical_initial_states": true,
+    "first_chunk_action_max_difference": 0.021511316299438477,
+    "semantic_compliance_proven": false
+  },
+  "evidence_directories": [
+    "/data/wangyihan/getscore-rl-skills/records/v3-preflight-20261104",
+    "/data/wangyihan/getscore-rl-skills/runs/v3-preflight-accepted-20261104"
+  ],
+  "limitations": [
+    "No successful scripted upright recovery; no BC demonstration warmup.",
+    "Final-state place success may include an air drop that lands stably; its return is lower and it earns no controlled contact/release/retreat event reward.",
+    "Process restarts discard unfinished simulators; snapshot counts do not guarantee bit-exact continuation."
+  ]
+}

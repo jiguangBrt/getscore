@@ -1,0 +1,51 @@
+{
+  "spec": {
+    "type": "porcelain_mug",
+    "object": "porcelain_mug_1",
+    "label": "white mug",
+    "upright_eligible": true,
+    "placement_orientation": "upright",
+    "task_index": 4,
+    "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+    "skill": "pick"
+  },
+  "prompt": "pick up the white mug",
+  "seed": 4203,
+  "init_index": 3,
+  "metrics": {
+    "clearance_m": -4.490882832275389e-08,
+    "table_z": 0.43676000000000015,
+    "object_pos": [
+      -0.10133674303401055,
+      -0.1665202971241339,
+      0.4343699608590306
+    ],
+    "eef_pos": [
+      -0.09190231088183089,
+      -0.15187039085691684,
+      0.6042545201656131
+    ],
+    "tilt_degrees": 0.0,
+    "lift_m": 0.0,
+    "grasped": false,
+    "supported": true,
+    "target_supported": true,
+    "target_xy_distance": 0.0,
+    "eef_distance": 0.12114427689249632,
+    "linear_speed": 1.2513960514340499e-14,
+    "angular_speed": 2.4137784490771836e-14,
+    "gripper_opening": 0.07975546982535153,
+    "eef_object_center_distance": 0.17077585237516477
+  },
+  "initialization_actions": 62,
+  "target_kind": "table_region",
+  "target_xy": [
+    -0.10133674303401055,
+    -0.1665202971241339
+  ],
+  "target_radius": 0.05,
+  "task_version": "rpent-skills-v3-20261104",
+  "policy_native_steps": 0,
+  "collision_bottom_z": 0.4367599550911718,
+  "support_z": 0.43676000000000015
+}

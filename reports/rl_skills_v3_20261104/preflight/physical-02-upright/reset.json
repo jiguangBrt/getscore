@@ -1,0 +1,51 @@
+{
+  "spec": {
+    "type": "porcelain_mug",
+    "object": "porcelain_mug_1",
+    "label": "white mug",
+    "upright_eligible": true,
+    "placement_orientation": "upright",
+    "task_index": 6,
+    "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+    "skill": "upright"
+  },
+  "prompt": "pick up the white mug and place it upright nearby",
+  "seed": 4202,
+  "init_index": 2,
+  "metrics": {
+    "clearance_m": -2.9370001475292895e-07,
+    "table_z": 0.43676000000000015,
+    "object_pos": [
+      -0.11171950325368822,
+      -0.1543152737967285,
+      0.47729052886487283
+    ],
+    "eef_pos": [
+      -0.11886655506491713,
+      -0.1630666364001084,
+      0.6470470615102447
+    ],
+    "tilt_degrees": 89.9998080363839,
+    "lift_m": 0.04292056800584182,
+    "grasped": false,
+    "supported": true,
+    "target_supported": true,
+    "target_xy_distance": 0.0,
+    "eef_distance": 0.12028837769398276,
+    "linear_speed": 9.95952730735091e-15,
+    "angular_speed": 4.9364693966147774e-14,
+    "gripper_opening": 0.07994452338517649,
+    "eef_object_center_distance": 0.17013214591248604
+  },
+  "initialization_actions": 111,
+  "target_kind": "table_region",
+  "target_xy": [
+    -0.11171950325368822,
+    -0.1543152737967285
+  ],
+  "target_radius": 0.1,
+  "task_version": "rpent-skills-v3-20261104",
+  "policy_native_steps": 0,
+  "collision_bottom_z": 0.4367597062999854,
+  "support_z": 0.43676000000000015
+}

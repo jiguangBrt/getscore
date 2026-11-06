@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-11-04T04:05:45.351229+00:00",
+  "supervisor_pid": 3643294,
+  "trainer_pid": 3643297,
+  "actor_pids": [
+    3645695,
+    3645696
+  ],
+  "first_update": {
+    "update": 1,
+    "native_steps": 4084,
+    "chunks": 512,
+    "logprob_max_error": 0.0,
+    "gradient_norm": 21.325469970703125,
+    "actor_lr": 0.0,
+    "critic_warmup": true,
+    "per_rank_chunks": [
+      176,
+      168,
+      168
+    ]
+  },
+  "fresh_base_and_zero_lora_B": true,
+  "initial_optimizer_empty": true,
+  "checkpoint_files": {
+    "latest.pt": 38869003,
+    "best.pt": 38868079,
+    "fresh-start.pt": 38870193,
+    "initial.pt": 38869241
+  },
+  "video_files": {
+    "eval-baseline-actor0-pick.mp4": 192265,
+    "eval-baseline-actor1-pick.mp4": 197812,
+    "eval-baseline-actor1-place.mp4": 719249,
+    "train-v0-actor0.mp4": 522525,
+    "train-v0-actor1.mp4": 672598,
+    "eval-baseline-actor0-upright.mp4": 705079,
+    "eval-baseline-actor0-place.mp4": 936807,
+    "eval-baseline-actor1-upright.mp4": 645203
+  },
+  "wandb_offline_files": {
+    "wandb/offline-run-20261104_120010-d40h2brt/run-d40h2brt.wandb": 65536
+  },
+  "gpu_query": "index, uuid, memory.used [MiB], utilization.gpu [%]\n0, GPU-32a18ee9-861a-b562-5a71-a54d056f063c, 9522 MiB, 0 %\n1, GPU-4d64f7aa-dd53-214b-a16c-72840622d125, 15219 MiB, 1 %\n3, GPU-90654270-b6da-2df9-5947-695584cc64c9, 13427 MiB, 46 %\n",
+  "gpu_uuid_environments_verified": true,
+  "legacy_entry_guard": {
+    "passed": true,
+    "exit_code": 1,
+    "v2_entry_rejected_v3": true
+  },
+  "baseline": {
+    "eval/pick_success": 0.0,
+    "eval/pick_valid": 24,
+    "eval/pick_invalid_reset": 0,
+    "eval/place_success": 0.0,
+    "eval/place_valid": 21,
+    "eval/place_invalid_reset": 3,
+    "eval/upright_success": 0.0,
+    "eval/upright_valid": 24,
+    "eval/upright_invalid_reset": 0,
+    "eval/macro_success": 0.0
+  },
+  "synced_policy_weight_verification": {
+    "critic_weight_change_since_fresh": 2.008676528930664e-05,
+    "note": "Measured current synced policy at verification time, not an isolated first-update snapshot."
+  }
+}

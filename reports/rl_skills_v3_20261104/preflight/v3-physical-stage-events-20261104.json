@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "events": [
+    "contact",
+    "release",
+    "retreat"
+  ],
+  "return_": 1.6273161185411928,
+  "held_contact": {
+    "clearance_m": -1.8562804562916035e-05,
+    "table_z": 0.9,
+    "object_pos": [
+      0.06287460255765746,
+      0.018333087688249497,
+      0.9661258235983485
+    ],
+    "eef_pos": [
+      0.07088841194693722,
+      0.019448421883894416,
+      1.0460327134950966
+    ],
+    "tilt_degrees": 0.05251385603348082,
+    "lift_m": 1.9969718368262335e-05,
+    "grasped": true,
+    "supported": true,
+    "target_supported": true,
+    "target_xy_distance": 0.0009220591304128981,
+    "eef_distance": 0.030982046003966462,
+    "linear_speed": 5.668356389335473e-06,
+    "angular_speed": 0.0002311789935037304,
+    "gripper_opening": 0.012915794162382248,
+    "eef_object_center_distance": 0.0803154789829875
+  },
+  "native_steps": 160,
+  "notes": "Supplemental genuine contact-before-opening control probe; same accepted runtime, no weight update, excluded from PPO. Completed during baseline startup."
+}

@@ -1,0 +1,2034 @@
+{
+  "results": [
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -4.490882832275389e-08,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.09266519816423602,
+          -0.14503576241070815,
+          0.4343699608590306
+        ],
+        "eef_pos": [
+          -0.08600283476514833,
+          -0.13895540476835447,
+          0.6038600601651748
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.11983005327259365,
+        "linear_speed": 1.2511907578737777e-14,
+        "angular_speed": 2.0661128408292616e-14,
+        "gripper_opening": 0.07970864913954473,
+        "eef_object_center_distance": 0.1697299372471664
+      },
+      "final": {
+        "clearance_m": 0.10378354312415616,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.09844253021981235,
+          -0.15878988998865645,
+          0.5460091929891999
+        ],
+        "eef_pos": [
+          -0.052093490078678306,
+          -0.13216256968280843,
+          0.6399144379872911
+        ],
+        "tilt_degrees": 21.007708206168125,
+        "lift_m": 0.1116392321301693,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.014918230160138567,
+        "eef_distance": 0.06917310349418397,
+        "linear_speed": 0.007069500104384391,
+        "angular_speed": 0.06492044138366557,
+        "gripper_opening": 0.016754823304652316,
+        "eef_object_center_distance": 0.10805296269342274,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.12699192002029125,
+        "object_lift_m": 0.1116392321301693,
+        "xy_offset_m": 0.014918230160138567,
+        "xy_path_m": 0.05716924432684503,
+        "hold_steps": 1,
+        "stable_count": 0,
+        "pick_count": 1,
+        "phase": "hold",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0014327150593461803,
+          "descent": -0.000998871384693123,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20253158644403932,
+        "episode_reward": -0.1326096610848348,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 1.0,
+          "hold": 0.725
+        },
+        "events": [],
+        "cumulative_descent_m": 0.015352687890121952,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 58,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "skill": "place"
+      },
+      "initial": {
+        "clearance_m": 0.10115097982778454,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.11196658298006987,
+          -0.164321092115093,
+          0.5381355176105637
+        ],
+        "eef_pos": [
+          -0.08819309914380631,
+          -0.13661543891358963,
+          0.614612254640249
+        ],
+        "tilt_degrees": 5.195650474365233,
+        "lift_m": 0.10376555675153304,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.04509766464878386,
+        "linear_speed": 8.669630740709304e-05,
+        "angular_speed": 0.0008785707964666226,
+        "gripper_opening": 0.00571060286925417,
+        "eef_object_center_distance": 0.08474357238010863
+      },
+      "final": {
+        "clearance_m": -4.490882832275389e-08,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.11089167857220551,
+          -0.1593518678450511,
+          0.4343699608590306
+        ],
+        "eef_pos": [
+          -0.0893083096305974,
+          -0.13627886618040377,
+          0.6522690590809355
+        ],
+        "tilt_degrees": 2.2588727439225506e-06,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.005084152764425915,
+        "eef_distance": 0.17084587324373757,
+        "linear_speed": 1.2420202231225262e-14,
+        "angular_speed": 2.6473556549501126e-14,
+        "gripper_opening": 0.07992141859310867,
+        "eef_object_center_distance": 0.22017770601631248,
+        "native_step": 126,
+        "remaining_steps": 74,
+        "max_object_lift_m": 0.10376555675153304,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.005084152764425915,
+        "xy_path_m": 0.006946918428591519,
+        "hold_steps": 0,
+        "stable_count": 80,
+        "pick_count": 0,
+        "phase": "stable",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0024999999999999914,
+          "success": 1.0
+        },
+        "reward": 1.0024,
+        "episode_reward": 1.4026654078570433,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "stability": 1.0
+        },
+        "events": [
+          "contact",
+          "release",
+          "retreat"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 126,
+      "initialization_steps": 226,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 6,
+        "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -2.9370001475292895e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.11171950325368822,
+          -0.1543152737967285,
+          0.47729052886487283
+        ],
+        "eef_pos": [
+          -0.11886655506491713,
+          -0.1630666364001084,
+          0.6470470615102447
+        ],
+        "tilt_degrees": 89.9998080363839,
+        "lift_m": 0.04292056800584182,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12028837769398276,
+        "linear_speed": 9.95952730735091e-15,
+        "angular_speed": 4.9364693966147774e-14,
+        "gripper_opening": 0.07994452338517649,
+        "eef_object_center_distance": 0.17013214591248604
+      },
+      "final": {
+        "clearance_m": -2.9370001475292895e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.10590656429898734,
+          -0.16693589519865581,
+          0.4772905288648729
+        ],
+        "eef_pos": [
+          -0.11509027695721875,
+          -0.15471687869960313,
+          0.6306741384073019
+        ],
+        "tilt_degrees": 89.99980803638391,
+        "lift_m": 0.042920568005841875,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.013894975489790002,
+        "eef_distance": 0.10450749094880468,
+        "linear_speed": 8.454875298519822e-15,
+        "angular_speed": 2.8203080252402626e-14,
+        "gripper_opening": 0.07997847420987311,
+        "eef_object_center_distance": 0.15414336384890984,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.04311046045053918,
+        "object_lift_m": 0.042920568005841875,
+        "xy_offset_m": 0.013894975489790002,
+        "xy_path_m": 0.02258252562015428,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.21560858623075513,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9911293001910686,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 111,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -4.490882832275389e-08,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.10133674303401055,
+          -0.1665202971241339,
+          0.4343699608590306
+        ],
+        "eef_pos": [
+          -0.09190231088183089,
+          -0.15187039085691684,
+          0.6042545201656131
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12114427689249632,
+        "linear_speed": 1.2513960514340499e-14,
+        "angular_speed": 2.4137784490771836e-14,
+        "gripper_opening": 0.07975546982535153,
+        "eef_object_center_distance": 0.17077585237516477
+      },
+      "final": {
+        "clearance_m": 0.10348612417120484,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.09164480176523097,
+          -0.18433989560199038,
+          0.5405684283117212
+        ],
+        "eef_pos": [
+          -0.06948775157397725,
+          -0.15643085660899883,
+          0.6175536101659054
+        ],
+        "tilt_degrees": 4.7808529693595325,
+        "lift_m": 0.10619846745269063,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.02028476806545979,
+        "eef_distance": 0.04469954552781767,
+        "linear_speed": 0.0001085281052524737,
+        "angular_speed": 0.005621573660516393,
+        "gripper_opening": 0.00605295477808997,
+        "eef_object_center_distance": 0.08483258545990367,
+        "native_step": 154,
+        "remaining_steps": 46,
+        "max_object_lift_m": 0.10619846745269063,
+        "object_lift_m": 0.10619846745269063,
+        "xy_offset_m": 0.02028476806545979,
+        "xy_path_m": 0.032586955929339835,
+        "hold_steps": 40,
+        "stable_count": 0,
+        "pick_count": 40,
+        "phase": "hold",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -2.6993553424153456e-05,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0050000000000000044,
+          "success": 1.0
+        },
+        "reward": 1.0048730064465758,
+        "episode_reward": 1.3216652203533008,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 1.0
+        },
+        "events": [],
+        "cumulative_descent_m": 2.1695251558373485e-05,
+        "skill": "pick",
+        "object": "white mug",
+        "prompt": "pick up the white mug",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 154,
+      "initialization_steps": 62,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "place"
+      },
+      "initial": {
+        "clearance_m": 0.10099505000806441,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.12282077586685256,
+          -0.17442790580069772,
+          0.5376746533467054
+        ],
+        "eef_pos": [
+          -0.09931285793913283,
+          -0.14741322625542572,
+          0.6153753284727272
+        ],
+        "tilt_degrees": 4.865196511990992,
+        "lift_m": 0.10330469248767477,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.04527408219575023,
+        "linear_speed": 7.590682943445088e-05,
+        "angular_speed": 0.0008489700433140835,
+        "gripper_opening": 0.005701146668703235,
+        "eef_object_center_distance": 0.08555588834948613
+      },
+      "final": {
+        "clearance_m": -4.490882826724274e-08,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.12193412708311663,
+          -0.16871011492883886,
+          0.4343699608590306
+        ],
+        "eef_pos": [
+          -0.10064961650633096,
+          -0.14711314806778863,
+          0.6531661843936185
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.005786128111268617,
+        "eef_distance": 0.17149817622245772,
+        "linear_speed": 1.1093409432895123e-14,
+        "angular_speed": 1.495267798600024e-15,
+        "gripper_opening": 0.07992141821597257,
+        "eef_object_center_distance": 0.2208874075204106,
+        "native_step": 126,
+        "remaining_steps": 74,
+        "max_object_lift_m": 0.10330469248767477,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.005786128111268617,
+        "xy_path_m": 0.007494254668212935,
+        "hold_steps": 0,
+        "stable_count": 80,
+        "pick_count": 0,
+        "phase": "stable",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0024999999999999914,
+          "success": 1.0
+        },
+        "reward": 1.0024,
+        "episode_reward": 1.599116941240589,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "lowering": 0.9959410729082654,
+          "stability": 1.0
+        },
+        "events": [
+          "contact",
+          "release",
+          "retreat"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "white mug",
+        "prompt": "place the white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 126,
+      "initialization_steps": 226,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "porcelain_mug",
+        "object": "porcelain_mug_1",
+        "label": "white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -2.075382278254878e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.08221710874135188,
+          -0.1615458591841464,
+          0.498722619563452
+        ],
+        "eef_pos": [
+          -0.0703508336746937,
+          -0.17427765590733965,
+          0.6687481204724617
+        ],
+        "tilt_degrees": 87.9659688208032,
+        "lift_m": 0.06435265870442097,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12128078166064475,
+        "linear_speed": 1.1961535635199901e-14,
+        "angular_speed": 4.380217722358509e-14,
+        "gripper_opening": 0.07993297717760882,
+        "eef_object_center_distance": 0.17091394937546195
+      },
+      "final": {
+        "clearance_m": -2.9370001475292895e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.011656773988832345,
+          -0.1644410306605529,
+          0.47729052886487294
+        ],
+        "eef_pos": [
+          -0.05689218471316651,
+          -0.16569235855320089,
+          0.7099219723578886
+        ],
+        "tilt_degrees": 89.9998080363839,
+        "lift_m": 0.04292056800584193,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.07061970587778892,
+        "eef_distance": 0.18815433122103964,
+        "linear_speed": 1.0003005034417476e-14,
+        "angular_speed": 7.659124581681539e-14,
+        "gripper_opening": 0.07996217121861066,
+        "eef_object_center_distance": 0.2369919760383002,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.06435265870442097,
+        "object_lift_m": 0.04292056800584193,
+        "xy_offset_m": 0.07061970587778892,
+        "xy_path_m": 0.11422729751151676,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -3.469446951953614e-18,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000000003,
+        "episode_reward": -0.40481138547461487,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.8728641909684028,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "white mug",
+        "prompt": "pick up the white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 116,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 5,
+        "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -2.4195629044765354e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.11334181496742758,
+          0.009257808865623943,
+          0.8852270012643118
+        ],
+        "eef_pos": [
+          -0.12736644113480394,
+          0.004035340347343257,
+          1.0555998940632552
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12129961927947261,
+        "linear_speed": 2.3116319068135147e-14,
+        "angular_speed": 2.910601553767121e-14,
+        "gripper_opening": 0.07979497902151708,
+        "eef_object_center_distance": 0.1710289066714728
+      },
+      "final": {
+        "clearance_m": 0.10057127446241954,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.10588289622652015,
+          0.019542145854575588,
+          0.9924526599245064
+        ],
+        "eef_pos": [
+          -0.08872889332363953,
+          -0.0037202670823259934,
+          1.0896904000794938
+        ],
+        "tilt_degrees": 8.75455067495721,
+        "lift_m": 0.10722565866019473,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.01270445024728654,
+        "eef_distance": 0.05537873026884131,
+        "linear_speed": 0.000645039728264444,
+        "angular_speed": 0.005979044961960839,
+        "gripper_opening": 0.00997187291019298,
+        "eef_object_center_distance": 0.10144248509223253,
+        "native_step": 154,
+        "remaining_steps": 46,
+        "max_object_lift_m": 0.10810232262436048,
+        "object_lift_m": 0.10722565866019473,
+        "xy_offset_m": 0.01270445024728654,
+        "xy_path_m": 0.0367125064691561,
+        "hold_steps": 40,
+        "stable_count": 0,
+        "pick_count": 40,
+        "phase": "hold",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0001074016578279168,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0050000000000000044,
+          "success": 1.0
+        },
+        "reward": 1.0047925983421722,
+        "episode_reward": 1.3010374676542196,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 1.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.000876663964165747,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 154,
+      "initialization_steps": 66,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 5,
+        "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+        "skill": "place"
+      },
+      "initial": {
+        "clearance_m": 0.10106325160695762,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.06758110729255688,
+          0.03644021529286445,
+          0.9914070303202247
+        ],
+        "eef_pos": [
+          -0.062081681840346695,
+          0.017456126442562312,
+          1.0673572150103552
+        ],
+        "tilt_degrees": 6.737493566587786,
+        "lift_m": 0.10618002905591295,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.03261980066205898,
+        "linear_speed": 0.00043565384503313004,
+        "angular_speed": 0.0012422156423408616,
+        "gripper_opening": 0.010248985971773508,
+        "eef_object_center_distance": 0.07847974174425852
+      },
+      "final": {
+        "clearance_m": -2.4195629044765354e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.07012356489152083,
+          0.03527670239880724,
+          0.8852270012643118
+        ],
+        "eef_pos": [
+          -0.06479696301938088,
+          0.01747634180413157,
+          1.10816929907884
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0027960423632639956,
+        "eef_distance": 0.17393752872273932,
+        "linear_speed": 2.471487152928504e-14,
+        "angular_speed": 6.633052851047153e-14,
+        "gripper_opening": 0.07992170929461813,
+        "eef_object_center_distance": 0.22371520663474492,
+        "native_step": 126,
+        "remaining_steps": 74,
+        "max_object_lift_m": 0.10618002905591295,
+        "object_lift_m": 0.0,
+        "xy_offset_m": 0.0027960423632639956,
+        "xy_path_m": 0.003951004631430953,
+        "hold_steps": 0,
+        "stable_count": 80,
+        "pick_count": 0,
+        "phase": "stable",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0024999999999999914,
+          "success": 1.0
+        },
+        "reward": 1.0024,
+        "episode_reward": 1.4176449768428463,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "stability": 1.0
+        },
+        "events": [
+          "contact",
+          "release",
+          "retreat"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 126,
+      "initialization_steps": 239,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 5,
+        "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -3.801857740848291e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.06642765424348522,
+          0.014334234073319373,
+          0.9174083116598946
+        ],
+        "eef_pos": [
+          -0.07255907819812721,
+          0.003799405981245192,
+          1.0879101689801554
+        ],
+        "tilt_degrees": 82.67890106705266,
+        "lift_m": 0.03218131039558281,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 3.238728729648699e-15,
+        "eef_distance": 0.12111678075425218,
+        "linear_speed": 1.8645948676873762e-14,
+        "angular_speed": 6.913340712386815e-14,
+        "gripper_opening": 0.0799796874927687,
+        "eef_object_center_distance": 0.17093700685427857
+      },
+      "final": {
+        "clearance_m": -2.212804653956013e-07,
+        "table_z": 0.88513,
+        "object_pos": [
+          -0.06238757465661644,
+          0.021943938509957378,
+          0.9191418693251981
+        ],
+        "eef_pos": [
+          -0.05491642232963675,
+          0.015024391207451466,
+          1.119792525318985
+        ],
+        "tilt_degrees": 82.52872979454476,
+        "lift_m": 0.033914868060886505,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.008615674360215295,
+        "eef_distance": 0.15099443169641347,
+        "linear_speed": 7.288369939368742e-15,
+        "angular_speed": 4.7909919535002774e-14,
+        "gripper_opening": 0.07996117720351575,
+        "eef_object_center_distance": 0.2009088947824401,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.039235102117314735,
+        "object_lift_m": 0.033914868060886505,
+        "xy_offset_m": 0.008615674360212435,
+        "xy_path_m": 0.05358088895807832,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.734723475976807e-16,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001000000000002,
+        "episode_reward": -0.2775417392463012,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9924007733971146,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 123,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -2.419562902811201e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.0859477332730184,
+          0.12426694814865885,
+          0.4368570012643121
+        ],
+        "eef_pos": [
+          -0.1033534299103439,
+          0.11324231932896202,
+          0.6055104305401594
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12042897074608416,
+        "linear_speed": 1.0031984324714047e-14,
+        "angular_speed": 8.583333385675402e-15,
+        "gripper_opening": 0.07965288139360216,
+        "eef_object_center_distance": 0.16990726859833255
+      },
+      "final": {
+        "clearance_m": 0.10136476635459857,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.06265196057867849,
+          0.1320727193877554,
+          0.543307901520134
+        ],
+        "eef_pos": [
+          -0.05372766579091878,
+          0.11194314441583686,
+          0.6186491228026834
+        ],
+        "tilt_degrees": 6.828274922905227,
+        "lift_m": 0.10645090025582188,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.02456874213433524,
+        "eef_distance": 0.0335711233368807,
+        "linear_speed": 0.00039912408927308415,
+        "angular_speed": 0.003855816265623965,
+        "gripper_opening": 0.010651046609473722,
+        "eef_object_center_distance": 0.07849294522665713,
+        "native_step": 155,
+        "remaining_steps": 45,
+        "max_object_lift_m": 0.1066969028457046,
+        "object_lift_m": 0.10645090025582188,
+        "xy_offset_m": 0.02456874213433524,
+        "xy_path_m": 0.03418346154439476,
+        "hold_steps": 40,
+        "stable_count": 0,
+        "pick_count": 40,
+        "phase": "hold",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -9.60051818919943e-05,
+          "descent": -0.0,
+          "height": 0.0,
+          "hold": 0.0050000000000000044,
+          "success": 1.0
+        },
+        "reward": 1.004803994818108,
+        "episode_reward": 1.3135826922780263,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "height": 1.0,
+          "hold": 1.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.00024600258988272117,
+        "skill": "pick",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 155,
+      "initialization_steps": 54,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "place"
+      },
+      "initial": {
+        "clearance_m": 0.10118290870774604,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.0393166097255693,
+          0.11212262921194109,
+          0.5440348622578647
+        ],
+        "eef_pos": [
+          -0.03228177751327171,
+          0.09373691431670338,
+          0.6197027035569648
+        ],
+        "tilt_degrees": 7.623066690191358,
+        "lift_m": 0.10717786099355225,
+        "grasped": true,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.03234751077625497,
+        "linear_speed": 0.00034529541426262287,
+        "angular_speed": 0.00368751352412629,
+        "gripper_opening": 0.01072603074946464,
+        "eef_object_center_distance": 0.0781866074422592
+      },
+      "final": {
+        "clearance_m": -2.419562902811201e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.040148499866918284,
+          0.11040155283127497,
+          0.4368570012643121
+        ],
+        "eef_pos": [
+          -0.03249059917787295,
+          0.09256357510576889,
+          0.660489461418327
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": -3.3306690738754696e-16,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0019115818359046104,
+        "eef_distance": 0.17471424701905253,
+        "linear_speed": 1.0364445189585514e-14,
+        "angular_speed": 3.364999218700478e-14,
+        "gripper_opening": 0.0799217115241551,
+        "eef_object_center_distance": 0.22447341518949632,
+        "native_step": 127,
+        "remaining_steps": 73,
+        "max_object_lift_m": 0.10717786099355225,
+        "object_lift_m": -3.3306690738754696e-16,
+        "xy_offset_m": 0.0019115818359046104,
+        "xy_path_m": 0.003373290387338283,
+        "hold_steps": 0,
+        "stable_count": 80,
+        "pick_count": 0,
+        "phase": "stable",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "stability": 0.0024999999999999914,
+          "success": 1.0
+        },
+        "reward": 1.0024,
+        "episode_reward": 1.4204335480633095,
+        "skill_success": true,
+        "failure": false,
+        "termination_reason": "success",
+        "terminated": true,
+        "truncated": false,
+        "earned": {
+          "stability": 1.0
+        },
+        "events": [
+          "contact",
+          "release",
+          "retreat"
+        ],
+        "cumulative_descent_m": 0.0,
+        "skill": "place",
+        "object": "yellow and white mug",
+        "prompt": "place the yellow and white mug upright nearby on the table",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": true,
+      "native_steps": 127,
+      "initialization_steps": 218,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "white_yellow_mug",
+        "object": "white_yellow_mug_1",
+        "label": "yellow and white mug",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 4,
+        "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -3.801857740848291e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.025549559861751156,
+          0.1039895740028044,
+          0.46903831165989474
+        ],
+        "eef_pos": [
+          -0.0365409473054027,
+          0.09186257796914811,
+          0.6388335969114706
+        ],
+        "tilt_degrees": 82.67890106705259,
+        "lift_m": 0.03218131039558264,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12090816762834175,
+        "linear_speed": 1.1663638293179508e-14,
+        "angular_speed": 2.264866198215539e-14,
+        "gripper_opening": 0.0799358146696682,
+        "eef_object_center_distance": 0.1705822778731741
+      },
+      "final": {
+        "clearance_m": -2.2128046534009016e-07,
+        "table_z": 0.43676000000000015,
+        "object_pos": [
+          -0.018344683008232183,
+          0.10984942602231094,
+          0.4707718693251982
+        ],
+        "eef_pos": [
+          -0.02028673183422485,
+          0.09769485328300714,
+          0.6614601370098749
+        ],
+        "tilt_degrees": 82.52872979454477,
+        "lift_m": 0.033914868060886116,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.00928698638767649,
+        "eef_distance": 0.14122568412379105,
+        "linear_speed": 1.0378607132093494e-14,
+        "angular_speed": 8.3023954951247e-14,
+        "gripper_opening": 0.07996551940615135,
+        "eef_object_center_distance": 0.1910851135612099,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.03570214297395602,
+        "object_lift_m": 0.033914868060886116,
+        "xy_offset_m": 0.00928698638767649,
+        "xy_path_m": 0.02336455816193482,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.1102230246251565e-16,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001000000000001,
+        "episode_reward": -0.2170806843644544,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9929686391883036,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "yellow and white mug",
+        "prompt": "pick up the yellow and white mug and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 101,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": []
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 2,
+        "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -4.475452972108052e-06,
+        "table_z": 0.9,
+        "object_pos": [
+          0.06530729308137519,
+          0.010040802913878915,
+          0.9661058538799803
+        ],
+        "eef_pos": [
+          0.07630554455535604,
+          0.002579139299290338,
+          1.1368925732903403
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12151571727681665,
+        "linear_speed": 2.2124441025549454e-14,
+        "angular_speed": 2.1551800089146497e-15,
+        "gripper_opening": 0.07991085662471908,
+        "eef_object_center_distance": 0.17130306910950327
+      },
+      "final": {
+        "clearance_m": -4.475452970775784e-06,
+        "table_z": 0.9,
+        "object_pos": [
+          0.04488189392063999,
+          0.010492042268134633,
+          0.9661058538799816
+        ],
+        "eef_pos": [
+          0.08554666842045883,
+          0.01013597375943095,
+          1.1485213923250799
+        ],
+        "tilt_degrees": 8.537736462515939e-07,
+        "lift_m": 1.3322676295501878e-15,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.02043038295848101,
+        "eef_distance": 0.13851940474752733,
+        "linear_speed": 9.15954551084652e-15,
+        "angular_speed": 4.021081198255918e-15,
+        "gripper_opening": 0.0009995817307731367,
+        "eef_object_center_distance": 0.18689349730827753,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.09060070158035982,
+        "object_lift_m": 1.3322676295501878e-15,
+        "xy_offset_m": 0.02043038295848101,
+        "xy_path_m": 0.08065552836015644,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.1275702593849246e-16,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001000000000001,
+        "episode_reward": -0.6232776418007819,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.0,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 85,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": [
+        {
+          "name": "table_collision",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_visual",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_leg1_visual",
+          "pos": [
+            0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg2_visual",
+          "pos": [
+            -0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg3_visual",
+          "pos": [
+            -0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg4_visual",
+          "pos": [
+            0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "valid_reset": false,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 2,
+        "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "skill": "place"
+      },
+      "error": "all real-grasp initializations failed",
+      "traceback": "Traceback (most recent call last):\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_preflight.py\", line 47, in physical_case\n    e=V3SkillEnv(spec,4200+i,folder,1.,True)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_skill_env.py\", line 86, in __init__\n    self._prepare_held_state()\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_skill_env.py\", line 126, in _prepare_held_state\n    raise RuntimeError('all real-grasp initializations failed')\nRuntimeError: all real-grasp initializations failed\n"
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 2,
+        "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -3.461379554570154e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.0348479983844185,
+          0.015831364176292318,
+          0.9368079657519363
+        ],
+        "eef_pos": [
+          0.026761846357346047,
+          0.013219630716804324,
+          1.1075180327733551
+        ],
+        "tilt_degrees": 90.00163523416177,
+        "lift_m": -0.029297888128043903,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12100879012114685,
+        "linear_speed": 2.310409374793736e-14,
+        "angular_speed": 3.728070450669588e-14,
+        "gripper_opening": 0.07998381373353082,
+        "eef_object_center_distance": 0.17092142635938207
+      },
+      "final": {
+        "clearance_m": -3.4613795545812565e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          0.03597386714513327,
+          0.01536703142621668,
+          0.9368079657519361
+        ],
+        "eef_pos": [
+          0.037807344894453435,
+          0.017325563716424065,
+          1.1040099928947829
+        ],
+        "tilt_degrees": 90.00163523416188,
+        "lift_m": -0.029297888128044125,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.001217860981042672,
+        "eef_distance": 0.11723272860332819,
+        "linear_speed": 2.2089406678218026e-14,
+        "angular_speed": 1.3514781339948312e-14,
+        "gripper_opening": 0.07998783169392687,
+        "eef_object_center_distance": 0.16722354908943382,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": -0.02853184146846366,
+        "object_lift_m": -0.029297888128044125,
+        "xy_offset_m": 0.001217860981042672,
+        "xy_path_m": 0.0049357298305707144,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -1.3877787807814457e-17,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.20010000000000003,
+        "episode_reward": -0.18065667207975933,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.9842957516276414,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 124,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": [
+        {
+          "name": "table_collision",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_visual",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_leg1_visual",
+          "pos": [
+            0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg2_visual",
+          "pos": [
+            -0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg3_visual",
+          "pos": [
+            -0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg4_visual",
+          "pos": [
+            0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 8,
+        "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+        "skill": "pick"
+      },
+      "initial": {
+        "clearance_m": -4.475452972108052e-06,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.06502633536490209,
+          0.23775012980300864,
+          0.9661058538799803
+        ],
+        "eef_pos": [
+          -0.07621371292743222,
+          0.24367808027562196,
+          1.1360435716611508
+        ],
+        "tilt_degrees": 0.0,
+        "lift_m": 0.0,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12060412165464351,
+        "linear_speed": 2.190550012751377e-14,
+        "angular_speed": 2.8134552317140905e-15,
+        "gripper_opening": 0.07986162196325758,
+        "eef_object_center_distance": 0.17040870264808988
+      },
+      "final": {
+        "clearance_m": 0.09784965026319803,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.062214310795674826,
+          0.2360191217009921,
+          1.0658749938860308
+        ],
+        "eef_pos": [
+          -0.04433750655608111,
+          0.23768735936601473,
+          1.1358369112241353
+        ],
+        "tilt_degrees": 2.8722144568491883,
+        "lift_m": 0.09976914000605053,
+        "grasped": false,
+        "supported": false,
+        "target_supported": false,
+        "target_xy_distance": 0.003302101032249718,
+        "eef_distance": 0.02684848767698234,
+        "linear_speed": 0.0012474041578492804,
+        "angular_speed": 0.00834804724720513,
+        "gripper_opening": 0.07872266124195135,
+        "eef_object_center_distance": 0.07222903172791068,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.10498275786286726,
+        "object_lift_m": 0.09976914000605053,
+        "xy_offset_m": 0.003302101032249718,
+        "xy_path_m": 0.008789272311871458,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -9.73514009104096e-05,
+          "descent": -0.00031030243042629024,
+          "height": 0.0,
+          "hold": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2005076538313367,
+        "episode_reward": -0.20320819538468068,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "height": 0.2726875181958675,
+          "hold": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.005213617856816732,
+        "skill": "pick",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 75,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": [
+        {
+          "name": "table_collision",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_visual",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_leg1_visual",
+          "pos": [
+            0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg2_visual",
+          "pos": [
+            -0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg3_visual",
+          "pos": [
+            -0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg4_visual",
+          "pos": [
+            0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "valid_reset": false,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 8,
+        "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+        "skill": "place"
+      },
+      "error": "all real-grasp initializations failed",
+      "traceback": "Traceback (most recent call last):\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_preflight.py\", line 47, in physical_case\n    e=V3SkillEnv(spec,4200+i,folder,1.,True)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_skill_env.py\", line 86, in __init__\n    self._prepare_held_state()\n  File \"/data/wangyihan/getscore-rl-skills/code/v3_skill_env.py\", line 126, in _prepare_held_state\n    raise RuntimeError('all real-grasp initializations failed')\nRuntimeError: all real-grasp initializations failed\n"
+    },
+    {
+      "valid_reset": true,
+      "spec": {
+        "type": "moka_pot",
+        "object": "moka_pot_1",
+        "label": "moka pot",
+        "upright_eligible": true,
+        "placement_orientation": "upright",
+        "task_index": 8,
+        "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+        "skill": "upright"
+      },
+      "initial": {
+        "clearance_m": -3.5657880356865235e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.045862030320218045,
+          0.29317098977652545,
+          0.9603983510341466
+        ],
+        "eef_pos": [
+          -0.04561714509416231,
+          0.3040434643271463,
+          1.1308461434329118
+        ],
+        "tilt_degrees": 63.554568562782386,
+        "lift_m": -0.005707502845833545,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.0,
+        "eef_distance": 0.12093775822861894,
+        "linear_speed": 2.2860444804012716e-14,
+        "angular_speed": 5.47615061010079e-14,
+        "gripper_opening": 0.07991616083429888,
+        "eef_object_center_distance": 0.17079438107045675
+      },
+      "final": {
+        "clearance_m": -3.5657880356865235e-05,
+        "table_z": 0.9,
+        "object_pos": [
+          -0.04469371616791602,
+          0.2935724319313553,
+          0.9603983510341466
+        ],
+        "eef_pos": [
+          -0.027197249549374938,
+          0.28555930561758386,
+          1.1883034495504339
+        ],
+        "tilt_degrees": 63.55456856278242,
+        "lift_m": -0.005707502845833545,
+        "grasped": false,
+        "supported": true,
+        "target_supported": true,
+        "target_xy_distance": 0.001235359770327503,
+        "eef_distance": 0.17894289763928625,
+        "linear_speed": 2.2278147726287827e-14,
+        "angular_speed": 4.18955151141096e-14,
+        "gripper_opening": 0.07994991232351346,
+        "eef_object_center_distance": 0.22871613512643305,
+        "native_step": 200,
+        "remaining_steps": 0,
+        "max_object_lift_m": 0.000778871299832895,
+        "object_lift_m": -0.005707502845833545,
+        "xy_offset_m": 0.001235359770327503,
+        "xy_path_m": 0.033199541676838626,
+        "hold_steps": 0,
+        "stable_count": 0,
+        "pick_count": 0,
+        "phase": "approach",
+        "reward_components": {
+          "step": -0.0001,
+          "horizontal": -0.0,
+          "approach": 0.0,
+          "stability": 0.0,
+          "timeout": -0.2
+        },
+        "reward": -0.2001,
+        "episode_reward": -0.24617214295234865,
+        "skill_success": false,
+        "failure": false,
+        "termination_reason": "timeout_200",
+        "terminated": false,
+        "truncated": true,
+        "earned": {
+          "approach": 0.804538808026577,
+          "stability": 0.0
+        },
+        "events": [],
+        "cumulative_descent_m": 0.0,
+        "skill": "upright",
+        "object": "moka pot",
+        "prompt": "pick up the moka pot and place it upright nearby",
+        "policy_start": true,
+        "policy_version": "script",
+        "task_version": "rpent-skills-v3-20261104"
+      },
+      "success": false,
+      "native_steps": 200,
+      "initialization_steps": 131,
+      "script": "physical control attempt, never training/BC data",
+      "table_geoms": [
+        {
+          "name": "table_collision",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_visual",
+          "pos": [
+            0.0,
+            0.0,
+            0.875
+          ],
+          "size": [
+            0.5,
+            0.6,
+            0.025
+          ]
+        },
+        {
+          "name": "table_leg1_visual",
+          "pos": [
+            0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg2_visual",
+          "pos": [
+            -0.4,
+            0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg3_visual",
+          "pos": [
+            -0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        },
+        {
+          "name": "table_leg4_visual",
+          "pos": [
+            0.4,
+            -0.5,
+            0.4375
+          ],
+          "size": [
+            0.025,
+            0.4375,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "valid": 16,
+  "successes": {
+    "pick": 3,
+    "place": 4,
+    "upright": 0
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "valid_reset": true,
+  "spec": {
+    "type": "porcelain_mug",
+    "object": "porcelain_mug_1",
+    "label": "white mug",
+    "upright_eligible": true,
+    "placement_orientation": "upright",
+    "task_index": 4,
+    "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+    "skill": "place"
+  },
+  "initial": {
+    "clearance_m": 0.10099505000806441,
+    "table_z": 0.43676000000000015,
+    "object_pos": [
+      -0.12282077586685256,
+      -0.17442790580069772,
+      0.5376746533467054
+    ],
+    "eef_pos": [
+      -0.09931285793913283,
+      -0.14741322625542572,
+      0.6153753284727272
+    ],
+    "tilt_degrees": 4.865196511990992,
+    "lift_m": 0.10330469248767477,
+    "grasped": true,
+    "supported": false,
+    "target_supported": false,
+    "target_xy_distance": 0.0,
+    "eef_distance": 0.04527408219575023,
+    "linear_speed": 7.590682943445088e-05,
+    "angular_speed": 0.0008489700433140835,
+    "gripper_opening": 0.005701146668703235,
+    "eef_object_center_distance": 0.08555588834948613
+  },
+  "final": {
+    "clearance_m": -4.490882826724274e-08,
+    "table_z": 0.43676000000000015,
+    "object_pos": [
+      -0.12193412708311663,
+      -0.16871011492883886,
+      0.4343699608590306
+    ],
+    "eef_pos": [
+      -0.10064961650633096,
+      -0.14711314806778863,
+      0.6531661843936185
+    ],
+    "tilt_degrees": 0.0,
+    "lift_m": 0.0,
+    "grasped": false,
+    "supported": true,
+    "target_supported": true,
+    "target_xy_distance": 0.005786128111268617,
+    "eef_distance": 0.17149817622245772,
+    "linear_speed": 1.1093409432895123e-14,
+    "angular_speed": 1.495267798600024e-15,
+    "gripper_opening": 0.07992141821597257,
+    "eef_object_center_distance": 0.2208874075204106,
+    "native_step": 126,
+    "remaining_steps": 74,
+    "max_object_lift_m": 0.10330469248767477,
+    "object_lift_m": 0.0,
+    "xy_offset_m": 0.005786128111268617,
+    "xy_path_m": 0.007494254668212935,
+    "hold_steps": 0,
+    "stable_count": 80,
+    "pick_count": 0,
+    "phase": "stable",
+    "reward_components": {
+      "step": -0.0001,
+      "horizontal": -0.0,
+      "stability": 0.0024999999999999914,
+      "success": 1.0
+    },
+    "reward": 1.0024,
+    "episode_reward": 1.599116941240589,
+    "skill_success": true,
+    "failure": false,
+    "termination_reason": "success",
+    "terminated": true,
+    "truncated": false,
+    "earned": {
+      "lowering": 0.9959410729082654,
+      "stability": 1.0
+    },
+    "events": [
+      "contact",
+      "release",
+      "retreat"
+    ],
+    "cumulative_descent_m": 0.0,
+    "skill": "place",
+    "object": "white mug",
+    "prompt": "place the white mug upright nearby on the table",
+    "policy_start": true,
+    "policy_version": "script",
+    "task_version": "rpent-skills-v3-20261104"
+  },
+  "success": true,
+  "native_steps": 126,
+  "initialization_steps": 226,
+  "script": "physical control attempt, never training/BC data",
+  "table_geoms": []
+}

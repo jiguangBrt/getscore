@@ -1,0 +1,51 @@
+{
+  "spec": {
+    "type": "moka_pot",
+    "object": "moka_pot_1",
+    "label": "moka pot",
+    "upright_eligible": true,
+    "placement_orientation": "upright",
+    "task_index": 2,
+    "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it",
+    "skill": "place"
+  },
+  "prompt": "place the moka pot upright nearby on the table",
+  "seed": 4213,
+  "init_index": 13,
+  "metrics": {
+    "clearance_m": 0.10023403475929105,
+    "table_z": 0.9,
+    "object_pos": [
+      0.06356805659141469,
+      0.01772537513856534,
+      1.0668026367882637
+    ],
+    "eef_pos": [
+      0.07060306626230198,
+      0.019012009405983594,
+      1.1467836356135608
+    ],
+    "tilt_degrees": 0.6551413682104903,
+    "lift_m": 0.10069678290828343,
+    "grasped": true,
+    "supported": false,
+    "target_supported": false,
+    "target_xy_distance": 0.0,
+    "eef_distance": 0.030822184857177706,
+    "linear_speed": 0.002107371644608457,
+    "angular_speed": 0.025208944813903778,
+    "gripper_opening": 0.012954106266673702,
+    "eef_object_center_distance": 0.08030010561574465
+  },
+  "initialization_actions": 265,
+  "target_kind": "table_region",
+  "target_xy": [
+    0.06356805659141469,
+    0.01772537513856534
+  ],
+  "target_radius": 0.08,
+  "task_version": "rpent-skills-v3-20261104",
+  "policy_native_steps": 0,
+  "collision_bottom_z": 1.000234034759291,
+  "support_z": 0.9
+}

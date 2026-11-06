@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "verified_at_utc": "2026-11-04T06:08:25.795985+00:00",
+  "source_parent_sha256": "4599c3f2b3a7d74835ece08d88d329929768b1fde5976ea6edeb9feac67f9c4c",
+  "migration_update": 95,
+  "migration_native_steps": 385875,
+  "optimizer_state_steps_imported": 95,
+  "weights_optimizer_actor_rng_exact": true,
+  "cuda_rng_old_prefix_exact": true,
+  "added_cuda_rng_seed": 42,
+  "first_update": {
+    "update": 96,
+    "native_steps": 391984,
+    "increment_native_steps": 6109,
+    "chunks": 768,
+    "rank_chunks": [
+      192,
+      192,
+      192,
+      192
+    ],
+    "physical_order": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "sampler_physical_gpus": [
+      1,
+      3,
+      2
+    ],
+    "logprob_max_error": 0.0,
+    "actor_lr": 1e-06,
+    "critic_warmup": false,
+    "approx_kl": 3.134598955512047e-06
+  },
+  "current_synced_policy": {
+    "version": 97,
+    "max_weight_change_since_migration": 2.109631896018982e-05
+  },
+  "supervisor_pid": 191182,
+  "trainer_pid": 191184,
+  "actor_pids": [
+    193607,
+    193608,
+    193609
+  ],
+  "uuid_environments_verified": true,
+  "deadline": 1793786380.4073858,
+  "original_started_at": 1793764780.4073858,
+  "discarded_checkpoint_episodes": 15,
+  "uncommitted_native_trace_steps": 2810,
+  "wandb_files": {
+    "wandb/offline-run-20261104_140402-f7bkwplb/run-f7bkwplb.wandb": 32768
+  },
+  "gpu_query": "index, uuid, memory.used [MiB], utilization.gpu [%]\n0, GPU-32a18ee9-861a-b562-5a71-a54d056f063c, 9542 MiB, 0 %\n1, GPU-4d64f7aa-dd53-214b-a16c-72840622d125, 13758 MiB, 0 %\n2, GPU-3e2f159e-f7f7-c04f-0e55-b0e55273618b, 13678 MiB, 27 %\n3, GPU-90654270-b6da-2df9-5947-695584cc64c9, 13328 MiB, 62 %\n"
+}

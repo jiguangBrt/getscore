@@ -89,9 +89,9 @@
   "lora_rank": 16,
   "lora_alpha": 16,
   "lora_dropout": 0.0,
-  "walltime_seconds": 43200,
-  "checkpoint_interval_seconds": 10800,
-  "evaluation_interval_seconds": 10800,
+  "walltime_seconds": 21600,
+  "checkpoint_interval_seconds": 7200,
+  "evaluation_interval_seconds": 7200,
   "evaluation_episodes_per_skill": 24,
   "critic_warmup_updates": 3,
   "actor_warmup_updates": 10,
@@ -126,11 +126,11 @@
   ],
   "demo_warmup": "No unverified BC data. Previous v2 scripted recovery attempts yielded zero valid demonstrations. If exploration remains zero-success, report it; any proposed successful-demo warmup must be physically validated and recorded separately.",
   "upright_eligible_types": "all long movable types except book,plate,frying pan,cream cheese,butter,chocolate pudding,basket; flat items still trained for pick/place",
-  "no_progress_policy": "run bounded 12h pilot, do not silently alter rewards/learning rates; nonfinite, logprob mismatch, excessive post-update KL stop and trigger bounded recovery",
+  "no_progress_policy": "run bounded 6h pilot, do not silently alter rewards/learning rates; nonfinite, logprob mismatch, excessive post-update KL stop and trigger bounded recovery",
   "episode_seconds": 10,
   "hold_time_included_in_episode": true,
-  "runtime_implementation_status": "pending_v3_adapter_and_preflight",
-  "runtime_entrypoint": null,
+  "runtime_implementation_status": "validated_v3",
+  "runtime_entrypoint": "code/v3_train.py",
   "initial_policy_source": "original_pi05_libero_base_with_fresh_lora_and_critic",
   "resume_previous_run": false,
   "reset_at_rollout_boundary": false,
@@ -203,7 +203,9 @@
     "stable_contact_event_bonus": 0.1,
     "conditional_release_event_bonus": 0.1,
     "retreat_event_bonus": 0.05,
-    "stability_progress_reward_budget": 0.2
+    "stability_progress_reward_budget": 0.2,
+    "controlled_lowering_max_speed_m_s": 0.15,
+    "controlled_lowering_tilt_degrees": 15.0
   },
   "upright": {
     "initial_state": "naturally settled tilted or side-fallen object; reject trivial self-righted reset",
@@ -223,7 +225,8 @@
     "orientation_progress_reward_budget": 0.3,
     "conditional_release_event_bonus": 0.1,
     "retreat_event_bonus": 0.05,
-    "stability_progress_reward_budget": 0.2
+    "stability_progress_reward_budget": 0.2,
+    "controlled_lift_min_m": 0.02
   },
   "preflight_requirements": [
     "Prove selected config is consumed by the environment and both train/eval paths",
@@ -241,5 +244,12 @@
     "place_flat": "place the {object} flat nearby on the table",
     "upright": "pick up the {object} and place it upright nearby"
   },
-  "prompt_policy": "Use the previously audited planner-style short instructions; do not append reward thresholds or training implementation details."
+  "prompt_policy": "Use the previously audited planner-style short instructions; do not append reward thresholds or training implementation details.",
+  "runtime_calibration_notes": [
+    "Table support height from authored collision geometry, not workspace_offset.",
+    "Controlled lowering speed <=0.15m/s and controlled upright lift >=0.02m are recommended shaping gates added during v3 preflight; physics unchanged.",
+    "6-hour budget and 2-hour checkpoints/evaluations override handoff per current user request.",
+    "Lowering progress allows <=15deg tilt; final contact/release/stability still <=5deg. Stable contact event requires held contact, and release eligibility is lost by air release. Physical ordering test revealed 5deg progress gating could rank an initially 5.2deg controlled descent below air release."
+  ],
+  "runtime_preflight_report": "/data/wangyihan/getscore-rl-skills/records/v3-preflight-20261104/acceptance.json"
 }
